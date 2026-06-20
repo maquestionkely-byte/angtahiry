@@ -1144,12 +1144,12 @@ const WORKER_URL_VIDEO = 'https://videohonor.ahofaly62.workers.dev';
 const WORKER_URL_MANIFEST = 'https://resakasary.ahofaly62.workers.dev';
 
 // ============================================================
-// LISTE DES GALERIES
+// 📋 LISTE DES GALERIES - Bouton renommé en "teny malagasy"
 // ============================================================
 const GALLERIES = [
     {
         id: 'motiv',
-        label: '📖 Vidéos LESONA 📖 (teny gasy)',
+        label: '📖 Vidéos LESONA 📖 (teny malagasy)',
         verification: 'numerovideolesona.txt',
         prefix: 'videolesona',
         title: '📼 {titre}',
@@ -1230,7 +1230,6 @@ class BlobURLManager {
     }
 
     create(url, filename) {
-        // Nettoyer l'ancienne URL si elle existe
         if (this.urls.has(filename)) {
             this.revoke(filename);
         }
@@ -1266,7 +1265,7 @@ class BlobURLManager {
 
     cleanup() {
         const now = Date.now();
-        const maxAge = 60000; // 1 minute
+        const maxAge = 60000;
         for (const [filename, data] of this.urls) {
             if (data.refCount === 0 && (now - data.timestamp) > maxAge) {
                 this.revoke(filename);
@@ -1786,7 +1785,6 @@ async function renderGallery(galleryId) {
     mediaCounterSpan.textContent = stored.length;
 
     let html = '';
-    // On va stocker les données des vidéos pour les charger en différé
     const videoData = [];
 
     for (let i = 0; i < stored.length; i++) {
@@ -1862,7 +1860,6 @@ async function renderGallery(galleryId) {
     galleryContainer.innerHTML = html;
 
     // ⭐ CHARGER LES VIDÉOS EN DIFFÉRÉ (LAZY LOAD)
-    // Au lieu d'inclure l'URL directement dans le src, on la met après
     setTimeout(() => {
         for (const data of videoData) {
             const card = document.querySelector(`.media-card[data-filename="${data.filename}"]`);
@@ -1871,14 +1868,12 @@ async function renderGallery(galleryId) {
                 if (video) {
                     video.src = data.blobUrl;
                     if (data.poster) video.poster = data.poster;
-                    // Décrémenter le compteur de référence
                     blobManager.decrementRef(data.filename);
                 }
             }
         }
     }, 100);
 
-    // Attacher les événements
     attachCardEvents(galleryId);
     mettreAJourCorbeille();
     applyScrollProtection();
@@ -1888,7 +1883,6 @@ async function renderGallery(galleryId) {
 // ATTACHER LES ÉVÉNEMENTS
 // ============================================================
 function attachCardEvents(galleryId) {
-    // Clic sur les cartes
     document.querySelectorAll('.media-card:not(.verrouille)').forEach(card => {
         card.addEventListener('click', function(e) {
             if (e.target.classList.contains('delete-btn')) return;
@@ -1906,7 +1900,6 @@ function attachCardEvents(galleryId) {
         });
     });
 
-    // Clic sur les vidéos verrouillées
     document.querySelectorAll('.media-card.verrouille').forEach(card => {
         card.addEventListener('click', function() {
             const index = parseInt(this.dataset.index);
@@ -1924,7 +1917,6 @@ function attachCardEvents(galleryId) {
         });
     });
 
-    // Boutons de suppression
     document.querySelectorAll('.delete-btn').forEach(btn => {
         btn.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -1936,7 +1928,6 @@ function attachCardEvents(galleryId) {
         });
     });
 
-    // Mode suppression (touche Delete)
     let deleteMode = false;
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Delete' || e.key === 'Suppr') {
@@ -1995,7 +1986,6 @@ function openLightbox(index) {
         afficherNotificationCentre('⚠️ Vidéo non disponible', 'error');
         return;
     }
-    // Créer une URL blob pour la lightbox
     const url = blobManager.create(URL.createObjectURL(item.blob), `lb_${item.filename}`);
     lbContent.innerHTML = `
         <div class="lb-container">
@@ -2004,7 +1994,6 @@ function openLightbox(index) {
     `;
     lightboxDiv.classList.add('active');
     lbCounter.textContent = `${index+1} / ${currentFilteredList.length}`;
-    // Nettoyer après 1 minute
     setTimeout(() => blobManager.revoke(`lb_${item.filename}`), 60000);
 }
 
@@ -2229,7 +2218,6 @@ function applyScrollProtection() {
     setupVideoObservers();
 }
 
-// Observer les changements DOM
 const scrollObserver = new MutationObserver(() => { applyScrollProtection(); });
 scrollObserver.observe(document.body, { childList: true, subtree: true });
 
@@ -2340,7 +2328,7 @@ console.log('🎬 Vidéos chargé - Solution ultime sans blob:video');
 console.log('📱 Device Model:', deviceModel);
 
 // ============================================================
-// CODE DE SÉCURITÉ (Version allégée)
+// CODE DE SÉCURITÉ
 // ============================================================
 (function() {
     function showBlockOverlay() {
