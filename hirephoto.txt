@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>🎬 Vidéos</title>
+    <title>🎵 Audios</title>
     
     <style>
-        /* ===== STYLES COMPLETS ===== */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: system-ui, -apple-system, sans-serif;
@@ -37,8 +36,8 @@
             max-height: 90vh;
             height: 90vh;
             text-align: center;
-            border: 1px solid rgba(255, 187, 0, 0.7);
-            box-shadow: 0 2px 15px rgba(255, 0, 0, 0.3);
+            border: 1px solid rgba(255, 200, 100, 0.3);
+            box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
             display: flex;
             flex-direction: column;
             overflow: hidden;
@@ -90,7 +89,7 @@
         .btn-gallery {
             display: block;
             width: 100%;
-            background: linear-gradient(135deg, rgba(255, 180, 70, 0.15), rgba(255, 140, 50, 0.10));
+            background: linear-gradient(15deg, rgba(255, 180, 70, 0.15), rgba(255, 140, 50, 0.10));
             border: 2px solid #FFB347;
             padding: 14px 0;
             margin: 8px 0;
@@ -211,6 +210,7 @@
             font-size: 0.7rem;
             font-weight: bold;
         }
+
         .search-bar-wrapper {
             position: sticky;
             top: 0;
@@ -311,118 +311,6 @@
             box-shadow: 0 12px 40px rgba(255, 50, 50, 0.15);
             transform: translateY(-4px);
         }
-        .video-wrap {
-            aspect-ratio: 16 / 9;
-            background: #0a1a22;
-            overflow: hidden;
-            position: relative;
-        }
-        .video-wrap video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-        .video-wrap video::-webkit-media-controls {
-            display: none !important;
-        }
-        .video-wrap video::-webkit-media-controls-enclosure {
-            display: none !important;
-        }
-        .video-wrap video::-webkit-media-controls-panel {
-            display: none !important;
-        }
-        .video-wrap video::-webkit-media-controls-overlay-play-button {
-            display: none !important;
-        }
-        .video-wrap video::-webkit-media-controls-play-button {
-            display: none !important;
-        }
-        .video-wrap video::-webkit-media-controls-current-time-display {
-            display: none !important;
-        }
-        .video-wrap video::-webkit-media-controls-time-remaining-display {
-            display: none !important;
-        }
-        .video-wrap video::-webkit-media-controls-timeline {
-            display: none !important;
-        }
-        .video-wrap video::-webkit-media-controls-volume-slider {
-            display: none !important;
-        }
-        .video-wrap video::-webkit-media-controls-mute-button {
-            display: none !important;
-        }
-        .video-wrap video::-webkit-media-controls-fullscreen-button {
-            display: none !important;
-        }
-        .video-wrap video::-webkit-media-controls-download-button {
-            display: none !important;
-        }
-        .video-wrap video::-internal-media-controls-download-button {
-            display: none !important;
-        }
-        .media-card:hover .video-wrap video { transform: scale(1.05); }
-        .video-play-icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 4rem;
-            color: white;
-            text-shadow: 0 0 30px rgba(0,0,0,0.9);
-            pointer-events: none;
-            opacity: 0.9;
-            transition: all 0.3s ease;
-            z-index: 2;
-        }
-        .media-card:hover .video-play-icon {
-            transform: translate(-50%, -50%) scale(1.1);
-            opacity: 1;
-        }
-        .video-wrap.verrouille-bg {
-            background: linear-gradient(145deg, #1a1a2e, #2d1b3d);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            min-height: 200px;
-        }
-        .video-wrap.verrouille-bg .lock-overlay {
-            font-size: 5rem;
-            color: #ff6b6b;
-            text-shadow: 0 0 40px rgba(255, 50, 50, 0.4);
-            animation: pulse-lock 2s ease-in-out infinite;
-            position: relative;
-            z-index: 2;
-        }
-        @keyframes pulse-lock {
-            0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.1); opacity: 0.8; }
-        }
-        .video-wrap.verrouille-bg .lock-sub {
-            position: absolute;
-            bottom: 12px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: rgba(255, 255, 255, 0.12);
-            font-size: 0.55rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            z-index: 1;
-            font-weight: 300;
-        }
-        .video-wrap.verrouille-bg .lock-bg-pattern {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 30% 40%, rgba(255,50,50,0.05) 0%, transparent 50%),
-                radial-gradient(circle at 70% 60%, rgba(255,50,50,0.05) 0%, transparent 50%);
-            z-index: 0;
-        }
         .media-card.delete-mode .delete-btn {
             display: flex !important;
         }
@@ -453,6 +341,123 @@
         .delete-btn:active {
             transform: scale(0.9);
         }
+
+        /* ============================================================
+           AUDIO WRAP
+           ============================================================ */
+        .audio-wrap {
+            aspect-ratio: 16 / 9;
+            background: linear-gradient(145deg, #0f1a24, #1a2a33);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 200px;
+        }
+        .audio-wrap .audio-icon {
+            font-size: 5rem;
+            color: #FFB347;
+            text-shadow: 0 0 40px rgba(255, 180, 70, 0.3);
+            animation: pulse-audio 2s ease-in-out infinite;
+            position: relative;
+            z-index: 2;
+        }
+        @keyframes pulse-audio {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+        }
+        .audio-wrap .audio-sub {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.1);
+            font-size: 0.55rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            z-index: 1;
+            font-weight: 300;
+        }
+        .audio-wrap .audio-bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 30% 40%, rgba(255,180,70,0.05) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(255,180,70,0.05) 0%, transparent 50%);
+            z-index: 0;
+        }
+        .audio-wrap.verrouille-bg {
+            background: linear-gradient(145deg, #1a1a2e, #2d1b3d);
+        }
+        .audio-wrap.verrouille-bg .audio-icon {
+            color: #ff6b6b;
+            text-shadow: 0 0 40px rgba(255, 50, 50, 0.4);
+            animation: pulse-lock 2s ease-in-out infinite;
+        }
+        @keyframes pulse-lock {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        .audio-wrap.verrouille-bg .lock-sub {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.12);
+            font-size: 0.55rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            z-index: 1;
+            font-weight: 300;
+        }
+        .audio-wrap.verrouille-bg .lock-bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 30% 40%, rgba(255,50,50,0.05) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(255,50,50,0.05) 0%, transparent 50%);
+            z-index: 0;
+        }
+        .audio-play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: white;
+            text-shadow: 0 0 30px rgba(0,0,0,0.9);
+            pointer-events: none;
+            opacity: 0.6;
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+        .media-card:hover .audio-play-icon {
+            transform: translate(-50%, -50%) scale(1.1);
+            opacity: 1;
+        }
+        .audio-wrap audio {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        /* Cacher les contrôles sur les miniatures */
+        .audio-wrap audio::-webkit-media-controls { display: none !important; }
+        .audio-wrap audio::-webkit-media-controls-enclosure { display: none !important; }
+        .audio-wrap audio::-webkit-media-controls-panel { display: none !important; }
+        .audio-wrap audio::-webkit-media-controls-timeline { display: none !important; }
+        .audio-wrap audio::-webkit-media-controls-play-button { display: none !important; }
+        
         .media-title {
             padding: 0.6rem 1rem 0.4rem;
             font-weight: 600;
@@ -476,6 +481,7 @@
             color: rgba(255, 255, 255, 0.4);
             letter-spacing: 0.3px;
         }
+
         .trash-modal {
             position: fixed;
             top: 0; left: 0;
@@ -567,6 +573,9 @@
             background: #27ae60;
             transform: scale(1.05);
         }
+        .trash-item .btn-redownload:active {
+            transform: scale(0.95);
+        }
         .trash-item .btn-redownload.loading {
             opacity: 0.6;
             pointer-events: none;
@@ -582,6 +591,10 @@
             display: block;
             margin-bottom: 16px;
         }
+
+        /* ============================================================
+           LIGHTBOX AUDIO
+           ============================================================ */
         .lightbox {
             position: fixed;
             top: 0; left: 0;
@@ -600,50 +613,68 @@
             max-width: 92vw;
             max-height: 85vh;
         }
-        .lb-video {
-            max-width: 92vw;
-            max-height: 85vh;
-            width: 90vw;
+        .lb-audio-player {
+            background: linear-gradient(145deg, #1a2a33, #0f1a24);
             border-radius: 28px;
+            padding: 40px 35px 35px;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid rgba(255, 180, 70, 0.2);
             box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+        }
+        .lb-audio-player .lb-audio-icon {
+            font-size: 6rem;
+            color: #FFB347;
+            margin-bottom: 16px;
             display: block;
+            animation: pulse-audio 2s ease-in-out infinite;
         }
-        .lb-video::-webkit-media-controls {
+        .lb-audio-player h3 {
+            color: #f7ecc7;
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        .lb-audio-player audio {
+            width: 100%;
+            border-radius: 12px;
+            background: #0a1a22;
+        }
+        .lb-audio-player audio::-webkit-media-controls {
             display: flex !important;
         }
-        .lb-video::-webkit-media-controls-enclosure {
+        .lb-audio-player audio::-webkit-media-controls-enclosure {
             display: flex !important;
         }
-        .lb-video::-webkit-media-controls-panel {
+        .lb-audio-player audio::-webkit-media-controls-panel {
             display: flex !important;
         }
-        .lb-video::-webkit-media-controls-timeline {
+        .lb-audio-player audio::-webkit-media-controls-timeline {
             display: flex !important;
         }
-        .lb-video::-webkit-media-controls-current-time-display {
+        .lb-audio-player audio::-webkit-media-controls-current-time-display {
             display: flex !important;
         }
-        .lb-video::-webkit-media-controls-time-remaining-display {
+        .lb-audio-player audio::-webkit-media-controls-time-remaining-display {
             display: flex !important;
         }
-        .lb-video::-webkit-media-controls-volume-slider {
+        .lb-audio-player audio::-webkit-media-controls-volume-slider {
             display: flex !important;
         }
-        .lb-video::-webkit-media-controls-mute-button {
+        .lb-audio-player audio::-webkit-media-controls-mute-button {
             display: flex !important;
         }
-        .lb-video::-webkit-media-controls-fullscreen-button {
+        .lb-audio-player audio::-webkit-media-controls-play-button {
             display: flex !important;
         }
-        .lb-video::-webkit-media-controls-play-button {
-            display: flex !important;
-        }
-        .lb-video::-webkit-media-controls-download-button {
+        .lb-audio-player audio::-webkit-media-controls-download-button {
             display: none !important;
         }
-        .lb-video::-internal-media-controls-download-button {
+        .lb-audio-player audio::-internal-media-controls-download-button {
             display: none !important;
         }
+
         .close-lb {
             position: absolute;
             top: 1.5rem;
@@ -705,6 +736,7 @@
             border: 1px solid rgba(255, 180, 70, 0.2);
             backdrop-filter: blur(8px);
         }
+
         .loader-area {
             display: flex;
             flex-direction: column;
@@ -722,6 +754,7 @@
         }
         @keyframes spin { to { transform: rotate(360deg); } }
         .hidden { display: none !important; }
+
         .btn-back {
             position: fixed;
             top: 1rem;
@@ -758,6 +791,7 @@
             display: block;
             margin-bottom: 1rem;
         }
+
         .code-modal {
             position: fixed;
             top: 0; left: 0;
@@ -930,6 +964,7 @@
             font-weight: bold;
         }
         .code-error.visible { display: block; }
+
         @media (max-width: 720px) {
             .gallery-grid { 
                 grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
@@ -995,11 +1030,14 @@
                 height: 32px;
                 font-size: 1rem;
             }
-            .video-wrap.verrouille-bg .lock-overlay {
+            .audio-wrap .audio-icon {
                 font-size: 3.5rem;
             }
-            .media-title .size {
-                font-size: 0.55rem;
+            .lb-audio-player {
+                padding: 30px 20px 25px;
+            }
+            .lb-audio-player .lb-audio-icon {
+                font-size: 4rem;
             }
         }
     </style>
@@ -1010,8 +1048,8 @@
 <div id="selectionScreen" class="selection-screen">
     <div class="selection-card">
         <div class="selection-card-header">
-            <h2>🎬 Vidéos</h2>
-            <p>Apprenons par la video</p>
+            <h2>🎵 Audios</h2>
+            <p>Apprenons par l'audio</p>
             <div class="device-info" id="deviceInfo">
                 📱 <span class="model-name" id="deviceDisplay">Chargement...</span>
             </div>
@@ -1024,10 +1062,10 @@
 <div id="galleryApp" class="hidden">
     <div class="hero" id="heroHeader">
         <div class="hero-content">
-            <h1 id="galleryTitle">🎬 Galerie</h1>
+            <h1 id="galleryTitle">🎵 Galerie Audio</h1>
             <div class="sub-header" id="gallerySub"></div>
             <div class="stat-badge">
-                <span>🎬</span> <span id="mediaCounter">--</span> <span>vidéos</span>
+                <span>🎵</span> <span id="mediaCounter">--</span> <span>audios</span>
             </div>
         </div>
         <button class="btn-trash" id="btnTrash" style="display:none;">
@@ -1038,7 +1076,7 @@
     <div class="search-bar-wrapper" id="searchWrapper">
         <div class="search-container">
             <span class="search-icon">🔍</span>
-            <input type="text" class="search-input" id="searchInput" placeholder="Rechercher une vidéo...">
+            <input type="text" class="search-input" id="searchInput" placeholder="Rechercher un audio...">
             <button class="search-clear" id="searchClear">✕</button>
         </div>
     </div>
@@ -1053,13 +1091,13 @@
 <!-- MODAL CORBEILLE -->
 <div id="trashModal" class="trash-modal">
     <div class="trash-modal-header">
-        <h2>🗑️ Vidéos supprimées</h2>
+        <h2>🗑️ Audios supprimés</h2>
         <button class="close-trash" id="closeTrash">✕</button>
     </div>
     <div class="trash-list" id="trashList">
         <div class="trash-empty">
             <span>🧹</span>
-            Aucune vidéo supprimée
+            Aucun audio supprimé
         </div>
     </div>
 </div>
@@ -1077,7 +1115,7 @@
 <div id="codeModal" class="code-modal">
     <div class="code-modal-content">
         <h3>🔐 Code requis</h3>
-        <p class="sub-title">Mila code ity vidéo ity, ampidiro ny code</p>
+        <p class="sub-title">Mila code ity audio ity, ampidiro ny code</p>
         <div style="background: #f8f9fa; border-radius: 12px; padding: 8px; margin-bottom: 12px;">
             <p style="font-size:13px;color:#555;margin:0;">
                 Fichier: <strong id="modalFileName" style="color:#2c3e50;">---</strong>
@@ -1097,7 +1135,7 @@
         <input type="text" id="modalCode" class="code-input" placeholder="Code" maxlength="10" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false">
         <div id="codeError" class="code-error">❌ Code tsy mety!</div>
         <div class="code-modal-buttons">
-            <button class="btn-validate" id="btnValidateCode">✅ Voir vidéo</button>
+            <button class="btn-validate" id="btnValidateCode">✅ Voir audio</button>
             <button class="btn-cancel" onclick="closeCodeModal()">Annuler</button>
         </div>
     </div>
@@ -1105,7 +1143,7 @@
 
 <script>
 // ============================================================
-// 🎯 SOLUTION ULTIME - PLUS DE PROBLÈME "blob:video"
+// 🎵 APPLICATION AUDIO - ULTIME
 // ============================================================
 
 // ============================================================
@@ -1144,17 +1182,17 @@ const WORKER_URL_VIDEO = 'https://videohonor.ahofaly62.workers.dev';
 const WORKER_URL_MANIFEST = 'https://resakasary.ahofaly62.workers.dev';
 
 // ============================================================
-// 📋 LISTE DES GALERIES - Bouton renommé en "teny malagasy"
+// 📋 LISTE DES GALERIES AUDIO
 // ============================================================
 const GALLERIES = [
     {
-        id: 'motiv',
-        label: '📖 Vidéos LESONA 📖 (teny malagasy)',
-        verification: 'numerovideolesona.txt',
-        prefix: 'videolesona',
-        title: '📼 {titre}',
-        screenTitle: 'Video lesona, mazotoa mianatra ô',
-        screenSub: 'Finiavana + Fahazotoa + fiezahana = Fahaombiazana',
+        id: 'audios_motiv',
+        label: '🎵 Audios LESONA (teny malagasy)',
+        verification: 'numeroaudiolesona.txt',
+        prefix: 'audiolesona',
+        title: '🎵 {titre}',
+        screenTitle: '🎵 Audios lesona',
+        screenSub: 'écoute · motivation · connaissance',
         order: 'asc'
     }
 ];
@@ -1165,7 +1203,7 @@ GALLERIES.forEach(g => {
         g.worker = WORKER_URL_VIDEO;
     }
     if (!g.manifest && !g.verification) {
-        g.manifest = `${WORKER_URL_MANIFEST}/numerovideo.txt`;
+        g.manifest = `${WORKER_URL_MANIFEST}/numeroaudio.txt`;
         g.worker = WORKER_URL_VIDEO;
     }
 });
@@ -1181,7 +1219,7 @@ let searchTerm = '';
 let isDownloading = false;
 let codePending = null;
 let sessionChecked = false;
-let deletedVideos = JSON.parse(localStorage.getItem('deletedVideos') || '{}');
+let deletedAudios = JSON.parse(localStorage.getItem('deletedAudios') || '{}');
 
 // ============================================================
 // DOM ELEMENTS
@@ -1220,7 +1258,7 @@ const btnValidateCode = document.getElementById('btnValidateCode');
 const codeError = document.getElementById('codeError');
 
 // ============================================================
-// 🎯 BLOB URL MANAGER - Gestion propre des URLs
+// 🎯 BLOB URL MANAGER
 // ============================================================
 class BlobURLManager {
     constructor() {
@@ -1240,9 +1278,7 @@ class BlobURLManager {
     revoke(filename) {
         if (this.urls.has(filename)) {
             const data = this.urls.get(filename);
-            try {
-                URL.revokeObjectURL(data.url);
-            } catch(e) {}
+            try { URL.revokeObjectURL(data.url); } catch(e) {}
             this.urls.delete(filename);
         }
     }
@@ -1297,89 +1333,6 @@ class BlobURLManager {
 const blobManager = new BlobURLManager();
 
 // ============================================================
-// 🖼️ GÉNÉRATEUR DE MINIATURES (POSTER)
-// ============================================================
-class ThumbnailGenerator {
-    constructor() {
-        this.cache = new Map();
-    }
-
-    async generate(videoBlob, filename) {
-        if (this.cache.has(filename)) {
-            return this.cache.get(filename);
-        }
-
-        return new Promise((resolve) => {
-            const url = URL.createObjectURL(videoBlob);
-            const video = document.createElement('video');
-            video.muted = true;
-            video.playsinline = true;
-            video.preload = 'metadata';
-            video.src = url;
-            
-            let resolved = false;
-            const timeoutId = setTimeout(() => {
-                if (!resolved) {
-                    resolved = true;
-                    URL.revokeObjectURL(url);
-                    this.cache.set(filename, null);
-                    resolve(null);
-                }
-            }, 3000);
-
-            video.addEventListener('loadedmetadata', () => {
-                if (resolved) return;
-                const time = Math.min(1, video.duration / 2);
-                video.currentTime = time;
-            });
-
-            video.addEventListener('seeked', () => {
-                if (resolved) return;
-                resolved = true;
-                clearTimeout(timeoutId);
-                try {
-                    const canvas = document.createElement('canvas');
-                    const maxW = 320, maxH = 180;
-                    let w = video.videoWidth || 320, h = video.videoHeight || 180;
-                    if (w > maxW) { h = (h * maxW) / w; w = maxW; }
-                    if (h > maxH) { w = (w * maxH) / h; h = maxH; }
-                    canvas.width = w;
-                    canvas.height = h;
-                    const ctx = canvas.getContext('2d');
-                    ctx.drawImage(video, 0, 0, w, h);
-                    const poster = canvas.toDataURL('image/jpeg', 0.7);
-                    this.cache.set(filename, poster);
-                    URL.revokeObjectURL(url);
-                    video.pause();
-                    video.removeAttribute('src');
-                    video.load();
-                    resolve(poster);
-                } catch(e) {
-                    URL.revokeObjectURL(url);
-                    this.cache.set(filename, null);
-                    resolve(null);
-                }
-            });
-
-            video.addEventListener('error', () => {
-                if (!resolved) {
-                    resolved = true;
-                    clearTimeout(timeoutId);
-                    URL.revokeObjectURL(url);
-                    this.cache.set(filename, null);
-                    resolve(null);
-                }
-            });
-            video.load();
-        });
-    }
-
-    clear() { this.cache.clear(); }
-}
-
-const thumbnailGen = new ThumbnailGenerator();
-
-// ============================================================
 // FONCTIONS UTILES
 // ============================================================
 function extrairePrefixe(nomFichier) {
@@ -1387,7 +1340,7 @@ function extrairePrefixe(nomFichier) {
     for (const prefix of prefixes) {
         if (nomFichier.startsWith(prefix)) return prefix;
     }
-    return 'video';
+    return 'audio';
 }
 
 function extraireNumero(nomFichier) {
@@ -1400,6 +1353,10 @@ function formatFileSize(bytes) {
     const sizes = ['o', 'Ko', 'Mo', 'Go'];
     const i = Math.floor(Math.log(bytes) / Math.log(1024));
     return (bytes / Math.pow(1024, i)).toFixed(1) + ' ' + sizes[i];
+}
+
+function estAudio(nomFichier) {
+    return nomFichier.startsWith('audio') || nomFichier.match(/\.(mp3|wav|ogg|m4a|aac)$/i) !== null;
 }
 
 function afficherNotificationCentre(message, type) {
@@ -1422,33 +1379,33 @@ function afficherNotificationCentre(message, type) {
 }
 
 // ============================================================
-// GESTION DES VIDÉOS SUPPRIMÉES
+// GESTION DES AUDIOS SUPPRIMÉS
 // ============================================================
-function ajouterVideoSupprimee(galleryId, filename, titre, numero) {
-    if (!deletedVideos[galleryId]) deletedVideos[galleryId] = [];
-    if (!deletedVideos[galleryId].find(v => v.filename === filename)) {
-        deletedVideos[galleryId].push({ filename, titre, numero });
-        localStorage.setItem('deletedVideos', JSON.stringify(deletedVideos));
+function ajouterAudioSupprime(galleryId, filename, titre, numero) {
+    if (!deletedAudios[galleryId]) deletedAudios[galleryId] = [];
+    if (!deletedAudios[galleryId].find(v => v.filename === filename)) {
+        deletedAudios[galleryId].push({ filename, titre, numero });
+        localStorage.setItem('deletedAudios', JSON.stringify(deletedAudios));
     }
     mettreAJourCorbeille();
 }
 
-function supprimerVideoSupprimee(galleryId, filename) {
-    if (deletedVideos[galleryId]) {
-        deletedVideos[galleryId] = deletedVideos[galleryId].filter(v => v.filename !== filename);
-        if (deletedVideos[galleryId].length === 0) delete deletedVideos[galleryId];
-        localStorage.setItem('deletedVideos', JSON.stringify(deletedVideos));
+function supprimerAudioSupprime(galleryId, filename) {
+    if (deletedAudios[galleryId]) {
+        deletedAudios[galleryId] = deletedAudios[galleryId].filter(v => v.filename !== filename);
+        if (deletedAudios[galleryId].length === 0) delete deletedAudios[galleryId];
+        localStorage.setItem('deletedAudios', JSON.stringify(deletedAudios));
     }
     mettreAJourCorbeille();
 }
 
-function getVideosSupprimees(galleryId) {
-    return deletedVideos[galleryId] || [];
+function getAudiosSupprimes(galleryId) {
+    return deletedAudios[galleryId] || [];
 }
 
 function mettreAJourCorbeille() {
     let total = 0;
-    for (const key in deletedVideos) total += deletedVideos[key].length;
+    for (const key in deletedAudios) total += deletedAudios[key].length;
     trashCount.textContent = total;
     btnTrash.style.display = total > 0 ? 'flex' : 'none';
 }
@@ -1526,7 +1483,7 @@ async function fetchManifest(gallery) {
             const match = line.match(regex);
             if (match) {
                 if (currentNum !== null && currentFilename !== null) {
-                    map.set(currentNum, { filename: currentFilename, numero: currentNum, titre: currentTitre || `Vidéo ${currentNum}` });
+                    map.set(currentNum, { filename: currentFilename, numero: currentNum, titre: currentTitre || `Audio ${currentNum}` });
                 }
                 currentNum = parseInt(match[1]);
                 currentFilename = line;
@@ -1537,7 +1494,7 @@ async function fetchManifest(gallery) {
             }
         }
         if (currentNum !== null && currentFilename !== null) {
-            map.set(currentNum, { filename: currentFilename, numero: currentNum, titre: currentTitre || `Vidéo ${currentNum}` });
+            map.set(currentNum, { filename: currentFilename, numero: currentNum, titre: currentTitre || `Audio ${currentNum}` });
         }
         return Array.from(map.values()).sort((a,b) => a.numero - b.numero);
     } catch(e) { 
@@ -1547,9 +1504,9 @@ async function fetchManifest(gallery) {
 }
 
 // ============================================================
-// TÉLÉCHARGER UNE VIDÉO INDIVIDUELLE
+// TÉLÉCHARGER UN AUDIO INDIVIDUEL
 // ============================================================
-async function telechargerVideoIndividuelle(galleryId, filename, titre, numero) {
+async function telechargerAudioIndividuel(galleryId, filename, titre, numero) {
     const url = `${WORKER_URL_VIDEO}/${filename}?deviceModel=${encodeURIComponent(deviceModel)}`;
     console.log(`📥 Téléchargement: ${filename}`);
     try {
@@ -1565,7 +1522,7 @@ async function telechargerVideoIndividuelle(galleryId, filename, titre, numero) 
         if (res.ok) {
             const blob = await res.blob();
             await saveMedia(galleryId, filename, blob, numero, titre, 'ok');
-            console.log(`✅ ${filename} téléchargée`);
+            console.log(`✅ ${filename} téléchargé`);
             return { status: 'ok', data: null };
         }
         return { status: 'error', data: { message: `HTTP ${res.status}` } };
@@ -1597,7 +1554,7 @@ function closeCodeModal() {
     fbMessageArea.style.display = 'none';
     codePending = null;
     btnValidateCode.disabled = false;
-    btnValidateCode.textContent = '✅ Voir vidéo';
+    btnValidateCode.textContent = '✅ Voir audio';
 }
 
 async function submitModalCode() {
@@ -1609,7 +1566,7 @@ async function submitModalCode() {
         return;
     }
     if (!codePending) {
-        codeError.textContent = '⚠️ Tsy misy vidéo voafidy';
+        codeError.textContent = '⚠️ Tsy misy audio voafidy';
         codeError.classList.add('visible');
         return;
     }
@@ -1628,7 +1585,7 @@ async function submitModalCode() {
             codeError.textContent = '❌ Code tsy mety!';
             codeError.classList.add('visible');
             btnValidateCode.disabled = false;
-            btnValidateCode.textContent = '✅ Voir vidéo';
+            btnValidateCode.textContent = '✅ Voir audio';
             return;
         }
         closeCodeModal();
@@ -1637,33 +1594,33 @@ async function submitModalCode() {
         if (!gallery) {
             afficherNotificationCentre('❌ Galerie non trouvée', 'error');
             btnValidateCode.disabled = false;
-            btnValidateCode.textContent = '✅ Voir vidéo';
+            btnValidateCode.textContent = '✅ Voir audio';
             return;
         }
         const manifest = await fetchManifest(gallery);
         if (!manifest.length) {
-            afficherNotificationCentre('❌ Aucune vidéo trouvée', 'error');
+            afficherNotificationCentre('❌ Aucun audio trouvé', 'error');
             btnValidateCode.disabled = false;
-            btnValidateCode.textContent = '✅ Voir vidéo';
+            btnValidateCode.textContent = '✅ Voir audio';
             return;
         }
-        await telechargerToutesVideosVerrouillees(galleryId, manifest);
-        if (fromTrash) supprimerVideoSupprimee(galleryId, filename);
+        await telechargerTousAudiosVerrouilles(galleryId, manifest);
+        if (fromTrash) supprimerAudioSupprime(galleryId, filename);
     } catch (error) {
         console.error('❌ Erreur activation:', error);
         afficherNotificationCentre('❌ Erreur lors de l\'activation', 'error');
     } finally {
         btnValidateCode.disabled = false;
-        btnValidateCode.textContent = '✅ Voir vidéo';
+        btnValidateCode.textContent = '✅ Voir audio';
         codePending = null;
     }
 }
 
-async function telechargerToutesVideosVerrouillees(galleryId, manifest) {
+async function telechargerTousAudiosVerrouilles(galleryId, manifest) {
     if (isDownloading) return;
     isDownloading = true;
     let stored = await getAllMedias(galleryId);
-    const deleted = getVideosSupprimees(galleryId);
+    const deleted = getAudiosSupprimes(galleryId);
     const deletedFilenames = deleted.map(v => v.filename);
     stored = stored.filter(item => !deletedFilenames.includes(item.filename));
     stored = stored.sort((a,b) => a.numero - b.numero);
@@ -1675,23 +1632,23 @@ async function telechargerToutesVideosVerrouillees(galleryId, manifest) {
         }
     }
     if (!premiereVerrouillee) {
-        console.log('✅ Aucune vidéo verrouillée trouvée');
+        console.log('✅ Aucun audio verrouillé trouvé');
         isDownloading = false;
         return;
     }
     const numeroDepart = premiereVerrouillee.numero;
-    const videosATelecharger = manifest.filter(m => m.numero >= numeroDepart);
-    console.log(`📥 ${videosATelecharger.length} vidéo(s) à télécharger à partir de ${numeroDepart}`);
-    let compteTelechargees = 0, premiereVideo = true;
-    for (const media of videosATelecharger) {
+    const audiosATelecharger = manifest.filter(m => m.numero >= numeroDepart);
+    console.log(`📥 ${audiosATelecharger.length} audio(s) à télécharger à partir de ${numeroDepart}`);
+    let compteTelecharges = 0, premiereAudio = true;
+    for (const media of audiosATelecharger) {
         const existeDeja = stored.find(item => item.filename === media.filename && item.status === 'ok');
         if (existeDeja) {
-            console.log(`⏭️ ${media.filename} déjà téléchargée, skip`);
+            console.log(`⏭️ ${media.filename} déjà téléchargé, skip`);
             continue;
         }
-        const result = await telechargerVideoIndividuelle(galleryId, media.filename, media.titre, media.numero);
+        const result = await telechargerAudioIndividuel(galleryId, media.filename, media.titre, media.numero);
         if (result.status === 'ok') {
-            compteTelechargees++;
+            compteTelecharges++;
             await setStoredNum(galleryId, media.numero);
             const indexInList = currentMediaList.findIndex(item => item.filename === media.filename);
             if (indexInList !== -1) {
@@ -1701,24 +1658,24 @@ async function telechargerToutesVideosVerrouillees(galleryId, manifest) {
                     currentMediaList[indexInList] = mediaUpdated;
                 }
             }
-            if (premiereVideo) { premiereVideo = false; await renderGallery(galleryId); }
+            if (premiereAudio) { premiereAudio = false; await renderGallery(galleryId); }
         } else if (result.status === 'verrouille') {
-            console.log(`🔒 ${media.filename} toujours verrouillée, arrêt`);
+            console.log(`🔒 ${media.filename} toujours verrouillé, arrêt`);
             break;
         } else {
             console.log(`❌ Erreur ${media.filename}, arrêt`);
             break;
         }
     }
-    console.log(`✅ ${compteTelechargees} vidéo(s) téléchargée(s)`);
+    console.log(`✅ ${compteTelecharges} audio(s) téléchargé(s)`);
     isDownloading = false;
-    if (compteTelechargees > 0) {
+    if (compteTelecharges > 0) {
         await renderGallery(galleryId);
-        afficherNotificationCentre(`✅ ${compteTelechargees} vidéo(s) déverrouillée(s) !`, 'success');
+        afficherNotificationCentre(`✅ ${compteTelecharges} audio(s) déverrouillé(s) !`, 'success');
     }
 }
 
-async function telechargerVideosManquantes(galleryId, manifest, dernierNumOk) {
+async function telechargerAudiosManquants(galleryId, manifest, dernierNumOk) {
     if (isDownloading) return;
     isDownloading = true;
     let maxNumManifest = 0;
@@ -1726,16 +1683,16 @@ async function telechargerVideosManquantes(galleryId, manifest, dernierNumOk) {
         if (media.numero > maxNumManifest) maxNumManifest = media.numero;
     }
     if (maxNumManifest <= dernierNumOk) {
-        console.log(`✅ Aucune nouvelle vidéo (${dernierNumOk} >= ${maxNumManifest})`);
+        console.log(`✅ Aucun nouvel audio (${dernierNumOk} >= ${maxNumManifest})`);
         isDownloading = false;
         return;
     }
     const debut = dernierNumOk + 1;
     const fin = maxNumManifest;
-    const videosManquantes = manifest.filter(m => m.numero >= debut && m.numero <= fin);
-    console.log(`📥 ${videosManquantes.length} vidéo(s) à traiter (${debut} à ${fin})`);
+    const audiosManquants = manifest.filter(m => m.numero >= debut && m.numero <= fin);
+    console.log(`📥 ${audiosManquants.length} audio(s) à traiter (${debut} à ${fin})`);
     let dernierNum = dernierNumOk;
-    for (const media of videosManquantes) {
+    for (const media of audiosManquants) {
         const db = await openDB(galleryId);
         const existing = await new Promise((resolve) => {
             const req = db.transaction(['medias'], 'readonly').objectStore('medias').get(media.filename);
@@ -1745,15 +1702,15 @@ async function telechargerVideosManquantes(galleryId, manifest, dernierNumOk) {
         if (!existing) {
             await saveMedia(galleryId, media.filename, null, media.numero, media.titre, 'verrouille');
         }
-        const result = await telechargerVideoIndividuelle(galleryId, media.filename, media.titre, media.numero);
+        const result = await telechargerAudioIndividuel(galleryId, media.filename, media.titre, media.numero);
         if (result.status === 'ok') {
             if (media.numero > dernierNum) {
                 dernierNum = media.numero;
                 await setStoredNum(galleryId, dernierNum);
             }
-            console.log(`✅ ${media.filename} téléchargée`);
+            console.log(`✅ ${media.filename} téléchargé`);
         } else if (result.status === 'verrouille') {
-            console.log(`🔒 ${media.filename} verrouillée`);
+            console.log(`🔒 ${media.filename} verrouillé`);
         }
     }
     console.log(`✅ Traitement terminé, dernier numéro: ${dernierNum}`);
@@ -1762,14 +1719,14 @@ async function telechargerVideosManquantes(galleryId, manifest, dernierNumOk) {
 }
 
 // ============================================================
-// 🎯 RENDER GALLERY - VERSION SANS PROBLÈME blob:video
+// 🎯 RENDER GALLERY - AUDIO
 // ============================================================
 async function renderGallery(galleryId) {
     const gallery = GALLERIES.find(g => g.id === galleryId);
     if (!gallery) return;
 
     let stored = await getAllMedias(galleryId);
-    const deleted = getVideosSupprimees(galleryId);
+    const deleted = getAudiosSupprimes(galleryId);
     const deletedFilenames = deleted.map(v => v.filename);
     stored = stored.filter(item => !deletedFilenames.includes(item.filename));
 
@@ -1785,43 +1742,30 @@ async function renderGallery(galleryId) {
     mediaCounterSpan.textContent = stored.length;
 
     let html = '';
-    const videoData = [];
+    const audioData = [];
 
     for (let i = 0; i < stored.length; i++) {
         const item = stored[i];
-        const title = item.titre || `Vidéo ${item.numero}`;
+        const title = item.titre || `Audio ${item.numero}`;
         const isVerrouille = item.status === 'verrouille';
         const isOk = item.status === 'ok' && item.blob && item.blob.size > 0;
 
         if (isOk) {
             const fileSize = item.blob ? formatFileSize(item.blob.size) : '';
-            // Générer le poster en arrière-plan
-            const poster = await thumbnailGen.generate(item.blob, item.filename);
-            
-            // Créer une URL blob mais avec gestion propre
             const blobUrl = blobManager.create(URL.createObjectURL(item.blob), item.filename);
             
-            videoData.push({
-                index: i,
-                filename: item.filename,
-                blobUrl: blobUrl,
-                poster: poster
-            });
+            audioData.push({ index: i, filename: item.filename, blobUrl: blobUrl });
 
             html += `
-                <div class="media-card" data-index="${i}" data-filename="${item.filename}" data-numero="${item.numero}" data-titre="${title.replace(/"/g, '&quot;')}">
-                    <div class="video-wrap" style="position:relative;background:#000;aspect-ratio:16/9;overflow:hidden;border-radius:12px;">
-                        <video 
-                            muted 
-                            playsinline 
-                            preload="none"
-                            ${poster ? `poster="${poster}"` : ''}
-                            style="width:100%;height:100%;object-fit:cover;cursor:pointer;"
-                            controlslist="nodownload"
-                        ></video>
-                        <div class="video-play-icon" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:4rem;color:white;text-shadow:0 0 30px rgba(0,0,0,0.9);pointer-events:none;opacity:0.9;z-index:2;">▶</div>
+                <div class="media-card audio-card" data-index="${i}" data-filename="${item.filename}" data-numero="${item.numero}" data-titre="${title.replace(/"/g, '&quot;')}" data-isaudio="true">
+                    <div class="audio-wrap">
+                        <div class="audio-bg-pattern"></div>
+                        <div class="audio-icon">🎵</div>
+                        <div class="audio-sub">● audio ●</div>
+                        <audio src="${blobUrl}" preload="none"></audio>
+                        <div class="audio-play-icon">▶</div>
                     </div>
-                    <button class="delete-btn" data-filename="${item.filename}" data-numero="${item.numero}" data-titre="${title.replace(/"/g, '&quot;')}" style="position:absolute;top:10px;right:10px;background:rgba(255,50,50,0.95);color:white;border:none;border-radius:50%;width:40px;height:40px;font-size:1.4rem;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:50;transition:all 0.3s ease;box-shadow:0 4px 15px rgba(255,0,0,0.4);">✕</button>
+                    <button class="delete-btn" data-filename="${item.filename}" data-numero="${item.numero}" data-titre="${title.replace(/"/g, '&quot;')}">✕</button>
                     <div class="media-title">
                         <span class="title">${title}</span>
                         ${fileSize ? `<span class="size">📦 ${fileSize}</span>` : ''}
@@ -1830,11 +1774,11 @@ async function renderGallery(galleryId) {
             `;
         } else if (isVerrouille) {
             html += `
-                <div class="media-card verrouille" data-index="${i}" data-filename="${item.filename}" data-numero="${item.numero}" data-titre="${title.replace(/"/g, '&quot;')}" data-verrouille="true">
-                    <div class="video-wrap verrouille-bg" style="aspect-ratio:16/9;background:linear-gradient(145deg,#1a1a2e,#2d1b3d);display:flex;align-items:center;justify-content:center;position:relative;border-radius:12px;">
-                        <div class="lock-bg-pattern" style="position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at 30% 40%,rgba(255,50,50,0.05) 0%,transparent 50%),radial-gradient(circle at 70% 60%,rgba(255,50,50,0.05) 0%,transparent 50%);z-index:0;"></div>
-                        <div class="lock-overlay" style="font-size:5rem;color:#ff6b6b;text-shadow:0 0 40px rgba(255,50,50,0.4);animation:pulse-lock 2s ease-in-out infinite;position:relative;z-index:2;">🔒</div>
-                        <div class="lock-sub" style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,0.12);font-size:0.55rem;letter-spacing:2px;text-transform:uppercase;z-index:1;font-weight:300;">● verrouillé ●</div>
+                <div class="media-card verrouille audio-card" data-index="${i}" data-filename="${item.filename}" data-numero="${item.numero}" data-titre="${title.replace(/"/g, '&quot;')}" data-verrouille="true" data-isaudio="true">
+                    <div class="audio-wrap verrouille-bg">
+                        <div class="lock-bg-pattern"></div>
+                        <div class="audio-icon">🔒</div>
+                        <div class="lock-sub">● verrouillé ●</div>
                     </div>
                     <div class="media-title">
                         <span class="title">${title}</span>
@@ -1844,9 +1788,9 @@ async function renderGallery(galleryId) {
             `;
         } else {
             html += `
-                <div class="media-card" data-index="${i}" style="cursor:default;">
-                    <div class="video-wrap" style="aspect-ratio:16/9;background:#1a1a2e;display:flex;align-items:center;justify-content:center;border-radius:12px;">
-                        <span style="color:#666;font-size:3rem;">⚠️</span>
+                <div class="media-card audio-card" data-index="${i}" style="cursor:default;">
+                    <div class="audio-wrap verrouille-bg">
+                        <div style="font-size:3rem;color:#666;">⚠️</div>
                     </div>
                     <div class="media-title">
                         <span class="title">${title}</span>
@@ -1859,15 +1803,14 @@ async function renderGallery(galleryId) {
 
     galleryContainer.innerHTML = html;
 
-    // ⭐ CHARGER LES VIDÉOS EN DIFFÉRÉ (LAZY LOAD)
+    // Charger les audios en différé
     setTimeout(() => {
-        for (const data of videoData) {
+        for (const data of audioData) {
             const card = document.querySelector(`.media-card[data-filename="${data.filename}"]`);
             if (card) {
-                const video = card.querySelector('video');
-                if (video) {
-                    video.src = data.blobUrl;
-                    if (data.poster) video.poster = data.poster;
+                const audio = card.querySelector('audio');
+                if (audio) {
+                    audio.src = data.blobUrl;
                     blobManager.decrementRef(data.filename);
                 }
             }
@@ -1890,7 +1833,7 @@ function attachCardEvents(galleryId) {
             if (isNaN(index)) return;
             const item = currentMediaList[index];
             if (!item || !item.blob) {
-                afficherNotificationCentre('⚠️ Vidéo non disponible', 'error');
+                afficherNotificationCentre('⚠️ Audio non disponible', 'error');
                 return;
             }
             const filteredIndex = currentFilteredList.findIndex(
@@ -1909,7 +1852,7 @@ function attachCardEvents(galleryId) {
             codePending = {
                 galleryId: galleryId,
                 filename: item.filename,
-                titre: item.titre || `Vidéo ${item.numero}`,
+                titre: item.titre || `Audio ${item.numero}`,
                 numero: item.numero,
                 fromTrash: false
             };
@@ -1924,7 +1867,7 @@ function attachCardEvents(galleryId) {
             const filename = this.dataset.filename;
             const titre = this.dataset.titre;
             const numero = parseInt(this.dataset.numero);
-            supprimerVideo(galleryId, filename, titre, numero);
+            supprimerAudio(galleryId, filename, titre, numero);
         });
     });
 
@@ -1952,9 +1895,9 @@ function attachCardEvents(galleryId) {
 }
 
 // ============================================================
-// SUPPRIMER UNE VIDÉO
+// SUPPRIMER UN AUDIO
 // ============================================================
-async function supprimerVideo(galleryId, filename, titre, numero) {
+async function supprimerAudio(galleryId, filename, titre, numero) {
     if (!confirm(`Supprimer "${titre}" de la bibliothèque ?`)) return;
     try {
         const db = await openDB(galleryId);
@@ -1962,12 +1905,12 @@ async function supprimerVideo(galleryId, filename, titre, numero) {
             const tx = db.transaction(['medias'], 'readwrite');
             const req = tx.objectStore('medias').delete(filename);
             req.onsuccess = () => {
-                ajouterVideoSupprimee(galleryId, filename, titre, numero);
+                ajouterAudioSupprime(galleryId, filename, titre, numero);
                 resolve();
             };
             req.onerror = () => reject(req.error);
         });
-        afficherNotificationCentre(`🗑️ "${titre}" supprimée`, 'success');
+        afficherNotificationCentre(`🗑️ "${titre}" supprimé`, 'success');
         await renderGallery(galleryId);
     } catch(e) {
         console.error('Erreur:', e);
@@ -1976,20 +1919,27 @@ async function supprimerVideo(galleryId, filename, titre, numero) {
 }
 
 // ============================================================
-// LIGHTBOX
+// LIGHTBOX - AUDIO
 // ============================================================
 function openLightbox(index) {
     if (!currentFilteredList.length) return;
     currentIndex = index;
     const item = currentFilteredList[index];
     if (!item || !item.blob) {
-        afficherNotificationCentre('⚠️ Vidéo non disponible', 'error');
+        afficherNotificationCentre('⚠️ Audio non disponible', 'error');
         return;
     }
     const url = blobManager.create(URL.createObjectURL(item.blob), `lb_${item.filename}`);
+    const title = item.titre || `Audio ${item.numero}`;
+    
     lbContent.innerHTML = `
         <div class="lb-container">
-            <video class="lb-video" src="${url}" controls autoplay controlslist="nodownload" disablePictureInPicture playsinline></video>
+            <div class="lb-audio-player">
+                <span class="lb-audio-icon">🎵</span>
+                <h3>${title}</h3>
+                <audio src="${url}" controls autoplay controlslist="nodownload" style="width:100%;border-radius:12px;background:#0a1a22;"></audio>
+                <div style="margin-top:12px;color:rgba(255,255,255,0.3);font-size:0.7rem;letter-spacing:1px;">${item.filename}</div>
+            </div>
         </div>
     `;
     lightboxDiv.classList.add('active');
@@ -1999,24 +1949,30 @@ function openLightbox(index) {
 
 function closeLightbox() {
     lightboxDiv.classList.remove('active');
-    const video = lbContent.querySelector('video');
-    if (video) video.pause();
+    const audio = lbContent.querySelector('audio');
+    if (audio) audio.pause();
 }
 
 function nextMedia() {
     if (currentIndex < currentFilteredList.length - 1) {
         currentIndex++;
-        const oldVideo = lbContent.querySelector('video');
-        if (oldVideo) oldVideo.pause();
+        const oldAudio = lbContent.querySelector('audio');
+        if (oldAudio) oldAudio.pause();
         const item = currentFilteredList[currentIndex];
         if (!item || !item.blob) {
-            afficherNotificationCentre('⚠️ Vidéo non disponible', 'error');
+            afficherNotificationCentre('⚠️ Audio non disponible', 'error');
             return;
         }
         const url = blobManager.create(URL.createObjectURL(item.blob), `lb_${item.filename}`);
+        const title = item.titre || `Audio ${item.numero}`;
         lbContent.innerHTML = `
             <div class="lb-container">
-                <video class="lb-video" src="${url}" controls autoplay controlslist="nodownload" disablePictureInPicture playsinline></video>
+                <div class="lb-audio-player">
+                    <span class="lb-audio-icon">🎵</span>
+                    <h3>${title}</h3>
+                    <audio src="${url}" controls autoplay controlslist="nodownload" style="width:100%;border-radius:12px;background:#0a1a22;"></audio>
+                    <div style="margin-top:12px;color:rgba(255,255,255,0.3);font-size:0.7rem;letter-spacing:1px;">${item.filename}</div>
+                </div>
             </div>
         `;
         lbCounter.textContent = `${currentIndex+1} / ${currentFilteredList.length}`;
@@ -2027,17 +1983,23 @@ function nextMedia() {
 function prevMedia() {
     if (currentIndex > 0) {
         currentIndex--;
-        const oldVideo = lbContent.querySelector('video');
-        if (oldVideo) oldVideo.pause();
+        const oldAudio = lbContent.querySelector('audio');
+        if (oldAudio) oldAudio.pause();
         const item = currentFilteredList[currentIndex];
         if (!item || !item.blob) {
-            afficherNotificationCentre('⚠️ Vidéo non disponible', 'error');
+            afficherNotificationCentre('⚠️ Audio non disponible', 'error');
             return;
         }
         const url = blobManager.create(URL.createObjectURL(item.blob), `lb_${item.filename}`);
+        const title = item.titre || `Audio ${item.numero}`;
         lbContent.innerHTML = `
             <div class="lb-container">
-                <video class="lb-video" src="${url}" controls autoplay controlslist="nodownload" disablePictureInPicture playsinline></video>
+                <div class="lb-audio-player">
+                    <span class="lb-audio-icon">🎵</span>
+                    <h3>${title}</h3>
+                    <audio src="${url}" controls autoplay controlslist="nodownload" style="width:100%;border-radius:12px;background:#0a1a22;"></audio>
+                    <div style="margin-top:12px;color:rgba(255,255,255,0.3);font-size:0.7rem;letter-spacing:1px;">${item.filename}</div>
+                </div>
             </div>
         `;
         lbCounter.textContent = `${currentIndex+1} / ${currentFilteredList.length}`;
@@ -2069,7 +2031,7 @@ async function loadGallery(galleryId) {
                     if (media.numero > maxNumManifest) maxNumManifest = media.numero;
                 }
                 if (maxNumManifest > dernierNumOk) {
-                    await telechargerVideosManquantes(galleryId, manifest, dernierNumOk);
+                    await telechargerAudiosManquants(galleryId, manifest, dernierNumOk);
                 }
             }
         }
@@ -2079,7 +2041,7 @@ async function loadGallery(galleryId) {
 // ============================================================
 // FILTRE RECHERCHE
 // ============================================================
-function filterVideos(query) {
+function filterAudios(query) {
     searchTerm = query.toLowerCase().trim();
     const cards = document.querySelectorAll('.media-card');
     let hasVisible = false;
@@ -2101,10 +2063,10 @@ function filterVideos(query) {
         if (!noResult) {
             noResult = document.createElement('div');
             noResult.className = 'no-result';
-            noResult.innerHTML = `<span>🔍</span>Aucune vidéo trouvée pour "<strong>${searchTerm}</strong>"`;
+            noResult.innerHTML = `<span>🔍</span>Aucun audio trouvé pour "<strong>${searchTerm}</strong>"`;
             galleryContainer.appendChild(noResult);
         } else {
-            noResult.innerHTML = `<span>🔍</span>Aucune vidéo trouvée pour "<strong>${searchTerm}</strong>"`;
+            noResult.innerHTML = `<span>🔍</span>Aucun audio trouvé pour "<strong>${searchTerm}</strong>"`;
             noResult.style.display = 'block';
         }
     } else if (noResult) {
@@ -2121,22 +2083,22 @@ function filterVideos(query) {
 // ============================================================
 function afficherCorbeille() {
     const galleryId = currentGallery;
-    const videos = getVideosSupprimees(galleryId);
+    const audios = getAudiosSupprimes(galleryId);
     trashList.innerHTML = '';
-    if (videos.length === 0) {
-        trashList.innerHTML = `<div class="trash-empty"><span>🧹</span>Aucune vidéo supprimée</div>`;
+    if (audios.length === 0) {
+        trashList.innerHTML = `<div class="trash-empty"><span>🧹</span>Aucun audio supprimé</div>`;
         return;
     }
-    for (const video of videos) {
+    for (const audio of audios) {
         const div = document.createElement('div');
         div.className = 'trash-item';
-        div.dataset.filename = video.filename;
+        div.dataset.filename = audio.filename;
         div.innerHTML = `
             <div class="info">
-                <div class="title">${video.titre || `Vidéo ${video.numero}`}</div>
-                <div class="detail">${video.filename} • N°${video.numero}</div>
+                <div class="title">${audio.titre || `Audio ${audio.numero}`}</div>
+                <div class="detail">${audio.filename} • N°${audio.numero} 🎵</div>
             </div>
-            <button class="btn-redownload" onclick="retelechargerVideo('${galleryId}', '${video.filename}', '${video.titre.replace(/'/g, "\\'")}', ${video.numero})">
+            <button class="btn-redownload" onclick="retelechargerAudio('${galleryId}', '${audio.filename}', '${audio.titre.replace(/'/g, "\\'")}', ${audio.numero})">
                 🔄 Retélécharger
             </button>
         `;
@@ -2144,18 +2106,18 @@ function afficherCorbeille() {
     }
 }
 
-async function retelechargerVideo(galleryId, filename, titre, numero) {
+async function retelechargerAudio(galleryId, filename, titre, numero) {
     const btn = document.querySelector(`.trash-item[data-filename="${filename}"] .btn-redownload`);
     if (btn) { btn.textContent = '⏳...'; btn.classList.add('loading'); }
     try {
-        const result = await telechargerVideoIndividuelle(galleryId, filename, titre, numero);
+        const result = await telechargerAudioIndividuel(galleryId, filename, titre, numero);
         if (result.status === 'ok') {
-            supprimerVideoSupprimee(galleryId, filename);
-            afficherNotificationCentre(`✅ ${titre} retéléchargée`, 'success');
+            supprimerAudioSupprime(galleryId, filename);
+            afficherNotificationCentre(`✅ ${titre} retéléchargé`, 'success');
             await renderGallery(galleryId);
             afficherCorbeille();
         } else if (result.status === 'verrouille') {
-            afficherNotificationCentre('🔒 Code requis pour cette vidéo', 'error');
+            afficherNotificationCentre('🔒 Code requis pour cet audio', 'error');
             codePending = { galleryId, filename, titre, numero, fromTrash: true };
             ouvrirModalCode(filename, titre, numero);
         } else {
@@ -2174,25 +2136,25 @@ async function retelechargerVideo(galleryId, filename, titre, numero) {
 let scrollTimer = null;
 let isScrolling = false;
 
-function pauseAllVideos() {
-    document.querySelectorAll('.video-wrap video').forEach(video => {
-        try { video.pause(); video.currentTime = 0; } catch(e) {}
+function pauseAllAudios() {
+    document.querySelectorAll('.audio-wrap audio').forEach(audio => {
+        try { audio.pause(); audio.currentTime = 0; } catch(e) {}
     });
 }
 
-function blockVideoOnScroll() {
+function blockAudioOnScroll() {
     isScrolling = true;
-    pauseAllVideos();
+    pauseAllAudios();
     if (scrollTimer) clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(() => { isScrolling = false; pauseAllVideos(); }, 500);
+    scrollTimer = setTimeout(() => { isScrolling = false; pauseAllAudios(); }, 500);
 }
 
-window.addEventListener('scroll', blockVideoOnScroll, { passive: true });
-window.addEventListener('touchmove', blockVideoOnScroll, { passive: true });
-window.addEventListener('touchend', () => { setTimeout(pauseAllVideos, 300); }, { passive: true });
+window.addEventListener('scroll', blockAudioOnScroll, { passive: true });
+window.addEventListener('touchmove', blockAudioOnScroll, { passive: true });
+window.addEventListener('touchend', () => { setTimeout(pauseAllAudios, 300); }, { passive: true });
 
-function setupVideoObservers() {
-    document.querySelectorAll('.video-wrap video').forEach(video => {
+function setupAudioObservers() {
+    document.querySelectorAll('.audio-wrap audio').forEach(audio => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 try {
@@ -2209,13 +2171,13 @@ function setupVideoObservers() {
                 } catch(e) {}
             });
         }, { threshold: 0.1 });
-        observer.observe(video);
+        observer.observe(audio);
     });
 }
 
 function applyScrollProtection() {
-    pauseAllVideos();
-    setupVideoObservers();
+    pauseAllAudios();
+    setupAudioObservers();
 }
 
 const scrollObserver = new MutationObserver(() => { applyScrollProtection(); });
@@ -2223,12 +2185,12 @@ scrollObserver.observe(document.body, { childList: true, subtree: true });
 
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(applyScrollProtection, 500);
-    document.querySelectorAll('.video-wrap video').forEach(video => {
-        video.addEventListener('click', function(e) {
+    document.querySelectorAll('.audio-wrap audio').forEach(audio => {
+        audio.addEventListener('click', function(e) {
             e.preventDefault(); e.stopPropagation();
             this.pause(); this.currentTime = 0;
         });
-        video.addEventListener('dblclick', function(e) {
+        audio.addEventListener('dblclick', function(e) {
             e.preventDefault(); e.stopPropagation();
             this.pause(); this.currentTime = 0;
         });
@@ -2263,13 +2225,13 @@ btnBack.addEventListener('click', () => {
 searchInput.addEventListener('input', (e) => {
     const value = e.target.value;
     searchClear.classList.toggle('visible', value.length > 0);
-    filterVideos(value);
+    filterAudios(value);
 });
 
 searchClear.addEventListener('click', () => {
     searchInput.value = '';
     searchClear.classList.remove('visible');
-    filterVideos('');
+    filterAudios('');
     searchInput.focus();
 });
 
@@ -2324,7 +2286,7 @@ modalCode.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preven
 codeModal.addEventListener('click', (e) => { if (e.target === codeModal) closeCodeModal(); });
 modalCode.addEventListener('input', () => { codeError.classList.remove('visible'); });
 
-console.log('🎬 Vidéos chargé - Solution ultime sans blob:video');
+console.log('🎵 Application Audio chargée - Sans problème blob:audio');
 console.log('📱 Device Model:', deviceModel);
 
 // ============================================================
