@@ -1,0 +1,239 @@
+1. ___ book on the table is mine.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Ity boky eo ambony latabatra ity dia ahy.
+
+2. ___ books on the shelf are mine.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto boky eo amin'ny talantalana ireto dia ahy.
+
+3. ___ house at the end of the street is beautiful.
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny zavatra iray lavitra (singular).
+TRADUCTION: Iny trano any amin'ny faran'ny arabe iny dia tsara.
+
+4. ___ flowers in the garden are beautiful.
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny zavatra maro lavitra (plural).
+TRADUCTION: Ireo voninkazo any an-jaridaina ireo dia tsara.
+
+5. ___ is my favorite restaurant.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Ity trano fisakafoanana tianako indrindra ity.
+
+6. ___ are my favorite restaurants.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto trano fisakafoanana tianako indrindra ireto.
+
+7. ___ is a difficult question.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Fanontaniana sarotra ity.
+
+8. ___ are difficult questions.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Fanontaniana sarotra ireto.
+
+9. ___ is a great opportunity.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Fahafahana lehibe ity.
+
+10. ___ are great opportunities.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Fahafahana lehibe ireto.
+
+11. ___ is my English teacher over there.
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny olona iray lavitra (singular).
+TRADUCTION: Iny mpampianatra anglisy iny.
+
+12. ___ are my classmates over there.
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny olona maro lavitra (plural).
+TRADUCTION: Ireo mpiara-mianatra amiko ireo.
+
+13. ___ is a beautiful city.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Tanàna tsara ity.
+
+14. ___ are beautiful cities.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Tanàna tsara ireto.
+
+15. ___ is my favorite movie of all time.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Ity sarimihetsika tianako indrindra hatramin'ny taloha ity.
+
+16. ___ are my favorite movies.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto sarimihetsika tianako indrindra ireto.
+
+17. ___ is my best friend over there.
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny olona iray lavitra (singular).
+TRADUCTION: Iny namako akaiky indrindra iny.
+
+18. ___ are my best friends.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny olona maro akaiky (plural).
+TRADUCTION: Ireto namako akaiky indrindra ireto.
+
+19. ___ is a wonderful present.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Fanomezana mahafinaritra ity.
+
+20. ___ are wonderful presents.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Fanomezana mahafinaritra ireto.
+
+21. ___ is a big building.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Trano lehibe ity.
+
+22. ___ are big buildings.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Trano lehibe ireto.
+
+23. ___ is my car over there.
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny zavatra iray lavitra (singular).
+TRADUCTION: Iny fiarako iny.
+
+24. ___ are my cars over there.
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny zavatra maro lavitra (plural).
+TRADUCTION: Ireo fiarako ireo.
+
+25. ___ is a great idea!
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Hevitra tsara ity!
+
+26. ___ are great ideas!
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Hevitra tsara ireto!
+
+27. ___ is a good school.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Sekoly tsara ity.
+
+28. ___ are good schools.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Sekoly tsara ireto.
+
+29. ___ is my brother over there.
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny olona iray lavitra (singular).
+TRADUCTION: Iny rahalahiko iny.
+
+30. ___ are my brothers over there.
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny olona maro lavitra (plural).
+TRADUCTION: Ireo rahalahiko ireo.

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Some and Any – Famaritana amin'ny teny anglisy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>SOME AND ANY</h1>
+  </div>
+
+  <!-- Carte : Inona ny Some sy Any ? -->
+  <div class="card">
+    <h2>🏷️ Inona ny "some" sy "any" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>some</strong> sy <strong>any</strong> dia ampiasaina ho an'ny <strong>zavatra tsy azo isaina</strong> (uncountable nouns) sy ny <strong>anarana maro</strong> (plural nouns).<br><br>
+      🔹 Mitovy amin'ny <strong>"du", "de la", "de l'", "des"</strong> amin'ny teny frantsay izy ireo.<br><br>
+      🔹 Tsy ampiasaina amin'ny anarana tokana (singular countable nouns) — fa "a" na "an" no ampiasaina.<br><br>
+      🔹 Ny fahasamihafana lehibe eo amin'ny <strong>some</strong> sy <strong>any</strong> dia ny <strong>karazan'ny fehezanteny</strong> :<br><br>
+      <span class="icone">📌</span> <strong>Some</strong> → fehezanteny <strong>tsotra</strong> (positive sentences), tolotra, fangatahana<br><br>
+      <span class="icone">📌</span> <strong>Any</strong> → fehezanteny <strong>mandà</strong> (negative sentences) sy <strong>fanontaniana</strong> (questions)
+    </div>
+  </div>
+
+  <!-- 1. Some -->
+  <div class="card">
+    <h2>1️⃣ SOME</h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Ny <strong>some</strong> dia ampiasaina amin'ny fehezanteny <strong>tsotra</strong> (positive sentences).<br><br>
+      Ampiasaina koa amin'ny <strong>tolotra</strong> (offers) sy <strong>fangatahana</strong> (requests) rehefa antenaina ny valiny hoe "eny".
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Ny fampiasana :</strong><br>
+      • Amin'ny fehezanteny tsotra (positive)<br>
+      • Amin'ny tolotra (Would you like some...?)<br>
+      • Amin'ny fangatahana (Can I have some...?)
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I have some water. (Manana rano aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She eats some bread. (Mihinana mofo izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He has some friends. (Manana sakaiza izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I need some milk. (Mila ronono aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Would you like some coffee? (Tia kafe ve ianao? — tolotra)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Can I have some sugar? (Afaka maka siramamy ve aho? — fangatahana)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> "Some" dia ampiasaina amin'ny fehezanteny tsotra sy rehefa manolotra na mangataka zavatra.
+    </div>
+  </div>
+
+  <!-- 2. Any -->
+  <div class="card">
+    <h2>2️⃣ ANY</h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Ny <strong>any</strong> dia ampiasaina amin'ny fehezanteny <strong>mandà</strong> (negative sentences) sy ny <strong>fanontaniana</strong> (questions).<br><br>
+      Ampiasaina koa rehefa tsy fantatra na tsy voafaritra ilay zavatra.
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Ny fampiasana :</strong><br>
+      • Amin'ny fehezanteny mandà (I don't have any...)<br>
+      • Amin'ny fanontaniana (Do you have any...?)
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I don't have any water. (Tsy manana rano aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She doesn't eat any bread. (Tsy mihinana mofo izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He doesn't have any friends. (Tsy manana sakaiza izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Do you have any milk? (Manana ronono ve ianao? — fanontaniana)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Is there any sugar? (Misy siramamy ve? — fanontaniana)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Are there any questions? (Misy fanontaniana ve? — fanontaniana)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> "Any" dia ampiasaina amin'ny fehezanteny mandà sy fanontaniana.
+    </div>
+  </div>
+
+  <!-- 3. Fahasamihafana Some sy Any -->
+  <div class="card">
+    <h2>3️⃣ Fahasamihafana eo amin'ny SOME sy ANY</h2>
+    <div class="definition-mg">
+      <strong>📖 Fanazavana malagasy :</strong><br>
+      Ny fahasamihafana lehibe dia ny <strong>karazan'ny fehezanteny</strong> :<br><br>
+      🔹 <strong>Some</strong> → fehezanteny <strong>tsotra</strong> (positive)<br>
+      🔹 <strong>Any</strong> → fehezanteny <strong>mandà</strong> (negative) sy <strong>fanontaniana</strong> (questions)
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Ohatra ampitahaina :</strong>
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I have some money. (Manana vola aho — tsotra)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I don't have any money. (Tsy manana vola aho — mandà)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Do you have any money? (Manana vola ve ianao? — fanontaniana)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She has some books. (Manana boky izy — tsotra)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She doesn't have any books. (Tsy manana boky izy — mandà)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Does she have any books? (Manana boky ve izy? — fanontaniana)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      • Some → fehezanteny tsotra (✅)<br>
+      • Any → fehezanteny mandà (❌) sy fanontaniana (❓)
+    </div>
+  </div>
+
+  <!-- 4. Rehefa mampiasa Some sy Any -->
+  <div class="card">
+    <h2>4️⃣ Rehefa mampiasa "SOME" sy "ANY"</h2>
+    <div class="definition-mg">
+      <strong>📖 Mampiasa "SOME" rehefa :</strong><br>
+      ✅ Fehezanteny tsotra (I have some water.)<br>
+      ✅ Tolo-tsakafo (Would you like some tea?)<br>
+      ✅ Fangatahana (Can I have some bread?)<br><br>
+      <strong>📖 Mampiasa "ANY" rehefa :</strong><br>
+      ✅ Fehezanteny mandà (I don't have any money.)<br>
+      ✅ Fanontaniana (Do you have any questions?)<br>
+      ✅ Rehefa tsy voafaritra na tsy fantatra
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra fampitahana
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I have some apples. (Manana paoma aho — tsotra)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I don't have any apples. (Tsy manana paoma aho — mandà)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Do you have any apples? (Manana paoma ve ianao? — fanontaniana)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Would you like some apples? (Tia paoma ve ianao? — tolotra)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Some sy Any amin'ny zavatra tsy azo isaina -->
+  <div class="card">
+    <h2>5️⃣ Some sy Any amin'ny zavatra tsy azo isaina</h2>
+    <div class="definition-mg">
+      <strong>📖 Fanazavana malagasy :</strong><br>
+      Ny <strong>some</strong> sy <strong>any</strong> dia ampiasaina indrindra amin'ny <strong>zavatra tsy azo isaina</strong> (uncountable nouns) toy ny :<br><br>
+      • rano (water) • ronono (milk) • siramamy (sugar) • kafe (coffee)<br>
+      • mofo (bread) • vary (rice) • hena (meat) • vola (money)
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I drink some water every day. (Misotro rano isan'andro aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She doesn't drink any coffee. (Tsy misotro kafe izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Do you have any sugar? (Manana siramamy ve ianao?)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I need some rice. (Mila vary aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">There isn't any milk in the fridge. (Tsy misy ronono ao anaty vata fampangatsiahana.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ho an'ny zavatra tsy azo isaina, ampiasao ny "some" (tsotra) na "any" (mandà/fanontaniana).
+    </div>
+  </div>
+
+  <!-- Tableau récapitulatif -->
+  <div class="card">
+    <h2>📌 Famintinana (summary)</h2>
+    <div class="definition-mg">
+      ✅ <strong>SOME</strong> → fehezanteny tsotra (positive)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• I have some water.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• She eats some bread.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• He has some friends.<br><br>
+      ✅ <strong>ANY</strong> → fehezanteny mandà sy fanontaniana<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• I don't have any water.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• Do you have any bread?<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• He doesn't have any friends.<br><br>
+      ✅ <strong>Tolotra sy fangatahana</strong> → SOME<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• Would you like some coffee?<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• Can I have some sugar?<br><br>
+     👉 <strong>Fanamarihana :</strong> Ny some sy any dia ampiasaina amin'ny zavatra tsy azo isaina sy ny anarana maro. Tsy ampiasaina amin'ny anarana tokana (fa "a" na "an" no ampiasaina).
+    </div>
+    <div class="exemple-modern" style="margin-top: 12px;">
+      <div class="exo-titre">
+        <span>🧪</span> Fehezanteny ahitana some sy any
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I have some money, but I don't have any food. (Manana vola aho, fa tsy manana sakafo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Do you have any questions? I can answer some. (Manana fanontaniana ve ianao? Afaka mamaly ny sasany aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Would you like some tea? Yes, but I don't have any sugar. (Tia dite ve ianao? Eny, fa tsy manana siramamy aho.)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carte Torohevitra -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny débutant</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Rehefa miresaka zavatra tsy azo isaina na anarana maro amin'ny fehezanteny tsotra → ampiasao ny "some".</li>
+        <li>Rehefa miresaka zavatra tsy azo isaina na anarana maro amin'ny fehezanteny mandà → ampiasao ny "any".</li>
+        <li>Rehefa mametraka fanontaniana → ampiasao ny "any" (afa-tsy rehefa manolotra zavatra ianao).</li>
+        <li>Rehefa manolotra zavatra (tolotra) na mangataka zavatra → ampiasao ny "some".</li>
+        <li>Aza adino fa tsy ampiasaina amin'ny anarana tokana ny some sy any — fa "a" na "an" no ampiasaina.</li>
+        <li>Mamaky be sy mihaino be mba hahatakatra ny fampiasana ny some sy any amin'ny teny anglisy.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> Ny fianarana some sy any dia tena ilaina satria isaky ny miteny na manoratra anglisy ianao dia mampiasa azy. Mianara tsikelikely ary aza matahotra diso !
+    </div>
+  </div>
+
+  <!-- Carte Fanampiana & Fifandraisana -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny fampiasana some sy any.</p>
+      <p> Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

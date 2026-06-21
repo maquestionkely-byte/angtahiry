@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Possessive Determiners – Famaritana amin'ny teny anglisy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .table-possessive {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    
+    .table-possessive th {
+      background: #1e40af;
+      color: white;
+      padding: 10px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    
+    .table-possessive td {
+      padding: 10px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    
+    .table-possessive tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    
+    .table-possessive tr:hover {
+      background: #eef4ea;
+    }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .table-possessive {
+        font-size: 0.75rem;
+      }
+      .table-possessive th, .table-possessive td {
+        padding: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>POSSESSIVE DETERMINERS</h1>
+  </div>
+
+  <!-- Carte : Inona ny possessive determiners ? -->
+  <div class="card">
+    <h2>🏷️ Inona ny "possessive determiners" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>possessive determiners</strong> dia teny milaza hoe <strong>an'iza</strong> ny zavatra iray.<br><br>
+      🔹 Mitovy amin'ny hoe <strong>"-ko"</strong>, <strong>"-nao"</strong>, <strong>"-ny"</strong>, <strong>"-ntsika"</strong>, <strong>"-nareo"</strong>, <strong>"-ny"</strong> (maro) amin'ny teny malagasy.<br><br>
+      🔹 <strong>Misy anarana (noun) manaraka</strong> azy foana.<br><br>
+      🔹 Miankina amin'ny <strong>tompony</strong> (owner) ny possessive, fa tsy amin'ny zavatra.<br><br>
+      🔹 Ny endrika :<br><br>
+      <span class="icone">📌</span> <strong>My</strong> → -ko (ny ahy)<br>
+      <span class="icone">📌</span> <strong>Your</strong> → -nao (ny anao)<br>
+      <span class="icone">📌</span> <strong>His / Her / Its</strong> → -ny (ny any / ny azy)<br>
+      <span class="icone">📌</span> <strong>Our</strong> → -ntsika / -nay (ny antsika / ny anay)<br>
+      <span class="icone">📌</span> <strong>Your</strong> → -nareo (ny anareo)<br>
+      <span class="icone">📌</span> <strong>Their</strong> → -ny (ny azy ireo)
+    </div>
+  </div>
+
+  <!-- 1. Ny endrika -->
+  <div class="card">
+    <h2>1️⃣ Ny endriky ny possessive determiners</h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Misy endrika samihafa arakaraka ny <strong>tompony</strong> (owner).<br><br>
+      <strong>Zava-dehibe :</strong> Tsy miova endrika na lahy na vavy ny zavatra. Ohatra : "my father" sy "my mother" dia samy "my" no ampiasaina.
+    </div>
+    
+    <table class="table-possessive">
+      <thead>
+        <tr>
+          <th>Tompony (Owner)</th>
+          <th>Anglisy</th>
+          <th>Malagasy</th>
+          <th>Ohatra</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>I</strong> (ahy)</td>
+          <td><strong>My</strong></td>
+          <td>-ko</td>
+          <td>my book → bokyko</td>
+        </tr>
+        <tr>
+          <td><strong>You</strong> (ianao)</td>
+          <td><strong>Your</strong></td>
+          <td>-nao</td>
+          <td>your pen → peninao</td>
+        </tr>
+        <tr>
+          <td><strong>He</strong> (izy lahy)</td>
+          <td><strong>His</strong></td>
+          <td>-ny</td>
+          <td>his car → fiarany</td>
+        </tr>
+        <tr>
+          <td><strong>She</strong> (izy vavy)</td>
+          <td><strong>Her</strong></td>
+          <td>-ny</td>
+          <td>her bag → kitapony</td>
+        </tr>
+        <tr>
+          <td><strong>It</strong> (izy zavatra)</td>
+          <td><strong>Its</strong></td>
+          <td>-ny</td>
+          <td>its tail → rambony</td>
+        </tr>
+        <tr>
+          <td><strong>We</strong> (isika / izahay)</td>
+          <td><strong>Our</strong></td>
+          <td>-ntsika / -nay</td>
+          <td>our house → tranontsika</td>
+        </tr>
+        <tr>
+          <td><strong>You</strong> (ianareo)</td>
+          <td><strong>Your</strong></td>
+          <td>-nareo</td>
+          <td>your school → sekolinareo</td>
+        </tr>
+        <tr>
+          <td><strong>They</strong> (izy ireo)</td>
+          <td><strong>Their</strong></td>
+          <td>-ny</td>
+          <td>their car → fiarany</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      • "Its" (tsy misy apostrophe) dia ny possessive an'ny "it". "It's" dia midika hoe "it is".<br>
+      • Tsy miova endrika na lahy na vavy ny zavatra : my father (raiko) / my mother (reniko).
+    </div>
+  </div>
+
+  <!-- 2. Ohatra maro -->
+  <div class="card">
+    <h2>2️⃣ Ohatra amin'ny teny anglisy</h2>
+    <div class="definition-mg">
+      <strong>📖 Ohatra maro ahitana possessive determiners :</strong>
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This is my pen. (Ity no peniko.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">That is your book. (Izany no bokinao.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">His father is a doctor. (Ny rainy dia dokotera.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Her mother is a teacher. (Ny reniny dia mpampianatra.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The dog is wagging its tail. (Mampihetsika ny rambony ilay alika.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Our house is big. (Ny tranontsika dia lehibe.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Your school is nice. (Ny sekolinareo dia tsara.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Their car is red. (Ny fiarany dia mena.)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Fampiasana amin'ny fianakaviana -->
+  <div class="card">
+    <h2>3️⃣ Fampiasana amin'ny fianakaviana</h2>
+    <div class="definition-mg">
+      <strong>📖 Fanazavana malagasy :</strong><br>
+      Matetika ampiasaina ny possessive determiners rehefa miresaka momba ny <strong>fianakaviana</strong>.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">My father is kind. (Ny raiko dia tsara fanahy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">My mother is beautiful. (Ny reniko dia tsara tarehy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">His brother is tall. (Ny rahalahiny dia lehibe.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Her sister is young. (Ny rahavaviny dia mbola tanora.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Our parents are here. (Ny ray aman-drenintsika dia eo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Their children are happy. (Ny zanany dia faly.)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Fahasamihafana amin'ny Possessive Pronouns -->
+  <div class="card">
+    <h2>4️⃣ Fahasamihafana amin'ny Possessive Pronouns</h2>
+    <div class="definition-mg">
+      <strong>📖 Fanazavana malagasy :</strong><br>
+      Misy karazany roa ny teny milaza fananana amin'ny teny anglisy :<br><br>
+      🔹 <strong>Possessive determiners</strong> → <strong>misy anarana manaraka</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Mitovy amin'ny hoe <strong>"-ko"</strong>, <strong>"-nao"</strong>, <strong>"-ny"</strong> amin'ny teny malagasy.<br><br>
+      🔹 <strong>Possessive pronouns</strong> → <strong>tsy misy anarana manaraka</strong>, misolo ny anarana<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Mitovy amin'ny hoe <strong>"an'ny ahy"</strong>, <strong>"an'ny anao"</strong>, <strong>"an'ny any"</strong> amin'ny teny malagasy.
+    </div>
+    
+    <table class="table-possessive">
+      <thead>
+        <tr>
+          <th>Tompony</th>
+          <th>Possessive Determiner<br>(misy anarana)</th>
+          <th>Malagasy</th>
+          <th>Possessive Pronoun<br>(tsy misy anarana)</th>
+          <th>Malagasy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>I</td>
+          <td><strong>my</strong> book</td>
+          <td>bokyko</td>
+          <td>This book is <strong>mine</strong></td>
+          <td>an'ny ahy</td>
+        </tr>
+        <tr>
+          <td>You</td>
+          <td><strong>your</strong> pen</td>
+          <td>peninao</td>
+          <td>This pen is <strong>yours</strong></td>
+          <td>an'ny anao</td>
+        </tr>
+        <tr>
+          <td>He</td>
+          <td><strong>his</strong> car</td>
+          <td>fiarany</td>
+          <td>This car is <strong>his</strong></td>
+          <td>an'ny any</td>
+        </tr>
+        <tr>
+          <td>She</td>
+          <td><strong>her</strong> bag</td>
+          <td>kitapony</td>
+          <td>This bag is <strong>hers</strong></td>
+          <td>an'ny any</td>
+        </tr>
+        <tr>
+          <td>We</td>
+          <td><strong>our</strong> house</td>
+          <td>tranontsika</td>
+          <td>This house is <strong>ours</strong></td>
+          <td>an'ny antsika</td>
+        </tr>
+        <tr>
+          <td>You</td>
+          <td><strong>your</strong> school</td>
+          <td>sekolinareo</td>
+          <td>This school is <strong>yours</strong></td>
+          <td>an'ny anareo</td>
+        </tr>
+        <tr>
+          <td>They</td>
+          <td><strong>their</strong> car</td>
+          <td>fiarany</td>
+          <td>This car is <strong>theirs</strong></td>
+          <td>an'ny azy ireo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra mampiseho ny fahasamihafana
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This is my book. (Ity no bokyko.) — <strong>Possessive determiner</strong></span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This book is mine. (Ity boky ity dia an'ny ahy.) — <strong>Possessive pronoun</strong></span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Is that your car? (Izany ve ny fiaranao?) — <strong>Possessive determiner</strong></span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Is that car yours? (Izany fiara izany ve an'ny anao?) — <strong>Possessive pronoun</strong></span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      • Possessive determiner → <strong>misy</strong> anarana manaraka (my book, your pen)<br>
+      • Possessive pronoun → <strong>tsy misy</strong> anarana manaraka (mine, yours)<br>
+      • Io no fahasamihafana lehibe indrindra eo amin'izy roa !
+    </div>
+  </div>
+
+  <!-- Tableau récapitulatif -->
+  <div class="card">
+    <h2>📌 Famintinana (summary)</h2>
+    <div class="definition-mg">
+      ✅ <strong>Possessive determiners</strong> → misy anarana manaraka<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• my book (bokyko)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• your pen (peninao)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• his sister (rahavaviny)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• her name (anarany)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• its tail (rambony)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• our house (tranontsika)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• your school (sekolinareo)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• their car (fiarany)<br><br>
+      ✅ <strong>Tsy miankina amin'ny lahy na vavin'ny zavatra</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• my father (raiko) / my mother (reniko)<br><br>
+      ✅ <strong>Tsy mitovy amin'ny possessive pronouns</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• my book (bokyko) ≠ This book is mine (an'ny ahy)<br><br>
+     👉 <strong>Fanamarihana :</strong> Miankina amin'ny tompony (owner) ny possessive determiner, fa tsy amin'ny zavatra.
+    </div>
+    <div class="exemple-modern" style="margin-top: 12px;">
+      <div class="exo-titre">
+        <span>🧪</span> Fehezanteny ahitana possessive determiners
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">My father and my mother are kind. (Ny raiko sy ny reniko dia tsara fanahy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Her brother is my friend. (Ny rahalahiny dia sakaizako.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Our school is near their house. (Ny sekolinay dia akaikin'ny tranony.)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carte Torohevitra -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny débutant</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Rehefa milaza fananana miaraka amin'ny anarana → ampiasao ny possessive determiner (my, your, his, her, its, our, their).</li>
+        <li>Rehefa milaza fananana nefa tsy misy anarana → ampiasao ny possessive pronoun (mine, yours, his, hers, ours, theirs).</li>
+        <li>Aza adino fa "its" (tsy misy apostrophe) dia possessive determiner, fa "it's" dia "it is".</li>
+        <li>Tsy miova na lahy na vavy ny zavatra : my father (raiko) / my mother (reniko).</li>
+        <li>Vakio mafy ny ohatra isan'andro mba hahatsapanao ny fampiasana azy.</li>
+        <li>Mamaky be sy mihaino be mba hahatakatra ny fahasamihafana eo amin'ny determiners sy pronouns.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> Ny fianarana possessive determiners dia tena ilaina satria isaky ny miteny na manoratra anglisy ianao dia mampiasa azy. Mianara tsikelikely ary aza matahotra diso !
+    </div>
+  </div>
+
+  <!-- Carte Fanampiana & Fifandraisana -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny possessive determiners.</p>
+      <p> Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

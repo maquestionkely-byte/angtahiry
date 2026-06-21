@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Definite and Indefinite Articles – Famaritana amin'ny teny anglisy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>DEFINITE AND INDEFINITE ARTICLES</h1>
+  </div>
+
+  <!-- Carte : Inona ny articles ? -->
+  <div class="card">
+    <h2>🏷️ Inona ny "article" amin'ny teny anglisy ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>article</strong> dia karazana determiner kely mifamatotra amin'ny anarana (noun) mba hamaritana azy.<br><br>
+      🔹 Ao alohan'ny anarana izy ary manome fampahalalana momba ny <strong>famaritana</strong> (voafaritra na tsy voafaritra) sy ny <strong>tokana na maro</strong> (number).<br><br>
+      🔹 Misy karazany roa lehibe :<br><br>
+      <span class="icone">📌</span> <strong>The definite article</strong> (voafaritra) → <strong>THE</strong><br><br>
+      <span class="icone">📌</span> <strong>The indefinite article</strong> (tsy voafaritra) → <strong>A / AN</strong>
+    </div>
+  </div>
+
+  <!-- 1. The definite article -->
+  <div class="card">
+    <h2>1️⃣ The definite article : THE (voafaritra)</h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Ny <strong>definite article</strong> (<strong>the</strong>) dia ampiasaina rehefa miresaka zavatra <strong>voafaritra</strong>, zavatra efa fantatra na efa noresahina. Mitovy amin'ny hoe <strong>"ny"</strong> amin'ny teny malagasy.
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Ny endrika :</strong><br>
+      <strong>The</strong> → ampiasaina amin'ny anarana rehetra :<br>
+      • Tokana na maro (singular / plural)<br>
+      • Lahy na vavy (masculine / feminine)<br>
+      • Misy feo renisoratra na zanatsoratra
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The boy is intelligent. (Ny zazalahy dia manan-tsaina.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The girl is beautiful. (Ny zazavavy dia tsara tarehy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The apple is on the table. (Ny paoma dia eo ambonin'ny latabatra.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The children are playing in the garden. (Ny ankizy dia milalao ao amin'ny zaridaina.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The sun is shining. (Ny masoandro dia mamirapiratra.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ampiasaina ny "the" rehefa :<br>
+      • Efa fantatra na efa noresahina ilay zavatra.<br>
+      • Zavatra tsy manam-paharoa (the sun, the moon, the sky).<br>
+      • Rehefa miresaka zavatra voafaritra mazava.
+    </div>
+  </div>
+
+  <!-- 2. The indefinite article -->
+  <div class="card">
+    <h2>2️⃣ The indefinite article : A / AN (tsy voafaritra)</h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Ny <strong>indefinite article</strong> (<strong>a / an</strong>) dia ampiasaina rehefa miresaka zavatra <strong>tsy voafaritra</strong>, zavatra tsy mbola fantatra na tsy voafaritra mazava. Mitovy amin'ny hoe <strong>"iray"</strong> amin'ny teny malagasy.
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Ny endrika :</strong><br>
+      <strong>A</strong> → ampiasaina alohan'ny feo <strong>renisoratra</strong> (consonant sound)<br>
+      <strong>An</strong> → ampiasaina alohan'ny feo <strong>zanatsoratra</strong> (vowel sound)
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I have a brother. (Manana rahalahy iray aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She has a sister. (Manana rahavavy iray izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He is a doctor. (Dokotera iray izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I saw an elephant. (Nahita elefanta iray aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She ate an apple. (Nihinana paoma iray izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">It is an interesting book. (Boky mahaliana iray io.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      • Ampiasao ny <strong>"a"</strong> alohan'ny feo renisoratra : a book, a house, a university (feo "y" no reno)<br>
+      • Ampiasao ny <strong>"an"</strong> alohan'ny feo zanatsoratra : an apple, an hour (feo "a" no reno), an umbrella<br>
+      • <strong>Zava-dehibe :</strong> Ny feo no jerena, fa tsy ny fanoratana !
+    </div>
+  </div>
+
+  <!-- 3. Fahasamihafana between THE and A/AN -->
+  <div class="card">
+    <h2>3️⃣ Fahasamihafana eo amin'ny "THE" sy "A / AN"</h2>
+    <div class="definition-mg">
+      <strong>📖 Fanazavana malagasy :</strong><br>
+      Ny fahasamihafana lehibe dia ny <strong>famaritana</strong> :<br><br>
+      🔹 Ny <strong>"the"</strong> dia ampiasaina rehefa <strong>voafaritra</strong> ny zavatra resahina (fantatra na efa noresahina).<br><br>
+      🔹 Ny <strong>"a / an"</strong> dia ampiasaina rehefa <strong>tsy voafaritra</strong> ny zavatra resahina (vaovao na tsy mbola fantatra).
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Ohatra ampitahaina :</strong>
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I saw a dog. The dog was big. (Nahita alika iray aho. Lehibe ilay alika.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She has a car. The car is red. (Manana fiara iray izy. Mena ilay fiara.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I want an apple. The apple is on the table. (Mila paoma iray aho. Eo ambonin'ny latabatra ilay paoma.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      • "A / an" → voalohany resahina, tsy mbola fantatra<br>
+      • "The" → efa fantatra, efa noresahina, na voafaritra mazava
+    </div>
+  </div>
+
+  <!-- 4. Mampiasa THE sy A/AN -->
+  <div class="card">
+    <h2>4️⃣ Rehefa mampiasa "THE" sy "A / AN"</h2>
+    <div class="definition-mg">
+      <strong>📖 Rehefa mampiasa "THE" :</strong><br>
+      ✅ Efa fantatra na efa noresahina ilay zavatra.<br>
+      ✅ Zavatra tsy manam-paharoa (the sun, the moon, the earth).<br>
+      ✅ Misy famaritana mazava (the boy in the blue shirt).<br>
+      ✅ Rehefa miresaka zavatra voafaritra (the door, the window).<br><br>
+      <strong>📖 Rehefa mampiasa "A / AN" :</strong><br>
+      ✅ Tsy mbola fantatra ilay zavatra.<br>
+      ✅ Miresaka zavatra amin'ny ankapobeny.<br>
+      ✅ Milaza asa na toerana (He is a teacher).<br>
+      ✅ Misaotra na mividy zavatra iray (I have a pen).
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra fampitahana
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I need a pen. (Mila penina iray aho — tsy voafaritra hoe iza)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The pen is on the desk. (Eo ambonin'ny birao ilay penina — voafaritra)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She is an engineer. (Injeniera iray izy — asa)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The engineer is here. (Eo ilay injeniera — voafaritra)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Tsy ampiasana articles -->
+  <div class="card">
+    <h2>5️⃣ Rehefa tsy mampiasa article</h2>
+    <div class="definition-mg">
+      <strong>📖 Tsy ampiasaina ny article rehefa :</strong><br><br>
+      ✅ Miresaka zavatra amin'ny ankapobeny amin'ny endrika maro (Cats are nice. — aleo "Cats" fa tsy "The cats")<br><br>
+      ✅ Anarana (proper nouns) : Peter, Mary, London, Paris<br><br>
+      ✅ Sakafo sy zava-pisotro amin'ny ankapobeny (I like coffee. — aleo fa tsy "I like a coffee")<br><br>
+      ✅ Lohahevitra sy zavakanto (I love music. — aleo fa tsy "I love the music")
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Dogs are loyal. (Ny alika dia mahatoky — amin'ny ankapobeny)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I love chocolate. (Tia sôkôla aho — amin'ny ankapobeny)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Peter is my friend. (Peter dia sakaizako — anarana)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She speaks English. (Miteny anglisy izy — fiteny)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Misy ny fotoana tsy ampiasana article, indrindra rehefa miresaka zavatra amin'ny ankapobeny na anarana manokana.
+    </div>
+  </div>
+
+  <!-- Tableau récapitulatif -->
+  <div class="card">
+    <h2>📌 Famintinana (summary)</h2>
+    <div class="definition-mg">
+      ✅ <strong>Definite article</strong> : THE → voafaritra, fantatra, efa noresahina<br><br>
+      ✅ <strong>Indefinite article</strong> : A / AN → tsy voafaritra, vaovao, tsy fantatra<br><br>
+      ✅ <strong>A</strong> → alohan'ny feo renisoratra (a book, a car)<br><br>
+      ✅ <strong>AN</strong> → alohan'ny feo zanatsoratra (an apple, an hour)<br><br>
+      ✅ <strong>Tsy ampiasana</strong> → amin'ny ankapobeny, anarana manokana, fiteny, lohahevitra<br><br>
+     👉 <strong>Fanamarihana</strong> : Zava-dehibe ny fahalalan'ny article satria isaky ny miresaka zavatra ianao dia mila mampiasa azy.<br><br>
+    </div>
+    <div class="exemple-modern" style="margin-top: 12px;">
+      <div class="exo-titre">
+        <span>🧪</span> Fehezanteny ahitana article samy hafa
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I saw a cat. The cat was sleeping on the sofa. (Nahita saka iray aho. Natory teo ambonin'ny sofa ilay saka.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She is an artist. The artist is famous. (Mpanakanto iray izy. Malaza ilay mpanakanto.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I have a car. The car is new. (Manana fiara iray aho. Vaovao ilay fiara.)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carte Torohevitra -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny débutant</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Rehefa miresaka zavatra voalohany indray mandeha, ampiasao ny "a" na "an".</li>
+        <li>Rehefa miverimberina na efa fantatra ilay zavatra, ampiasao ny "the".</li>
+        <li>Jereo ny feo voalohany amin'ny teny : raha renisoratra → "a", raha zanatsoratra → "an".</li>
+        <li>Aza adino ny zavatra tsy manam-paharoa : the sun, the moon, the sky.</li>
+        <li>Mianara tsianjery ny ohatra mba hahatsapanao ny fomba fampiasana azy.</li>
+        <li>Mamaky be sy mihaino be mba hahatakatra ny fampiasana ny article amin'ny teny anglisy.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> Ny fianarana article dia tena ilaina satria isaky ny miteny na manoratra anglisy ianao dia mampiasa azy. Mianara tsikelikely ary aza matahotra diso !
+    </div>
+  </div>
+
+  <!-- Carte Fanampiana & Fifandraisana -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny article.</p>
+      <p> Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

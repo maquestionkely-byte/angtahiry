@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Verb to have and to be – Matoanteny to have sy to be amin'ny teny anglisy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+
+    .verb-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    .verb-table th {
+      background: #1e40af;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    .verb-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    .verb-table tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    .verb-table tr:last-child td {
+      border-bottom: none;
+    }
+    .verb-table .mg-trans {
+      color: #1e3a5f;
+      font-weight: 500;
+    }
+    
+    .color-to-be { color: #1e40af; font-weight: 700; }
+    .color-to-have { color: #b45309; font-weight: 700; }
+    .use-tag {
+      display: inline-block;
+      background: #1e40af;
+      color: white;
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 6px;
+    }
+    .use-tag.have { background: #b45309; }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .verb-table {
+        font-size: 0.78rem;
+      }
+      .verb-table th, .verb-table td {
+        padding: 5px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>VERB "TO BE" AND "TO HAVE"</h1>
+    <p style="font-size: 0.9rem; font-weight: 500; margin-top: 4px; color: #1e3a8a;">Matoanteny "to be" sy "to have" amin'ny teny anglisy</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte : Inona ny matoanteny to be sy to have ?                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🏷️ Inona ny "to be" sy "to have" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny matoanteny <strong>"to be"</strong> sy <strong>"to have"</strong> dia <strong>matoanteny tena ilaina</strong> amin'ny fiteny anglisy.<br><br>
+      🔹 Izy ireo no <strong>matoanteny be mpampiasaina indrindra</strong> amin'ny resaka andavanandro.<br><br>
+      🔹 Ny <strong>"to be"</strong> dia midika hoe <strong>"avy"</strong> na <strong>"misy"</strong> na <strong>"toetra"</strong> amin'ny teny malagasy.<br><br>
+      🔹 Ny <strong>"to have"</strong> dia midika hoe <strong>"manana"</strong> amin'ny teny malagasy.<br><br>
+      <span class="icone">📌</span> <strong>To be</strong> → ampiasaina hilazana <strong>toerana, toetra, maha-izy, asa, zom-pirenena, taona, ny endrika, ny fihetsehampo, ary ny zavatra ankapobeny</strong>.<br><br>
+      <span class="icone">📌</span> <strong>To have</strong> → ampiasaina hilazana <strong>fananana (zavatra anananao), fifandraisana (havana), taona, aretina, sakafo sy zava-pisotro, fahatsapana ara-batana, ary fomba fiteny maro hafa</strong>.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 1. VERB TO BE                                                 -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>1️⃣ VERB "TO BE" <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Avy / Misy / Toetra)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Ny matoanteny <strong>"to be"</strong> dia ampiasaina hilazana zavatra maro samihafa. Izao ny fampiasana azy :
+    </div>
+    
+    <div class="conjugaison-ligne">
+      <strong>📊 Filazam-potoana ankehitriny (Present Tense) :</strong><br><br>
+      <table class="verb-table">
+        <tr><th>Pronom (Sujet)</th><th>Verbe "to be"</th><th>Dikany malagasy</th></tr>
+        <tr><td>I</td><td><strong class="color-to-be">am</strong></td><td class="mg-trans">(avy / misy / toetra)</td></tr>
+        <tr><td>You</td><td><strong class="color-to-be">are</strong></td><td class="mg-trans">(avy / misy / toetra)</td></tr>
+        <tr><td>He / She / It</td><td><strong class="color-to-be">is</strong></td><td class="mg-trans">(avy / misy / toetra)</td></tr>
+        <tr><td>We</td><td><strong class="color-to-be">are</strong></td><td class="mg-trans">(avy / misy / toetra)</td></tr>
+        <tr><td>You (pluriel)</td><td><strong class="color-to-be">are</strong></td><td class="mg-trans">(avy / misy / toetra)</td></tr>
+        <tr><td>They</td><td><strong class="color-to-be">are</strong></td><td class="mg-trans">(avy / misy / toetra)</td></tr>
+      </table>
+    </div>
+
+    <!-- ====== A. To be + ADJECTIF ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🎨</span> A. Miaraka amin'ny <strong>adjectif</strong> (mpamaritra) — hilazana toetra, endrika, na fihetsehampo
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>is</strong> beautiful. (Tsara tarehy izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>is</strong> tall. (Lava izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>are</strong> happy. (Faly izy ireo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>am</strong> tired. (Sasatra aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You <strong>are</strong> kind. (Tsara fanahy ianao.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The weather <strong>is</strong> hot. (Mafana ny andro.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>toetra, endrika, fihetsehampo, na fahatsapana</strong>. Ohatra : sasatra, faly, lava, tsara tarehy, marary, noana, mangatsiaka, sns.
+    </div>
+
+    <!-- ====== B. To be + PROFESSION ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>💼</span> B. Miaraka amin'ny <strong>asa na zavatra iantsoana</strong> (profession, statut)
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>am</strong> a teacher. (Mpampianatra aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>is</strong> a doctor. (Dokotera izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>is</strong> a student. (Mpianatra izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>are</strong> engineers. (Injeniera izy ireo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We <strong>are</strong> nurses. (Mpitsabo mpanampy izahay.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>asa, fanjakana, na zavatra iantsoana olona</strong>. Ohatra : mpampianatra, mpianatra, dokotera, injeniera, sns.
+    </div>
+
+    <!-- ====== C. To be + NATIONALITY ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🌍</span> C. Miaraka amin'ny <strong>zom-pirenena</strong> (nationalité)
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>am</strong> Malagasy. (Malagasy aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>is</strong> French. (Frantsay izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>are</strong> American. (Amerikana izy ireo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>is</strong> English. (Anglisy izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We <strong>are</strong> African. (Afrikana izahay.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>firenena na foko</strong>. Ohatra : Malagasy, Frantsay, Amerikana, Anglisy, Afrikana, sns.
+    </div>
+
+    <!-- ====== D. To be + LOCATION ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>📍</span> D. Miaraka amin'ny <strong>toerana</strong> (location / place)
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>am</strong> at home. (Ao an-trano aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>is</strong> in Antananarivo. (Ao Antananarivo izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>are</strong> at school. (Ao an-tsekoly izy ireo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>is</strong> at work. (Miasa izy / ao am-piasana.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We <strong>are</strong> in the garden. (Ao an-jatidaina izahay.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>toerana misy olona na zavatra</strong>. Ohatra : ao an-trano, ao Antananarivo, ao an-tsekoly, sns.
+    </div>
+
+    <!-- ====== E. To be + ORIGIN ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✈️</span> E. Miaraka amin'ny <strong>fiaviana</strong> (origin) — "from"
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>am</strong> from Madagascar. (Avany Madagasikara aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>is</strong> from France. (Avany Frantsa izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>are</strong> from the USA. (Avany Amerika izy ireo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We <strong>are</strong> from Africa. (Avany Afrika izahay.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>fiaviana</strong> amin'ny alalan'ny <strong>"from"</strong>. Ohatra : Avany Madagasikara, Avany Frantsa, sns.
+    </div>
+
+    <!-- ====== F. To be + AGE ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🎂</span> F. Miaraka amin'ny <strong>taona</strong> (age)
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>am</strong> 25 years old. (25 taona aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>is</strong> 30 years old. (30 taona izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>are</strong> 18 years old. (18 taona izy ireo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>is</strong> 40 years old. (40 taona izy.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>taona</strong>. Ampiasao ny <strong>"years old"</strong> aorian'ny isa. Ohatra : 25 years old.
+    </div>
+
+    <!-- ====== G. To be + TIME / DATE ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🕐</span> G. Miaraka amin'ny <strong>ora na daty</strong> (time / date)
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">It <strong>is</strong> 3 o'clock. (Amin'ny 3 ora izao.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">It <strong>is</strong> Monday. (Alatsinainy androany.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Today <strong>is</strong> June 21st. (21 Jona androany.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">It <strong>is</strong> 10 AM. (Amin'ny 10 ora maraina izao.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>ora sy daty</strong>. Ampiasao ny <strong>"it is"</strong> ho an'ny ora sy daty.
+    </div>
+
+    <!-- ====== H. To be + WEATHER ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🌤️</span> H. Miaraka amin'ny <strong>toetr'andro</strong> (weather)
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">It <strong>is</strong> sunny. (Mamirapiratra ny masoandro.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">It <strong>is</strong> rainy. (Misy orana.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">It <strong>is</strong> cold. (Mangatsiaka.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">It <strong>is</strong> windy. (Misy rivotra.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>toetr'andro</strong>. Ampiasao ny <strong>"it is"</strong> + adjectif toetr'andro.
+    </div>
+
+    <div class="conjugaison-ligne" style="margin-top: 16px;">
+      <strong>✅ Famintinana ny fampiasana ny TO BE :</strong><br>
+      🔹 <strong>Adjectif</strong> → She is beautiful. (toetra, endrika, fihetsehampo)<br>
+      🔹 <strong>Profession</strong> → I am a teacher. (asa)<br>
+      🔹 <strong>Nationalité</strong> → He is Malagasy. (firenena)<br>
+      🔹 <strong>Location</strong> → We are at home. (toerana)<br>
+      🔹 <strong>Origin</strong> → They are from France. (fiaviana)<br>
+      🔹 <strong>Age</strong> → She is 25 years old. (taona)<br>
+      🔹 <strong>Time / Date</strong> → It is 3 o'clock. (ora / daty)<br>
+      🔹 <strong>Weather</strong> → It is sunny. (toetr'andro)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. VERB TO HAVE                                               -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ VERB "TO HAVE" <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(Manana)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Ny matoanteny <strong>"to have"</strong> dia ampiasaina hilazana zavatra maro samihafa. Izao ny fampiasana azy :
+    </div>
+    
+    <div class="conjugaison-ligne">
+      <strong>📊 Filazam-potoana ankehitriny (Present Tense) :</strong><br><br>
+      <table class="verb-table">
+        <tr><th>Pronom (Sujet)</th><th>Verbe "to have"</th><th>Dikany malagasy</th></tr>
+        <tr><td>I</td><td><strong class="color-to-have">have</strong></td><td class="mg-trans">(manana)</td></tr>
+        <tr><td>You</td><td><strong class="color-to-have">have</strong></td><td class="mg-trans">(manana)</td></tr>
+        <tr><td>He / She / It</td><td><strong class="color-to-have">has</strong></td><td class="mg-trans">(manana)</td></tr>
+        <tr><td>We</td><td><strong class="color-to-have">have</strong></td><td class="mg-trans">(manana)</td></tr>
+        <tr><td>You (pluriel)</td><td><strong class="color-to-have">have</strong></td><td class="mg-trans">(manana)</td></tr>
+        <tr><td>They</td><td><strong class="color-to-have">have</strong></td><td class="mg-trans">(manana)</td></tr>
+      </table>
+    </div>
+
+    <!-- ====== A. To have + POSSESSION ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>📦</span> A. Miaraka amin'ny <strong>fananana</strong> (possession) — zavatra anananao
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>have</strong> a car. (Manana fiara aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>has</strong> a house. (Manana trano izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>have</strong> money. (Manana vola izy ireo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We <strong>have</strong> a garden. (Manana jatidaina izahay.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>has</strong> a book. (Manana boky izy.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>zavatra anananao</strong> na ananan'olona. Ohatra : fiara, trano, vola, boky, sns.
+    </div>
+
+    <!-- ====== B. To have + FAMILY / RELATIONSHIP ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👨‍👩‍👧‍👦</span> B. Miaraka amin'ny <strong>fifandraisana (havana)</strong> (family / relationship)
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>have</strong> a brother. (Manana rahalahy aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>has</strong> two sisters. (Manana anabavy roa izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>has</strong> a wife. (Manana vady izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>have</strong> children. (Manana zanaka izy ireo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We <strong>have</strong> a big family. (Manana fianakaviana lehibe izahay.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>havana na fifandraisana</strong>. Ohatra : rahalahy, anabavy, vady, zanaka, fianakaviana, sns.
+    </div>
+
+    <!-- ====== C. To have + AGE ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🎂</span> C. Miaraka amin'ny <strong>taona</strong> (age) — amin'ny fomba hafa
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>have</strong> 25 years. (25 taona aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>has</strong> 30 years. (30 taona izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>has</strong> 18 years. (18 taona izy.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>taona</strong> ihany koa. Amin'ny teny anglisy, afaka mampiasa ny <strong>"have"</strong> hilazana taona (toy ny amin'ny teny frantsay). Ohatra : I have 25 years.
+    </div>
+
+    <!-- ====== D. To have + ILLNESS / PAIN ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🤒</span> D. Miaraka amin'ny <strong>aretina na fanaintainana</strong> (illness / pain)
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>have</strong> a headache. (Manana aretin'andoha aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>has</strong> a fever. (Manana tazo izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>has</strong> a cold. (Manana sery izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>have</strong> a cough. (Manana kohaka izy ireo.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>aretina na fanaintainana</strong>. Ohatra : aretin'andoha, tazo, sery, kohaka, sns.
+    </div>
+
+    <!-- ====== E. To have + FOOD / DRINK ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🍽️</span> E. Miaraka amin'ny <strong>sakafo sy zava-pisotro</strong> (food / drink)
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>have</strong> breakfast at 7 AM. (Misakafo maraina aho amin'ny 7 ora.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We <strong>have</strong> rice for lunch. (Manana vary ho an'ny sakafo atoandro izahay.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>has</strong> coffee in the morning. (Misotro kafe izy maraina.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>have</strong> dinner at 8 PM. (Misakafo hariva izy ireo amin'ny 8 ora.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>sakafo sy zava-pisotro</strong>. Ampiasaina amin'ny <strong>breakfast, lunch, dinner</strong> ary amin'ny sakafo sy zava-pisotro hafa.
+    </div>
+
+    <!-- ====== F. To have + PHYSICAL DESCRIPTION ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👀</span> F. Miaraka amin'ny <strong>endrika ara-batana</strong> (physical description)
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>has</strong> blue eyes. (Manana maso manga izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>has</strong> long hair. (Manana volo vatomiempo izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>have</strong> brown skin. (Manana hoditra volontsôkôlà izy ireo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>have</strong> black hair. (Manana volo mainty aho.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>endrika ara-batana</strong>. Ohatra : maso manga, volo vatomiempo, hoditra volontsôkôlà, sns.
+    </div>
+
+    <!-- ====== G. To have + FEELINGS / SENSATIONS ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>💭</span> G. Miaraka amin'ny <strong>fahatsapana na fihetsehampo</strong> (feelings / sensations)
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>have</strong> hunger. (Noana aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>has</strong> thirst. (Mangetaheta izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We <strong>have</strong> fear. (Matahotra izahay.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>has</strong> hope. (Manana fanantenana izy.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Fampiasana :</strong> Mba hilazana <strong>fahatsapana ara-batana sy ara-tsaina</strong>. Ohatra : noana, mangetaheta, matahotra, fanantenana, sns.
+    </div>
+
+    <div class="conjugaison-ligne" style="margin-top: 16px;">
+      <strong>✅ Famintinana ny fampiasana ny TO HAVE :</strong><br>
+      🔹 <strong>Possession</strong> → I have a car. (fananana)<br>
+      🔹 <strong>Family / Relationship</strong> → She has a brother. (havana)<br>
+      🔹 <strong>Age</strong> → He has 25 years. (taona)<br>
+      🔹 <strong>Illness / Pain</strong> → I have a headache. (aretina)<br>
+      🔹 <strong>Food / Drink</strong> → We have breakfast. (sakafo)<br>
+      🔹 <strong>Physical description</strong> → She has blue eyes. (endrika)<br>
+      🔹 <strong>Feelings / Sensations</strong> → I have hunger. (fahatsapana)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. ENDRIKY NY FANDEVENANA (NÉGATIVE)                          -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>3️⃣ Endrika fandavana (Négative form)</h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Mba hanaovana <strong>fandavana</strong> dia ampiana <strong>"not"</strong> aorian'ny matoanteny.<br>
+      Misy ihany koa ny <strong>endrika fohy (contracted form)</strong> ampiasaina amin'ny resaka andavanandro.
+    </div>
+
+    <div class="conjugaison-ligne">
+      <strong>🔹 TO BE (fandavana) :</strong><br>
+      <table class="verb-table">
+        <tr><th>Pronom</th><th>Fandavana feno</th><th>Fandavana fohy</th><th>Dikany</th></tr>
+        <tr><td>I</td><td>I am <strong>not</strong></td><td>I'm <strong>not</strong></td><td>Tsy (iza / aiza / toetra)</td></tr>
+        <tr><td>He / She / It</td><td>He <strong>is not</strong></td><td>He <strong>isn't</strong></td><td>Tsy (iza / aiza / toetra)</td></tr>
+        <tr><td>You / We / They</td><td>You <strong>are not</strong></td><td>You <strong>aren't</strong></td><td>Tsy (iza / aiza / toetra)</td></tr>
+      </table>
+      <br>
+      <strong>🔹 TO HAVE (fandavana) :</strong><br>
+      <table class="verb-table">
+        <tr><th>Pronom</th><th>Fandavana feno</th><th>Fandavana fohy</th><th>Dikany</th></tr>
+        <tr><td>I / You / We / They</td><td><strong>do not have</strong></td><td><strong>don't have</strong></td><td>Tsy manana</td></tr>
+        <tr><td>He / She / It</td><td><strong>does not have</strong></td><td><strong>doesn't have</strong></td><td>Tsy manana</td></tr>
+      </table>
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>am not</strong> a doctor. (Tsy mpitsabo aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>isn't</strong> at home. (Tsy ao an-trano izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>aren't</strong> happy. (Tsy faly izy ireo.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>don't have</strong> a car. (Tsy manana fiara aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>doesn't have</strong> money. (Tsy manana vola izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We <strong>don't have</strong> time. (Tsy manana fotoana izahay.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ho an'ny "to have" amin'ny fandavana dia mampiasa <strong>do not (don't)</strong> na <strong>does not (doesn't)</strong> alohan'ny "have".
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 4. ENDRIKY NY FANONTANIANA (INTERROGATIVE)                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>4️⃣ Endrika fanontaniana (Interrogative form)</h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Mba hanaovana <strong>fanontaniana</strong> dia <strong>afindra eo alohan'ny sujet</strong> ny matoanteny (to be) na ny mpanampy (do/does) ho an'ny to have.
+    </div>
+
+    <div class="conjugaison-ligne">
+      <strong>🔹 TO BE (fanontaniana) :</strong><br>
+      <table class="verb-table">
+        <tr><th>Fanontaniana</th><th>Dikany</th></tr>
+        <tr><td><strong>Am</strong> I ... ?</td><td>(Iza / aiza / toetra ve aho ?)</td></tr>
+        <tr><td><strong>Is</strong> he / she / it ... ?</td><td>(Iza / aiza / toetra ve izy ?)</td></tr>
+        <tr><td><strong>Are</strong> you / we / they ... ?</td><td>(Iza / aiza / toetra ve ianao / izahay / izy ireo ?)</td></tr>
+      </table>
+      <br>
+      <strong>🔹 TO HAVE (fanontaniana) :</strong><br>
+      <table class="verb-table">
+        <tr><th>Fanontaniana</th><th>Dikany</th></tr>
+        <tr><td><strong>Do</strong> I / you / we / they <strong>have</strong> ... ?</td><td>(Manana ... ve aho / ianao / izahay / izy ireo ?)</td></tr>
+        <tr><td><strong>Does</strong> he / she / it <strong>have</strong> ... ?</td><td>(Manana ... ve izy ?)</td></tr>
+      </table>
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Are</strong> you a student? (Mpianatra ve ianao?)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Is</strong> she at work? (Miasa ve izy?)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Do</strong> you <strong>have</strong> a pen? (Manana penina ve ianao?)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Does</strong> he <strong>have</strong> a car? (Manana fiara ve izy?)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Are</strong> they from Madagascar? (Avany Madagasikara ve izy ireo?)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Do</strong> we <strong>have</strong> enough food? (Manana sakafo ampy ve isika?)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ho an'ny "to have" amin'ny fanontaniana dia mampiasa <strong>Do</strong> na <strong>Does</strong> eo alohan'ny sujet, ary miverina amin'ny <strong>have</strong> ny matoanteny (tsy misy -s).
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 5. TABLEAU RÉCAPITULATIF                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
+    <div class="definition-mg">
+      <strong>🔹 TO BE (Avy / Misy / Toetra) :</strong><br>
+      <table class="verb-table">
+        <tr><th>Sujet</th><th>Manao</th><th>Fandavana</th><th>Fanontaniana</th></tr>
+        <tr><td>I</td><td>am</td><td>am not (I'm not)</td><td>Am I ... ?</td></tr>
+        <tr><td>He / She / It</td><td>is</td><td>is not (isn't)</td><td>Is he/she/it ... ?</td></tr>
+        <tr><td>You / We / They</td><td>are</td><td>are not (aren't)</td><td>Are you/we/they ... ?</td></tr>
+      </table>
+      <br>
+      <strong>🔹 TO HAVE (Manana) :</strong><br>
+      <table class="verb-table">
+        <tr><th>Sujet</th><th>Manao</th><th>Fandavana</th><th>Fanontaniana</th></tr>
+        <tr><td>I / You / We / They</td><td>have</td><td>don't have</td><td>Do ... have ?</td></tr>
+        <tr><td>He / She / It</td><td>has</td><td>doesn't have</td><td>Does ... have ?</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 6. FAMPITAHANA SY FANAZAVANINA FANAMPINY                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📌 Fahasamihafana eo amin'ny "to be" sy "to have"</h2>
+    <div class="definition-mg">
+      <strong>🔹 TO BE (Avy / Misy / Toetra) :</strong><br>
+      • Ampiasaina hilazana <strong>toerana, toetra, maha-izy, asa, zom-pirenena, taona, ora, daty, toetr'andro</strong>.<br>
+      • Ohatra : <em>I <strong>am</strong> happy.</em> (Faly aho.)<br>
+      • Ohatra : <em>She <strong>is</strong> in Antananarivo.</em> (Ao Antananarivo izy.)<br>
+      • Ohatra : <em>We <strong>are</strong> teachers.</em> (Mpampianatra izahay.)<br>
+      • Ohatra : <em>He <strong>is</strong> Malagasy.</em> (Malagasy izy.)<br>
+      • Ohatra : <em>It <strong>is</strong> 3 o'clock.</em> (Amin'ny 3 ora izao.)<br><br>
+      
+      <strong>🔹 TO HAVE (Manana) :</strong><br>
+      • Ampiasaina hilazana <strong>fananana, havana, taona, aretina, sakafo, endrika ara-batana, fahatsapana</strong>.<br>
+      • Ohatra : <em>I <strong>have</strong> a book.</em> (Manana boky aho.)<br>
+      • Ohatra : <em>He <strong>has</strong> a sister.</em> (Manana anabavy izy.)<br>
+      • Ohatra : <em>She <strong>has</strong> a headache.</em> (Manana aretin'andoha izy.)<br>
+      • Ohatra : <em>We <strong>have</strong> breakfast.</em> (Misakafo maraina izahay.)<br>
+      • Ohatra : <em>They <strong>have</strong> blue eyes.</em> (Manana maso manga izy ireo.)
+    </div>
+    <div class="exemple-modern" style="margin-top: 12px;">
+      <div class="exo-titre">
+        <span>🧪</span> Ohatra fampitahana mazava
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>am</strong> tired. (Sasatra aho.) → TO BE (toetra)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I <strong>have</strong> a headache. (Manana aretin'andoha aho.) → TO HAVE (aretina)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>is</strong> a nurse. (Mpitsabo mpanampy izy.) → TO BE (asa)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>has</strong> a uniform. (Manana fanamiana izy.) → TO HAVE (fananana)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>is</strong> from France. (Avany Frantsa izy.) → TO BE (fiaviana)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>has</strong> a French accent. (Manana aksa frantsay izy.) → TO HAVE (endrika)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      🧠 <strong>Fomba tsarovana mora :</strong><br>
+      - Raha miresaka <strong>toetra, toerana, maha-izy, asa, zom-pirenena, ora, daty, toetr'andro</strong> → TO BE (am / is / are)<br>
+      - Raha miresaka <strong>fananana, havana, aretina, sakafo, endrika ara-batana, fahatsapana</strong> → TO HAVE (have / has)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. Ohatra fanampiny                                             -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li><strong>To be :</strong> I <strong>am</strong> 25 years old. (25 taona aho.)</li>
+        <li><strong>To have :</strong> I <strong>have</strong> a brother. (Manana rahalahy aho.)</li>
+        <li><strong>To be :</strong> We <strong>are</strong> from Madagascar. (Avany Madagasikara izahay.)</li>
+        <li><strong>To have :</strong> We <strong>have</strong> rice for lunch. (Manana vary ho an'ny sakafo atoandro izahay.)</li>
+        <li><strong>To be :</strong> She <strong>is</strong> beautiful. (Tsara tarehy izy.)</li>
+        <li><strong>To have :</strong> She <strong>has</strong> long hair. (Manana volo vatomiempo izy.)</li>
+        <li><strong>To be :</strong> They <strong>are</strong> at school. (Ao an-tsekoly izy ireo.)</li>
+        <li><strong>To have :</strong> They <strong>have</strong> a test today. (Manana fitsapana izy ireo androany.)</li>
+        <li><strong>To be :</strong> It <strong>is</strong> sunny today. (Mamirapiratra ny masoandro androany.)</li>
+        <li><strong>To have :</strong> He <strong>has</strong> a cold. (Manana sery izy.)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. TOROHEVITRA MAHASOA                                       -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny débutant</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Jereo foana ny <strong>sujet</strong> alohan'ny hampiasanao ny matoanteny (I, You, He, She, It, We, They).</li>
+        <li>Ho an'ny <strong>to be</strong> : I = <strong>am</strong>, He/She/It = <strong>is</strong>, You/We/They = <strong>are</strong>.</li>
+        <li>Ho an'ny <strong>to have</strong> : He/She/It = <strong>has</strong>, ny hafa rehetra = <strong>have</strong>.</li>
+        <li>Raha <strong>manontany</strong> amin'ny to have dia ampiasao <strong>Do</strong> na <strong>Does</strong> eo aloha.</li>
+        <li>Raha <strong>mandà</strong> amin'ny to have dia ampiasao <strong>don't</strong> na <strong>doesn't</strong>.</li>
+        <li>Vakio mafy ny ohatra isan'andro mba hianarana ny feony.</li>
+        <li>Tsarovy fa ny "to be" dia ampiasaina amin'ny <strong>toetra, toerana, asa, zom-pirenena, ora, daty, toetr'andro</strong>.</li>
+        <li>Tsarovy fa ny "to have" dia ampiasaina amin'ny <strong>fananana, havana, aretina, sakafo, endrika ara-batana</strong>.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> Ny "to be" sy "to have" no <strong>matoanteny be mpampiasaina indrindra</strong> amin'ny teny anglisy. Raha mahay izy ireo dia afaka miresaka zavatra maro ianao !
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny "to be" sy "to have".</p>
+      <p>Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

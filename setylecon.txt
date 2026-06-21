@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Sentence Types – Karazana fehezanteny amin'ny teny anglisy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 220px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+    
+    /* Tag for sentence type labels */
+    .sentence-tag {
+      display: inline-block;
+      background: #1e40af;
+      color: white;
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 2px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 8px;
+    }
+    
+    .sentence-tag.declarative { background: #2563eb; }
+    .sentence-tag.interrogative { background: #7c3aed; }
+    .sentence-tag.imperative { background: #dc2626; }
+    .sentence-tag.exclamatory { background: #d97706; }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>SENTENCE TYPES</h1>
+    <p style="font-size: 0.9rem; font-weight: 500; margin-top: 4px; color: #1e3a8a;">Karazana fehezanteny amin'ny teny anglisy</p>
+  </div>
+
+  <!-- Carte : Inona ny sentence types ? -->
+  <div class="card">
+    <h2>🏷️ Inona ny "Sentence Types" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>sentence types</strong> dia ny <strong>karazana fehezanteny</strong> ampiasaina amin'ny fiteny anglisy.<br><br>
+      🔹 Misy <strong>karazany efatra (4)</strong> lehibe izy ireo :<br><br>
+      <span class="icone">📌</span> <strong>Declarative</strong> → Fehezanteny milaza (manambara zavatra)<br><br>
+      <span class="icone">📌</span> <strong>Interrogative</strong> → Fehezanteny manontany (mametraka fanontaniana)<br><br>
+      <span class="icone">📌</span> <strong>Imperative</strong> → Fehezanteny didy (manome baiko na toromarika)<br><br>
+      <span class="icone">📌</span> <strong>Exclamatory</strong> → Fehezanteny miantsoantso (mampiseho fihetsehampo mahery)
+    </div>
+  </div>
+
+  <!-- 1. DECLARATIVE SENTENCE -->
+  <div class="card">
+    <h2>1️⃣ DECLARATIVE SENTENCE <span class="sentence-tag declarative">Milaza</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Ny <strong>declarative sentence</strong> dia fehezanteny <strong>milaza na manambara zavatra iray</strong>. Izy no karazana fehezanteny ampiasaina indrindra amin'ny resaka andavanandro.
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Raha fintinina :</strong><br>
+      • Manambara zava-misy, hevitra, na fihetsehampo tsotra.<br>
+      • Mamarana amin'ny <strong>point (.)</strong>.<br>
+      • Filaharana mahazatra : <strong>Sujet + Verbe + Complément</strong>.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I speak English. (Miteny anglisy aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She lives in Antananarivo. (Mipetraka any Antananarivo izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We eat rice every day. (Mihinana vary isan'andro izahay.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He is a teacher. (Mpampianatra izy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Madagascar is a big island. (Nosy lehibe i Madagasikara.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They like to play football. (Tia milalao baolina kitra izy ireo.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny declarative no fehezanteny <strong>mahazatra indrindra</strong>. Ampiasaina isan'andro amin'ny resaka sy fanoratana.
+    </div>
+  </div>
+
+  <!-- 2. INTERROGATIVE SENTENCE -->
+  <div class="card">
+    <h2>2️⃣ INTERROGATIVE SENTENCE <span class="sentence-tag interrogative">Manontany</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Ny <strong>interrogative sentence</strong> dia fehezanteny <strong>mametraka fanontaniana</strong>. Ampiasaina raha te hahafantatra zavatra ianao.
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Raha fintinina :</strong><br>
+      • Mametraka fanontaniana.<br>
+      • Mamarana amin'ny <strong>question mark (?)</strong>.<br>
+      • Misy karazany roa : <strong>Yes/No questions</strong> sy <strong>WH-questions</strong>.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Do you speak English? (Miteny anglisy ve ianao?)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Where does she live? (Aiza no misy azy?)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">What time is it? (Amin'ny firy izao?)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Are you hungry? (Noana ve ianao?)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Why do they come here? (Nahoana no tonga atỳ izy ireo?)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Can you help me? (Afaka manampy ahy ve ianao?)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny interrogative dia miafara amin'ny <strong>?</strong>. Misy ihany koa ny fanontaniana amin'ny <strong>question words</strong> : What, Where, When, Why, Who, How.
+    </div>
+  </div>
+
+  <!-- 3. IMPERATIVE SENTENCE -->
+  <div class="card">
+    <h2>3️⃣ IMPERATIVE SENTENCE <span class="sentence-tag imperative">Didy / Baiko</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Ny <strong>imperative sentence</strong> dia fehezanteny <strong>manome baiko, toromarika, na fangatahana</strong>. Matetika dia tsy misy <strong>sujet</strong> (you) fa tsy voasoratra nefa takatra.
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Raha fintinina :</strong><br>
+      • Manome baiko, toromarika, na fangatahana.<br>
+      • Mamarana amin'ny <strong>point (.)</strong> na <strong>exclamation point (!)</strong>.<br>
+      • Ny matoanteny dia amin'ny endrika <strong>base form</strong> (tsy misy -s na -ed).
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Open the door. (Sokafy ny varavarana.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Sit down, please. (Mipetraha, azafady.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Don't speak loudly. (Aza miteny mafy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Listen to me! (Henoy aho!)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Write your name here. (Soraty eto ny anaranao.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Be careful! (Tandremo!)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny imperative dia mampiasa ny matoanteny <strong>tsy misy fiovana</strong>. Raha fandavana dia ampiasao ny <strong>"Don't"</strong> + verbe.
+    </div>
+  </div>
+
+  <!-- 4. EXCLAMATORY SENTENCE -->
+  <div class="card">
+    <h2>4️⃣ EXCLAMATORY SENTENCE <span class="sentence-tag exclamatory">Miantsoantso</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Ny <strong>exclamatory sentence</strong> dia fehezanteny <strong>mampiseho fihetsehampo na hery</strong> toy ny fahagagana, fahatezerana, fifaliana, na tahotra.
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Raha fintinina :</strong><br>
+      • Mampiseho fihetsehampo mahery vaika.<br>
+      • Mamarana amin'ny <strong>exclamation point (!)</strong>.<br>
+      • Matetika manomboka amin'ny <strong>"What"</strong> na <strong>"How"</strong>.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">What a beautiful day! (Tena andro tsara izao!)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">How wonderful! (Tena mahafinaritra!)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">That's amazing! (Tena mahagaga izany!)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">What a big house! (Trano lehibe tokoa!)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">How fast he runs! (Tena haingana izy!)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I can't believe it! (Tsy mino aho!)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny exclamatory dia miafara amin'ny <strong>!</strong>. Mampiasa ny <strong>"What"</strong> ho an'ny anarana ary <strong>"How"</strong> ho an'ny adjectif na adverbe.
+    </div>
+  </div>
+
+  <!-- ==================== TABLEAU RÉCAPITULATIF ==================== -->
+  <div class="card">
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
+    <div class="definition-mg">
+      <strong>Declarative :</strong><br>
+      • Manambara zavatra<br>
+      • Mamarana amin'ny <strong>.</strong><br>
+      • Ohatra : <em>I like coffee.</em><br><br>
+      
+      <strong>Interrogative :</strong><br>
+      • Mametraka fanontaniana<br>
+      • Mamarana amin'ny <strong>?</strong><br>
+      • Ohatra : <em>Do you like coffee?</em><br><br>
+      
+      <strong>Imperative :</strong><br>
+      • Manome baiko na toromarika<br>
+      • Mamarana amin'ny <strong>.</strong> na <strong>!</strong><br>
+      • Ohatra : <em>Drink your coffee!</em><br><br>
+      
+      <strong>Exclamatory :</strong><br>
+      • Mampiseho fihetsehampo mahery<br>
+      • Mamarana amin'ny <strong>!</strong><br>
+      • Ohatra : <em>What good coffee!</em>
+    </div>
+    <div class="exemple-modern" style="margin-top: 12px;">
+      <div class="exo-titre">
+        <span>🧪</span> Ohatra fampitahana ny karazana fehezanteny rehetra
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You are happy. (Declarative)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Are you happy? (Interrogative)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Be happy! (Imperative)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">What a happy day! (Exclamatory)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FANAZAVANINA FANAMPINY ==================== -->
+  <div class="card">
+    <h2>📌 Fahasamihafana sy fanampim-panazavana</h2>
+    <div class="definition-mg">
+      <strong>🔹 Inona no maha-samihafa azy ireo?</strong><br><br>
+      <strong>Declarative</strong> → <em>Milaza zavatra tsotra.</em><br>
+      Ohatra : <em>She is a nurse.</em><br><br>
+      
+      <strong>Interrogative</strong> → <em>Mametraka fanontaniana.</em><br>
+      Ohatra : <em>Is she a nurse?</em><br><br>
+      
+      <strong>Imperative</strong> → <em>Manome baiko.</em><br>
+      Ohatra : <em>Call the nurse!</em><br><br>
+      
+      <strong>Exclamatory</strong> → <em>Mampiseho fihetsehampo.</em><br>
+      Ohatra : <em>What a good nurse!</em>
+    </div>
+    <div class="highlight">
+      🧠 <strong>Fomba tsarovana mora :</strong><br>
+      - Raha <strong>milaza</strong> → Declarative (.)<br>
+      - Raha <strong>mametra-panontaniana</strong> → Interrogative (?)<br>
+      - Raha <strong>manome baiko</strong> → Imperative (.) na (!)<br>
+      - Raha <strong>miantsoantso</strong> → Exclamatory (!)
+    </div>
+  </div>
+
+  <!-- Liste des exemples supplémentaires -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li><strong>Declarative :</strong> The sun rises in the east. (Miposaka any atsinanana ny masoandro.)</li>
+        <li><strong>Interrogative :</strong> Where do you live? (Aiza no misy anao?)</li>
+        <li><strong>Imperative :</strong> Turn off the light, please. (Vonoy ny jiro, azafady.)</li>
+        <li><strong>Exclamatory :</strong> How hot it is today! (Mafana tokoa androany!)</li>
+        <li><strong>Declarative :</strong> I have two brothers. (Manana rahalahy roa aho.)</li>
+        <li><strong>Interrogative :</strong> Did you eat breakfast? (Nisakafo maraina ve ianao?)</li>
+        <li><strong>Imperative :</strong> Don't forget your book. (Aza adino ny bokinao.)</li>
+        <li><strong>Exclamatory :</strong> What a lovely smile! (Tena tsiky mahafinaritra!)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Carte Torohevitra -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny débutant</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Jereo foana ny <strong>famaranana</strong> (., ?, !) mba hahalala ny karazan'ny fehezanteny.</li>
+        <li>Mba hahalalana ny <strong>interrogative</strong>, jereo raha misy "Do/Does/Did/Is/Are/Can/Will" eo alohan'ny sujet.</li>
+        <li>Ny <strong>imperative</strong> dia miala amin'ny "you" nefa takatra ho "you".</li>
+        <li>Ny <strong>exclamatory</strong> matetika manomboka amin'ny "What" na "How".</li>
+        <li>Vakio mafy ny ohatra isan'andro mba hianarana ny feon'ny karazana tsirairay.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> Ny fianarana karazana fehezanteny dia manampy anao hahay <strong>miresaka sy manoratra tsara kokoa</strong> amin'ny teny anglisy. Mianara tsikelikely ary aza matahotra diso !
+    </div>
+  </div>
+
+  <!-- Carte Fanampiana & Fifandraisana -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny karazana fehezanteny.</p>
+      <p>Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

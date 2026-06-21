@@ -1,0 +1,84 @@
+Exercice : Types of Sentences - Niveau 2 (facile)
+
+Consigne : Identifiez le type de chaque phrase.
+A) Declarative / B) Interrogative / C) Imperative / D) Exclamatory
+
+1. I don't like spinach.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara hevitra tsotra, ka declarative.
+TRADUCTION: Tsy tiako ny epinara.
+
+2. Have you finished your homework?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Vita ve ny entimodinao?
+
+3. Please don't make noise.
+A) Declarative
+B) Interrogative
+*C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manome baiko, ka imperative.
+TRADUCTION: Aza mamoaka tabataba, azafady.
+
+4. What a wonderful view!
+A) Declarative
+B) Interrogative
+C) Imperative
+*D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mampiseho fihetsehampo, ka exclamatory.
+TRADUCTION: Tena mahafinaritra ny fahitana!
+
+5. My brother plays football every Saturday.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara zava-misy, ka declarative.
+TRADUCTION: Milalao baolina kitra ny rahalahiko isaky ny sabotsy.
+
+6. Why didn't you come to the party?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Nahoana no tsy tonga tany amin'ny fety ianao?
+
+7. Come here right now!
+A) Declarative
+B) Interrogative
+*C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manome baiko, ka imperative.
+TRADUCTION: Avia eto izao!
+
+8. How fast he runs!
+A) Declarative
+B) Interrogative
+C) Imperative
+*D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mampiseho fahagagana, ka exclamatory.
+TRADUCTION: Tena mihazakazaka haingana izy!
+
+9. We visited Paris last summer.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara zavatra nitranga, ka declarative.
+TRADUCTION: Nitsidika an'i Paris izahay tamin'ny fahavaratra lasa.
+
+10. Do you know where the station is?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Hainao ve ny misy ny gare?

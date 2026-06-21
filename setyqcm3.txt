@@ -1,0 +1,84 @@
+Exercice : Types of Sentences - Niveau 3 (moyen)
+
+Consigne : Identifiez le type de chaque phrase.
+A) Declarative / B) Interrogative / C) Imperative / D) Exclamatory
+
+1. It's really a shame you can't attend this ceremony.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara hevitra, ka declarative.
+TRADUCTION: Tena mampalahelo fa tsy afaka manatrika io lanonana io ianao.
+
+2. Could you tell me where the post office is, please?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana fahalalam-pomba, ka interrogative.
+TRADUCTION: Azonao atao ve ny milaza amiko hoe aiza no misy ny paositra?
+
+3. Please wait a moment, your call will be connected.
+A) Declarative
+B) Interrogative
+*C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manome baiko fahalalam-pomba, ka imperative.
+TRADUCTION: Miangavy anao hiandry fotoana fohy, ny antso anao dia hifandray.
+
+4. How time flies when you're having fun!
+A) Declarative
+B) Interrogative
+C) Imperative
+*D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mampiseho fihetsehampo, ka exclamatory.
+TRADUCTION: Hafaingana ny fotoana rehefa miala voly!
+
+5. I had never realized the importance of this decision.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara zava-misy, ka declarative.
+TRADUCTION: Tsy mbola nahatsikaritra mihitsy ny maha-zava-dehibe ity fanapahan-kevitra ity aho.
+
+6. Couldn't you try to understand my point of view for once?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Tsy afaka manandrana hahatakatra ny fomba fijeriko ve ianao indray mandeha?
+
+7. Don't open this door before I return, no matter what.
+A) Declarative
+B) Interrogative
+*C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manome baiko, ka imperative.
+TRADUCTION: Aza manokatra izany varavarana izany mihitsy alohan'ny hiverenako, na inona na inona mitranga.
+
+8. What a magnificent show we were lucky to see!
+A) Declarative
+B) Interrogative
+C) Imperative
+*D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mampiseho fihetsehampo, ka exclamatory.
+TRADUCTION: Tena fampisehoana lehibe no nahitana anay!
+
+9. Every morning, he gets up at five o'clock to go running.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara zava-misy, ka declarative.
+TRADUCTION: Isaky ny maraina, mifarana amin'ny dimy ora izy mba hihazakazaka.
+
+10. Have you ever thought about all those people who suffer every day?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Efa nieritreritra ny olona rehetra izay mijaly isan'andro ve ianao?

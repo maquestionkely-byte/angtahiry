@@ -1,0 +1,239 @@
+1. ___ is my book.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Ity bokiko ity.
+
+2. ___ are my shoes.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto kiraroko ireto.
+
+3. ___ is your house over there.
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny zavatra iray lavitra (singular).
+TRADUCTION: Iny tranonao iny.
+
+4. ___ are my friends.
+A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny zavatra maro lavitra (plural).
+TRADUCTION: Ireo namako ireo.
+
+5. ___ is my car.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Ity fiarako ity.
+
+6. ___ are my pens.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto peniko ireto.
+
+7. ___ is my sister.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny olona iray akaiky (singular).
+TRADUCTION: Ity rahavaviko ity.
+
+8. ___ are my parents.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny olona maro akaiky (plural).
+TRADUCTION: Ireto ray aman-dreniko ireto.
+
+9. ___ is my dog over there.
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny zavatra iray lavitra (singular).
+TRADUCTION: Iny alikako iny.
+
+10. ___ are my books.
+A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto bokiko ireto.
+
+11. ___ is my pen.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Ity peniko ity.
+
+12. ___ are my cats.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto sakako ireto.
+
+13. ___ is my teacher.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny olona iray akaiky (singular).
+TRADUCTION: Ity mpampianatro ity.
+
+14. ___ are my keys.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto lakileko ireto.
+
+15. ___ is my house over there.
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny zavatra iray lavitra (singular).
+TRADUCTION: Iny tranoko iny.
+
+16. ___ are my oranges.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto voasariko ireto.
+
+17. ___ is my brother.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny olona iray akaiky (singular).
+TRADUCTION: Ity rahalahiko ity.
+
+18. ___ are my shoes over there.
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny zavatra maro lavitra (plural).
+TRADUCTION: Ireo kiraroko ireo.
+
+19. ___ is my phone.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Ity findaiko ity.
+
+20. ___ are my friends over there.
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny olona maro lavitra (plural).
+TRADUCTION: Ireo namako ireo.
+
+21. ___ is my bike.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Ity bisikiletako ity.
+
+22. ___ are my apples.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto paomako ireto.
+
+23. ___ is my school.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Ity sekoliko ity.
+
+24. ___ are my glasses.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto solomasoko ireto.
+
+25. ___ is my hat.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra iray akaiky (singular).
+TRADUCTION: Ity satroko ity.
+
+26. ___ are my children.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny olona maro akaiky (plural).
+TRADUCTION: Ireto zanako ireto.
+
+27. ___ is my bag over there.
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny zavatra iray lavitra (singular).
+TRADUCTION: Iny kitapoko iny.
+
+28. ___ are my pencils.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto pensilihazoko ireto.
+
+29. ___ is my mother.
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny olona iray akaiky (singular).
+TRADUCTION: Ity reniko ity.
+
+30. ___ are my chairs.
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural).
+TRADUCTION: Ireto sezako ireto.

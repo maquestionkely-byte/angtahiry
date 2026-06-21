@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Demonstrative Determiners – Famaritana amin'ny teny anglisy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .table-demo {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    
+    .table-demo th {
+      background: #1e40af;
+      color: white;
+      padding: 10px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    
+    .table-demo td {
+      padding: 10px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    
+    .table-demo tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    
+    .table-demo tr:hover {
+      background: #eef4ea;
+    }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .table-demo {
+        font-size: 0.75rem;
+      }
+      .table-demo th, .table-demo td {
+        padding: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>DEMONSTRATIVE DETERMINERS</h1>
+  </div>
+
+  <!-- Carte : Inona ny demonstrative determiners ? -->
+  <div class="card">
+    <h2>🏷️ Inona ny "demonstrative determiners" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>demonstrative determiners</strong> dia teny <strong>manondro</strong> zavatra iray.<br><br>
+      🔹 Mitovy amin'ny hoe <strong>"ity"</strong>, <strong>"io"</strong>, <strong>"ireto"</strong>, <strong>"ireo"</strong> amin'ny teny malagasy.<br><br>
+      🔹 Mampiseho ny <strong>halavirana</strong> (akaiky / lavitra) sy ny <strong>isany</strong> (tokana / maro).<br><br>
+      🔹 <strong>Misy anarana (noun) manaraka</strong> azy foana.<br><br>
+      🔹 Ny endrika :<br><br>
+      <span class="icone">📌</span> <strong>This</strong> → tokana, akaiky (ity... ity)<br>
+      <span class="icone">📌</span> <strong>That</strong> → tokana, lavitra (io... io)<br>
+      <span class="icone">📌</span> <strong>These</strong> → maro, akaiky (ireto... ireto)<br>
+      <span class="icone">📌</span> <strong>Those</strong> → maro, lavitra (ireo... ireo)
+    </div>
+  </div>
+
+  <!-- 1. Ny endrika -->
+  <div class="card">
+    <h2>1️⃣ Ny endriky ny demonstrative determiners</h2>
+    <div class="definition-mg">
+      <strong>📖 Famaritana malagasy :</strong><br>
+      Misy endrika efatra ny demonstrative determiners :<br><br>
+      🔹 <strong>This</strong> → zavatra <strong>tokana</strong> sy <strong>akaiky</strong> (here)<br>
+      🔹 <strong>That</strong> → zavatra <strong>tokana</strong> sy <strong>lavitra</strong> (there)<br>
+      🔹 <strong>These</strong> → zavatra <strong>maro</strong> sy <strong>akaiky</strong> (here)<br>
+      🔹 <strong>Those</strong> → zavatra <strong>maro</strong> sy <strong>lavitra</strong> (there)
+    </div>
+    
+    <table class="table-demo">
+      <thead>
+        <tr>
+          <th>Endrika</th>
+          <th>Isany (Number)</th>
+          <th>Halavirana (Distance)</th>
+          <th>Malagasy</th>
+          <th>Ohatra</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>This</strong></td>
+          <td>Tokana (Singular)</td>
+          <td>Akaiky (Near)</td>
+          <td>ity... ity</td>
+          <td>this book → ity boky ity</td>
+        </tr>
+        <tr>
+          <td><strong>That</strong></td>
+          <td>Tokana (Singular)</td>
+          <td>Lavitra (Far)</td>
+          <td>io... io</td>
+          <td>that car → io fiara io</td>
+        </tr>
+        <tr>
+          <td><strong>These</strong></td>
+          <td>Maro (Plural)</td>
+          <td>Akaiky (Near)</td>
+          <td>ireto... ireto</td>
+          <td>these apples → ireto paoma ireto</td>
+        </tr>
+        <tr>
+          <td><strong>Those</strong></td>
+          <td>Maro (Plural)</td>
+          <td>Lavitra (Far)</td>
+          <td>ireo... ireo</td>
+          <td>those houses → ireo trano ireo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      • "This" sy "these" → ho an'ny zavatra <strong>akaiky</strong> (eo akaikinao)<br>
+      • "That" sy "those" → ho an'ny zavatra <strong>lavitra</strong> (any lavitra)<br>
+      • "This" sy "that" → ho an'ny zavatra <strong>tokana</strong><br>
+      • "These" sy "those" → ho an'ny zavatra <strong>maro</strong>
+    </div>
+  </div>
+
+  <!-- 2. Ohatra amin'ny teny anglisy -->
+  <div class="card">
+    <h2>2️⃣ Ohatra amin'ny teny anglisy</h2>
+    <div class="definition-mg">
+      <strong>📖 Ohatra maro ahitana demonstrative determiners :</strong>
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This book is interesting. (Ity boky ity dia mahaliana.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">That car is expensive. (Io fiara io dia lafo vidy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">These apples are fresh. (Ireto paoma ireto dia vaovao.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Those houses are old. (Ireo trano ireo dia tranainy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This man is tall. (Ity lehilahy ity dia lehibe.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">That woman is kind. (Io vehivavy io dia tsara fanahy.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">These children are happy. (Ireto ankizy ireto dia faly.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Those flowers are beautiful. (Ireo voninkazo ireo dia tsara tarehy.)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Fampiasana ara-potoana -->
+  <div class="card">
+    <h2>3️⃣ Fampiasana ara-potoana (Time)</h2>
+    <div class="definition-mg">
+      <strong>📖 Fanazavana malagasy :</strong><br>
+      Ampiasaina koa ny demonstrative determiners hilazana <strong>fotoana</strong> (time) :<br><br>
+      🔹 <strong>This</strong> → fotoana <strong>akaiky</strong> (zavatra mitranga ankehitriny na akaiky)<br>
+      🔹 <strong>That</strong> → fotoana <strong>lavitra</strong> (zavatra efa lasa na ho avy lavitra)
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra amin'ny teny anglisy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This morning, I went to school. (Ity maraina ity, nandeha tany an-tsekoly aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">That day, we were happy. (Io andro io, faly izahay.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This year, I will learn English. (Ity taona ity, hianatra anglisy aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">That year, I was in France. (Io taona io, tany Frantsa aho.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This week, I have a test. (Ity herinandro ity, manana fitsapana aho.)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      • "This" → ho an'ny fotoana <strong>akaiky</strong> (this morning, this year)<br>
+      • "That" → ho an'ny fotoana <strong>lavitra</strong> (that day, that year)
+    </div>
+  </div>
+
+  <!-- 4. Fahasamihafana amin'ny Demonstrative Pronouns -->
+  <div class="card">
+    <h2>4️⃣ Fahasamihafana amin'ny Demonstrative Pronouns</h2>
+    <div class="definition-mg">
+      <strong>📖 Fanazavana malagasy :</strong><br>
+      Misy karazany roa ny teny manondro amin'ny teny anglisy :<br><br>
+      🔹 <strong>Demonstrative determiners</strong> → <strong>misy anarana manaraka</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Mitovy amin'ny hoe <strong>"ity... ity"</strong>, <strong>"io... io"</strong><br><br>
+      🔹 <strong>Demonstrative pronouns</strong> → <strong>tsy misy anarana manaraka</strong>, misolo ny anarana<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Mitovy amin'ny hoe <strong>"ity"</strong>, <strong>"io"</strong>, <strong>"ireto"</strong>, <strong>"ireo"</strong> fotsiny
+    </div>
+    
+    <table class="table-demo">
+      <thead>
+        <tr>
+          <th>Endrika</th>
+          <th>Demonstrative Determiner<br>(misy anarana)</th>
+          <th>Malagasy</th>
+          <th>Demonstrative Pronoun<br>(tsy misy anarana)</th>
+          <th>Malagasy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tokana / Akaiky</td>
+          <td><strong>this</strong> book</td>
+          <td>ity boky ity</td>
+          <td><strong>This</strong> is a book.</td>
+          <td>Ity dia boky.</td>
+        </tr>
+        <tr>
+          <td>Tokana / Lavitra</td>
+          <td><strong>that</strong> car</td>
+          <td>io fiara io</td>
+          <td><strong>That</strong> is a car.</td>
+          <td>Io dia fiara.</td>
+        </tr>
+        <tr>
+          <td>Maro / Akaiky</td>
+          <td><strong>these</strong> apples</td>
+          <td>ireto paoma ireto</td>
+          <td><strong>These</strong> are apples.</td>
+          <td>Ireto dia paoma.</td>
+        </tr>
+        <tr>
+          <td>Maro / Lavitra</td>
+          <td><strong>those</strong> houses</td>
+          <td>ireo trano ireo</td>
+          <td><strong>Those</strong> are houses.</td>
+          <td>Ireo dia trano.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Ohatra mampiseho ny fahasamihafana
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This book is interesting. (Ity boky ity dia mahaliana.) — <strong>Determiner</strong></span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This is interesting. (Ity dia mahaliana.) — <strong>Pronoun</strong></span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">These apples are fresh. (Ireto paoma ireto dia vaovao.) — <strong>Determiner</strong></span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">These are fresh. (Ireto dia vaovao.) — <strong>Pronoun</strong></span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      • Demonstrative determiner → <strong>misy</strong> anarana manaraka (this book)<br>
+      • Demonstrative pronoun → <strong>tsy misy</strong> anarana manaraka (This is a book.)<br>
+      • Io no fahasamihafana lehibe indrindra eo amin'izy roa !
+    </div>
+  </div>
+
+  <!-- Tableau récapitulatif -->
+  <div class="card">
+    <h2>📌 Famintinana (summary)</h2>
+    <div class="definition-mg">
+      ✅ <strong>Demonstrative determiners</strong> → misy anarana manaraka<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• <strong>This</strong> book → ity boky ity (tokana, akaiky)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• <strong>That</strong> car → io fiara io (tokana, lavitra)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• <strong>These</strong> apples → ireto paoma ireto (maro, akaiky)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• <strong>Those</strong> houses → ireo trano ireo (maro, lavitra)<br><br>
+      ✅ <strong>Fampiasana ara-potoana</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• This morning → ity maraina ity (fotoana akaiky)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• That day → io andro io (fotoana lavitra)<br><br>
+      ✅ <strong>Tsy mitovy amin'ny demonstrative pronouns</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;• This book (ity boky ity) ≠ This is a book. (Ity dia boky.)<br><br>
+     👉 <strong>Fanamarihana :</strong> Miankina amin'ny <strong>halavirana</strong> (akaiky/lavitra) sy ny <strong>isany</strong> (tokana/maro) ny fampiasana azy.
+    </div>
+    <div class="exemple-modern" style="margin-top: 12px;">
+      <div class="exo-titre">
+        <span>🧪</span> Fehezanteny ahitana demonstrative determiners
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This pen is mine, but that pen is yours. (Ity penina ity dia an'ny ahy, fa io penina io dia an'ny anao.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">These books are interesting, but those books are boring. (Ireto boky ireto dia mahaliana, fa ireo boky ireo dia mandreraka.)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This morning I saw that man. (Ity maraina ity nahita io lehilahy io aho.)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carte Torohevitra -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny débutant</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Rehefa manondro zavatra akaiky sy tokana → ampiasao ny "this".</li>
+        <li>Rehefa manondro zavatra lavitra sy tokana → ampiasao ny "that".</li>
+        <li>Rehefa manondro zavatra akaiky sy maro → ampiasao ny "these".</li>
+        <li>Rehefa manondro zavatra lavitra sy maro → ampiasao ny "those".</li>
+        <li>Rehefa miresaka fotoana akaiky (this morning, this week) → ampiasao ny "this".</li>
+        <li>Rehefa miresaka fotoana lavitra (that day, that year) → ampiasao ny "that".</li>
+        <li>Raha misy anarana manaraka → demonstrative determiner. Raha tsy misy → demonstrative pronoun.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> Ny fianarana demonstrative determiners dia tena ilaina satria isaky ny miteny na manoratra anglisy ianao dia mampiasa azy. Mianara tsikelikely ary aza matahotra diso !
+    </div>
+  </div>
+
+  <!-- Carte Fanampiana & Fifandraisana -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny demonstrative determiners.</p>
+      <p> Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

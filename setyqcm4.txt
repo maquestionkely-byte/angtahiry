@@ -1,0 +1,84 @@
+Exercice : Types of Sentences - Niveau 4 (difficile)
+
+Consigne : Identifiez le type de chaque phrase.
+A) Declarative / B) Interrogative / C) Imperative / D) Exclamatory
+
+1. I wonder if he will finally come to this meeting tomorrow morning.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara hevitra, ka declarative.
+TRADUCTION: Manontany tena aho raha ho tonga amin'ity fivoriana ity rahampitso maraina izy.
+
+2. Would you be so kind as to tell me the way to the station?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana fahalalam-pomba, ka interrogative.
+TRADUCTION: Azonao atao ve ny milaza amiko ny lalana mankany amin'ny gara?
+
+3. Let no one move from here until I return.
+A) Declarative
+B) Interrogative
+*C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manome baiko, ka imperative.
+TRADUCTION: Aza misy mihetsika eto mandra-piveriko.
+
+4. What an incredible coincidence to run into you here, at the end of the world!
+A) Declarative
+B) Interrogative
+C) Imperative
+*D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mampiseho fihetsehampo, ka exclamatory.
+TRADUCTION: Tena fifandrifian-javatra mahatalanjona ny nifankahita anao eto, any amin'ny faran'izao tontolo izao!
+
+5. No one truly knows what lies behind these thick walls.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara zava-misy, ka declarative.
+TRADUCTION: Tsy misy mahalala marina izay miafina any aorian'ireo rindrina matevina ireo.
+
+6. Wouldn't it be wiser to wait a few more days?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Tsy ho hendry kokoa ve ny miandry andro vitsivitsy?
+
+7. Never reveal this secret to anyone, no matter what they offer you.
+A) Declarative
+B) Interrogative
+*C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manome baiko, ka imperative.
+TRADUCTION: Aza ambara mihitsy izao tsiambaratelo izao na olona na inona na inona atolotr'izy ireo anao.
+
+8. How sad it is to see this historic building left abandoned!
+A) Declarative
+B) Interrogative
+C) Imperative
+*D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mampiseho fihetsehampo, ka exclamatory.
+TRADUCTION: Mampalahelo ny mahita ity trano manan-tantara ity nilaozana!
+
+9. This explanation doesn't seem entirely convincing to me.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara hevitra, ka declarative.
+TRADUCTION: Ity fanazavana ity dia tsy dia mandresy lahatra ahy.
+
+10. Why have you never dared to confess your true feelings to her?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Nahoana no tsy nanana herim-po nilaza taminy ny tena fihetseham-ponao mihitsy ianao?

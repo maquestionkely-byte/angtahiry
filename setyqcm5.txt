@@ -1,0 +1,84 @@
+Exercice : Types of Sentences - Niveau 5 (très difficile)
+
+Consigne : Identifiez le type de chaque phrase.
+A) Declarative / B) Interrogative / C) Imperative / D) Exclamatory
+
+1. Perhaps we should reconsider our position in the current circumstances.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara hevitra, ka declarative.
+TRADUCTION: Angamba mety, amin'ny toe-javatra misy ankehitriny, ny mandinika indray ny toerantsika.
+
+2. Will you finally stop complaining about trivial things?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Hijanona ny fitarainana amin'ny zavatra madinika ve ianao farany?
+
+3. Let him who is without sin cast the first stone.
+A) Declarative
+B) Interrogative
+*C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manome baiko, ka imperative.
+TRADUCTION: Avelao izay tsy manota hanipy vato voalohany.
+
+4. How sweet and soothing it is to feel the sea breeze caress your face at dawn!
+A) Declarative
+B) Interrogative
+C) Imperative
+*D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mampiseho fihetsehampo, ka exclamatory.
+TRADUCTION: Mankarary ny fihetsehan'ny rivotra an-dranomasina mikitika ny tavany amin'ny maraina!
+
+5. I cannot believe that you were completely unaware of this crucial information.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara hevitra, ka declarative.
+TRADUCTION: Tsy afaka mino aho fa tsy fantatrao tanteraka izany vaovao manan-danja izany.
+
+6. Would it really be the last time we see each other?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Tena ity ve no farany hahitantsika?
+
+7. Know that I will not tolerate any misconduct during your internship.
+A) Declarative
+B) Interrogative
+*C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manome baiko, ka imperative.
+TRADUCTION: Fantaro fa tsy hanakana ny fitondran-tena ratsy aho mandritra ny fiofananao.
+
+8. What wonderful childhood memories this song brings back to me!
+A) Declarative
+B) Interrogative
+C) Imperative
+*D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mampiseho fihetsehampo, ka exclamatory.
+TRADUCTION: Mampahatsiahy ahy ny fahatsiarovana mahafinaritra tamin'ny fahazazako ity hira ity!
+
+9. No one had predicted that the accident would happen at that precise moment.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara zava-misy, ka declarative.
+TRADUCTION: Tsy nisy naminavina fa hitranga amin'izany fotoana izany ny loza.
+
+10. Couldn't you show a little more discernment?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Tsy afaka manao fahiratan-tsaina kely bebe kokoa ve ianao?

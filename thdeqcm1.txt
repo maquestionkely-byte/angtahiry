@@ -1,0 +1,239 @@
+1. ___ apple a day keeps the doctor away.
+*A) An
+B) A
+C) The
+D) Some
+EXPLICATION: "Apple" manomboka amin'ny zanatsoratra "a", ka "an" no ampiasaina.
+TRADUCTION: Poma iray isan'andro no mahatonga ny dokotera tsy ho tonga.
+
+2. I have ___ car.
+A) an
+*B) a
+C) the
+D) some
+EXPLICATION: "Car" manomboka amin'ny renisoratra "c", ka "a" no ampiasaina.
+TRADUCTION: Manana fiara aho.
+
+3. ___ sun is shining.
+A) An
+B) A
+*C) The
+D) Some
+EXPLICATION: "Sun" dia zavatra tsy manam-paharoa, ka "the" no ampiasaina.
+TRADUCTION: Mamirapiratra ny masoandro.
+
+4. She wants ___ water.
+A) an
+B) a
+C) the
+*D) some
+EXPLICATION: "Water" dia tsy azo isaina, ka "some" no ampiasaina.
+TRADUCTION: Te-rrano izy.
+
+5. I have ___ orange.
+*A) an
+B) a
+C) the
+D) some
+EXPLICATION: "Orange" manomboka amin'ny zanatsoratra "o", ka "an" no ampiasaina.
+TRADUCTION: Manana voasary aho.
+
+6. He is ___ teacher.
+A) an
+*B) a
+C) the
+D) some
+EXPLICATION: "Teacher" manomboka amin'ny renisoratra "t", ka "a" no ampiasaina.
+TRADUCTION: Mpampianatra izy.
+
+7. ___ moon is beautiful tonight.
+A) An
+B) A
+*C) The
+D) Some
+EXPLICATION: "Moon" dia zavatra tsy manam-paharoa, ka "the" no ampiasaina.
+TRADUCTION: Tsara tarehy ny volana androany.
+
+8. I need ___ sugar.
+A) an
+B) a
+C) the
+*D) some
+EXPLICATION: "Sugar" dia tsy azo isaina, ka "some" no ampiasaina.
+TRADUCTION: Mila siramamy aho.
+
+9. She is ___ engineer.
+*A) an
+B) a
+C) the
+D) some
+EXPLICATION: "Engineer" manomboka amin'ny zanatsoratra "e", ka "an" no ampiasaina.
+TRADUCTION: Injeniera izy.
+
+10. This is ___ book.
+A) an
+*B) a
+C) the
+D) some
+EXPLICATION: "Book" manomboka amin'ny renisoratra "b", ka "a" no ampiasaina.
+TRADUCTION: Ity boky ity.
+
+11. ___ Earth goes around the Sun.
+A) An
+B) A
+*C) The
+D) Some
+EXPLICATION: "Earth" dia zavatra tsy manam-paharoa, ka "the" no ampiasaina.
+TRADUCTION: Miodidina ny masoandro ny tany.
+
+12. We have ___ milk.
+A) an
+B) a
+C) the
+*D) some
+EXPLICATION: "Milk" dia tsy azo isaina, ka "some" no ampiasaina.
+TRADUCTION: Manana ronono izahay.
+
+13. He is ___ actor.
+*A) an
+B) a
+C) the
+D) some
+EXPLICATION: "Actor" manomboka amin'ny zanatsoratra "a", ka "an" no ampiasaina.
+TRADUCTION: Mpilalao sarimihetsika izy.
+
+14. I saw ___ elephant.
+*A) an
+B) a
+C) the
+D) some
+EXPLICATION: "Elephant" manomboka amin'ny zanatsoratra "e", ka "an" no ampiasaina.
+TRADUCTION: Nahita elefanta aho.
+
+15. ___ sky is blue.
+A) An
+B) A
+*C) The
+D) Some
+EXPLICATION: "Sky" dia zavatra tsy manam-paharoa, ka "the" no ampiasaina.
+TRADUCTION: Manga ny lanitra.
+
+16. Can I have ___ bread?
+A) an
+B) a
+C) the
+*D) some
+EXPLICATION: "Bread" dia tsy azo isaina, ka "some" no ampiasaina.
+TRADUCTION: Afaka manana mofo kely ve aho?
+
+17. She is ___ doctor.
+A) an
+*B) a
+C) the
+D) some
+EXPLICATION: "Doctor" manomboka amin'ny renisoratra "d", ka "a" no ampiasaina.
+TRADUCTION: Dokotera izy.
+
+18. I have ___ umbrella.
+*A) an
+B) a
+C) the
+D) some
+EXPLICATION: "Umbrella" manomboka amin'ny zanatsoratra "u", ka "an" no ampiasaina.
+TRADUCTION: Manana elo aho.
+
+19. We need ___ rice.
+A) an
+B) a
+C) the
+*D) some
+EXPLICATION: "Rice" dia tsy azo isaina, ka "some" no ampiasaina.
+TRADUCTION: Mila vary izahay.
+
+20. This is ___ school.
+A) an
+*B) a
+C) the
+D) some
+EXPLICATION: "School" manomboka amin'ny renisoratra "s", ka "a" no ampiasaina.
+TRADUCTION: Ity sekoly ity.
+
+21. ___ President of the United States lives here.
+A) An
+B) A
+*C) The
+D) Some
+EXPLICATION: "President" dia zavatra tsy manam-paharoa, ka "the" no ampiasaina.
+TRADUCTION: Mipetraka eto ny Filohan'i Amerika.
+
+22. I want ___ money.
+A) an
+B) a
+C) the
+*D) some
+EXPLICATION: "Money" dia tsy azo isaina, ka "some" no ampiasaina.
+TRADUCTION: Mila vola aho.
+
+23. She is ___ artist.
+*A) an
+B) a
+C) the
+D) some
+EXPLICATION: "Artist" manomboka amin'ny zanatsoratra "a", ka "an" no ampiasaina.
+TRADUCTION: Mpanakanto izy.
+
+24. I have ___ house.
+A) an
+*B) a
+C) the
+D) some
+EXPLICATION: "House" manomboka amin'ny renisoratra "h", ka "a" no ampiasaina.
+TRADUCTION: Manana trano aho.
+
+25. ___ water is cold.
+A) An
+B) A
+*C) The
+D) Some
+EXPLICATION: "Water" manokana resahina, ka "the" no ampiasaina.
+TRADUCTION: Mangatsiaka ny rano.
+
+26. She needs ___ help.
+A) an
+B) a
+C) the
+*D) some
+EXPLICATION: "Help" dia tsy azo isaina, ka "some" no ampiasaina.
+TRADUCTION: Mila fanampiana izy.
+
+27. He is ___ honest man.
+*A) an
+B) a
+C) the
+D) some
+EXPLICATION: "Honest" manomboka amin'ny zanatsoratra "o" (h muet), ka "an" no ampiasaina.
+TRADUCTION: Lehilahy marina izy.
+
+28. This is ___ chair.
+A) an
+*B) a
+C) the
+D) some
+EXPLICATION: "Chair" manomboka amin'ny renisoratra "c", ka "a" no ampiasaina.
+TRADUCTION: Ity seza ity.
+
+29. ___ Queen of England is famous.
+A) An
+B) A
+*C) The
+D) Some
+EXPLICATION: "Queen" dia zavatra tsy manam-paharoa, ka "the" no ampiasaina.
+TRADUCTION: Malaza ny Mpanjakavavin'i Angletera.
+
+30. I'd like ___ coffee.
+A) an
+B) a
+C) the
+*D) some
+EXPLICATION: "Coffee" dia tsy azo isaina, ka "some" no ampiasaina.
+TRADUCTION: Te-kafe aho.

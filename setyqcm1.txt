@@ -1,0 +1,84 @@
+Exercice : Types of Sentences - Niveau 1 (très facile)
+
+Consigne : Identifiez le type de chaque phrase.
+A) Declarative / B) Interrogative / C) Imperative / D) Exclamatory
+
+1. The sun is shining today.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara zava-misy tsotra, ka declarative.
+TRADUCTION: Mamirapiratra ny masoandro androany.
+
+2. Where do you live?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Aiza no misy anao?
+
+3. Come here!
+A) Declarative
+B) Interrogative
+*C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manome baiko, ka imperative.
+TRADUCTION: Avia eto!
+
+4. What a beautiful flower!
+A) Declarative
+B) Interrogative
+C) Imperative
+*D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mampiseho fihetsehampo mahery, ka exclamatory.
+TRADUCTION: Voninkazo tsara tarehy tokoa!
+
+5. I like chocolate.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara hevitra tsotra, ka declarative.
+TRADUCTION: Tia sôkôla aho.
+
+6. Are you hungry?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Noana ve ianao?
+
+7. Close the door.
+A) Declarative
+B) Interrogative
+*C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manome baiko, ka imperative.
+TRADUCTION: Akatony ny varavarana.
+
+8. How kind you are!
+A) Declarative
+B) Interrogative
+C) Imperative
+*D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mampiseho fihetsehampo, ka exclamatory.
+TRADUCTION: Tena tsara fanahy ianao!
+
+9. We go to school every day.
+*A) Declarative
+B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia manambara zava-misy, ka declarative.
+TRADUCTION: Mandeha any an-tsekoly isan'andro izahay.
+
+10. Why are you crying?
+A) Declarative
+*B) Interrogative
+C) Imperative
+D) Exclamatory
+EXPLICATION: Io fehezanteny io dia mametraka fanontaniana, ka interrogative.
+TRADUCTION: Nahoana no mitomany ianao?

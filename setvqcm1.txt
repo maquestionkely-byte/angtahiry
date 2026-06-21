@@ -1,0 +1,319 @@
+1. I ___ a student.
+*A) am
+B) have
+C) is
+D) has
+EXPLICATION: Io fehezanteny io dia milaza maha-izy, ka "I" dia miaraka amin'ny "am".
+TRADUCTION: Mpianatra aho.
+
+2. She ___ a car.
+A) am
+B) have
+C) is
+*D) has
+EXPLICATION: Io fehezanteny io dia milaza fananana, ka "She" dia miaraka amin'ny "has".
+TRADUCTION: Manana fiara izy.
+
+3. We ___ happy.
+A) am
+*B) are
+C) is
+D) have
+EXPLICATION: Io fehezanteny io dia milaza toetra, ka "We" dia miaraka amin'ny "are".
+TRADUCTION: Faly izahay.
+
+4. He ___ a teacher.
+A) am
+B) have
+*C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza asa, ka "He" dia miaraka amin'ny "is".
+TRADUCTION: Mpampianatra izy.
+
+5. They ___ from France.
+A) am
+B) is
+C) has
+*D) are
+EXPLICATION: Io fehezanteny io dia milaza fiaviana, ka "They" dia miaraka amin'ny "are".
+TRADUCTION: Avany Frantsa izy ireo.
+
+6. I ___ a brother.
+A) am
+*B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza fananana, ka "I" dia miaraka amin'ny "have".
+TRADUCTION: Manana rahalahy aho.
+
+7. It ___ cold outside.
+A) am
+B) have
+*C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza toetr'andro, ka "It" dia miaraka amin'ny "is".
+TRADUCTION: Mangatsiaka any ivelany.
+
+8. We ___ students.
+A) am
+B) is
+C) has
+*D) are
+EXPLICATION: Io fehezanteny io dia milaza maha-izy, ka "We" dia miaraka amin'ny "are".
+TRADUCTION: Mpianatra izahay.
+
+9. She ___ blue eyes.
+A) am
+B) have
+C) is
+*D) has
+EXPLICATION: Io fehezanteny io dia milaza endrika ara-batana, ka "She" dia miaraka amin'ny "has".
+TRADUCTION: Manana maso manga izy.
+
+10. You ___ very kind.
+A) am
+B) have
+C) is
+*D) are
+EXPLICATION: Io fehezanteny io dia milaza toetra, ka "You" dia miaraka amin'ny "are".
+TRADUCTION: Tena tsara fanahy ianao.
+
+11. I ___ 25 years old.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza taona, ka "I" dia miaraka amin'ny "am".
+TRADUCTION: 25 taona aho.
+
+12. They ___ a big house.
+A) am
+B) is
+C) have
+D) has
+EXPLICATION: Io fehezanteny io dia milaza fananana, ka "They" dia miaraka amin'ny "have".
+TRADUCTION: Manana trano lehibe izy ireo.
+
+13. It ___ a beautiful day.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza toetr'andro, ka "It" dia miaraka amin'ny "is".
+TRADUCTION: Andro tsara androany.
+
+14. My father ___ a doctor.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza asa, ka "My father" (tokana) dia miaraka amin'ny "is".
+TRADUCTION: Dokotera ny raiko.
+
+15. We ___ two dogs.
+A) am
+B) is
+C) have
+D) has
+EXPLICATION: Io fehezanteny io dia milaza fananana, ka "We" dia miaraka amin'ny "have".
+TRADUCTION: Manana alika roa izahay.
+
+16. You ___ at home.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza toerana, ka "You" dia miaraka amin'ny "are".
+TRADUCTION: Ao an-trano ianao.
+
+17. She ___ a nurse.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza asa, ka "She" dia miaraka amin'ny "is".
+TRADUCTION: Mpitsabo mpanampy izy.
+
+18. I ___ a headache.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza aretina, ka "I" dia miaraka amin'ny "have".
+TRADUCTION: Manana aretin'andoha aho.
+
+19. They ___ American.
+A) am
+B) is
+C) has
+D) are
+EXPLICATION: Io fehezanteny io dia milaza zom-pirenena, ka "They" dia miaraka amin'ny "are".
+TRADUCTION: Amerikana izy ireo.
+
+20. He ___ a new phone.
+A) am
+B) have
+C) is
+D) has
+EXPLICATION: Io fehezanteny io dia milaza fananana, ka "He" dia miaraka amin'ny "has".
+TRADUCTION: Manana finday vaovao izy.
+
+21. We ___ tired.
+A) am
+B) is
+C) have
+D) are
+EXPLICATION: Io fehezanteny io dia milaza toetra, ka "We" dia miaraka amin'ny "are".
+TRADUCTION: Sasatra izahay.
+
+22. It ___ 3 o'clock.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza ora, ka "It" dia miaraka amin'ny "is".
+TRADUCTION: Amin'ny 3 ora izao.
+
+23. My sister ___ a cat.
+A) am
+B) have
+C) is
+D) has
+EXPLICATION: Io fehezanteny io dia milaza fananana, ka "My sister" (tokana) dia miaraka amin'ny "has".
+TRADUCTION: Manana saka ny rahavaviko.
+
+24. You ___ very tall.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza endrika, ka "You" dia miaraka amin'ny "are".
+TRADUCTION: Tena lava ianao.
+
+25. I ___ hungry.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza fahatsapana, ka "I" dia miaraka amin'ny "am".
+TRADUCTION: Noana aho.
+
+26. They ___ at school.
+A) am
+B) is
+C) have
+D) are
+EXPLICATION: Io fehezanteny io dia milaza toerana, ka "They" dia miaraka amin'ny "are".
+TRADUCTION: Ao an-tsekoly izy ireo.
+
+27. She ___ long hair.
+A) am
+B) have
+C) is
+D) has
+EXPLICATION: Io fehezanteny io dia milaza endrika ara-batana, ka "She" dia miaraka amin'ny "has".
+TRADUCTION: Manana volo vatomiempo izy.
+
+28. We ___ English.
+A) am
+B) is
+C) have
+D) are
+EXPLICATION: Io fehezanteny io dia milaza zom-pirenena, ka "We" dia miaraka amin'ny "are".
+TRADUCTION: Anglisy izahay.
+
+29. He ___ a bicycle.
+A) am
+B) have
+C) is
+D) has
+EXPLICATION: Io fehezanteny io dia milaza fananana, ka "He" dia miaraka amin'ny "has".
+TRADUCTION: Manana bisikileta izy.
+
+30. It ___ sunny today.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza toetr'andro, ka "It" dia miaraka amin'ny "is".
+TRADUCTION: Mamirapiratra ny masoandro androany.
+
+31. You ___ a nice smile.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza fananana, ka "You" dia miaraka amin'ny "have".
+TRADUCTION: Manana tsiky tsara ianao.
+
+32. My parents ___ at work.
+A) am
+B) is
+C) have
+D) are
+EXPLICATION: Io fehezanteny io dia milaza toerana, ka "My parents" (maro) dia miaraka amin'ny "are".
+TRADUCTION: Miasa ny ray aman-dreniko.
+
+33. I ___ a book.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza fananana, ka "I" dia miaraka amin'ny "have".
+TRADUCTION: Manana boky aho.
+
+34. She ___ sad.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza toetra, ka "She" dia miaraka amin'ny "is".
+TRADUCTION: Malahelo izy.
+
+35. They ___ many friends.
+A) am
+B) is
+C) have
+D) has
+EXPLICATION: Io fehezanteny io dia milaza fananana, ka "They" dia miaraka amin'ny "have".
+TRADUCTION: Manana namana maro izy ireo.
+
+36. It ___ Monday today.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza daty, ka "It" dia miaraka amin'ny "is".
+TRADUCTION: Alatsinainy androany.
+
+37. We ___ in the garden.
+A) am
+B) is
+C) have
+D) are
+EXPLICATION: Io fehezanteny io dia milaza toerana, ka "We" dia miaraka amin'ny "are".
+TRADUCTION: Ao an-jaridaina izahay.
+
+38. He ___ a wife.
+A) am
+B) have
+C) is
+D) has
+EXPLICATION: Io fehezanteny io dia milaza fifandraisana, ka "He" dia miaraka amin'ny "has".
+TRADUCTION: Manana vady izy.
+
+39. You ___ right.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza hevitra, ka "You" dia miaraka amin'ny "are".
+TRADUCTION: Marina ianao.
+
+40. I ___ a pen.
+A) am
+B) have
+C) is
+D) are
+EXPLICATION: Io fehezanteny io dia milaza fananana, ka "I" dia miaraka amin'ny "have".
+TRADUCTION: Manana penina aho.

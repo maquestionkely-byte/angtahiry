@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Determiners – English lesson</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>DETERMINERS – ENGLISH</h1>
+  </div>
+
+  <!-- Carte : What is a determiner? -->
+  <div class="card">
+    <h2>🏷️ What is a determiner?</h2>
+    <div class="definition-mg">
+      🔹 A <strong>determiner</strong> is a small word that comes before a noun to clarify it.<br><br>
+      🔹 It gives information about <strong>definiteness</strong> (specific or general), <strong>quantity</strong>, <strong>possession</strong>, or <strong>demonstration</strong>.<br><br>
+      🔹 In English, determiners are essential: they introduce nouns and help us understand exactly what we are talking about.<br><br>
+      <span class="icone">📌</span> <strong>Main types for beginners:</strong><br><br>
+      <span class="icone">📌</span> <strong>Articles</strong> (definite, indefinite)<br><br>
+      <span class="icone">📌</span> <strong>Possessive determiners</strong> (my, your, his...)<br><br>
+      <span class="icone">📌</span> <strong>Demonstrative determiners</strong> (this, that, these, those)<br><br>
+      <span class="icone">📌</span> <strong>Quantifiers</strong> (some, any, much, many...)
+    </div>
+  </div>
+
+  <!-- 1. Articles -->
+  <div class="card">
+    <h2>1️⃣ Articles (definite & indefinite)</h2>
+    <div class="definition-mg">
+      <strong>📖 Explanation:</strong><br>
+      <strong>Definite article</strong> → <strong>the</strong> (specific, known).<br>
+      <strong>Indefinite articles</strong> → <strong>a</strong> / <strong>an</strong> (general, not specific).<br>
+      Use <strong>a</strong> before consonant sounds, <strong>an</strong> before vowel sounds.
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Forms:</strong><br>
+      <strong>The</strong> → singular & plural, all genders<br>
+      <strong>A</strong> → singular, consonant sound<br>
+      <strong>An</strong> → singular, vowel sound
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Examples
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The cat is on the roof. (specific cat)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I saw a dog in the park. (one dog, not specific)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She ate an apple. (apple → vowel sound)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The children are playing. (specific children)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Remember:</strong> Use "a" before consonant sounds (a book, a house) and "an" before vowel sounds (an hour, an orange).
+    </div>
+  </div>
+
+  <!-- 2. Possessive determiners -->
+  <div class="card">
+    <h2>2️⃣ Possessive determiners (my, your, his...)</h2>
+    <div class="definition-mg">
+      <strong>📖 Explanation:</strong><br>
+      Possessive determiners show <strong>ownership</strong> or <strong>belonging</strong>. They agree with the <strong>owner</strong>, not the object.
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Forms:</strong><br>
+      <strong>My</strong> → 1st person singular (I)<br>
+      <strong>Your</strong> → 2nd person singular (you)<br>
+      <strong>His / Her / Its</strong> → 3rd person singular (he, she, it)<br>
+      <strong>Our</strong> → 1st person plural (we)<br>
+      <strong>Your</strong> → 2nd person plural (you all)<br>
+      <strong>Their</strong> → 3rd person plural (they)
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Examples
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This is my book.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Is that your pen?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">His sister is a doctor.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Her name is Emma.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Our house is big.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Their car is red.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Note:</strong> "Its" (no apostrophe) is the possessive of "it". "It's" means "it is".
+    </div>
+  </div>
+
+  <!-- 3. Demonstrative determiners -->
+  <div class="card">
+    <h2>3️⃣ Demonstrative determiners (this, that, these, those)</h2>
+    <div class="definition-mg">
+      <strong>📖 Explanation:</strong><br>
+      Demonstratives point to <strong>specific</strong> things. They show <strong>distance</strong> (near / far) and <strong>number</strong> (singular / plural).
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Forms:</strong><br>
+      <strong>This</strong> → singular, near (here)<br>
+      <strong>That</strong> → singular, far (there)<br>
+      <strong>These</strong> → plural, near (here)<br>
+      <strong>Those</strong> → plural, far (there)
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Examples
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This book is interesting. (here, singular)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">That car is expensive. (there, singular)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">These apples are fresh. (here, plural)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Those houses are old. (there, plural)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tip:</strong> Use "this/these" for things close to you, "that/those" for things farther away.
+    </div>
+  </div>
+
+  <!-- 4. Quantifiers (some, any, much, many, etc.) -->
+  <div class="card">
+    <h2>4️⃣ Quantifiers (some, any, much, many, a lot of)</h2>
+    <div class="definition-mg">
+      <strong>📖 Explanation:</strong><br>
+      Quantifiers express <strong>quantity</strong> or <strong>amount</strong>. They are used with countable and uncountable nouns.
+    </div>
+    <div class="conjugaison-ligne">
+      <strong>Common quantifiers:</strong><br>
+      <strong>Some</strong> → positive sentences, offers, requests (countable/uncountable)<br>
+      <strong>Any</strong> → negative sentences, questions (countable/uncountable)<br>
+      <strong>Much</strong> → uncountable nouns (much water)<br>
+      <strong>Many</strong> → countable nouns (many books)<br>
+      <strong>A lot of</strong> → both countable & uncountable (a lot of time / people)<br>
+      <strong>A few</strong> → countable, small number<br>
+      <strong>A little</strong> → uncountable, small amount
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>✨</span> Examples
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I have some money. (uncountable, positive)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Do you have any questions? (countable, question)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">There isn't much milk left. (uncountable, negative)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She has many friends. (countable, positive)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We need a lot of sugar. (uncountable)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I have a few ideas. (countable, small number)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Remember:</strong> Use "much" with uncountable nouns (milk, water), "many" with countable nouns (books, cars).
+    </div>
+  </div>
+
+  <!-- 5. Summary table -->
+  <div class="card">
+    <h2>📌 Quick summary – Determiners</h2>
+    <div class="definition-mg">
+      ✅ <strong>Articles</strong> : a / an / the → specific or general<br><br>
+      ✅ <strong>Possessives</strong> : my, your, his, her, its, our, their → ownership<br><br>
+      ✅ <strong>Demonstratives</strong> : this, that, these, those → pointing / distance<br><br>
+      ✅ <strong>Quantifiers</strong> : some, any, much, many, a lot of, etc. → quantity<br><br>
+      ✅ <strong>Numbers</strong> : one, two, three... (also determiners)<br><br>
+      👉 <strong>Key idea</strong> : a determiner always comes before a noun and helps define it.
+    </div>
+    <div class="exemple-modern" style="margin-top: 12px;">
+      <div class="exo-titre">
+        <span>🧪</span> Mixed examples
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This is my favourite book.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I have some apples and a few oranges.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Those children are our neighbours.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tips card -->
+  <div class="card">
+    <h2>🎯 Tips for beginners</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Always use a determiner before a singular countable noun (a dog, the car).</li>
+        <li>Plural countable nouns can stand alone (dogs are friendly) or with determiners (those dogs).</li>
+        <li>Uncountable nouns often use quantifiers (some water, much rice).</li>
+        <li>Practice with "a" vs "an": listen to the first sound (a university, an umbrella).</li>
+        <li>Possessives agree with the owner, not the object (her book, his book).</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Remember:</strong> Determiners are everywhere in English. Learn them step by step, and don't be afraid to make mistakes!
+    </div>
+  </div>
+
+  <!-- Contact card -->
+  <div class="card">
+    <h2>📬 Questions / Feedback</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>If you have any questions or suggestions :</p>
+      <p>➡️ Send us a message on Facebook.</p>
+      <p>➡️ We are happy to help you improve your English.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Contact us on Facebook 👉
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Keep learning and stay curious 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Only serious learners here!</h3><p style="color:white;">Close and reload the page.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Close & Reload</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>
