@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Possessive Pronouns – Mine, Yours, His, Hers, Ours, Theirs</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+
+    .verb-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    .verb-table th {
+      background: #1e40af;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    .verb-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    .verb-table tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    .verb-table tr:last-child td {
+      border-bottom: none;
+    }
+    .verb-table .mg-trans {
+      color: #1e3a5f;
+      font-weight: 500;
+    }
+    
+    .color-mine { color: #1e40af; font-weight: 700; }
+    .color-yours { color: #b45309; font-weight: 700; }
+    .color-his { color: #0d9488; font-weight: 700; }
+    .color-hers { color: #7c3aed; font-weight: 700; }
+    .color-ours { color: #d97706; font-weight: 700; }
+    .color-theirs { color: #dc2626; font-weight: 700; }
+    
+    .use-tag {
+      display: inline-block;
+      background: #1e40af;
+      color: white;
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 6px;
+    }
+    .use-tag.yours { background: #b45309; }
+    .use-tag.his { background: #0d9488; }
+    .use-tag.hers { background: #7c3aed; }
+    .use-tag.ours { background: #d97706; }
+    .use-tag.theirs { background: #dc2626; }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .verb-table {
+        font-size: 0.78rem;
+      }
+      .verb-table th, .verb-table td {
+        padding: 5px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>POSSESSIVE PRONOUNS</h1>
+    <p style="font-size:0.9rem;margin-top:4px;color:#1e3a8a;">Mine &bull; Yours &bull; His &bull; Hers &bull; Ours &bull; Theirs</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte : Inona ny possessive pronouns ?                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🏷️ Inona ny "possessive pronouns" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>possessive pronouns</strong> dia <strong>mpisolo anarana</strong> ampiasaina <strong>hanehoana ny fananana</strong>.<br><br>
+      🔹 Izy ireo dia <strong>mijoro irery</strong> (tsy miaraka amin'ny anarana).<br><br>
+      🔹 Ny <strong>possessive pronouns</strong> dia : <strong>mine, yours, his, hers, ours, theirs</strong>.<br><br>
+      <span class="icone">📌</span> <strong>Mine</strong> → an'ny olona miteny (izy tokana)<br><br>
+      <span class="icone">📌</span> <strong>Yours</strong> → an'ny olona iresahana (tokana na maro)<br><br>
+      <span class="icone">📌</span> <strong>His</strong> → an'ny lehilahy<br><br>
+      <span class="icone">📌</span> <strong>Hers</strong> → an'ny vehivavy<br><br>
+      <span class="icone">📌</span> <strong>Ours</strong> → an'ny olona miteny sy ny hafa (isika)<br><br>
+      <span class="icone">📌</span> <strong>Theirs</strong> → an'ny olona hafa (izy ireo)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 1. MINE                                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>1️⃣ "MINE" – An'ny olona miteny <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Ahy / An'ahy)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Mine</strong> dia ampiasaina hilazana fa <strong>an'ny olona miteny</strong> ilay zavatra.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Ahy"</strong> na <strong>"An'ahy"</strong>.
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👆</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-mine">Mine</strong> is red. → <strong>Ahy</strong> no mena.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This book is <strong class="color-mine">mine</strong>. → Ity boky ity dia <strong>an'ahy</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">That car is <strong class="color-mine">mine</strong>. → Io fiara io dia <strong>ahy</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The pen is <strong class="color-mine">mine</strong>. → Ny penina dia <strong>an'ahy</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Is this bag <strong class="color-mine">mine</strong>? → Ity kitapo ity ve <strong>ahy</strong>?</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"Mine"</strong> dia ho an'ny zavatra <strong>an'ny olona miteny</strong>. Ohatra : "This book is mine." → "Ity boky ity dia ahy."
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. YOURS                                                     -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ "YOURS" – An'ny olona iresahana <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(Anao / Anareo)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Yours</strong> dia ampiasaina hilazana fa <strong>an'ny olona iresahana</strong> ilay zavatra.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Anao"</strong> (tokana) na <strong>"Anareo"</strong> (maro).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👉</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-yours">Yours</strong> is blue. → <strong>Anao</strong> no manga.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This phone is <strong class="color-yours">yours</strong>. → Ity telefaona ity dia <strong>anao</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Are these keys <strong class="color-yours">yours</strong>? → Ireo lakile ireo ve <strong>anareo</strong>?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The house is <strong class="color-yours">yours</strong>. → Ny trano dia <strong>anareo</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I like <strong class="color-yours">yours</strong>. → Tiako <strong>anao</strong>.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"Yours"</strong> dia ho an'ny zavatra <strong>an'ny olona iresahana</strong>. Ohatra : "This phone is yours." → "Ity telefaona ity dia anao."
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. HIS                                                       -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>3️⃣ "HIS" – An'ny lehilahy <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(An'ny lehilahy / Azy)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>His</strong> dia ampiasaina hilazana fa <strong>an'ny lehilahy</strong> ilay zavatra.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"An'ny lehilahy"</strong> na <strong>"Azy"</strong> (rehefa mazava fa lehilahy).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👨</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-his">His</strong> is green. → <strong>An'ny lehilahy</strong> no maitso.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This jacket is <strong class="color-his">his</strong>. → Ity palitao ity dia <strong>azy</strong> (an'ny lehilahy).</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">That bike is <strong class="color-his">his</strong>. → Io bisikileta io dia <strong>an'ny lehilahy</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The bag is <strong class="color-his">his</strong>. → Ny kitapo dia <strong>azy</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I prefer <strong class="color-his">his</strong>. → Aleoko <strong>an'ny lehilahy</strong>.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"His"</strong> dia ho an'ny zavatra <strong>an'ny lehilahy</strong>. Ohatra : "This jacket is his." → "Ity palitao ity dia an'ny lehilahy."
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 4. HERS                                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>4️⃣ "HERS" – An'ny vehivavy <span style="font-size:0.8rem;color:#7c3aed;font-weight:400;">(An'ny vehivavy / Azy)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Hers</strong> dia ampiasaina hilazana fa <strong>an'ny vehivavy</strong> ilay zavatra.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"An'ny vehivavy"</strong> na <strong>"Azy"</strong> (rehefa mazava fa vehivavy).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👩</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-hers">Hers</strong> is yellow. → <strong>An'ny vehivavy</strong> no mavo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This dress is <strong class="color-hers">hers</strong>. → Ity akanjo ity dia <strong>an'ny vehivavy</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">That hat is <strong class="color-hers">hers</strong>. → Io satroka io dia <strong>azy</strong> (an'ny vehivavy).</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The shoes are <strong class="color-hers">hers</strong>. → Ny kiraro dia <strong>an'ny vehivavy</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I want <strong class="color-hers">hers</strong>. → Tiako <strong>an'ny vehivavy</strong>.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"Hers"</strong> dia ho an'ny zavatra <strong>an'ny vehivavy</strong>. Ohatra : "This dress is hers." → "Ity akanjo ity dia an'ny vehivavy."
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 5. OURS                                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>5️⃣ "OURS" – An'ny olona miteny sy ny hafa <span style="font-size:0.8rem;color:#d97706;font-weight:400;">(Anay / Ahatsika)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Ours</strong> dia ampiasaina hilazana fa <strong>an'ny olona miteny sy ny olona hafa</strong> (isika) ilay zavatra.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Anay"</strong> na <strong>"Ahatsika"</strong>.
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👥</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-ours">Ours</strong> is bigger. → <strong>Anay</strong> no lehibe kokoa.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This house is <strong class="color-ours">ours</strong>. → Ity trano ity dia <strong>anay</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">Those cars are <strong class="color-ours">ours</strong>. → Ireo fiara ireo dia <strong>anay</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The garden is <strong class="color-ours">ours</strong>. → Ny zaridaina dia <strong>ahatika</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We love <strong class="color-ours">ours</strong>. → Tiantsika <strong>anay</strong>.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"Ours"</strong> dia ho an'ny zavatra <strong>an'ny olona miteny sy ny hafa</strong> (isika). Ohatra : "This house is ours." → "Ity trano ity dia anay."
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 6. THEIRS                                                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>6️⃣ "THEIRS" – An'ny olona hafa <span style="font-size:0.8rem;color:#dc2626;font-weight:400;">(An'izy ireo / Azy ireo)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Theirs</strong> dia ampiasaina hilazana fa <strong>an'ny olona hafa</strong> (izy ireo) ilay zavatra.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"An'izy ireo"</strong> na <strong>"Azy ireo"</strong>.
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👥👥</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-theirs">Theirs</strong> is purple. → <strong>An'izy ireo</strong> no volomparasy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">These backpacks are <strong class="color-theirs">theirs</strong>. → Ireo kitapo ireo dia <strong>an'izy ireo</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">That dog is <strong class="color-theirs">theirs</strong>. → Io alika io dia <strong>azy ireo</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The chairs are <strong class="color-theirs">theirs</strong>. → Ny seza dia <strong>an'izy ireo</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I don't like <strong class="color-theirs">theirs</strong>. → Tsy tiako <strong>an'izy ireo</strong>.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"Theirs"</strong> dia ho an'ny zavatra <strong>an'ny olona hafa</strong> (izy ireo). Ohatra : "These backpacks are theirs." → "Ireo kitapo ireo dia an'izy ireo."
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. COMPARAISON : TABLEAU RÉCAPITULATIF                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
+    <div class="definition-mg">
+      <strong>🔹 Fampitahana ny possessive pronouns :</strong>
+    </div>
+    <div class="conjugaison-ligne">
+      <table class="verb-table">
+        <tr><th style="background:#1e40af;">Pronom</th><th style="background:#1e40af;">Olona</th><th style="background:#1e40af;">Dikany malagasy</th></tr>
+        <tr><td><strong class="color-mine">Mine</strong></td><td>Olona miteny (1ère pers. sing.)</td><td>Ahy / An'ahy</td></tr>
+        <tr><td><strong class="color-yours">Yours</strong></td><td>Olona iresahana (2ème pers.)</td><td>Anao / Anareo</td></tr>
+        <tr><td><strong class="color-his">His</strong></td><td>Lehilahy (3ème pers. masc.)</td><td>An'ny lehilahy / Azy</td></tr>
+        <tr><td><strong class="color-hers">Hers</strong></td><td>Vehivavy (3ème pers. fém.)</td><td>An'ny vehivavy / Azy</td></tr>
+        <tr><td><strong class="color-ours">Ours</strong></td><td>Isika (1ère pers. plu.)</td><td>Anay / Ahatsika</td></tr>
+        <tr><td><strong class="color-theirs">Theirs</strong></td><td>Izy ireo (3ème pers. plu.)</td><td>An'izy ireo / Azy ireo</td></tr>
+      </table>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      ✅ <strong class="color-mine">Mine</strong> → ahy<br>
+      ✅ <strong class="color-yours">Yours</strong> → anao / anareo<br>
+      ✅ <strong class="color-his">His</strong> → an'ny lehilahy<br>
+      ✅ <strong class="color-hers">Hers</strong> → an'ny vehivavy<br>
+      ✅ <strong class="color-ours">Ours</strong> → anay<br>
+      ✅ <strong class="color-theirs">Theirs</strong> → an'izy ireo
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. DIFFÉRENCE ENTRE ADJECTIFS ET PRONOMS POSSESSIFS         -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📌 Fahasamihafana : Adjectif possessif vs Pronom possessif</h2>
+    <div class="definition-mg">
+      <strong>🔹 Zava-dehibe tokony hotadidina :</strong><br><br>
+      <strong>Adjectif possessif (mpamaritra)</strong> → miaraka amin'ny <strong>anarana (nom)</strong><br>
+      <strong>Pronom possessif (mpisolo)</strong> → <strong>mijoro irery</strong> (tsy misy anarana)<br><br>
+      <span class="icone">📌</span> <strong>Adjectif :</strong> This is <strong>my</strong> book. (Miaraka amin'ny "book")<br>
+      <span class="icone">📌</span> <strong>Pronom :</strong> This book is <strong>mine</strong>. (Mijoro irery)<br><br>
+      <span class="icone">📌</span> <strong>Adjectif :</strong> These are <strong>your</strong> shoes. (Miaraka amin'ny "shoes")<br>
+      <span class="icone">📌</span> <strong>Pronom :</strong> These shoes are <strong>yours</strong>. (Mijoro irery)
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>⚖️</span> Fampitahana mazava
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Adjectif :</strong> This is <strong class="color-mine">my</strong> car. → Ity no <strong>fiara</strong>ko.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Pronom :</strong> This car is <strong class="color-mine">mine</strong>. → Ity fiara ity dia <strong>ahy</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Adjectif :</strong> These are <strong class="color-yours">your</strong> keys. → Ireo no <strong>lakile</strong>nao.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Pronom :</strong> These keys are <strong class="color-yours">yours</strong>. → Ireo lakile ireo dia <strong>anao</strong>.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Adjectif :</strong> This is <strong class="color-his">his</strong> house. → Ity no <strong>trano</strong>ny (lehil.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong>Pronom :</strong> This house is <strong class="color-his">his</strong>. → Ity trano ity dia <strong>an'ny lehilahy</strong>.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 9. Ohatra fanampiny                                          -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li><strong class="color-mine">Mine</strong> is the best. → <strong>Ahy</strong> no tsara indrindra.</li>
+        <li><strong class="color-yours">Yours</strong> is on the table. → <strong>Anao</strong> no eo ambony latabatra.</li>
+        <li><strong class="color-his">His</strong> is over there. → <strong>An'ny lehilahy</strong> no any.</li>
+        <li><strong class="color-hers">Hers</strong> is in the bag. → <strong>An'ny vehivavy</strong> no ao anaty kitapo.</li>
+        <li><strong class="color-ours">Ours</strong> is in the garage. → <strong>Anay</strong> no ao anaty garazy.</li>
+        <li><strong class="color-theirs">Theirs</strong> is outside. → <strong>An'izy ireo</strong> no any ivelany.</li>
+        <li>I prefer <strong class="color-mine">mine</strong>. → Aleoko <strong>ahy</strong>.</li>
+        <li>I prefer <strong class="color-yours">yours</strong>. → Aleoko <strong>anao</strong>.</li>
+        <li>I prefer <strong class="color-his">his</strong>. → Aleoko <strong>an'ny lehilahy</strong>.</li>
+        <li>I prefer <strong class="color-hers">hers</strong>. → Aleoko <strong>an'ny vehivavy</strong>.</li>
+        <li>I prefer <strong class="color-ours">ours</strong>. → Aleoko <strong>anay</strong>.</li>
+        <li>I prefer <strong class="color-theirs">theirs</strong>. → Aleoko <strong>an'izy ireo</strong>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 10. TOROHEVITRA MAHASOA                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Jereo foana izay <strong>olona</strong> no tompon'ilay zavatra.</li>
+        <li><strong>"Mine"</strong> dia ho an'ny olona miteny ihany.</li>
+        <li><strong>"Yours"</strong> dia ho an'ny olona iresahana.</li>
+        <li><strong>"His"</strong> dia ho an'ny lehilahy.</li>
+        <li><strong>"Hers"</strong> dia ho an'ny vehivavy.</li>
+        <li><strong>"Ours"</strong> dia ho an'ny olona miteny sy ny hafa.</li>
+        <li><strong>"Theirs"</strong> dia ho an'ny olona hafa.</li>
+        <li>Tsarovy fa ny <strong>possessive pronouns</strong> dia <strong>mijoro irery</strong>, tsy miaraka amin'ny anarana.</li>
+        <li>Raha miaraka amin'ny <strong>anarana</strong> izy ireo dia <strong>adjectifs possessifs</strong> izy ireo (my, your, his, her, our, their).</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> "Mine, yours, his, hers, ours, theirs" dia samy manana ny olona azy. Zava-dehibe ny mifanentana amin'ny tompony !
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny "possessive pronouns".</p>
+      <p>Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

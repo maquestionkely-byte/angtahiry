@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Negation – Not, No Longer, Never, Neither...Nor, Nobody, Nothing</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .title-main p {
+      font-size: 0.9rem;
+      margin-top: 4px;
+      color: #1e3a8a;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+
+    .verb-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    .verb-table th {
+      background: #1e40af;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    .verb-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    .verb-table tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    .verb-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .color-not { color: #1e40af; font-weight: 700; }
+    .color-nolonger { color: #b45309; font-weight: 700; }
+    .color-never { color: #0d9488; font-weight: 700; }
+    .color-neither { color: #7c3aed; font-weight: 700; }
+    .color-nobody { color: #d97706; font-weight: 700; }
+    .color-nothing { color: #dc2626; font-weight: 700; }
+    
+    .badge {
+      display: inline-block;
+      font-size: 0.55rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-left: 4px;
+      background: #e2e6cf;
+      color: #1f3d34;
+    }
+    
+    .neg-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .neg-box {
+      background: #f8faf8;
+      border-radius: 16px;
+      padding: 14px;
+      border: 2px solid #e2e6cf;
+      text-align: center;
+    }
+    .neg-box .neg-word {
+      font-size: 1.3rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .neg-box .neg-meaning {
+      font-size: 0.8rem;
+      color: #1f3d34;
+      display: block;
+    }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .verb-table {
+        font-size: 0.78rem;
+      }
+      .verb-table th, .verb-table td {
+        padding: 5px 8px;
+      }
+      .neg-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>NEGATION</h1>
+    <p>Not &bull; No longer &bull; Never &bull; Neither...Nor &bull; Nobody &bull; Nothing</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte : Inona ny Negation ?                                 -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🏷️ Inona ny "Negation" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>negation</strong> dia ampiasaina <strong>handàna</strong> na <strong>hanambara fa tsy misy</strong> zavatra iray.<br><br>
+      🔹 Misy karazany maro ny fomba fanaovana negation amin'ny teny anglisy.<br><br>
+      <span class="icone">📌</span> <strong>Not</strong> → tsia / tsy (ilay fototry ny fandavana)<br>
+      <span class="icone">📌</span> <strong>No longer</strong> → tsy...intsony (tsy mitohy intsony)<br>
+      <span class="icone">📌</span> <strong>Never</strong> → tsy...mihitsy / tsy mbola (tsy misy fotoana)<br>
+      <span class="icone">📌</span> <strong>Neither...nor</strong> → na...na (fandavana roa sosona)<br>
+      <span class="icone">📌</span> <strong>Nobody</strong> → tsy misy olona<br>
+      <span class="icone">📌</span> <strong>Nothing</strong> → tsy misy zavatra
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Lisitry ny negation rehetra                                  -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📋 Lisitry ny Negation</h2>
+    <div class="neg-grid">
+      <div class="neg-box"><span class="neg-word color-not">not</span><span class="neg-meaning">tsy / tsia</span></div>
+      <div class="neg-box"><span class="neg-word color-nolonger">no longer</span><span class="neg-meaning">tsy...intsony</span></div>
+      <div class="neg-box"><span class="neg-word color-never">never</span><span class="neg-meaning">tsy...mihitsy</span></div>
+      <div class="neg-box"><span class="neg-word color-neither">neither...nor</span><span class="neg-meaning">na...na (fandavana)</span></div>
+      <div class="neg-box"><span class="neg-word color-nobody">nobody</span><span class="neg-meaning">tsy misy olona</span></div>
+      <div class="neg-box"><span class="neg-word color-nothing">nothing</span><span class="neg-meaning">tsy misy zavatra</span></div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 1. NOT – Tsy / Tsia                                         -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>1️⃣ "NOT" – Tsy / Tsia <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Fandavana fototra)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Not</strong> dia ampiasaina <strong>handàna</strong> zavatra iray. Izy no fototry ny negation.<br><br>
+      <strong>📌 Miaraka amin'ny auxiliaire :</strong> ampidirina aorian'ny auxiliaire (do, does, did, is, are, was, were, will, can, etc.)<br><br>
+      <strong>📌 Misy endrika fohy (contractions) :</strong> don't, doesn't, didn't, isn't, aren't, wasn't, weren't, won't, can't, etc.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>🚫</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">I do <strong class="color-not">not</strong> like coffee. → <strong class="color-not">Tsy</strong> tia kafe aho.</span></div>
+      <div class="exo-ligne"><span class="fr">She is <strong class="color-not">not</strong> here. → <strong class="color-not">Tsy</strong> eto izy.</span></div>
+      <div class="exo-ligne"><span class="fr">They did <strong class="color-not">not</strong> come. → <strong class="color-not">Tsy</strong> tonga izy ireo.</span></div>
+      <div class="exo-ligne"><span class="fr">I can <strong class="color-not">not</strong> swim. → <strong class="color-not">Tsy</strong> mahay milomano aho.</span></div>
+      <div class="exo-ligne"><span class="fr">He will <strong class="color-not">not</strong> go. → <strong class="color-not">Tsy</strong> handeha izy.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "Not" dia ampidirina <strong>aorian'ny auxiliaire</strong>. Misy endrika fohy toy ny <strong>don't, doesn't, isn't, can't, won't</strong>.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. NO LONGER – Tsy...intsony                                -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ "NO LONGER" – Tsy...intsony <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(Tsy mitohy intsony)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>No longer</strong> dia ampiasaina hilazana fa <strong>tsy mitohy intsony</strong> zavatra iray izay efa nisy taloha.<br><br>
+      <strong>📌 Toerana :</strong> apetraka <strong>eo alohan'ny matoanteny</strong> na <strong>aorian'ny auxiliaire</strong>.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>⏹️</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">I <strong class="color-nolonger">no longer</strong> live here. → <strong class="color-nolonger">Tsy</strong> mipetraka <strong class="color-nolonger">intsony</strong> eto aho.</span></div>
+      <div class="exo-ligne"><span class="fr">She is <strong class="color-nolonger">no longer</strong> a student. → <strong class="color-nolonger">Tsy</strong> mpianatra <strong class="color-nolonger">intsony</strong> izy.</span></div>
+      <div class="exo-ligne"><span class="fr">They <strong class="color-nolonger">no longer</strong> work here. → <strong class="color-nolonger">Tsy</strong> miasa <strong class="color-nolonger">intsony</strong> eto izy ireo.</span></div>
+      <div class="exo-ligne"><span class="fr">He <strong class="color-nolonger">no longer</strong> smokes. → <strong class="color-nolonger">Tsy</strong> mifoka sigara <strong class="color-nolonger">intsony</strong> izy.</span></div>
+      <div class="exo-ligne"><span class="fr">We are <strong class="color-nolonger">no longer</strong> friends. → <strong class="color-nolonger">Tsy</strong> namana <strong class="color-nolonger">intsony</strong> izahay.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "No longer" dia ampiasaina rehefa <strong>tsy mitohy intsony</strong> zavatra iray izay efa nisy taloha.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. NEVER – Tsy...mihitsy / Tsy mbola                       -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>3️⃣ "NEVER" – Tsy...mihitsy / Tsy mbola <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(Tsy misy fotoana)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Never</strong> dia ampiasaina hilazana fa <strong>tsy nisy mihitsy</strong> na <strong>tsy mbola</strong> nitranga zavatra iray.<br><br>
+      <strong>📌 Toerana :</strong> apetraka <strong>eo alohan'ny matoanteny</strong> na <strong>aorian'ny auxiliaire</strong>.<br><br>
+      <strong>⚠️ Tsarovy :</strong> "Never" dia <strong>tsy mila "not"</strong> intsony satria efa manana dikany mandà izy.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>❌</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">I have <strong class="color-never">never</strong> been to Paris. → <strong class="color-never">Tsy mbola</strong> nankany Paris aho.</span></div>
+      <div class="exo-ligne"><span class="fr">She <strong class="color-never">never</strong> eats meat. → <strong class="color-never">Tsy</strong> mihinana hena <strong class="color-never">mihitsy</strong> izy.</span></div>
+      <div class="exo-ligne"><span class="fr">They will <strong class="color-never">never</strong> know. → <strong class="color-never">Tsy</strong> hahalala <strong class="color-never">mihitsy</strong> izy ireo.</span></div>
+      <div class="exo-ligne"><span class="fr">I <strong class="color-never">never</strong> lie. → <strong class="color-never">Tsy</strong> mandainga <strong class="color-never">mihitsy</strong> aho.</span></div>
+      <div class="exo-ligne"><span class="fr">He has <strong class="color-never">never</strong> seen snow. → <strong class="color-never">Tsy mbola</strong> nahita oram-panala mihitsy izy.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "Never" dia midika hoe <strong>"tsy...mihitsy"</strong> na <strong>"tsy mbola"</strong>. Tsy mila "not" intsony izy.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 4. NEITHER...NOR – Na...na (fandavana roa sosona)           -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>4️⃣ "NEITHER...NOR" – Na...na (fandavana roa sosona) <span style="font-size:0.8rem;color:#7c3aed;font-weight:400;">(Fandavana roa)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Neither...nor</strong> dia ampiasaina <strong>handàna zavatra roa</strong> miaraka. Midika hoe "tsy izy roa" na "na izy na izy".<br><br>
+      <strong>📌 Structure :</strong> <strong>Neither + A + nor + B</strong> (A sy B dia zavatra roa lavina).<br><br>
+      <strong>⚠️ Tsarovy :</strong> Ny matoanteny dia mifanaraka amin'ny <strong>B</strong> (ilay akaiky indrindra amin'ny matoanteny).
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>⚖️</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-neither">Neither</strong> John <strong class="color-neither">nor</strong> Mary is here. → <strong class="color-neither">Na</strong> John <strong class="color-neither">na</strong> Mary dia tsy eto.</span></div>
+      <div class="exo-ligne"><span class="fr">I like <strong class="color-neither">neither</strong> coffee <strong class="color-neither">nor</strong> tea. → <strong class="color-neither">Na</strong> kafe <strong class="color-neither">na</strong> dite dia tsy tiako.</span></div>
+      <div class="exo-ligne"><span class="fr">She speaks <strong class="color-neither">neither</strong> English <strong class="color-neither">nor</strong> French. → <strong class="color-neither">Na</strong> anglisy <strong class="color-neither">na</strong> frantsay dia tsy miteny izy.</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-neither">Neither</strong> my brother <strong class="color-neither">nor</strong> my sister came. → <strong class="color-neither">Na</strong> ny rahalahiko <strong class="color-neither">na</strong> ny rahavaviko dia tsy tonga.</span></div>
+      <div class="exo-ligne"><span class="fr">I have <strong class="color-neither">neither</strong> money <strong class="color-neither">nor</strong> time. → <strong class="color-neither">Na</strong> vola <strong class="color-neither">na</strong> fotoana dia tsy manana aho.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "Neither...nor" dia ampiasaina <strong>handàna zavatra roa</strong>. Ny matoanteny dia mifanaraka amin'ny <strong>B</strong> (ilavy akaiky indrindra).</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 5. NOBODY – Tsy misy olona                                 -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>5️⃣ "NOBODY" – Tsy misy olona <span style="font-size:0.8rem;color:#d97706;font-weight:400;">(Tsy misy olona)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Nobody</strong> dia midika hoe <strong>"tsy misy olona"</strong>. Ampiasaina hilazana fa tsy nisy olona nanao zavatra iray.<br><br>
+      <strong>📌 Toerana :</strong> matetika apetraka <strong>eo am-piandohana</strong> ny fehezanteny, ary ny matoanteny dia <strong>singular</strong>.<br><br>
+      <strong>⚠️ Tsarovy :</strong> "Nobody" dia <strong>tsy mila "not"</strong> intsony satria efa manana dikany mandà izy.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>👤</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-nobody">Nobody</strong> knows the answer. → <strong class="color-nobody">Tsy misy olona</strong> mahalala ny valiny.</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-nobody">Nobody</strong> came to the party. → <strong class="color-nobody">Tsy nisy olona</strong> tonga tamin'ny fety.</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-nobody">Nobody</strong> saw me. → <strong class="color-nobody">Tsy nisy olona</strong> nahita ahy.</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-nobody">Nobody</strong> is perfect. → <strong class="color-nobody">Tsy misy olona</strong> tonga lafatra.</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-nobody">Nobody</strong> told me. → <strong class="color-nobody">Tsy nisy olona</strong> nilaza tamiko.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "Nobody" dia midika hoe <strong>"tsy misy olona"</strong>. Tsy mila "not" intsony izy.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 6. NOTHING – Tsy misy zavatra                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>6️⃣ "NOTHING" – Tsy misy zavatra <span style="font-size:0.8rem;color:#dc2626;font-weight:400;">(Tsy misy zavatra)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Nothing</strong> dia midika hoe <strong>"tsy misy zavatra"</strong>. Ampiasaina hilazana fa tsy nisy zavatra nanao na nitranga.<br><br>
+      <strong>📌 Toerana :</strong> matetika apetraka <strong>eo am-piandohana</strong> ny fehezanteny, ary ny matoanteny dia <strong>singular</strong>.<br><br>
+      <strong>⚠️ Tsarovy :</strong> "Nothing" dia <strong>tsy mila "not"</strong> intsony satria efa manana dikany mandà izy.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>📭</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-nothing">Nothing</strong> is impossible. → <strong class="color-nothing">Tsy misy zavatra</strong> tsy azo atao.</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-nothing">Nothing</strong> happened. → <strong class="color-nothing">Tsy nisy zavatra</strong> nitranga.</span></div>
+      <div class="exo-ligne"><span class="fr">I have <strong class="color-nothing">nothing</strong> to say. → <strong class="color-nothing">Tsy misy zavatra</strong> holazaiko.</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-nothing">Nothing</strong> is better than this. → <strong class="color-nothing">Tsy misy zavatra</strong> tsara kokoa noho ity.</span></div>
+      <div class="exo-ligne"><span class="fr">She knows <strong class="color-nothing">nothing</strong> about it. → <strong class="color-nothing">Tsy misy zavatra</strong> fantany momba izany.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "Nothing" dia midika hoe <strong>"tsy misy zavatra"</strong>. Tsy mila "not" intsony izy.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. TABLEAU RÉCAPITULATIF                                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
+    <div class="definition-mg">
+      <strong>🔹 Fampitahana ny negation :</strong>
+    </div>
+    <div class="conjugaison-ligne">
+      <table class="verb-table">
+        <tr><th style="background:#1e40af;">Negation</th><th style="background:#1e40af;">Dikany</th><th style="background:#1e40af;">Fampiasana</th></tr>
+        <tr><td><strong class="color-not">not</strong></td><td>tsy / tsia</td><td>Fandavana fototra (miaraka amin'ny auxiliaire)</td></tr>
+        <tr><td><strong class="color-nolonger">no longer</strong></td><td>tsy...intsony</td><td>Tsy mitohy intsony (zavatra efa nisy taloha)</td></tr>
+        <tr><td><strong class="color-never">never</strong></td><td>tsy...mihitsy / tsy mbola</td><td>Tsy misy fotoana na indray mihitsy</td></tr>
+        <tr><td><strong class="color-neither">neither...nor</strong></td><td>na...na (fandavana)</td><td>Fandavana zavatra roa miaraka</td></tr>
+        <tr><td><strong class="color-nobody">nobody</strong></td><td>tsy misy olona</td><td>Tsy misy olona nanao zavatra</td></tr>
+        <tr><td><strong class="color-nothing">nothing</strong></td><td>tsy misy zavatra</td><td>Tsy misy zavatra nitranga</td></tr>
+      </table>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong><br>
+      ✅ <strong class="color-not">not</strong> → tsy (fandavana fototra)<br>
+      ✅ <strong class="color-nolonger">no longer</strong> → tsy...intsony (tsy mitohy)<br>
+      ✅ <strong class="color-never">never</strong> → tsy...mihitsy (tsy misy fotoana)<br>
+      ✅ <strong class="color-neither">neither...nor</strong> → na...na (fandavana roa)<br>
+      ✅ <strong class="color-nobody">nobody</strong> → tsy misy olona<br>
+      ✅ <strong class="color-nothing">nothing</strong> → tsy misy zavatra
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. FANAZAVANA : Double Negation                             -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📌 Fanazavana momba ny "Double Negation"</h2>
+    <div class="definition-mg">
+      <strong>🔹 Zava-dehibe tokony hotadidina :</strong><br><br>
+      Amin'ny teny anglisy, ny <strong>double negation</strong> (fandavana roa sosona) dia <strong>tsy azo ampiasaina</strong> amin'ny fomba ofisialy.<br><br>
+      <span class="icone">📌</span> ❌ <strong>Diso :</strong> I <strong>don't</strong> have <strong>nothing</strong>.<br>
+      <span class="icone">📌</span> ✅ <strong>Marina :</strong> I <strong>don't</strong> have <strong>anything</strong>. / I have <strong>nothing</strong>.<br><br>
+      <span class="icone">📌</span> ❌ <strong>Diso :</strong> <strong>Nobody</strong> <strong>didn't</strong> come.<br>
+      <span class="icone">📌</span> ✅ <strong>Marina :</strong> <strong>Nobody</strong> came. / <strong>Everybody</strong> came.<br><br>
+      <strong>⚠️ Tsarovy :</strong> Ny teny toy ny <strong>nobody, nothing, never, neither</strong> dia <strong>efa mandà</strong> ka tsy mila "not" intsony.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>⚠️</span> Ohatra mampiseho ny double negation diso sy marina</div>
+      <div class="exo-ligne"><span class="fr">❌ I don't know <strong>nothing</strong>. → ✅ I don't know <strong>anything</strong>. / I know <strong>nothing</strong>.</span></div>
+      <div class="exo-ligne"><span class="fr">❌ She doesn't like <strong>nobody</strong>. → ✅ She doesn't like <strong>anybody</strong>. / She likes <strong>nobody</strong>.</span></div>
+      <div class="exo-ligne"><span class="fr">❌ He never goes <strong>nowhere</strong>. → ✅ He never goes <strong>anywhere</strong>. / He goes <strong>nowhere</strong>.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> Amin'ny teny anglisy, <strong>tsy azo atao</strong> ny mampiasa "not" miaraka amin'ny <strong>nobody, nothing, never, nowhere, neither</strong>. Mampiasà "any" (anything, anybody, anywhere) rehefa misy "not".</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 9. Ohatra fanampiny                                          -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li>I am <strong class="color-not">not</strong> ready. → <strong class="color-not">Tsy</strong> vonona aho.</li>
+        <li>She <strong class="color-nolonger">no longer</strong> works here. → <strong class="color-nolonger">Tsy</strong> miasa <strong class="color-nolonger">intsony</strong> eto izy.</li>
+        <li>I have <strong class="color-never">never</strong> eaten sushi. → <strong class="color-never">Tsy mbola</strong> nihinana sushi aho.</li>
+        <li><strong class="color-neither">Neither</strong> my father <strong class="color-neither">nor</strong> my mother is here. → <strong class="color-neither">Na</strong> ny raiko <strong class="color-neither">na</strong> ny reniko dia tsy eto.</li>
+        <li><strong class="color-nobody">Nobody</strong> likes to be alone. → <strong class="color-nobody">Tsy misy olona</strong> tia ho irery.</li>
+        <li><strong class="color-nothing">Nothing</strong> is more important than family. → <strong class="color-nothing">Tsy misy zavatra</strong> zava-dehibe kokoa noho ny fianakaviana.</li>
+        <li>I do <strong class="color-not">not</strong> understand. → <strong class="color-not">Tsy</strong> azoko.</li>
+        <li>He <strong class="color-never">never</strong> forgets. → <strong class="color-never">Tsy</strong> manadino <strong class="color-never">mihitsy</strong> izy.</li>
+        <li><strong class="color-nobody">Nobody</strong> knows the truth. → <strong class="color-nobody">Tsy misy olona</strong> mahalala ny marina.</li>
+        <li>There is <strong class="color-nothing">nothing</strong> in the box. → <strong class="color-nothing">Tsy misy zavatra</strong> ao anaty boaty.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 10. TOROHEVITRA MAHASOA                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Ampiasao ny <strong>"not"</strong> ho an'ny <strong>fandavana fototra</strong> (miaraka amin'ny auxiliaire).</li>
+        <li>Ampiasao ny <strong>"no longer"</strong> rehefa <strong>tsy mitohy intsony</strong> zavatra iray.</li>
+        <li>Ampiasao ny <strong>"never"</strong> rehefa <strong>tsy nisy mihitsy</strong> na <strong>tsy mbola</strong> nitranga.</li>
+        <li>Ampiasao ny <strong>"neither...nor"</strong> rehefa <strong>handà zavatra roa</strong> miaraka.</li>
+        <li>Ampiasao ny <strong>"nobody"</strong> rehefa <strong>tsy misy olona</strong>.</li>
+        <li>Ampiasao ny <strong>"nothing"</strong> rehefa <strong>tsy misy zavatra</strong>.</li>
+        <li><strong>Aza</strong> mampiasa "not" miaraka amin'ny <strong>nobody, nothing, never, neither</strong> (double negation).</li>
+        <li>Rehefa misy "not" dia mampiasà <strong>anything</strong> fa tsy "nothing", ary <strong>anybody</strong> fa tsy "nobody".</li>
+        <li>Ny <strong>neither...nor</strong> dia mitovy amin'ny <strong>not...either</strong>.</li>
+        <li>Ny <strong>never</strong> dia matetika ampiasaina amin'ny <strong>present perfect</strong> (have/has + ever).</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> "Not" = tsy (fandavana fototra). "Never" = tsy...mihitsy (tsy misy fotoana). "Nobody" = tsy misy olona. "Nothing" = tsy misy zavatra. Ary <strong>aza</strong> mampiasa "not" miaraka amin'izy ireo (double negation) !
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny "Negation".</p>
+      <p>Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

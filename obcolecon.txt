@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Object Complements – Direct and Indirect Object</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .title-main p {
+      font-size: 0.9rem;
+      margin-top: 4px;
+      color: #1e3a8a;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+
+    .verb-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    .verb-table th {
+      background: #1e40af;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    .verb-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    .verb-table tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    .verb-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .color-do { color: #1e40af; font-weight: 700; }
+    .color-io { color: #b45309; font-weight: 700; }
+    
+    .badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 6px;
+    }
+    .badge.do { background: #1e40af; color: white; }
+    .badge.io { background: #b45309; color: white; }
+    
+    .highlight-do {
+      background: #dbeafe;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+      border-left: 4px solid #1e40af;
+    }
+    .highlight-io {
+      background: #fef3c7;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+      border-left: 4px solid #b45309;
+    }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .verb-table {
+        font-size: 0.78rem;
+      }
+      .verb-table th, .verb-table td {
+        padding: 5px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>OBJECT COMPLEMENTS</h1>
+    <p>Direct Object &bull; Indirect Object</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte : Inona ny Object Complements ?                        -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🏷️ Inona ny "Object Complements" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>Object Complements</strong> dia <strong>teny na andian-teny</strong> izay <strong>manome fampahalalana fanampiny</strong> momba ny zavatra iainan'ny matoanteny (verb).<br><br>
+      🔹 Misy karazany roa lehibe :<br><br>
+      <span class="icone">📌</span> <strong>Direct Object (DO)</strong> → zavatra <strong>mivantana</strong> voakasiky ny asa atao.<br>
+      <span class="icone">📌</span> <strong>Indirect Object (IO)</strong> → olona na zavatra <strong>voataona</strong> na <strong>tompoin'ny asa</strong>.<br><br>
+      <strong>🔹 Fanontaniana ahafantarana :</strong><br>
+      • <strong>Direct Object</strong> → mamaly ny <strong>"Inona?"</strong> na <strong>"Iza?"</strong> (What? / Who?)<br>
+      • <strong>Indirect Object</strong> → mamaly ny <strong>"Ho an'iza?"</strong> na <strong>"Ho an'inona?"</strong> (To whom? / For whom? / To what?)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 1. DIRECT OBJECT – Zavatra mivantana                        -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>1️⃣ "DIRECT OBJECT" – Zavatra mivantana <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Zavatra voakasika mivantana)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      Ny <strong>Direct Object</strong> dia <strong>zavatra na olona</strong> izay <strong>mivantana</strong> voakasiky ny asa ataon'ny matoanteny.<br><br>
+      <strong>📌 Fanontaniana :</strong> <strong>"Inona?"</strong> na <strong>"Iza?"</strong> (What? / Who?)<br><br>
+      <strong>📌 Ohatra :</strong><br>
+      • I eat <strong class="color-do">an apple</strong>. → (Inona no hohaniko? <strong class="color-do">An apple</strong>)<br>
+      • She sees <strong class="color-do">him</strong>. → (Iza no hitany? <strong class="color-do">Him</strong>)<br>
+      • They bought <strong class="color-do">a car</strong>. → (Inona no novidiny? <strong class="color-do">A car</strong>)
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🎯</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I eat <strong class="color-do">an apple</strong>. → Mihinana <strong class="color-do">paoma</strong> aho.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She reads <strong class="color-do">a book</strong>. → Mamaky <strong class="color-do">boky</strong> izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They love <strong class="color-do">her</strong>. → Tia <strong class="color-do">azy</strong> izy ireo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He bought <strong class="color-do">a house</strong>. → Nividy <strong class="color-do">trano</strong> izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I see <strong class="color-do">you</strong>. → Mahita <strong class="color-do">anao</strong> aho.</span>
+      </div>
+    </div>
+    <div class="highlight-do">
+      💡 <strong>Tsarovy :</strong> Ny <strong>Direct Object</strong> dia mamaly ny fanontaniana <strong>"Inona?"</strong> na <strong>"Iza?"</strong>. Izy no zavatra <strong>mivantana</strong> voakasiky ny asa.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. INDIRECT OBJECT – Zavatra tsy mivantana                  -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ "INDIRECT OBJECT" – Zavatra tsy mivantana <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(Olona na zavatra voataona)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      Ny <strong>Indirect Object</strong> dia <strong>olona na zavatra</strong> izay <strong>voataona</strong> na <strong>tompoin'ny asa</strong>, fa tsy voakasika mivantana.<br><br>
+      <strong>📌 Fanontaniana :</strong> <strong>"Ho an'iza?"</strong> na <strong>"Ho an'inona?"</strong> (To whom? / For whom? / To what?)<br><br>
+      <strong>📌 Ohatra :</strong><br>
+      • I give <strong class="color-io">her</strong> a book. → (Ho an'iza no homeko boky? <strong class="color-io">Her</strong>)<br>
+      • He sent <strong class="color-io">me</strong> a letter. → (Ho an'iza no nandefasany taratasy? <strong class="color-io">Me</strong>)<br>
+      • She bought <strong class="color-io">him</strong> a gift. → (Ho an'iza no nividiany fanomezana? <strong class="color-io">Him</strong>)
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🎁</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I give <strong class="color-io">her</strong> a flower. → Manome <strong class="color-io">azy</strong> voninkazo aho.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He sent <strong class="color-io">me</strong> an email. → Nandefa <strong class="color-io">ahy</strong> mailaka izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She bought <strong class="color-io">him</strong> a gift. → Nividy <strong class="color-io">azy</strong> fanomezana izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They told <strong class="color-io">us</strong> a story. → Nitantara <strong class="color-io">anay</strong> tantara izy ireo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I cooked <strong class="color-io">you</strong> dinner. → Nahandro <strong class="color-io">anao</strong> sakafo hariva aho.</span>
+      </div>
+    </div>
+    <div class="highlight-io">
+      💡 <strong>Tsarovy :</strong> Ny <strong>Indirect Object</strong> dia mamaly ny fanontaniana <strong>"Ho an'iza?"</strong> na <strong>"Ho an'inona?"</strong>. Izy no <strong>voataona</strong> na <strong>tompoin'ny asa</strong>.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. COMPARAISON : DIRECT vs INDIRECT OBJECT                   -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📊 Fampitahana : Direct Object vs Indirect Object</h2>
+    <div class="definition-mg">
+      <strong>🔹 Tabilao famintinana :</strong>
+    </div>
+    <div class="conjugaison-ligne">
+      <table class="verb-table">
+        <tr><th style="background:#1e40af;">Object</th><th style="background:#1e40af;">Fanontaniana</th><th style="background:#1e40af;">Dikany</th><th style="background:#1e40af;">Ohatra</th></tr>
+        <tr>
+          <td><strong class="color-do">Direct Object</strong></td>
+          <td>Inona? / Iza?<br>(What? / Who?)</td>
+          <td>Zavatra mivantana voakasika</td>
+          <td>I eat <strong class="color-do">an apple</strong>.</td>
+        </tr>
+        <tr>
+          <td><strong class="color-io">Indirect Object</strong></td>
+          <td>Ho an'iza? / Ho an'inona?<br>(To whom? / For whom?)</td>
+          <td>Olona na zavatra voataona</td>
+          <td>I give <strong class="color-io">her</strong> a book.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="highlight" style="margin-top:8px;">
+      💡 <strong>Tsarovy :</strong><br>
+      ✅ <strong class="color-do">Direct Object</strong> → mamaly "Inona?" na "Iza?"<br>
+      ✅ <strong class="color-io">Indirect Object</strong> → mamaly "Ho an'iza?" na "Ho an'inona?"
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 4. FANAZAVANA : Misy matoanteny mila Direct Object ihany         -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📌 Misy matoanteny mila Direct Object ihany</h2>
+    <div class="definition-mg">
+      <strong>🔹 Zava-dehibe tokony hotadidina :</strong><br><br>
+      Ny matoanteny sasany dia <strong>mila Direct Object</strong> mba hahatonga azy ho feno dikany. Ireo dia antsoina hoe <strong>transitive verbs</strong>.<br><br>
+      <span class="icone">📌</span> <strong>Ohatra :</strong> <strong>eat, read, see, buy, love, want</strong><br><br>
+      • I eat. → ❌ (tsy feno dikany)<br>
+      • I eat <strong class="color-do">an apple</strong>. → ✅ (feno dikany)<br><br>
+      Ny <strong>Indirect Object</strong> kosa dia <strong>tsy voatery</strong> amin'ny fehezanteny rehetra. Misy matoanteny mila azy, fa misy koa tsy mila.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>⚠️</span> Ohatra amin'ny matoanteny mila Direct Object
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She <strong>reads</strong> <strong class="color-do">a magazine</strong>. → Mamaky <strong class="color-do">gazety</strong> izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They <strong>want</strong> <strong class="color-do">water</strong>. → Mila <strong class="color-do">rano</strong> izy ireo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He <strong>bought</strong> <strong class="color-do">a new phone</strong>. → Nividy <strong class="color-do">telefaona vaovao</strong> izy.</span>
+      </div>
+    </div>
+    <div class="highlight" style="margin-top:8px;">
+      💡 <strong>Tsarovy :</strong> Ny matoanteny sasany dia <strong>mila Direct Object</strong> mba ho feno dikany. Raha tsy misy azy, dia tsy lavorary ny fehezanteny.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 5. FANAZAVANA : Misy matoanteny afaka maka Direct sy Indirect   -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📌 Misy matoanteny afaka maka Direct sy Indirect miaraka</h2>
+    <div class="definition-mg">
+      <strong>🔹 Zava-dehibe tokony hotadidina :</strong><br><br>
+      Misy matoanteny sasany afaka maka <strong>Direct Object</strong> sy <strong>Indirect Object</strong> miaraka. Ireo dia antsoina hoe <strong>ditransitive verbs</strong>.<br><br>
+      <span class="icone">📌</span> <strong>Ohatra :</strong> <strong>give, send, tell, buy, show, teach</strong><br><br>
+      <strong>Structure :</strong> <strong>Subject + Verb + Indirect Object + Direct Object</strong><br><br>
+      • I give <strong class="color-io">her</strong> <strong class="color-do">a book</strong>.<br>
+      • He sent <strong class="color-io">me</strong> <strong class="color-do">a letter</strong>.<br>
+      • She showed <strong class="color-io">us</strong> <strong class="color-do">her house</strong>.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>📦</span> Ohatra amin'ny ditransitive verbs
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I give <strong class="color-io">him</strong> <strong class="color-do">a gift</strong>. → Manome <strong class="color-io">azy</strong> <strong class="color-do">fanomezana</strong> aho.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She sent <strong class="color-io">her mother</strong> <strong class="color-do">a letter</strong>. → Nandefa <strong class="color-io">ny reniny</strong> <strong class="color-do">taratasy</strong> izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They told <strong class="color-io">us</strong> <strong class="color-do">the truth</strong>. → Nilaza <strong class="color-io">anay</strong> <strong class="color-do">ny marina</strong> izy ireo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He bought <strong class="color-io">his daughter</strong> <strong class="color-do">a bike</strong>. → Nividy <strong class="color-io">ny zanany vavy</strong> <strong class="color-do">bisikileta</strong> izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We showed <strong class="color-io">them</strong> <strong class="color-do">our photos</strong>. → Nasehonay <strong class="color-io">azy ireo</strong> <strong class="color-do">ny sarintsika</strong>.</span>
+      </div>
+    </div>
+    <div class="highlight" style="margin-top:8px;">
+      💡 <strong>Tsarovy :</strong> Misy matoanteny afaka maka <strong>Direct</strong> sy <strong>Indirect</strong> miaraka (ohatra : give, send, tell, show). Ny <strong>Indirect Object</strong> dia eo alohan'ny <strong>Direct Object</strong>.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 6. FANAZAVANA : PRONOUNS AMIN'NY OBJECT                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📌 Pronouns amin'ny maha-Object</h2>
+    <div class="definition-mg">
+      <strong>🔹 Zava-dehibe tokony hotadidina :</strong><br><br>
+      Rehefa <strong>mpisolo anarana (pronoun)</strong> no ampiasaina ho <strong>Object</strong>, dia tsy maintsy mampiasa ny <strong>object pronouns</strong>.<br><br>
+      <strong>📌 Object Pronouns :</strong><br>
+      <strong>me, you, him, her, it, us, them</strong><br><br>
+      <span class="icone">📌</span> <strong>Direct Object :</strong> I see <strong class="color-do">him</strong>.<br>
+      <span class="icone">📌</span> <strong>Indirect Object :</strong> I give <strong class="color-io">her</strong> a book.
+    </div>
+    <div class="conjugaison-ligne">
+      <table class="verb-table">
+        <tr><th style="background:#1e40af;">Sujet (Subject)</th><th style="background:#1e40af;">Objet (Object)</th><th style="background:#1e40af;">Dikany</th></tr>
+        <tr><td>I</td><td><strong class="color-do">me</strong></td><td>ahy</td></tr>
+        <tr><td>You</td><td><strong class="color-do">you</strong></td><td>anao / anareo</td></tr>
+        <tr><td>He</td><td><strong class="color-do">him</strong></td><td>azy (lehilahy)</td></tr>
+        <tr><td>She</td><td><strong class="color-do">her</strong></td><td>azy (vehivavy)</td></tr>
+        <tr><td>It</td><td><strong class="color-do">it</strong></td><td>izy / io (zavatra)</td></tr>
+        <tr><td>We</td><td><strong class="color-do">us</strong></td><td>anay</td></tr>
+        <tr><td>They</td><td><strong class="color-do">them</strong></td><td>azy ireo</td></tr>
+      </table>
+    </div>
+    <div class="highlight" style="margin-top:8px;">
+      💡 <strong>Tsarovy :</strong> Rehefa <strong>Object</strong> ny pronon, dia ampiasao ny <strong>object pronouns</strong> : me, you, him, her, it, us, them.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. Ohatra fanampiny                                          -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li>I love <strong class="color-do">you</strong>. → Tiako <strong class="color-do">anao</strong>. <span class="badge do">DO</span></li>
+        <li>She gave <strong class="color-io">me</strong> <strong class="color-do">a present</strong>. → Nanome <strong class="color-io">ahy</strong> <strong class="color-do">fanomezana</strong> izy. <span class="badge io">IO</span> <span class="badge do">DO</span></li>
+        <li>He told <strong class="color-io">her</strong> <strong class="color-do">the news</strong>. → Nanolotra <strong class="color-io">azy</strong> <strong class="color-do">ny vaovao</strong> izy. <span class="badge io">IO</span> <span class="badge do">DO</span></li>
+        <li>They saw <strong class="color-do">us</strong>. → Nahita <strong class="color-do">anay</strong> izy ireo. <span class="badge do">DO</span></li>
+        <li>I bought <strong class="color-io">my sister</strong> <strong class="color-do">a dress</strong>. → Nividy <strong class="color-io">ny rahavaviko</strong> <strong class="color-do">akanjo</strong> aho. <span class="badge io">IO</span> <span class="badge do">DO</span></li>
+        <li>We sent <strong class="color-io">them</strong> <strong class="color-do">an invitation</strong>. → Nandefa <strong class="color-io">azy ireo</strong> <strong class="color-do">fanasana</strong> izahay. <span class="badge io">IO</span> <span class="badge do">DO</span></li>
+        <li>She loves <strong class="color-do">him</strong>. → Tia <strong class="color-do">azy</strong> izy. <span class="badge do">DO</span></li>
+        <li>He showed <strong class="color-io">us</strong> <strong class="color-do">his house</strong>. → Nasehony <strong class="color-io">anay</strong> <strong class="color-do">ny tranony</strong>. <span class="badge io">IO</span> <span class="badge do">DO</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. TOROHEVITRA MAHASOA                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Mametraha fanontaniana <strong>"Inona?"</strong> na <strong>"Iza?"</strong> mba hahitana ny <strong>Direct Object</strong>.</li>
+        <li>Mametraha fanontaniana <strong>"Ho an'iza?"</strong> na <strong>"Ho an'inona?"</strong> mba hahitana ny <strong>Indirect Object</strong>.</li>
+        <li>Ny <strong>Direct Object</strong> dia zavatra <strong>mivantana</strong> voakasiky ny asa.</li>
+        <li>Ny <strong>Indirect Object</strong> dia olona na zavatra <strong>voataona</strong> na <strong>tompoin'ny asa</strong>.</li>
+        <li>Misy matoanteny <strong>mila Direct Object</strong> ihany (ohatra : eat, read, see, buy).</li>
+        <li>Misy matoanteny afaka maka <strong>Direct sy Indirect</strong> miaraka (ohatra : give, send, tell, show).</li>
+        <li>Rehefa <strong>Object</strong> ny pronon, dia ampiasao ny <strong>object pronouns</strong> : me, you, him, her, it, us, them.</li>
+        <li>Ny <strong>Indirect Object</strong> dia matetika eo <strong>alohan'ny Direct Object</strong>.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> "Direct Object" = Inona? / Iza? (zavatra mivantana). "Indirect Object" = Ho an'iza? / Ho an'inona? (zavatra voataona). Io no fototry ny fampiasana azy ireo !
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny "Object Complements".</p>
+      <p>Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Interrogative Words – Why, How, What, When, Where, How Many</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .title-main p {
+      font-size: 0.9rem;
+      margin-top: 4px;
+      color: #1e3a8a;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+
+    .verb-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    .verb-table th {
+      background: #1e40af;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    .verb-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    .verb-table tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    .verb-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .color-why { color: #1e40af; font-weight: 700; }
+    .color-how { color: #b45309; font-weight: 700; }
+    .color-what { color: #0d9488; font-weight: 700; }
+    .color-when { color: #7c3aed; font-weight: 700; }
+    .color-where { color: #d97706; font-weight: 700; }
+    .color-howmany { color: #dc2626; font-weight: 700; }
+    
+    .badge {
+      display: inline-block;
+      font-size: 0.55rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-left: 4px;
+      background: #e2e6cf;
+      color: #1f3d34;
+    }
+    
+    .qw-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .qw-box {
+      background: #f8faf8;
+      border-radius: 16px;
+      padding: 14px;
+      border: 2px solid #e2e6cf;
+      text-align: center;
+    }
+    .qw-box .qw-word {
+      font-size: 1.3rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .qw-box .qw-meaning {
+      font-size: 0.8rem;
+      color: #1f3d34;
+      display: block;
+    }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .verb-table {
+        font-size: 0.78rem;
+      }
+      .verb-table th, .verb-table td {
+        padding: 5px 8px;
+      }
+      .qw-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>INTERROGATIVE WORDS</h1>
+    <p>Why &bull; How &bull; What &bull; When &bull; Where &bull; How Many</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte : Inona ny Interrogative Words ?                       -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🏷️ Inona ny "Interrogative Words" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>interrogative words</strong> dia <strong>teny fampiasaina hanontaniana</strong> mba hahazoana fampahalalana.<br><br>
+      🔹 Izy ireo dia apetraka <strong>eo am-piandohan'ny fehezanteny</strong> (na eo alohan'ny matoanteny).<br><br>
+      🔹 Antsoina koa hoe <strong>"Wh-words"</strong> satria ny ankamaroany dia manomboka amin'ny "wh" (why, what, when, where) — fa misy koa "how" sy "how many".<br><br>
+      <span class="icone">📌</span> <strong>Why</strong> → manontany <strong>antony</strong> (Nahoana?)<br>
+      <span class="icone">📌</span> <strong>How</strong> → manontany <strong>fomba</strong> (Ahoana?)<br>
+      <span class="icone">📌</span> <strong>What</strong> → manontany <strong>zavatra</strong> (Inona?)<br>
+      <span class="icone">📌</span> <strong>When</strong> → manontany <strong>fotoana</strong> (Rahoviana?)<br>
+      <span class="icone">📌</span> <strong>Where</strong> → manontany <strong>toerana</strong> (Aiza?)<br>
+      <span class="icone">📌</span> <strong>How many</strong> → manontany <strong>isa</strong> (Firy?)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Lisitry ny interrogative words rehetra                       -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📋 Lisitry ny Interrogative Words</h2>
+    <div class="qw-grid">
+      <div class="qw-box"><span class="qw-word color-why">why</span><span class="qw-meaning">nahoana</span></div>
+      <div class="qw-box"><span class="qw-word color-how">how</span><span class="qw-meaning">ahoana</span></div>
+      <div class="qw-box"><span class="qw-word color-what">what</span><span class="qw-meaning">inona</span></div>
+      <div class="qw-box"><span class="qw-word color-when">when</span><span class="qw-meaning">rahoviana</span></div>
+      <div class="qw-box"><span class="qw-word color-where">where</span><span class="qw-meaning">aiza</span></div>
+      <div class="qw-box"><span class="qw-word color-howmany">how many</span><span class="qw-meaning">firy</span></div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 1. WHY – Nahoana                                            -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>1️⃣ "WHY" – Nahoana? <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Antony / Reason)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Why</strong> dia ampiasaina hanontaniana ny <strong>antony</strong> na ny <strong>fototra</strong> nahatonga zavatra iray.<br><br>
+      <strong>📌 Valiny :</strong> matetika misy "because" (satria).
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>❓</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-why">Why</strong> are you sad? → <strong class="color-why">Nahoana</strong> no malahelo ianao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-why">Why</strong> did you come late? → <strong class="color-why">Nahoana</strong> no tara ianao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-why">Why</strong> is she crying? → <strong class="color-why">Nahoana</strong> no mitomany izy?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-why">Why</strong> do you study English? → <strong class="color-why">Nahoana</strong> no mianatra teny anglisy ianao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-why">Why</strong> not? → <strong class="color-why">Nahoana</strong> no tsia?</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "Why" dia manontany ny <strong>antony</strong>. Ny valiny matetika dia manomboka amin'ny "because".</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. HOW – Ahoana                                             -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ "HOW" – Ahoana? <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(Fomba / Manner)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>How</strong> dia ampiasaina hanontaniana ny <strong>fomba</strong> na ny <strong>toetran'ny</strong> zavatra iray.<br><br>
+      <strong>📌 Valiny :</strong> mamaritra ny fomba na toetra.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>❓</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-how">How</strong> are you? → <strong class="color-how">Ahoana</strong> ianao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-how">How</strong> do you go to school? → <strong class="color-how">Ahoana</strong> no andehananao any am-pianarana?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-how">How</strong> does it work? → <strong class="color-how">Ahoana</strong> no fiasany?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-how">How</strong> was your day? → <strong class="color-how">Ahoana</strong> ny andronao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-how">How</strong> can I help you? → <strong class="color-how">Ahoana</strong> no ahafahako manampy anao?</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "How" dia manontany ny <strong>fomba</strong> na ny <strong>toetra</strong>. Ampiasaina koa izy hilazana <strong>habetsahana</strong> miaraka amin'ny adjectives (how tall, how big).</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. WHAT – Inona                                             -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>3️⃣ "WHAT" – Inona? <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(Zavatra / Thing)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>What</strong> dia ampiasaina hanontaniana ny <strong>zavatra</strong>, ny <strong>asa</strong>, na ny <strong>fanazavana</strong> momba zavatra iray.<br><br>
+      <strong>📌 Valiny :</strong> anarana na fanazavana momba ilay zavatra.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>❓</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-what">What</strong> is your name? → <strong class="color-what">Inona</strong> ny anaranao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-what">What</strong> do you do? → <strong class="color-what">Inona</strong> no asanao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-what">What</strong> is this? → <strong class="color-what">Inona</strong> ity?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-what">What</strong> time is it? → <strong class="color-what">Inona</strong> ny ora?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-what">What</strong> do you want? → <strong class="color-what">Inona</strong> no tadiavinao?</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "What" dia manontany ny <strong>zavatra</strong> na ny <strong>fanazavana</strong>. Izy no tena ampiasaina indrindra amin'ny fanontaniana.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 4. WHEN – Rahoviana                                         -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>4️⃣ "WHEN" – Rahoviana? <span style="font-size:0.8rem;color:#7c3aed;font-weight:400;">(Fotoana / Time)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>When</strong> dia ampiasaina hanontaniana ny <strong>fotoana</strong> nitrangan'ny zavatra iray.<br><br>
+      <strong>📌 Valiny :</strong> daty, ora, andro, volana, taona.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>❓</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-when">When</strong> is your birthday? → <strong class="color-when">Rahoviana</strong> ny fitsingerenan'ny andro nahaterahanao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-when">When</strong> will you come? → <strong class="color-when">Rahoviana</strong> no ho avy ianao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-when">When</strong> did she leave? → <strong class="color-when">Rahoviana</strong> no nandeha izy?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-when">When</strong> does the movie start? → <strong class="color-when">Rahoviana</strong> no manomboka ilay sarimihetsika?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-when">When</strong> is the meeting? → <strong class="color-when">Rahoviana</strong> ny fivoriana?</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "When" dia manontany ny <strong>fotoana</strong>. Ny valiny dia mety ho daty, ora, andro, na taona.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 5. WHERE – Aiza                                             -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>5️⃣ "WHERE" – Aiza? <span style="font-size:0.8rem;color:#d97706;font-weight:400;">(Toerana / Place)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Where</strong> dia ampiasaina hanontaniana ny <strong>toerana</strong> misy zavatra iray.<br><br>
+      <strong>📌 Valiny :</strong> toerana (trano, tanàna, firenena, sns).
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>❓</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-where">Where</strong> do you live? → <strong class="color-where">Aiza</strong> no ipetrahanao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-where">Where</strong> is the school? → <strong class="color-where">Aiza</strong> ny sekoly?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-where">Where</strong> are my keys? → <strong class="color-where">Aiza</strong> ny lakileko?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-where">Where</strong> did you go? → <strong class="color-where">Aiza</strong> no nandehananao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-where">Where</strong> is she from? → <strong class="color-where">Aiza</strong> no niaviany?</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "Where" dia manontany ny <strong>toerana</strong>. Ny valiny dia mety ho anaran-toerana na famaritana toerana.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 6. HOW MANY – Firy                                          -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>6️⃣ "HOW MANY" – Firy? <span style="font-size:0.8rem;color:#dc2626;font-weight:400;">(Isa / Quantity)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>How many</strong> dia ampiasaina hanontaniana ny <strong>isa</strong> na ny <strong>habetsahan'ny</strong> zavatra azo isaina.<br><br>
+      <strong>📌 Valiny :</strong> isa (1, 2, 3, ...).<br><br>
+      <strong>⚠️ Tsarovy :</strong> Ampiasaina amin'ny <strong>zavatra azo isaina</strong> (countable nouns) ihany.
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>❓</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-howmany">How many</strong> books do you have? → <strong class="color-howmany">Firy</strong> ny boky anananao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-howmany">How many</strong> people are there? → <strong class="color-howmany">Firy</strong> ny olona ao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-howmany">How many</strong> apples do you want? → <strong class="color-howmany">Firy</strong> ny paoma tadiavinao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-howmany">How many</strong> students are in your class? → <strong class="color-howmany">Firy</strong> ny mpianatra ao amin'ny kilasinao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-howmany">How many</strong> times did you go? → <strong class="color-howmany">Firy</strong> indray ianao no nandeha?</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "How many" dia manontany ny <strong>isa</strong> ho an'ny <strong>zavatra azo isaina</strong>. Raha tsy azo isaina (uncountable), dia "how much" no ampiasaina.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. TABLEAU RÉCAPITULATIF                                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
+    <div class="definition-mg">
+      <strong>🔹 Fampitahana ny interrogative words :</strong>
+    </div>
+    <div class="conjugaison-ligne">
+      <table class="verb-table">
+        <tr><th style="background:#1e40af;">Interrogative</th><th style="background:#1e40af;">Fanontaniana</th><th style="background:#1e40af;">Dikany malagasy</th></tr>
+        <tr><td><strong class="color-why">Why</strong></td><td>Antony (Reason)</td><td>Nahoana</td></tr>
+        <tr><td><strong class="color-how">How</strong></td><td>Fomba (Manner)</td><td>Ahoana</td></tr>
+        <tr><td><strong class="color-what">What</strong></td><td>Zavatra (Thing)</td><td>Inona</td></tr>
+        <tr><td><strong class="color-when">When</strong></td><td>Fotoana (Time)</td><td>Rahoviana</td></tr>
+        <tr><td><strong class="color-where">Where</strong></td><td>Toerana (Place)</td><td>Aiza</td></tr>
+        <tr><td><strong class="color-howmany">How many</strong></td><td>Isa (Quantity)</td><td>Firy</td></tr>
+      </table>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong><br>
+      ✅ <strong class="color-why">Why</strong> → nahoana (antony)<br>
+      ✅ <strong class="color-how">How</strong> → ahoana (fomba)<br>
+      ✅ <strong class="color-what">What</strong> → inona (zavatra)<br>
+      ✅ <strong class="color-when">When</strong> → rahoviana (fotoana)<br>
+      ✅ <strong class="color-where">Where</strong> → aiza (toerana)<br>
+      ✅ <strong class="color-howmany">How many</strong> → firy (isa)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. FANAZAVANA : STRUCTURE AMIN'NY FANONTANIANA              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📌 Structure amin'ny fanontaniana</h2>
+    <div class="definition-mg">
+      <strong>🔹 Ny firafitry ny fanontaniana amin'ny interrogative words :</strong><br><br>
+      <strong>Interrogative Word + Auxiliaire / Verbe + Sujet + Verbe principal + ... ?</strong><br><br>
+      <span class="icone">📌</span> <strong>Ohatra :</strong><br>
+      • <strong>What</strong> are you doing?<br>
+      • <strong>Where</strong> do you live?<br>
+      • <strong>Why</strong> is she crying?<br><br>
+      <strong>⚠️ Tsarovy :</strong> Raha "who" no ampiasaina ho <strong>sujet</strong>, dia tsy misy auxiliaire fanampiny (ohatra : Who called you?).
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>📝</span> Firafitry ny fanontaniana</div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-what">What</strong> + are + you + doing? → <strong class="color-what">Inona</strong> no ataonao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-where">Where</strong> + do + you + live? → <strong class="color-where">Aiza</strong> no ipetrahanao?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-why">Why</strong> + did + she + go? → <strong class="color-why">Nahoana</strong> no nandeha izy?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-how">How</strong> + do + you + spell + this? → <strong class="color-how">Ahoana</strong> no fanoratanao ity?</span></div>
+      <div class="exo-ligne"><span class="fr"><strong class="color-when">When</strong> + will + they + come? → <strong class="color-when">Rahoviana</strong> no ho avy izy ireo?</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> Ny interrogative words dia apetraka <strong>eo am-piandohana</strong> ny fehezanteny. Avy eo ny <strong>auxiliaire</strong> (do, does, did, is, are, was, were, will...), arahan'ny <strong>sujet</strong>, ary ny <strong>verbe principal</strong>.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 9. Ohatra fanampiny                                          -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li><strong class="color-why">Why</strong> are you tired? → <strong class="color-why">Nahoana</strong> no reraka ianao?</li>
+        <li><strong class="color-how">How</strong> did you do that? → <strong class="color-how">Ahoana</strong> no nanaovanao izany?</li>
+        <li><strong class="color-what">What</strong> is your favorite food? → <strong class="color-what">Inona</strong> ny sakafo tianao indrindra?</li>
+        <li><strong class="color-when">When</strong> is the party? → <strong class="color-when">Rahoviana</strong> ny fety?</li>
+        <li><strong class="color-where">Where</strong> is the nearest hospital? → <strong class="color-where">Aiza</strong> ny hopitaly akaiky indrindra?</li>
+        <li><strong class="color-howmany">How many</strong> children do they have? → <strong class="color-howmany">Firy</strong> ny zanany?</li>
+        <li><strong class="color-why">Why</strong> don't you like coffee? → <strong class="color-why">Nahoana</strong> no tsy tianao ny kafe?</li>
+        <li><strong class="color-how">How</strong> is your family? → <strong class="color-how">Ahoana</strong> ny fianakavianao?</li>
+        <li><strong class="color-what">What</strong> happened? → <strong class="color-what">Inona</strong> no nitranga?</li>
+        <li><strong class="color-where">Where</strong> are we going? → <strong class="color-where">Aiza</strong> no halehantsika?</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 10. TOROHEVITRA MAHASOA                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Ampiasao ny <strong>"Why"</strong> raha te hahalala ny <strong>antony</strong>.</li>
+        <li>Ampiasao ny <strong>"How"</strong> raha te hahalala ny <strong>fomba</strong>.</li>
+        <li>Ampiasao ny <strong>"What"</strong> raha te hahalala ny <strong>zavatra</strong>.</li>
+        <li>Ampiasao ny <strong>"When"</strong> raha te hahalala ny <strong>fotoana</strong>.</li>
+        <li>Ampiasao ny <strong>"Where"</strong> raha te hahalala ny <strong>toerana</strong>.</li>
+        <li>Ampiasao ny <strong>"How many"</strong> raha te hahalala ny <strong>isa</strong> (ho an'ny zavatra azo isaina).</li>
+        <li>Ny interrogative words dia apetraka <strong>eo am-piandohana</strong> ny fehezanteny.</li>
+        <li>Araho ny structure : <strong>Interrogative Word + Auxiliaire + Sujet + Verbe + ... ?</strong></li>
+        <li>Raha <strong>"who"</strong> no manontany ny <strong>sujet</strong>, dia tsy misy auxiliaire fanampiny.</li>
+        <li>Mampiasà <strong>"how much"</strong> raha zavatra <strong>tsy azo isaina</strong> (uncountable) ny resahina.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> "Why" = nahoana, "How" = ahoana, "What" = inona, "When" = rahoviana, "Where" = aiza, "How many" = firy. Io no fototry ny fampiasana azy ireo !
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny "Interrogative Words".</p>
+      <p>Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+1. ___ is my book. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no bokiko.
+
+2. ___ are my pens. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no peniko.
+
+3. ___ is your house over there. (far)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" dia ampiasaina ho an'ny zavatra lavitra (singulier).
+TRADUCTION: Io no tranonao any.
+
+4. ___ are her shoes. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no kirarony.
+
+5. ___ is my car. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no fiarako.
+
+6. ___ are his keys. (far)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" dia ampiasaina ho an'ny zavatra lavitra (pluriel).
+TRADUCTION: Ireo no lakileny any.
+
+7. ___ is your pen. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no peninao.
+
+8. ___ are her books. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no bokiny.
+
+9. ___ is his bag. (far)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" dia ampiasaina ho an'ny zavatra lavitra (singulier).
+TRADUCTION: Io no kitapony any.
+
+10. ___ are my glasses. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no solomasoko.
+
+11. ___ is her dress. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no akanjony.
+
+12. ___ are his shoes. (far)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" dia ampiasaina ho an'ny zavatra lavitra (pluriel).
+TRADUCTION: Ireo no kirarony any.
+
+13. ___ is my phone. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no findaiko.
+
+14. ___ are your keys. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no lakilenao.
+
+15. ___ is his house. (far)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" dia ampiasaina ho an'ny zavatra lavitra (singulier).
+TRADUCTION: Io no tranony any.
+
+16. ___ are her pens. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no peniny.
+
+17. ___ is my bag. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no kitapoko.
+
+18. ___ are his books. (far)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" dia ampiasaina ho an'ny zavatra lavitra (pluriel).
+TRADUCTION: Ireo no bokiny any.
+
+19. ___ is your car. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no fiaranao.
+
+20. ___ are her shoes. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no kirarony.
+
+21. ___ is his pen. (far)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" dia ampiasaina ho an'ny zavatra lavitra (singulier).
+TRADUCTION: Io no peniny any.
+
+22. ___ are my books. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no bokiko.
+
+23. ___ is her bag. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no kitapony.
+
+24. ___ are his glasses. (far)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" dia ampiasaina ho an'ny zavatra lavitra (pluriel).
+TRADUCTION: Ireo no solomasony any.
+
+25. ___ is my house. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no tranoko.
+
+26. ___ are your pens. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no peninao.
+
+27. ___ is his car. (far)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" dia ampiasaina ho an'ny zavatra lavitra (singulier).
+TRADUCTION: Io no fiarany any.
+
+28. ___ are her keys. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no lakileny.
+
+29. ___ is my pen. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no peniko.
+
+30. ___ are his books. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no bokiny.
+
+31. ___ is her house. (far)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" dia ampiasaina ho an'ny zavatra lavitra (singulier).
+TRADUCTION: Io no tranony any.
+
+32. ___ are my shoes. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no kiraroko.
+
+33. ___ is his bag. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no kitapony.
+
+34. ___ are her books. (far)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" dia ampiasaina ho an'ny zavatra lavitra (pluriel).
+TRADUCTION: Ireo no bokiny any.
+
+35. ___ is your phone. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no findainao.
+
+36. ___ are his pens. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no peniny.
+
+37. ___ is her car. (far)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" dia ampiasaina ho an'ny zavatra lavitra (singulier).
+TRADUCTION: Io no fiarany any.
+
+38. ___ are my keys. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no lakileko.
+
+39. ___ is his house. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no tranony.
+
+40. ___ are your books. (far)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" dia ampiasaina ho an'ny zavatra lavitra (pluriel).
+TRADUCTION: Ireo no bokinao any.
+
+41. ___ is her bag. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no kitapony.
+
+42. ___ are his shoes. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no kirarony.
+
+43. ___ is my car. (far)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" dia ampiasaina ho an'ny zavatra lavitra (singulier).
+TRADUCTION: Io no fiarako any.
+
+44. ___ are her pens. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no peniny.
+
+45. ___ is his phone. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no findainy.
+
+46. ___ are my books. (far)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" dia ampiasaina ho an'ny zavatra lavitra (pluriel).
+TRADUCTION: Ireo no bokiko any.
+
+47. ___ is her house. (near)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" dia ampiasaina ho an'ny zavatra akaiky (singulier).
+TRADUCTION: Ity no tranony.
+
+48. ___ are your keys. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no lakilenao.
+
+49. ___ is his bag. (far)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" dia ampiasaina ho an'ny zavatra lavitra (singulier).
+TRADUCTION: Io no kitapony any.
+
+50. ___ are her shoes. (near)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" dia ampiasaina ho an'ny zavatra akaiky (pluriel).
+TRADUCTION: Ireto no kirarony.

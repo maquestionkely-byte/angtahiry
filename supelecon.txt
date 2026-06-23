@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Subject Personal Pronouns – I, You, He, She, We, They</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+
+    .verb-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    .verb-table th {
+      background: #1e40af;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    .verb-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    .verb-table tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    .verb-table tr:last-child td {
+      border-bottom: none;
+    }
+    .verb-table .mg-trans {
+      color: #1e3a5f;
+      font-weight: 500;
+    }
+    
+    .color-i { color: #1e40af; font-weight: 700; }
+    .color-you { color: #b45309; font-weight: 700; }
+    .color-he { color: #0d9488; font-weight: 700; }
+    .color-she { color: #7c3aed; font-weight: 700; }
+    .color-we { color: #dc2626; font-weight: 700; }
+    .color-they { color: #d97706; font-weight: 700; }
+    
+    .use-tag {
+      display: inline-block;
+      color: white;
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 6px;
+    }
+    .use-tag.i { background: #1e40af; }
+    .use-tag.you { background: #b45309; }
+    .use-tag.he { background: #0d9488; }
+    .use-tag.she { background: #7c3aed; }
+    .use-tag.we { background: #dc2626; }
+    .use-tag.they { background: #d97706; }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .verb-table {
+        font-size: 0.78rem;
+      }
+      .verb-table th, .verb-table td {
+        padding: 5px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>SUBJECT PERSONAL PRONOUNS</h1>
+    <p style="font-size:0.9rem;margin-top:4px;color:#1e3a8a;">I &bull; You &bull; He &bull; She &bull; We &bull; They</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte : Inona ny subject personal pronouns ?                -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🏷️ Inona ny "subject personal pronouns" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>subject personal pronouns</strong> dia <strong>mpisolo anarana</strong> ampiasaina <strong>hisolo ny anaran'olona na zavatra</strong> izay <strong>mpanao (sujet)</strong> ny matoanteny.<br><br>
+      🔹 Izy ireo dia <strong>mijoro eo alohan'ny matoanteny</strong> ary <strong>manao ny asa</strong> voalazan'ilay matoanteny.<br><br>
+      🔹 Ny <strong>"I"</strong> → ho an'ny <strong>tena miteny</strong> (mpanao voalohany tokana).<br><br>
+      🔹 Ny <strong>"you"</strong> → ho an'ny <strong>olona iresahana</strong> (mpanao faharoa tokana na maro).<br><br>
+      🔹 Ny <strong>"he"</strong> → ho an'ny <strong>lahy</strong> (mpanao fahatelo tokana).<br><br>
+      🔹 Ny <strong>"she"</strong> → ho an'ny <strong>vavy</strong> (mpanao fahatelo tokana).<br><br>
+      🔹 Ny <strong>"we"</strong> → ho an'ny <strong>tena miteny sy ny hafa</strong> (mpanao voalohany maro).<br><br>
+      🔹 Ny <strong>"they"</strong> → ho an'ny <strong>olona na zavatra maro</strong> (mpanao fahatelo maro).<br><br>
+      <span class="icone">📌</span> <strong>I</strong> → aho / izaho<br>
+      <span class="icone">📌</span> <strong>You</strong> → ianao / ianareo<br>
+      <span class="icone">📌</span> <strong>He</strong> → izy (lahy)<br>
+      <span class="icone">📌</span> <strong>She</strong> → izy (vavy)<br>
+      <span class="icone">📌</span> <strong>We</strong> → isika / izahay<br>
+      <span class="icone">📌</span> <strong>They</strong> → izy ireo / izy (maro)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 1. I – Mpanao voalohany tokana                             -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>1️⃣ "I" – Aho / Izaho <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Mpanao voalohany tokana)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"I"</strong> dia ampiasaina ho an'ny <strong>tena miteny</strong> (mpanao voalohany tokana).<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Aho"</strong> na <strong>"izaho"</strong> (ilay miteny).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👤</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-i">I</strong> am a student. → <strong>Izaho</strong> dia mpianatra.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-i">I</strong> like pizza. → <strong>Izaho</strong> dia tia pizza.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-i">I</strong> live in Madagascar. → <strong>Izaho</strong> dia mipetraka any Madagasikara.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-i">I</strong> have a brother. → <strong>Izaho</strong> dia manana rahalahy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-i">I</strong> am happy. → <strong>Izaho</strong> dia faly.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"I"</strong> dia <strong>lehibe</strong> foana amin'ny soratra (capital letter). Ohatra : <em><strong>I</strong> am a teacher.</em> ❌ <em>i am a teacher.</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. YOU – Mpanao faharoa tokana na maro                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ "YOU" – Ianao / Ianareo <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(Mpanao faharoa tokana na maro)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"You"</strong> dia ampiasaina ho an'ny <strong>olona iresahana</strong> (mpanao faharoa).<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Ianao"</strong> (tokana) na <strong>"ianareo"</strong> (maro) — tsy miova ny endriny.
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👤</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-you">You</strong> are my friend. → <strong>Ianao</strong> dia namako.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-you">You</strong> are students. → <strong>Ianareo</strong> dia mpianatra.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-you">You</strong> speak English. → <strong>Ianao</strong> dia miteny anglisy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-you">You</strong> have a car. → <strong>Ianao</strong> dia manana fiara.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-you">You</strong> are kind. → <strong>Ianao</strong> dia tsara fanahy.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"you"</strong> dia mitovy na ho an'ny <strong>olona iray</strong> na <strong>olona maro</strong>. Ohatra : <em>You are my friend.</em> (ianao iray) / <em>You are my friends.</em> (ianareo maro)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. HE – Mpanao fahatelo tokana (lahy)                     -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>3️⃣ "HE" – Izy (lahy) <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(Mpanao fahatelo tokana – lahy)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"He"</strong> dia ampiasaina ho an'ny <strong>lahy</strong> (mpanao fahatelo tokana).<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Izy"</strong> (lahy).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👦</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-he">He</strong> is my father. → <strong>Izy</strong> dia raiko.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-he">He</strong> works in a hospital. → <strong>Izy</strong> dia miasa any amin'ny hopitaly.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-he">He</strong> has a dog. → <strong>Izy</strong> dia manana alika.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-he">He</strong> is tall. → <strong>Izy</strong> dia lava.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-he">He</strong> plays football. → <strong>Izy</strong> dia milalao baolina kitra.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"he"</strong> dia ho an'ny <strong>lahy</strong> ihany. Ohatra : <em>He is my brother.</em> (rahalahy)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 4. SHE – Mpanao fahatelo tokana (vavy)                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>4️⃣ "SHE" – Izy (vavy) <span style="font-size:0.8rem;color:#7c3aed;font-weight:400;">(Mpanao fahatelo tokana – vavy)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"She"</strong> dia ampiasaina ho an'ny <strong>vavy</strong> (mpanao fahatelo tokana).<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Izy"</strong> (vavy).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👧</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-she">She</strong> is my mother. → <strong>Izy</strong> dia reniko.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-she">She</strong> is a teacher. → <strong>Izy</strong> dia mpampianatra.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-she">She</strong> has a sister. → <strong>Izy</strong> dia manana anabavy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-she">She</strong> is beautiful. → <strong>Izy</strong> dia tsara tarehy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-she">She</strong> sings well. → <strong>Izy</strong> dia mihira tsara.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"she"</strong> dia ho an'ny <strong>vavy</strong> ihany. Ohatra : <em>She is my sister.</em> (rahavavy)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 5. WE – Mpanao voalohany maro                             -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>5️⃣ "WE" – Isika / Izahay <span style="font-size:0.8rem;color:#dc2626;font-weight:400;">(Mpanao voalohany maro)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"We"</strong> dia ampiasaina ho an'ny <strong>tena miteny sy ny hafa</strong> (mpanao voalohany maro).<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Isika"</strong> (miteny + olona iresahana) na <strong>"izahay"</strong> (miteny + hafa tsy iresahana).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👥</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-we">We</strong> are students. → <strong>Izahay</strong> dia mpianatra.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-we">We</strong> live in Antananarivo. → <strong>Izahay</strong> dia mipetraka any Antananarivo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-we">We</strong> have a house. → <strong>Izahay</strong> dia manana trano.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-we">We</strong> are happy. → <strong>Isika</strong> dia faly.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-we">We</strong> speak French. → <strong>Izahay</strong> dia miteny frantsay.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"we"</strong> dia ho an'ny <strong>olona maro</strong> izay ahitana ilay miteny. Ohatra : <em>We are going to school.</em> (mandeha any an-tsekoly izahay)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 6. THEY – Mpanao fahatelo maro                           -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>6️⃣ "THEY" – Izy ireo / Izy (maro) <span style="font-size:0.8rem;color:#d97706;font-weight:400;">(Mpanao fahatelo maro)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"They"</strong> dia ampiasaina ho an'ny <strong>olona na zavatra maro</strong> (mpanao fahatelo maro).<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Izy ireo"</strong> na <strong>"izy"</strong> (maro).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👥</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-they">They</strong> are my friends. → <strong>Izy ireo</strong> dia namako.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-they">They</strong> live in France. → <strong>Izy ireo</strong> dia mipetraka any Frantsa.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-they">They</strong> have two cars. → <strong>Izy ireo</strong> dia manana fiara roa.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-they">They</strong> are happy. → <strong>Izy ireo</strong> dia faly.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-they">They</strong> speak English. → <strong>Izy ireo</strong> dia miteny anglisy.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"they"</strong> dia ho an'ny <strong>olona na zavatra maro</strong>. Ohatra : <em>They are my parents.</em> (izy ireo no ray aman-dreniko)
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. TABLEAU RÉCAPITULATIF                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
+    <div class="definition-mg">
+      <strong>🔹 Fampitahana ny subject personal pronouns :</strong>
+    </div>
+    <div class="conjugaison-ligne">
+      <table class="verb-table">
+        <tr><th style="background:#1e40af;">Pronom</th><th style="background:#1e40af;">Personne</th><th style="background:#1e40af;">Nombre</th><th style="background:#1e40af;">Dikany malagasy</th></tr>
+        <tr><td><strong class="color-i">I</strong></td><td>1ère</td><td>Singulier (tokana)</td><td>Aho / Izaho</td></tr>
+        <tr><td><strong class="color-you">You</strong></td><td>2ème</td><td>Singulier / Pluriel</td><td>Ianao / Ianareo</td></tr>
+        <tr><td><strong class="color-he">He</strong></td><td>3ème</td><td>Singulier (lahy)</td><td>Izy (lahy)</td></tr>
+        <tr><td><strong class="color-she">She</strong></td><td>3ème</td><td>Singulier (vavy)</td><td>Izy (vavy)</td></tr>
+        <tr><td><strong class="color-we">We</strong></td><td>1ère</td><td>Pluriel (maro)</td><td>Isika / Izahay</td></tr>
+        <tr><td><strong class="color-they">They</strong></td><td>3ème</td><td>Pluriel (maro)</td><td>Izy ireo / Izy (maro)</td></tr>
+      </table>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      ✅ <strong class="color-i">I</strong> → aho<br>
+      ✅ <strong class="color-you">You</strong> → ianao / ianareo<br>
+      ✅ <strong class="color-he">He</strong> → izy (lahy)<br>
+      ✅ <strong class="color-she">She</strong> → izy (vavy)<br>
+      ✅ <strong class="color-we">We</strong> → isika / izahay<br>
+      ✅ <strong class="color-they">They</strong> → izy ireo
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. DIFFÉRENCE ENTRE WE (ISIKA / IZAHAY)                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📌 Fahasamihafana : "We" = Isika vs Izahay</h2>
+    <div class="definition-mg">
+      <strong>🔹 Zava-dehibe tokony hotadidina :</strong><br><br>
+      <span class="icone">📌</span> <strong>"We" = Isika</strong> → ahitana ny <strong>tena miteny + ny olona iresahana</strong>.<br>
+      Ohatra : <em>We are going. (Isika)</em> → Mandeha isika (aho + ianao).<br><br>
+      <span class="icone">📌</span> <strong>"We" = Izahay</strong> → ahitana ny <strong>tena miteny + olona hafa</strong> fa tsy ilay iresahana.<br>
+      Ohatra : <em>We are going. (Izahay)</em> → Mandeha izahay (aho + hafa, tsy ianao).<br><br>
+      <div style="background:#fef1cf;padding:10px;border-radius:16px;margin-top:8px;">
+      💡 Amin'ny teny anglisy dia <strong>"we"</strong> ihany no ampiasaina na ho an'ny "isika" na "izahay". Ny heviny no mamantatra izany.
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 9. Ohatra fanampiny isan-karazany                          -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li><strong class="color-i">I</strong> am hungry. → <strong>Izaho</strong> dia noana.</li>
+        <li><strong class="color-you">You</strong> are my best friend. → <strong>Ianao</strong> dia namako akaiky indrindra.</li>
+        <li><strong class="color-he">He</strong> is my brother. → <strong>Izy</strong> dia rahalahiko.</li>
+        <li><strong class="color-she">She</strong> is my sister. → <strong>Izy</strong> dia rahavaviko.</li>
+        <li><strong class="color-we">We</strong> are going to the market. → <strong>Izahay</strong> dia mandeha any an-tsena.</li>
+        <li><strong class="color-they">They</strong> are teachers. → <strong>Izy ireo</strong> dia mpampianatra.</li>
+        <li><strong class="color-i">I</strong> love you. → <strong>Izaho</strong> dia tia anao.</li>
+        <li><strong class="color-we">We</strong> live together. → <strong>Isika</strong> dia miara-mipetraka.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 10. ASTUCES POUR LES ÉLÈVES                                  -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Jereo foana ny <strong>mpanao (sujet)</strong> alohan'ny hampiasanao matoanteny.</li>
+        <li>Ny <strong>"I"</strong> dia <strong>lehibe</strong> foana amin'ny soratra.</li>
+        <li>Ny <strong>"you"</strong> dia mitovy na ho an'ny olona iray na maro.</li>
+        <li>Ny <strong>"he"</strong> dia ho an'ny <strong>lahy</strong> ihany.</li>
+        <li>Ny <strong>"she"</strong> dia ho an'ny <strong>vavy</strong> ihany.</li>
+        <li>Ny <strong>"they"</strong> dia ho an'ny <strong>olona na zavatra maro</strong>.</li>
+        <li>Ho an'ny zavatra tsy misy aina na biby, dia mampiasa <strong>"it"</strong> isika (tsy voaresaka eto).</li>
+        <li>Mifanaraka amin'ny <strong>sujet</strong> ny matoanteny : <em>I am, you are, he/she/it is, we are, they are</em>.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> "I" = aho, "You" = ianao, "He" = izy (lahy), "She" = izy (vavy), "We" = isika/izahay, "They" = izy ireo.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny "subject personal pronouns".</p>
+      <p>Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

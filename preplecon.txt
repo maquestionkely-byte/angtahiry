@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Prepositions – To, At, Of, For, On, Under, In, With, Without</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .title-main p {
+      font-size: 0.9rem;
+      margin-top: 4px;
+      color: #1e3a8a;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+
+    .verb-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    .verb-table th {
+      background: #1e40af;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    .verb-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    .verb-table tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    .verb-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .prep-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .prep-box {
+      background: #f8faf8;
+      border-radius: 16px;
+      padding: 14px;
+      border: 2px solid #e2e6cf;
+      text-align: center;
+    }
+    .prep-box .prep-word {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #1e40af;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .prep-box .prep-meaning {
+      font-size: 0.8rem;
+      color: #1f3d34;
+      display: block;
+    }
+    
+    .color-to { color: #1e40af; font-weight: 700; }
+    .color-at { color: #b45309; font-weight: 700; }
+    .color-of { color: #0d9488; font-weight: 700; }
+    .color-for { color: #7c3aed; font-weight: 700; }
+    .color-on { color: #d97706; font-weight: 700; }
+    .color-under { color: #dc2626; font-weight: 700; }
+    .color-in { color: #0891b2; font-weight: 700; }
+    .color-with { color: #65a30d; font-weight: 700; }
+    .color-without { color: #be185d; font-weight: 700; }
+    
+    .badge {
+      display: inline-block;
+      font-size: 0.55rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-left: 4px;
+      background: #e2e6cf;
+      color: #1f3d34;
+    }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .verb-table {
+        font-size: 0.78rem;
+      }
+      .verb-table th, .verb-table td {
+        padding: 5px 8px;
+      }
+      .prep-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>PREPOSITIONS</h1>
+    <p>To &bull; At &bull; Of &bull; For &bull; On &bull; Under &bull; In &bull; With &bull; Without</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte : Inona ny Prepositions ?                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🏷️ Inona ny "Prepositions" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>prepositions</strong> dia <strong>teny fampiasa</strong> izay <strong>mampifandray</strong> ny anarana na mpisolo anarana amin'ny teny hafa ao anaty fehezanteny.<br><br>
+      🔹 Izy ireo dia <strong>mampiseho fifandraisana</strong> eo amin'ny zavatra roa :<br>
+      • <strong>toerana</strong> (on, under, in, at)<br>
+      • <strong>fotoana</strong> (at, in, on)<br>
+      • <strong>fomba</strong> (with, without)<br>
+      • <strong>fanondroana</strong> (of, for, to)<br><br>
+      <span class="icone">📌</span> Ny prepositions dia <strong>tsy miova</strong> na inona na inona teny manodidina azy.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Lisitry ny prepositions rehetra                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📋 Lisitry ny prepositions</h2>
+    <div class="prep-grid">
+      <div class="prep-box"><span class="prep-word color-to">to</span><span class="prep-meaning">ho an'ny, mankany</span></div>
+      <div class="prep-box"><span class="prep-word color-at">at</span><span class="prep-meaning">ao amin'ny (toerana/fotoana)</span></div>
+      <div class="prep-box"><span class="prep-word color-of">of</span><span class="prep-meaning">an'ny, avy amin'ny</span></div>
+      <div class="prep-box"><span class="prep-word color-for">for</span><span class="prep-meaning">ho an'ny, satria</span></div>
+      <div class="prep-box"><span class="prep-word color-on">on</span><span class="prep-meaning">eo ambony</span></div>
+      <div class="prep-box"><span class="prep-word color-under">under</span><span class="prep-meaning">eo ambanin'ny</span></div>
+      <div class="prep-box"><span class="prep-word color-in">in</span><span class="prep-meaning">ao anaty</span></div>
+      <div class="prep-box"><span class="prep-word color-with">with</span><span class="prep-meaning">miaraka amin'ny</span></div>
+      <div class="prep-box"><span class="prep-word color-without">without</span><span class="prep-meaning">tsy misy</span></div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 1. TO                                                        -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>1️⃣ "TO" <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(ho an'ny, mankany)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>To</strong> dia ampiasaina :<br>
+      • hilazana <strong>tanjona</strong> na <strong>toerana aleha</strong> (mankany)<br>
+      • hilazana <strong>olona na zavatra tompoina</strong> (ho an'ny)<br><br>
+      <strong>📌 Ohatra :</strong> go <strong class="color-to">to</strong> school, give it <strong class="color-to">to</strong> me
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>➡️</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">I go <strong class="color-to">to</strong> school. → Mankany <strong class="color-to">amin'ny</strong> sekoly aho.</span></div>
+      <div class="exo-ligne"><span class="fr">Give it <strong class="color-to">to</strong> me. → Omeo <strong class="color-to">ahy</strong> izany.</span></div>
+      <div class="exo-ligne"><span class="fr">She went <strong class="color-to">to</strong> the market. → Nankany <strong class="color-to">amin'ny</strong> tsena izy.</span></div>
+      <div class="exo-ligne"><span class="fr">I sent a letter <strong class="color-to">to</strong> her. → Nandefa taratasy <strong class="color-to">ho an'ny</strong> azy aho.</span></div>
+      <div class="exo-ligne"><span class="fr">This belongs <strong class="color-to">to</strong> me. → Ity dia an'<strong class="color-to">ahy</strong>.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "To" dia ampiasaina ho an'ny <strong>tanjona</strong> sy <strong>mpanonerana</strong>.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. AT                                                        -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ "AT" <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(ao amin'ny, amin'ny)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>At</strong> dia ampiasaina :<br>
+      • hilazana <strong>toerana voafaritra</strong> (ao amin'ny)<br>
+      • hilazana <strong>fotoana voafaritra</strong> (amin'ny ora)<br><br>
+      <strong>📌 Ohatra :</strong> <strong class="color-at">at</strong> home, <strong class="color-at">at</strong> 5 o'clock
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>📍</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">She is <strong class="color-at">at</strong> home. → <strong class="color-at">Ao</strong> trano izy.</span></div>
+      <div class="exo-ligne"><span class="fr">We met <strong class="color-at">at</strong> the station. → Nihaona <strong class="color-at">tamin'ny</strong> gara izahay.</span></div>
+      <div class="exo-ligne"><span class="fr">I wake up <strong class="color-at">at</strong> 6 a.m. → Mifoha <strong class="color-at">amin'ny</strong> 6 maraina aho.</span></div>
+      <div class="exo-ligne"><span class="fr">He works <strong class="color-at">at</strong> the hospital. → Miasa <strong class="color-at">ao amin'ny</strong> hopitaly izy.</span></div>
+      <div class="exo-ligne"><span class="fr">I'll see you <strong class="color-at">at</strong> noon. → Hahita anao <strong class="color-at">amin'ny</strong> mitataovovonana aho.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "At" dia ampiasaina ho an'ny <strong>toerana</strong> sy <strong>fotoana voafaritra</strong>.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. OF                                                        -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>3️⃣ "OF" <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(an'ny, avy amin'ny)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Of</strong> dia ampiasaina :<br>
+      • hilazana <strong>fananana</strong> na <strong>fifandraisana</strong> (an'ny)<br>
+      • hilazana <strong>fiaviana</strong> (avy amin'ny)<br><br>
+      <strong>📌 Ohatra :</strong> the color <strong class="color-of">of</strong> the sky, a friend <strong class="color-of">of</strong> mine
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>🔗</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">The color <strong class="color-of">of</strong> the sky is blue. → Ny lokon'<strong class="color-of">ny</strong> lanitra dia manga.</span></div>
+      <div class="exo-ligne"><span class="fr">He is a friend <strong class="color-of">of</strong> mine. → Izy dia sakaizan'<strong class="color-of">ny</strong> ahy.</span></div>
+      <div class="exo-ligne"><span class="fr">The roof <strong class="color-of">of</strong> the house is red. → Ny tafon'<strong class="color-of">ny</strong> trano dia mena.</span></div>
+      <div class="exo-ligne"><span class="fr">I drank a glass <strong class="color-of">of</strong> water. → Nisotro vera <strong class="color-of">rano</strong> aho.</span></div>
+      <div class="exo-ligne"><span class="fr">She is the mother <strong class="color-of">of</strong> two children. → Izy dia renin'<strong class="color-of">ny</strong> zaza roa.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "Of" dia ampiasaina hilazana <strong>fananana</strong> na <strong>fifandraisana</strong>.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 4. FOR                                                       -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>4️⃣ "FOR" <span style="font-size:0.8rem;color:#7c3aed;font-weight:400;">(ho an'ny, satria)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>For</strong> dia ampiasaina :<br>
+      • hilazana <strong>tanjona</strong> na <strong>mpanonerana</strong> (ho an'ny)<br>
+      • hilazana <strong>antony</strong> (satria)<br>
+      • hilazana <strong>fotoana</strong> (mandritra)<br><br>
+      <strong>📌 Ohatra :</strong> a gift <strong class="color-for">for</strong> you, I waited <strong class="color-for">for</strong> an hour
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>🎁</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">This is a gift <strong class="color-for">for</strong> you. → Ity dia fanomezana <strong class="color-for">ho anao</strong>.</span></div>
+      <div class="exo-ligne"><span class="fr">I bought flowers <strong class="color-for">for</strong> her. → Nividy voninkazo <strong class="color-for">ho azy</strong> aho.</span></div>
+      <div class="exo-ligne"><span class="fr">She studied <strong class="color-for">for</strong> two hours. → Nianatra <strong class="color-for">mandritra ny</strong> adiny roa izy.</span></div>
+      <div class="exo-ligne"><span class="fr">I am happy <strong class="color-for">for</strong> you. → Faly <strong class="color-for">ho anao</strong> aho.</span></div>
+      <div class="exo-ligne"><span class="fr">We need water <strong class="color-for">for</strong> cooking. → Mila rano <strong class="color-for">ho an'ny</strong> fandrahoana izahay.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "For" dia ampiasaina ho an'ny <strong>tanjona</strong>, <strong>antony</strong>, ary <strong>fotoana</strong>.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 5. ON                                                        -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>5️⃣ "ON" <span style="font-size:0.8rem;color:#d97706;font-weight:400;">(eo ambony)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>On</strong> dia ampiasaina :<br>
+      • hilazana <strong>toerana eo ambonin'ny</strong> zavatra iray<br>
+      • hilazana <strong>andro na daty</strong><br><br>
+      <strong>📌 Ohatra :</strong> <strong class="color-on">on</strong> the table, <strong class="color-on">on</strong> Monday
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>⬆️</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">The book is <strong class="color-on">on</strong> the table. → Ny boky dia <strong class="color-on">eo ambony</strong> latabatra.</span></div>
+      <div class="exo-ligne"><span class="fr">She sat <strong class="color-on">on</strong> the chair. → Nipetraka <strong class="color-on">teo ambony</strong> seza izy.</span></div>
+      <div class="exo-ligne"><span class="fr">I will come <strong class="color-on">on</strong> Monday. → Ho avy <strong class="color-on">amin'ny</strong> Alatsinainy aho.</span></div>
+      <div class="exo-ligne"><span class="fr">The picture is <strong class="color-on">on</strong> the wall. → Ny sary dia <strong class="color-on">eo amin'ny</strong> rindrina.</span></div>
+      <div class="exo-ligne"><span class="fr">He put the bag <strong class="color-on">on</strong> the floor. → Nametraka ny kitapo <strong class="color-on">teo amin'ny</strong> tany izy.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "On" dia ampiasaina ho an'ny <strong>toerana eo ambony</strong> sy <strong>andro</strong>.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 6. UNDER                                                     -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>6️⃣ "UNDER" <span style="font-size:0.8rem;color:#dc2626;font-weight:400;">(eo ambanin'ny)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Under</strong> dia ampiasaina hilazana <strong>toerana eo ambanin'ny</strong> zavatra iray.<br><br>
+      <strong>📌 Ohatra :</strong> <strong class="color-under">under</strong> the bed, <strong class="color-under">under</strong> the tree
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>⬇️</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">The cat is <strong class="color-under">under</strong> the table. → Ny saka dia <strong class="color-under">eo ambanin'ny</strong> latabatra.</span></div>
+      <div class="exo-ligne"><span class="fr">I found my keys <strong class="color-under">under</strong> the bed. → Nahita ny lakileko <strong class="color-under">teo ambanin'ny</strong> fandriana aho.</span></div>
+      <div class="exo-ligne"><span class="fr">They sat <strong class="color-under">under</strong> the tree. → Nipetraka <strong class="color-under">teo ambanin'ny</strong> hazo izy ireo.</span></div>
+      <div class="exo-ligne"><span class="fr">The shoes are <strong class="color-under">under</strong> the chair. → Ny kiraro dia <strong class="color-under">eo ambanin'ny</strong> seza.</span></div>
+      <div class="exo-ligne"><span class="fr">He hid <strong class="color-under">under</strong> the blanket. → Niafina <strong class="color-under">teo ambanin'ny</strong> lamba izy.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "Under" dia ampiasaina ho an'ny <strong>toerana eo ambanin'ny</strong> zavatra.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. IN                                                        -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>7️⃣ "IN" <span style="font-size:0.8rem;color:#0891b2;font-weight:400;">(ao anaty)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>In</strong> dia ampiasaina :<br>
+      • hilazana <strong>toerana ao anaty</strong> zavatra iray<br>
+      • hilazana <strong>fotoana</strong> (volana, taona, fotoana)<br><br>
+      <strong>📌 Ohatra :</strong> <strong class="color-in">in</strong> the box, <strong class="color-in">in</strong> January
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>📦</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">The pen is <strong class="color-in">in</strong> the box. → Ny penina dia <strong class="color-in">ao anaty</strong> boaty.</span></div>
+      <div class="exo-ligne"><span class="fr">She lives <strong class="color-in">in</strong> Paris. → Mipetraka <strong class="color-in">ao</strong> Paris izy.</span></div>
+      <div class="exo-ligne"><span class="fr">I was born <strong class="color-in">in</strong> January. → Teraka <strong class="color-in">tamin'ny</strong> Janoary aho.</span></div>
+      <div class="exo-ligne"><span class="fr">The keys are <strong class="color-in">in</strong> my pocket. → Ny lakile dia <strong class="color-in">ao anaty</strong> paosinako.</span></div>
+      <div class="exo-ligne"><span class="fr">I will come back <strong class="color-in">in</strong> an hour. → Hiverina <strong class="color-in">ao anatin'ny</strong> adiny iray aho.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "In" dia ampiasaina ho an'ny <strong>toerana ao anaty</strong> sy <strong>fotoana</strong>.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. WITH                                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>8️⃣ "WITH" <span style="font-size:0.8rem;color:#65a30d;font-weight:400;">(miaraka amin'ny)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>With</strong> dia ampiasaina :<br>
+      • hilazana <strong>fiarahana</strong> (miaraka amin'ny)<br>
+      • hilazana <strong>fitaovana</strong> na <strong>fomba</strong> (amin'ny)<br><br>
+      <strong>📌 Ohatra :</strong> go <strong class="color-with">with</strong> me, write <strong class="color-with">with</strong> a pen
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>🤝</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">I go <strong class="color-with">with</strong> you. → Mandeha <strong class="color-with">miaraka</strong> aminao aho.</span></div>
+      <div class="exo-ligne"><span class="fr">She came <strong class="color-with">with</strong> her friend. → Tonga <strong class="color-with">niaraka</strong> tamin'ny namany izy.</span></div>
+      <div class="exo-ligne"><span class="fr">I write <strong class="color-with">with</strong> a pen. → Manoratra <strong class="color-with">amin'ny</strong> penina aho.</span></div>
+      <div class="exo-ligne"><span class="fr">He cut the bread <strong class="color-with">with</strong> a knife. → Nanapaka ny mofo <strong class="color-with">tamin'ny</strong> antsy izy.</span></div>
+      <div class="exo-ligne"><span class="fr">I agree <strong class="color-with">with</strong> you. → Mankasitraka <strong class="color-with">ananao</strong> aho.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "With" dia ampiasaina ho an'ny <strong>fiarahana</strong> sy <strong>fitaovana</strong>.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 9. WITHOUT                                                   -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>9️⃣ "WITHOUT" <span style="font-size:0.8rem;color:#be185d;font-weight:400;">(tsy misy)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Without</strong> dia ampiasaina hilazana <strong>tsy fisian'ny</strong> zavatra iray.<br><br>
+      <strong>📌 Ohatra :</strong> <strong class="color-without">without</strong> water, <strong class="color-without">without</strong> help
+    </div>
+    <div class="exemple-modern">
+      <div class="exo-titre"><span>🚫</span> Ohatra amin'ny teny anglisy sy malagasy</div>
+      <div class="exo-ligne"><span class="fr">I can't live <strong class="color-without">without</strong> water. → Tsy afaka miaina <strong class="color-without">tsy misy</strong> rano aho.</span></div>
+      <div class="exo-ligne"><span class="fr">She left <strong class="color-without">without</strong> saying goodbye. → Nandeha <strong class="color-without">tsy</strong> nilaza veloma izy.</span></div>
+      <div class="exo-ligne"><span class="fr">I did it <strong class="color-without">without</strong> help. → Nanao izany <strong class="color-without">tsy misy</strong> fanampiana aho.</span></div>
+      <div class="exo-ligne"><span class="fr">He went to work <strong class="color-without">without</strong> breakfast. → Nandeha niasa <strong class="color-without">tsy</strong> nisakafo maraina izy.</span></div>
+      <div class="exo-ligne"><span class="fr">I can't do it <strong class="color-without">without</strong> you. → Tsy afaka manao izany <strong class="color-without">tsy misy</strong> anao aho.</span></div>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> "Without" dia ampiasaina hilazana <strong>tsy fisian'ny</strong> zavatra.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 10. TABLEAU RÉCAPITULATIF                                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
+    <div class="definition-mg">
+      <strong>🔹 Fampitahana ny prepositions :</strong>
+    </div>
+    <div class="conjugaison-ligne">
+      <table class="verb-table">
+        <tr><th style="background:#1e40af;">Preposition</th><th style="background:#1e40af;">Fampiasana</th><th style="background:#1e40af;">Dikany malagasy</th></tr>
+        <tr><td><strong class="color-to">to</strong></td><td>Tanjon'ny, mankany, ho an'ny</td><td>ho an'ny, mankany</td></tr>
+        <tr><td><strong class="color-at">at</strong></td><td>Toerana voafaritra, ora</td><td>ao amin'ny, amin'ny</td></tr>
+        <tr><td><strong class="color-of">of</strong></td><td>Fananana, fiaviana, fifandraisana</td><td>an'ny, avy amin'ny</td></tr>
+        <tr><td><strong class="color-for">for</strong></td><td>Tanjon'ny, antony, fotoana</td><td>ho an'ny, satria</td></tr>
+        <tr><td><strong class="color-on">on</strong></td><td>Toerana eo ambony, andro</td><td>eo ambony, amin'ny (andro)</td></tr>
+        <tr><td><strong class="color-under">under</strong></td><td>Toerana eo ambaniny</td><td>eo ambanin'ny</td></tr>
+        <tr><td><strong class="color-in">in</strong></td><td>Toerana ao anaty, fotoana</td><td>ao anaty, amin'ny (volana/taona)</td></tr>
+        <tr><td><strong class="color-with">with</strong></td><td>Fiarahana, fitaovana</td><td>miaraka amin'ny, amin'ny</td></tr>
+        <tr><td><strong class="color-without">without</strong></td><td>Tsy fisiana</td><td>tsy misy</td></tr>
+      </table>
+    </div>
+    <div class="highlight">💡 <strong>Tsarovy :</strong> Ny prepositions dia <strong>teny fampiasa</strong> izay mampifandray ny anarana amin'ny teny hafa. Samy manana ny fampiasany avy izy ireo.</div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 11. Ohatra fanampiny                                         -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li>I go <strong class="color-to">to</strong> work every day. → Mankany <strong class="color-to">amin'ny</strong> asa aho isan'andro.</li>
+        <li>She is <strong class="color-at">at</strong> the door. → <strong class="color-at">Eo</strong> am-baravarana izy.</li>
+        <li>The color <strong class="color-of">of</strong> her eyes is green. → Ny lokon'<strong class="color-of">ny</strong> masony dia maitso.</li>
+        <li>This is <strong class="color-for">for</strong> you. → Ity dia <strong class="color-for">ho anao</strong>.</li>
+        <li>The book is <strong class="color-on">on</strong> the shelf. → Ny boky dia <strong class="color-on">eo ambony</strong> talantalana.</li>
+        <li>The dog is <strong class="color-under">under</strong> the car. → Ny alika dia <strong class="color-under">eo ambanin'ny</strong> fiara.</li>
+        <li>I live <strong class="color-in">in</strong> a small house. → Mipetraka <strong class="color-in">ao anaty</strong> trano kely aho.</li>
+        <li>I came <strong class="color-with">with</strong> my family. → Tonga <strong class="color-with">niaraka</strong> tamin'ny fianakaviako aho.</li>
+        <li>I can't sing <strong class="color-without">without</strong> music. → Tsy afaka mihira <strong class="color-without">tsy misy</strong> mozika aho.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 12. TOROHEVITRA MAHASOA                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Ny <strong>prepositions</strong> dia <strong>tsy miova</strong> na inona na inona.</li>
+        <li>Ampiasao ny <strong>"to"</strong> ho an'ny <strong>tanjona</strong> na <strong>toerana aleha</strong>.</li>
+        <li>Ampiasao ny <strong>"at"</strong> ho an'ny <strong>toerana voafaritra</strong> na <strong>ora</strong>.</li>
+        <li>Ampiasao ny <strong>"of"</strong> ho an'ny <strong>fananana</strong> na <strong>fifandraisana</strong>.</li>
+        <li>Ampiasao ny <strong>"for"</strong> ho an'ny <strong>tanjona</strong>, <strong>antony</strong>, na <strong>fotoana</strong>.</li>
+        <li>Ampiasao ny <strong>"on"</strong> ho an'ny <strong>toerana eo ambony</strong> na <strong>andro</strong>.</li>
+        <li>Ampiasao ny <strong>"under"</strong> ho an'ny <strong>toerana eo ambaniny</strong>.</li>
+        <li>Ampiasao ny <strong>"in"</strong> ho an'ny <strong>toerana ao anaty</strong> na <strong>volana/taona</strong>.</li>
+        <li>Ampiasao ny <strong>"with"</strong> ho an'ny <strong>fiarahana</strong> na <strong>fitaovana</strong>.</li>
+        <li>Ampiasao ny <strong>"without"</strong> ho an'ny <strong>tsy fisian'ny</strong> zavatra.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> Ny prepositions dia <strong>teny fampiasa</strong> izay mampiseho fifandraisana. Zava-dehibe ny mahafantatra ny fampiasana azy tsirairay !
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny "Prepositions".</p>
+      <p>Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Demonstrative determiners – this, that, these, those</title>
+  <title>Neuter Demonstrative Pronouns – This, That, It</title>
   <style>
     * {
       margin: 0;
@@ -39,6 +39,12 @@
       font-weight: 700;
       letter-spacing: -0.5px;
       margin: 0;
+    }
+
+    .title-main p {
+      font-size: 0.9rem;
+      margin-top: 4px;
+      color: #1e3a8a;
     }
 
     .card {
@@ -248,12 +254,11 @@
     .verb-table tr:last-child td {
       border-bottom: none;
     }
-    .verb-table .mg-trans {
-      color: #1e3a5f;
-      font-weight: 500;
-    }
     
-    .color-demo { color: #1e40af; font-weight: 700; }
+    .color-this { color: #1e40af; font-weight: 700; }
+    .color-that { color: #b45309; font-weight: 700; }
+    .color-it { color: #0d9488; font-weight: 700; }
+    
     .use-tag {
       display: inline-block;
       background: #1e40af;
@@ -266,10 +271,8 @@
       letter-spacing: 0.5px;
       margin-left: 6px;
     }
-    .use-tag.this { background: #1e40af; }
     .use-tag.that { background: #b45309; }
-    .use-tag.these { background: #0d9488; }
-    .use-tag.those { background: #7c3aed; }
+    .use-tag.it { background: #0d9488; }
     
     @media (max-width: 550px) {
       .exemple-modern .exo-ligne {
@@ -291,50 +294,36 @@
 <body>
 <div class="container">
   <div class="title-main">
-    <h1>DEMONSTRATIVE DETERMINERS</h1>
-    <p style="font-size:0.9rem;margin-top:4px;color:#1e3a8a;">this / that / these / those</p>
+    <h1>NEUTER DEMONSTRATIVE PRONOUNS</h1>
+    <p>This &bull; That &bull; It</p>
   </div>
 
   <!-- ============================================================ -->
-  <!-- Carte : Inona ny demonstrative determiners ?                   -->
+  <!-- Carte : Inona ny neuter demonstrative pronouns ?            -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>🏷️ Inona ny "this, that, these, those" ?</h2>
+    <h2>🏷️ Inona ny "neuter demonstrative pronouns" ?</h2>
     <div class="definition-mg">
-      🔹 Ny <strong>"demonstrative determiners"</strong> dia <strong>mpamaritra</strong> ampiasaina hilazana <strong>zavatra na olona akaiky na lavitra</strong>.<br><br>
-      🔹 Izy ireo dia <strong>mampiseho</strong> na <strong>manondro</strong> zavatra iray na maromaro.<br><br>
-      🔹 <strong>THIS</strong> → <strong>"ity"</strong> (zavatra tokana akaiky)<br><br>
-      🔹 <strong>THAT</strong> → <strong>"io / iry"</strong> (zavatra tokana lavitra)<br><br>
-      🔹 <strong>THESE</strong> → <strong>"ireo"</strong> (zavatra maromaro akaiky)<br><br>
-      🔹 <strong>THOSE</strong> → <strong>"ireo / iry"</strong> (zavatra maromaro lavitra)<br><br>
-      <span class="icone">📌</span> Ampiasaina eo <strong>alohan'ny anarana</strong> (noun) izy ireo mba hilazana hoe <strong>iza na inona</strong> no resahina.
+      🔹 Ny <strong>neuter demonstrative pronouns</strong> dia <strong>mpisolo anarana</strong> tsy milaza lahy na vavy (<strong>tsy misy maha-lahy na maha-vavy</strong>).<br><br>
+      🔹 Izy ireo dia : <strong>this, that, it</strong>.<br><br>
+      🔹 <strong>"This"</strong> sy <strong>"that"</strong> dia <strong>mpanondro (démonstratifs)</strong>.<br>
+      🔹 <strong>"It"</strong> dia <strong>mpisolo anarana (pronom personnel)</strong> ho an'ny zavatra tsy misy maha-lahy na vavy.<br><br>
+      <span class="icone">📌</span> <strong>This</strong> → zavatra <strong>akaiky</strong> (tokana)<br><br>
+      <span class="icone">📌</span> <strong>That</strong> → zavatra <strong>lavitra</strong> (tokana)<br><br>
+      <span class="icone">📌</span> <strong>It</strong> → <strong>zavatra efa resahina</strong> na zavatra tsy misy maha-lahy na vavy
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 1. TABLEAU RECAPITULATIF                                      -->
+  <!-- 1. THIS – zavatra akaiky                                     -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>📊 Tabilao famintinana</h2>
-    <div class="conjugaison-ligne">
-      <table class="verb-table">
-        <tr><th>Determiner</th><th>Iza no ampiasaina</th><th>Dikany malagasy</th><th>Ohatra</th></tr>
-        <tr><td><strong class="color-demo">THIS</strong></td><td>Zavatra tokana <strong>akaiky</strong></td><td>ity / izao</td><td>this book (ity boky ity)</td></tr>
-        <tr><td><strong class="color-demo">THAT</strong></td><td>Zavatra tokana <strong>lavitra</strong></td><td>io / izy / iry</td><td>that car (io fiara io)</td></tr>
-        <tr><td><strong class="color-demo">THESE</strong></td><td>Zavatra maro <strong>akaiky</strong></td><td>ireto / ireo</td><td>these pens (ireto penina ireto)</td></tr>
-        <tr><td><strong class="color-demo">THOSE</strong></td><td>Zavatra maro <strong>lavitra</strong></td><td>ireo / iry</td><td>those houses (ireo trano ireo)</td></tr>
-      </table>
-    </div>
-  </div>
-
-  <!-- ============================================================ -->
-  <!-- 2. THIS (ity / izao)                                         -->
-  <!-- ============================================================ -->
-  <div class="card">
-    <h2>1️⃣ THIS <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(ity / izao)</span></h2>
+    <h2>1️⃣ "THIS" – Zavatra akaiky <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Ity / Io)</span></h2>
     <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"this"</strong> dia ampiasaina ho an'ny <strong>zavatra tokana akaiky</strong> (eo akaikinao na eo am-pelatananao).
+      <strong>📖 Règle :</strong><br>
+      <strong>This</strong> dia ampiasaina hanondroana <strong>zavatra tokana (singulier)</strong> izay <strong>akaiky</strong> ilay miteny.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Ity"</strong> na <strong>"Io"</strong> (zavatra eo akaiky eo).
     </div>
 
     <div class="exemple-modern">
@@ -342,34 +331,36 @@
         <span>👆</span> Ohatra amin'ny teny anglisy sy malagasy
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> book is mine. (Ity boky ity dia ahy.)</span>
+        <span class="fr"><strong class="color-this">This</strong> is my book. → <strong>Ity</strong> no bokyko.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> house is big. (Ity trano ity dia lehibe.)</span>
+        <span class="fr"><strong class="color-this">This</strong> is beautiful. → <strong>Io</strong> no tsara tarehy.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> is my friend. (Ity no namako.)</span>
+        <span class="fr"><strong class="color-this">This</strong> is mine. → <strong>Ity</strong> no ahy.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> pen is red. (Ity penina ity dia mena.)</span>
+        <span class="fr"><strong class="color-this">This</strong> is a good idea. → <strong>Ity</strong> no hevitra tsara.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> is a cat. (Ity dia saka.)</span>
+        <span class="fr">I like <strong class="color-this">this</strong>. → Tiako <strong>ity</strong>.</span>
       </div>
     </div>
     <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>akaiky</strong> ny zavatra resahina. Ohatra : zavatra eo am-pelatananao, eo akaikinao, na zavatra vao nolazainao.
+      💡 <strong>Tsarovy :</strong> <strong>"This"</strong> dia ho an'ny zavatra <strong>tokana</strong> sy <strong>akaiky</strong> anao. Ohatra : mitazona boky ianao dia milaza hoe "This is my book."
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 3. THAT (io / iry)                                           -->
+  <!-- 2. THAT – zavatra lavitra                                    -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>2️⃣ THAT <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(io / iry)</span></h2>
+    <h2>2️⃣ "THAT" – Zavatra lavitra <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(Iny / Izy)</span></h2>
     <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"that"</strong> dia ampiasaina ho an'ny <strong>zavatra tokana lavitra</strong> (tsy akaiky na eo indray).
+      <strong>📖 Règle :</strong><br>
+      <strong>That</strong> dia ampiasaina hanondroana <strong>zavatra tokana (singulier)</strong> izay <strong>lavitra</strong> ilay miteny.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Iny"</strong> na <strong>"Izy"</strong> (zavatra lavitra).
     </div>
 
     <div class="exemple-modern">
@@ -377,167 +368,165 @@
         <span>👉</span> Ohatra amin'ny teny anglisy sy malagasy
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> car is expensive. (Io fiara io dia lafo.)</span>
+        <span class="fr"><strong class="color-that">That</strong> is my car. → <strong>Iny</strong> no fiarako.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> man is my father. (Io lehilahy io no raiko.)</span>
+        <span class="fr"><strong class="color-that">That</strong> is expensive. → <strong>Izy</strong> no lafo.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> is my house. (Io no tranoko.)</span>
+        <span class="fr"><strong class="color-that">That</strong> is yours. → <strong>Iny</strong> no anao.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> dog is big. (Io alika io dia lehibe.)</span>
+        <span class="fr"><strong class="color-that">That</strong> is far away. → <strong>Izy</strong> no lavitra.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> is a tree. (Io dia hazo.)</span>
+        <span class="fr">I want <strong class="color-that">that</strong>. → Tiako <strong>iny</strong>.</span>
       </div>
     </div>
     <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>lavitra</strong> ny zavatra resahina. Ohatra : zavatra any lavitra, eo indray, na zavatra efa resahina taloha.
+      💡 <strong>Tsarovy :</strong> <strong>"That"</strong> dia ho an'ny zavatra <strong>tokana</strong> sy <strong>lavitra</strong> anao. Ohatra : manondro fiara lavitra ianao dia milaza hoe "That is my car."
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 4. THESE (ireto / ireo)                                     -->
+  <!-- 3. IT – mpisolo ho an'ny zavatra tsy misy lahy na vavy      -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>3️⃣ THESE <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(ireto / ireo)</span></h2>
+    <h2>3️⃣ "IT" – Mpisolo ho an'ny zavatra tsy misy lahy na vavy <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(Izy / Io)</span></h2>
     <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"these"</strong> dia ampiasaina ho an'ny <strong>zavatra maromaro akaiky</strong> (eo akaikinao na eo am-pelatananao).
+      <strong>📖 Règle :</strong><br>
+      <strong>It</strong> dia <strong>mpisolo anarana (pronom personnel)</strong> ampiasaina hilazana:<br>
+      • zavatra <strong>tsy misy maha-lahy na maha-vavy</strong> (zavatra, biby, hevitra...)<br>
+      • zavatra <strong>efa resahina</strong> na <strong>hita maso</strong><br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Izy"</strong> na <strong>"Io"</strong> (rehefa tsy olona).
     </div>
 
     <div class="exemple-modern">
       <div class="exo-titre">
-        <span>👐</span> Ohatra amin'ny teny anglisy sy malagasy
+        <span>🔹</span> Ohatra amin'ny teny anglisy sy malagasy
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> books are mine. (Ireto boky ireto dia ahy.)</span>
+        <span class="fr"><strong class="color-it">It</strong> is a book. → <strong>Izy</strong> dia boky.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> flowers are beautiful. (Ireto voninkazo ireto dia tsara tarehy.)</span>
+        <span class="fr"><strong class="color-it">It</strong> is raining. → <strong>Io</strong> no orana (mamorona orana).</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> are my friends. (Ireto no namako.)</span>
+        <span class="fr">I have a car. <strong class="color-it">It</strong> is red. → Manana fiara aho. <strong>Izy</strong> dia mena.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> pens are red. (Ireto penina ireto dia mena.)</span>
+        <span class="fr">Look at the cat. <strong class="color-it">It</strong> is sleeping. → Jereo ny saka. <strong>Izy</strong> no matory.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> are apples. (Ireto dia paoma.)</span>
+        <span class="fr"><strong class="color-it">It</strong> is important. → <strong>Izy</strong> dia zava-dehibe.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I love <strong class="color-it">it</strong>. → Tiako <strong>izy</strong>.</span>
       </div>
     </div>
     <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>maro sy akaiky</strong> ny zavatra resahina. Ohatra : zavatra maro eo am-pelatananao na eo akaikinao.
+      💡 <strong>Tsarovy :</strong> <strong>"It"</strong> dia ampiasaina ho an'ny zavatra <strong>rehetra tsy olona</strong> (zavatra, biby, hevitra, toetrandro...). Tsy milaza lahy na vavy izy.
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 5. THOSE (ireo / iry)                                       -->
+  <!-- 4. COMPARAISON : TABLEAU RÉCAPITULATIF                    -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>4️⃣ THOSE <span style="font-size:0.8rem;color:#7c3aed;font-weight:400;">(ireo / iry)</span></h2>
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
     <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"those"</strong> dia ampiasaina ho an'ny <strong>zavatra maromaro lavitra</strong> (tsy akaiky na eo indray).
+      <strong>🔹 Fampitahana ny neuter demonstrative pronouns :</strong>
     </div>
-
-    <div class="exemple-modern">
-      <div class="exo-titre">
-        <span>👋</span> Ohatra amin'ny teny anglisy sy malagasy
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> cars are expensive. (Ireo fiara ireo dia lafo.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> men are my teachers. (Ireo lehilahy ireo no mpampianatro.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> are my houses. (Ireo no tranoko.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> dogs are big. (Ireo alika ireo dia lehibe.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> are trees. (Ireo dia hazo.)</span>
-      </div>
-    </div>
-    <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>maro sy lavitra</strong> ny zavatra resahina. Ohatra : zavatra maro any lavitra na eo indray.
-    </div>
-  </div>
-
-  <!-- ============================================================ -->
-  <!-- 6. FANAZAVANINA FANAMPINY                                   -->
-  <!-- ============================================================ -->
-  <div class="card">
-    <h2>📌 Fahasamihafana lehibe</h2>
-    <div class="definition-mg">
-      <strong>🔹 Distance :</strong><br>
-      • <strong>THIS / THESE</strong> → <strong>akaiky</strong> (proche)<br>
-      • <strong>THAT / THOSE</strong> → <strong>lavitra</strong> (loin)<br><br>
-      
-      <strong>🔹 Isan'isa (Nombre) :</strong><br>
-      • <strong>THIS / THAT</strong> → <strong>tokana</strong> (singulier)<br>
-      • <strong>THESE / THOSE</strong> → <strong>maro</strong> (pluriel)<br><br>
-
-      <strong>🔹 Tabilao fampitahana :</strong><br>
+    <div class="conjugaison-ligne">
       <table class="verb-table">
-        <tr><th></th><th>SINGULIER (tokana)</th><th>PLURIEL (maro)</th></tr>
-        <tr><th>PROCHE (akaiky)</th><td><strong>THIS</strong> (ity)</td><td><strong>THESE</strong> (ireto)</td></tr>
-        <tr><th>LOIN (lavitra)</th><td><strong>THAT</strong> (io / iry)</td><td><strong>THOSE</strong> (ireo)</td></tr>
+        <tr><th style="background:#1e40af;">Pronom</th><th style="background:#1e40af;">Fonction</th><th style="background:#1e40af;">Distance</th><th style="background:#1e40af;">Dikany malagasy</th></tr>
+        <tr><td><strong class="color-this">This</strong></td><td>Démonstratif (mpanondro)</td><td>Proche (akaiky)</td><td>Ity / Io</td></tr>
+        <tr><td><strong class="color-that">That</strong></td><td>Démonstratif (mpanondro)</td><td>Loin (lavitra)</td><td>Iny / Izy</td></tr>
+        <tr><td><strong class="color-it">It</strong></td><td>Personnel (mpisolo olona)</td><td>Tsy misy (zavatra resahina)</td><td>Izy / Io</td></tr>
       </table>
     </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      ✅ <strong class="color-this">This</strong> → zavatra akaiky (tondroina)<br>
+      ✅ <strong class="color-that">That</strong> → zavatra lavitra (tondroina)<br>
+      ✅ <strong class="color-it">It</strong> → zavatra resahina na tsy misy lahy/vavy
+    </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 7. Ohatra fampitahana mivantana                              -->
+  <!-- 5. DIFFÉRENCE ENTRE this/that (démonstratifs) et it (pers.) -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>🧪 Ohatra fampitahana mazava</h2>
+    <h2>📌 Fahasamihafana : "This/That" vs "It"</h2>
+    <div class="definition-mg">
+      <strong>🔹 Zava-dehibe tokony hotadidina :</strong><br><br>
+      <strong>"This"</strong> sy <strong>"That"</strong> dia <strong>mpanondro (démonstratifs)</strong> → ampiasaina <strong>hanondroana zavatra</strong> (mipetraka eo akaiky na lavitra).<br><br>
+      <strong>"It"</strong> dia <strong>mpisolo anarana (pronom personnel)</strong> → ampiasaina <strong>hisolo zavatra efa resahina</strong> na zavatra tsy mila tondroina intsony.<br><br>
+      <span class="icone">📌</span> <strong>This / That</strong> → <strong>mampiseho</strong> (tondroina amin'ny tanana na maso)<br>
+      <span class="icone">📌</span> <strong>It</strong> → <strong>mamerina</strong> (zavatra efa fantatra)
+    </div>
     <div class="exemple-modern">
       <div class="exo-titre">
-        <span>🔍</span> Jereo ny fahasamihafana
+        <span>⚖️</span> Fampitahana mazava
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> book is new. (Ity boky ity dia vaovao.) → akaiky</span>
+        <span class="fr"><strong class="color-this">This</strong> is my phone. (tondroina ilay izy) → <strong>Ity</strong> no findayko.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> book is old. (Io boky io dia tranainy.) → lavitra</span>
+        <span class="fr"><strong class="color-it">It</strong> is new. (miresaka ilay finday efa resahina) → <strong>Izy</strong> dia vaovao.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> books are new. (Ireto boky ireto dia vaovao.) → maro akaiky</span>
+        <span class="fr"><strong class="color-that">That</strong> is your house. (tondroina lavitra) → <strong>Iny</strong> no tranonao.</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> books are old. (Ireo boky ireo dia tranainy.) → maro lavitra</span>
+        <span class="fr"><strong class="color-it">It</strong> is big. (miresaka ilay trano efa resahina) → <strong>Izy</strong> dia lehibe.</span>
       </div>
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 8. TOROHEVITRA MAHASOA                                       -->
+  <!-- 6. Ohatra fanampiny isan-karazany                            -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>🎯 Torohevitra mahasoa ho an'ny débutant</h2>
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li><strong class="color-this">This</strong> is my favourite. → <strong>Ity</strong> no tiako indrindra.</li>
+        <li><strong class="color-that">That</strong> is my brother. → <strong>Iny</strong> no rahalahiko.</li>
+        <li><strong class="color-it">It</strong> is my dog. → <strong>Izy</strong> no aliko.</li>
+        <li>I see a bird. <strong class="color-it">It</strong> is flying. → Mahita vorona aho. <strong>Izy</strong> no manidina.</li>
+        <li><strong class="color-this">This</strong> is a problem. → <strong>Ity</strong> no olana.</li>
+        <li><strong class="color-that">That</strong> is a solution. → <strong>Iny</strong> no vahaolana.</li>
+        <li><strong class="color-it">It</strong> is easy. → <strong>Izy</strong> dia mora.</li>
+        <li>I know <strong class="color-it">it</strong>. → Fantatro <strong>izany</strong>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. TOROHEVITRA MAHASOA                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
     <div class="definition-mg" style="margin-bottom: 6px;">
       <ul class="liste-avec-lignes-vides">
-        <li>Jereo foana raha <strong>tokana na maro</strong> ilay zavatra resahina.</li>
-        <li>Jereo raha <strong>akaiky na lavitra</strong> ilay zavatra resahina.</li>
-        <li>Raha <strong>tokana sy akaiky</strong> → <strong>THIS</strong></li>
-        <li>Raha <strong>tokana sy lavitra</strong> → <strong>THAT</strong></li>
-        <li>Raha <strong>maro sy akaiky</strong> → <strong>THESE</strong></li>
-        <li>Raha <strong>maro sy lavitra</strong> → <strong>THOSE</strong></li>
-        <li>Ampiasaina eo <strong>alohan'ny anarana</strong> (noun) ny determiners : <em>this book, that car, these pens, those houses</em></li>
-        <li>Azo ampiasaina irery koa izy ireo (maha-pronom) : <em>This is my house. That is my car.</em></li>
+        <li>Ampiasao ny <strong>"This"</strong> rehefa <strong>akaiky</strong> anao ilay zavatra resahina.</li>
+        <li>Ampiasao ny <strong>"That"</strong> rehefa <strong>lavitra</strong> anao ilay zavatra resahina.</li>
+        <li>Ampiasao ny <strong>"It"</strong> rehefa <strong>efa resahina</strong> ilay zavatra na rehefa tsy mila tondroina intsony.</li>
+        <li><strong>"This"</strong> sy <strong>"that"</strong> dia <strong>mampiseho</strong> zavatra (tondroina amin'ny tanana na maso).</li>
+        <li><strong>"It"</strong> dia <strong>mamerina</strong> zavatra efa fantatra.</li>
+        <li>Tsarovy fa <strong>"it"</strong> dia ampiasaina ho an'ny zavatra rehetra <strong>tsy olona</strong> (zavatra, biby, hevitra, toetrandro).</li>
+        <li>Aza afangaro ny <strong>"this"</strong> sy <strong>"that"</strong> amin'ny <strong>"it"</strong> : ny roa voalohany dia mpanondro, ny farany dia mpisolo.</li>
       </ul>
     </div>
     <div class="highlight" style="margin-top: 8px;">
-      🌱 <strong>Tsarovy :</strong> THIS / THESE = <strong>akaiky</strong> (proche) — THAT / THOSE = <strong>lavitra</strong> (loin) !
+      🌱 <strong>Tsarovy :</strong> "This / That" = manondro (akaiky/lavitra). "It" = mamerina zavatra efa resahina. Io no fototry ny fampiasana azy ireo !
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 9. Carte Fanampiana & Fifandraisana                          -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
   <!-- ============================================================ -->
   <div class="card">
     <h2>📬 Fanamarihana sy Fifandraisana</h2>
@@ -545,7 +534,7 @@
       <p>Raha misy ny fanamarihana avy aminao : </p>
       <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
       <p>➡️ Na maniry hianatra ianao.</p>
-      <p>➡️ Na manana olana amin'ny "this, that, these, those".</p>
+      <p>➡️ Na manana olana amin'ny "neuter demonstrative pronouns".</p>
       <p>Dia azonao atao ny miresaka aminay mivantana.</p>
     </div>
     

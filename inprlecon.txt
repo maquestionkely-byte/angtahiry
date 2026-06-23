@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Interrogative Pronouns – Who, Whom, To Whom, Of Whom, For Whom</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+
+    .verb-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    .verb-table th {
+      background: #1e40af;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    .verb-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    .verb-table tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    .verb-table tr:last-child td {
+      border-bottom: none;
+    }
+    .verb-table .mg-trans {
+      color: #1e3a5f;
+      font-weight: 500;
+    }
+    
+    .color-who { color: #1e40af; font-weight: 700; }
+    .color-whom { color: #7c3aed; font-weight: 700; }
+    .color-to-whom { color: #0d9488; font-weight: 700; }
+    .color-of-whom { color: #b45309; font-weight: 700; }
+    .color-for-whom { color: #dc2626; font-weight: 700; }
+    
+    .use-tag {
+      display: inline-block;
+      color: white;
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 6px;
+    }
+    .use-tag.who { background: #1e40af; }
+    .use-tag.whom { background: #7c3aed; }
+    .use-tag.to-whom { background: #0d9488; }
+    .use-tag.of-whom { background: #b45309; }
+    .use-tag.for-whom { background: #dc2626; }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .verb-table {
+        font-size: 0.78rem;
+      }
+      .verb-table th, .verb-table td {
+        padding: 5px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>INTERROGATIVE PRONOUNS</h1>
+    <p style="font-size:0.9rem;margin-top:4px;color:#1e3a8a;">Who &bull; Whom &bull; To Whom &bull; Of Whom &bull; For Whom</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte : Inona ny interrogative pronouns ?                   -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🏷️ Inona ny "interrogative pronouns" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>interrogative pronouns</strong> dia <strong>mpisolo anarana</strong> ampiasaina <strong>hanontaniana</strong> momba ny <strong>olona</strong>.<br><br>
+      🔹 Izy ireo dia mamela antsika <strong>hanontany</strong> amin'ny fomba <strong>mazava sy marina</strong>.<br><br>
+      🔹 Ny <strong>"who"</strong> dia ampiasaina ho an'ny <strong>sujet</strong> (mpanao).<br><br>
+      🔹 Ny <strong>"whom"</strong> dia ampiasaina ho an'ny <strong>objet</strong> (iharan'ny atao).<br><br>
+      🔹 Ny <strong>"to whom"</strong>, <strong>"of whom"</strong>, <strong>"for whom"</strong> dia ampiasaina rehefa misy <strong>mpampiankin-teny (préposition)</strong>.<br><br>
+      <span class="icone">📌</span> <strong>Who</strong> → Iza no (manao)<br>
+      <span class="icone">📌</span> <strong>Whom</strong> → Iza no (iharan'ny atao)<br>
+      <span class="icone">📌</span> <strong>To whom</strong> → Ho an'iza / Amin'iza<br>
+      <span class="icone">📌</span> <strong>Of whom</strong> → An'iza / Iza no manana<br>
+      <span class="icone">📌</span> <strong>For whom</strong> → Ho an'iza
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 1. WHO – Olona (Sujet)                                     -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>1️⃣ "WHO" – Iza no (manao) <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Sujet – mpanao)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"Who"</strong> dia ampiasaina <strong>hanontaniana</strong> momba ny <strong>olona izay mpanao (sujet)</strong> ny matoanteny.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Iza no"</strong> (manao zavatra).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>❓</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-who">Who</strong> is coming? → <strong>Iza no</strong> ho avy?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-who">Who</strong> called you? → <strong>Iza no</strong> niantso anao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-who">Who</strong> lives here? → <strong>Iza no</strong> mipetraka eto?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-who">Who</strong> is your teacher? → <strong>Iza no</strong> mpampianatrao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-who">Who</strong> wants to go? → <strong>Iza no</strong> te-handeha?</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"who"</strong> dia ampiasaina rehefa <strong>mamantatra ny mpanao (sujet)</strong> ny fehezanteny. Ohatra : <em><strong>Who</strong> is coming?</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. WHOM – Olona (Objet)                                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ "WHOM" – Iza no (iharan'ny atao) <span style="font-size:0.8rem;color:#7c3aed;font-weight:400;">(Objet – iharan'ny zavatra)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"Whom"</strong> dia ampiasaina <strong>hanontaniana</strong> momba ny <strong>olona izay iharan'ny atao (objet)</strong>.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Iza no"</strong> (iharan'ny zavatra).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>❓</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-whom">Whom</strong> did you see? → <strong>Iza no</strong> nahitanao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-whom">Whom</strong> do you know? → <strong>Iza no</strong> fantatrao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-whom">Whom</strong> did she call? → <strong>Iza no</strong> niantsoany?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-whom">Whom</strong> are you looking for? → <strong>Iza no</strong> tadiavinao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-whom">Whom</strong> did he meet? → <strong>Iza no</strong> nifankahitany?</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"whom"</strong> dia ampiasaina rehefa <strong>mamantatra ny iharan'ny atao (objet)</strong>. Ohatra : <em><strong>Whom</strong> did you see?</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. TO WHOM – Amin'iza / Ho an'iza                        -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>3️⃣ "TO WHOM" – Amin'iza / Ho an'iza <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(Préposition + objet)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"To whom"</strong> dia ampiasaina <strong>hanontaniana</strong> momba ny <strong>olona izay toerana aleha</strong> na <strong>olona itodihana</strong>.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Amin'iza"</strong> na <strong>"ho an'iza"</strong>.
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>❓</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-to-whom">To whom</strong> did you give it? → <strong>Amin'iza</strong> no nomenao izany?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-to-whom">To whom</strong> should I write? → <strong>Amin'iza</strong> no tokony hanoratako?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-to-whom">To whom</strong> does this belong? → <strong>Amin'iza</strong> no maha-izy io?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-to-whom">To whom</strong> are you talking? → <strong>Amin'iza</strong> no iresahanao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-to-whom">To whom</strong> did you send the letter? → <strong>Amin'iza</strong> no nandefasanao ilay taratasy?</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"to whom"</strong> dia ampiasaina rehefa misy <strong>"to"</strong> ho mpampiankin-teny. Ohatra : <em><strong>To whom</strong> did you give it?</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 4. OF WHOM – An'iza / Iza no manana                       -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>4️⃣ "OF WHOM" – An'iza / Iza no manana <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(Préposition + objet)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"Of whom"</strong> dia ampiasaina <strong>hanontaniana</strong> momba ny <strong>fananana</strong> na ny <strong>fiaviana</strong>.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"An'iza"</strong> na <strong>"iza no manana"</strong>.
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>❓</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-of-whom">Of whom</strong> is this book? → <strong>An'iza</strong> io boky io?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-of-whom">Of whom</strong> are you speaking? → <strong>An'iza</strong> no itenenanao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-of-whom">Of whom</strong> is this picture? → <strong>An'iza</strong> ity sarity ity?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-of-whom">Of whom</strong> are you thinking? → <strong>An'iza</strong> no eritreretinao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-of-whom">Of whom</strong> is this house? → <strong>An'iza</strong> ity trano ity?</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"of whom"</strong> dia ampiasaina rehefa misy <strong>"of"</strong> ho mpampiankin-teny. Ohatra : <em><strong>Of whom</strong> is this book?</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 5. FOR WHOM – Ho an'iza                                  -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>5️⃣ "FOR WHOM" – Ho an'iza <span style="font-size:0.8rem;color:#dc2626;font-weight:400;">(Préposition + objet)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"For whom"</strong> dia ampiasaina <strong>hanontaniana</strong> momba ny <strong>olona itodihana</strong> na <strong>olona hahazoana zavatra</strong>.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Ho an'iza"</strong>.
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>❓</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-for-whom">For whom</strong> is this gift? → <strong>Ho an'iza</strong> ity fanomezana ity?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-for-whom">For whom</strong> did you buy it? → <strong>Ho an'iza</strong> no novidianao izany?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-for-whom">For whom</strong> are you cooking? → <strong>Ho an'iza</strong> no mahandroanao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-for-whom">For whom</strong> is this job? → <strong>Ho an'iza</strong> ity asa ity?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-for-whom">For whom</strong> did you make this? → <strong>Ho an'iza</strong> no nanaovanao io?</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"for whom"</strong> dia ampiasaina rehefa misy <strong>"for"</strong> ho mpampiankin-teny. Ohatra : <em><strong>For whom</strong> is this gift?</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 6. TABLEAU RÉCAPITULATIF                                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
+    <div class="definition-mg">
+      <strong>🔹 Fampitahana ny interrogative pronouns :</strong>
+    </div>
+    <div class="conjugaison-ligne">
+      <table class="verb-table">
+        <tr><th style="background:#1e40af;">Pronom</th><th style="background:#1e40af;">Fampiasana</th><th style="background:#1e40af;">Dikany malagasy</th></tr>
+        <tr><td><strong class="color-who">WHO</strong></td><td>Sujet (mpanao)</td><td>Iza no (manao)</td></tr>
+        <tr><td><strong class="color-whom">WHOM</strong></td><td>Objet (iharan'ny atao)</td><td>Iza no (iharan'ny zavatra)</td></tr>
+        <tr><td><strong class="color-to-whom">TO WHOM</strong></td><td>Amin'iza / Ho an'iza (mpampiankin-teny "to")</td><td>Amin'iza / Ho an'iza</td></tr>
+        <tr><td><strong class="color-of-whom">OF WHOM</strong></td><td>An'iza / Iza no manana (mpampiankin-teny "of")</td><td>An'iza / Iza no manana</td></tr>
+        <tr><td><strong class="color-for-whom">FOR WHOM</strong></td><td>Ho an'iza (mpampiankin-teny "for")</td><td>Ho an'iza</td></tr>
+      </table>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      ✅ <strong class="color-who">WHO</strong> → Iza no manao?<br>
+      ✅ <strong class="color-whom">WHOM</strong> → Iza no iharan'ny atao?<br>
+      ✅ <strong class="color-to-whom">TO WHOM</strong> → Amin'iza? / Ho an'iza?<br>
+      ✅ <strong class="color-of-whom">OF WHOM</strong> → An'iza? / Iza no manana?<br>
+      ✅ <strong class="color-for-whom">FOR WHOM</strong> → Ho an'iza?
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. DIFFÉRENCE : WHO vs WHOM                                -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📌 Fahasamihafana : WHO vs WHOM</h2>
+    <div class="definition-mg">
+      <strong>🔹 Zava-dehibe tokony hotadidina :</strong><br><br>
+      <span class="icone">📌</span> <strong>WHO</strong> → ampiasaina rehefa <strong>ilay olona no manao</strong> ny asa (sujet).<br>
+      Ohatra : <em><strong>Who</strong> called you?</em> → <strong>Iza no</strong> niantso anao? (ilay niantso no manao)<br><br>
+      <span class="icone">📌</span> <strong>WHOM</strong> → ampiasaina rehefa <strong>ilay olona no iharan'ny atao</strong> (objet).<br>
+      Ohatra : <em><strong>Whom</strong> did you see?</em> → <strong>Iza no</strong> nahitanao? (ilay olona no iharan'ny fahitana)<br><br>
+      <div style="background:#fef1cf;padding:10px;border-radius:16px;margin-top:8px;">
+      💡 <strong>Tsarovy :</strong> Raha azonao soloina <strong>"he"</strong> na <strong>"she"</strong> ilay olona, dia <strong>"who"</strong> no ampiasaina. Raha azonao soloina <strong>"him"</strong> na <strong>"her"</strong>, dia <strong>"whom"</strong> no ampiasaina.
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. Ohatra fanampiny isan-karazany                          -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li><strong class="color-who">Who</strong> is that man? → <strong>Iza</strong> io lehilahy io?</li>
+        <li><strong class="color-whom">Whom</strong> did you invite? → <strong>Iza no</strong> nampaharinao?</li>
+        <li><strong class="color-to-whom">To whom</strong> should I give this? → <strong>Amin'iza</strong> no tokony hanehoako ity?</li>
+        <li><strong class="color-of-whom">Of whom</strong> are you afraid? → <strong>An'iza</strong> no matahotra anao?</li>
+        <li><strong class="color-for-whom">For whom</strong> is this cake? → <strong>Ho an'iza</strong> ity mofomamy ity?</li>
+        <li><strong class="color-who">Who</strong> knows the answer? → <strong>Iza no</strong> mahalala ny valiny?</li>
+        <li><strong class="color-whom">Whom</strong> did you choose? → <strong>Iza no</strong> nofidinao?</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 9. ASTUCES POUR LES ÉLÈVES                                  -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Jereo raha <strong>mpanao (sujet)</strong> sa <strong>iharan'ny atao (objet)</strong> ilay olona resahina.</li>
+        <li>Raha <strong>mpanao</strong> → <strong>"who"</strong> no ampiasaina.</li>
+        <li>Raha <strong>iharan'ny atao</strong> → <strong>"whom"</strong> no ampiasaina.</li>
+        <li>Rehefa misy <strong>mpampiankin-teny (to, of, for)</strong>, dia ampiasao ny <strong>"to whom"</strong>, <strong>"of whom"</strong>, na <strong>"for whom"</strong>.</li>
+        <li>Amin'ny resaka andavanandro, ny <strong>"who"</strong> no ampiasaina matetika kokoa.</li>
+        <li>Ny <strong>"whom"</strong> sy ny endrika miaraka amin'ny mpampiankin-teny dia ampiasaina amin'ny fomba ofisialy na an-tsoratra.</li>
+        <li>Mba hahafantarana raha <strong>"who"</strong> sa <strong>"whom"</strong>, andramo soloina <strong>"he/she"</strong> na <strong>"him/her"</strong> ilay olona.</li>
+        <li>Raha <strong>"he/she"</strong> → <strong>"who"</strong>. Raha <strong>"him/her"</strong> → <strong>"whom"</strong>.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> "Who" = he/she (mpanao), "Whom" = him/her (iharan'ny atao). "To whom" = amin'iza, "Of whom" = an'iza, "For whom" = ho an'iza.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny "interrogative pronouns".</p>
+      <p>Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

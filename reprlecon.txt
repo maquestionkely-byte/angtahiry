@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Reflexive Pronouns – Myself, Yourself, Himself, Herself, Ourselves, Yourselves, Themselves</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+
+    .verb-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    .verb-table th {
+      background: #1e40af;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    .verb-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    .verb-table tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    .verb-table tr:last-child td {
+      border-bottom: none;
+    }
+    .verb-table .mg-trans {
+      color: #1e3a5f;
+      font-weight: 500;
+    }
+    
+    .color-myself { color: #1e40af; font-weight: 700; }
+    .color-yourself { color: #b45309; font-weight: 700; }
+    .color-himself { color: #0d9488; font-weight: 700; }
+    .color-herself { color: #7c3aed; font-weight: 700; }
+    .color-ourselves { color: #dc2626; font-weight: 700; }
+    .color-yourselves { color: #d97706; font-weight: 700; }
+    .color-themselves { color: #c026d3; font-weight: 700; }
+    
+    .use-tag {
+      display: inline-block;
+      color: white;
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 6px;
+    }
+    .use-tag.myself { background: #1e40af; }
+    .use-tag.yourself { background: #b45309; }
+    .use-tag.himself { background: #0d9488; }
+    .use-tag.herself { background: #7c3aed; }
+    .use-tag.ourselves { background: #dc2626; }
+    .use-tag.yourselves { background: #d97706; }
+    .use-tag.themselves { background: #c026d3; }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .verb-table {
+        font-size: 0.78rem;
+      }
+      .verb-table th, .verb-table td {
+        padding: 5px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>REFLEXIVE PRONOUNS</h1>
+    <p style="font-size:0.9rem;margin-top:4px;color:#1e3a8a;">Myself &bull; Yourself &bull; Himself &bull; Herself &bull; Ourselves &bull; Yourselves &bull; Themselves</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte : Inona ny reflexive pronouns ?                       -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🏷️ Inona ny "reflexive pronouns" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>reflexive pronouns</strong> dia <strong>mpisolo anarana</strong> ampiasaina rehefa <strong>mitovy ny mpanao (sujet)</strong> sy ny <strong>iharan'ny atao (objet)</strong>.<br><br>
+      🔹 Izy ireo dia <strong>miverina any amin'ilay mpanao</strong>.<br><br>
+      🔹 Ny <strong>"myself"</strong> → ho an'ny <strong>I</strong> (tena miteny).<br><br>
+      🔹 Ny <strong>"yourself"</strong> → ho an'ny <strong>you</strong> (tokana).<br><br>
+      🔹 Ny <strong>"himself"</strong> → ho an'ny <strong>he</strong> (lahy).<br><br>
+      🔹 Ny <strong>"herself"</strong> → ho an'ny <strong>she</strong> (vavy).<br><br>
+      🔹 Ny <strong>"ourselves"</strong> → ho an'ny <strong>we</strong> (isika / izahay).<br><br>
+      🔹 Ny <strong>"yourselves"</strong> → ho an'ny <strong>you</strong> (maro).<br><br>
+      🔹 Ny <strong>"themselves"</strong> → ho an'ny <strong>they</strong> (izy ireo).<br><br>
+      <span class="icone">📌</span> <strong>Myself</strong> → tenako / izaho<br>
+      <span class="icone">📌</span> <strong>Yourself</strong> → tenanao / ianao<br>
+      <span class="icone">📌</span> <strong>Himself</strong> → tenany (lahy)<br>
+      <span class="icone">📌</span> <strong>Herself</strong> → tenany (vavy)<br>
+      <span class="icone">📌</span> <strong>Ourselves</strong> → tenantsika / tenanay<br>
+      <span class="icone">📌</span> <strong>Yourselves</strong> → tenanareo<br>
+      <span class="icone">📌</span> <strong>Themselves</strong> → tenany ireo
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 1. MYSELF – Ho an'ny I                                     -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>1️⃣ "MYSELF" – Tenako / Izaho <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(ho an'ny I)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"Myself"</strong> dia ampiasaina rehefa <strong>"I"</strong> no mpanao ary <strong>"I"</strong> ihany no iharan'ny atao.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Tenako"</strong> na <strong>"izaho"</strong> (rehefa miverina amin'ny tena).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔄</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I hurt <strong class="color-myself">myself</strong>. → Nandratra <strong>tenako</strong> aho.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I taught <strong class="color-myself">myself</strong> English. → Nampianatra <strong>tenako</strong> anglisy aho.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I looked at <strong class="color-myself">myself</strong> in the mirror. → Nijery <strong>tenako</strong> tao amin'ny fitaratra aho.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I can do it <strong class="color-myself">myself</strong>. → Afaka manao izany <strong>izaho</strong> irery aho.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I blame <strong class="color-myself">myself</strong>. → Mamelona <strong>tenako</strong> aho.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"myself"</strong> dia miaraka amin'ny <strong>"I"</strong> ihany. Ohatra : <em>I cut <strong>myself</strong>.</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. YOURSELF – Ho an'ny YOU (tokana)                        -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ "YOURSELF" – Tenanao / Ianao <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(ho an'ny you tokana)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"Yourself"</strong> dia ampiasaina rehefa <strong>"you"</strong> (tokana) no mpanao ary <strong>"you"</strong> ihany no iharan'ny atao.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Tenanao"</strong> na <strong>"ianao"</strong> (rehefa miverina amin'ny tena).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔄</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You hurt <strong class="color-yourself">yourself</strong>. → Nandratra <strong>tenanao</strong> ianao.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You taught <strong class="color-yourself">yourself</strong> French. → Nampianatra <strong>tenanao</strong> frantsay ianao.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You looked at <strong class="color-yourself">yourself</strong> in the mirror. → Nijery <strong>tenanao</strong> tao amin'ny fitaratra ianao.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You can do it <strong class="color-yourself">yourself</strong>. → Afaka manao izany <strong>ianao</strong> irery.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You blame <strong class="color-yourself">yourself</strong>. → Mamelona <strong>tenanao</strong> ianao.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"yourself"</strong> dia miaraka amin'ny <strong>"you"</strong> tokana ihany. Ohatra : <em>You cut <strong>yourself</strong>.</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. HIMSELF – Ho an'ny HE (lahy)                            -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>3️⃣ "HIMSELF" – Tenany (lahy) <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(ho an'ny he – lahy)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"Himself"</strong> dia ampiasaina rehefa <strong>"he"</strong> no mpanao ary <strong>"he"</strong> ihany no iharan'ny atao.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Tenany"</strong> (lahy).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔄</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He hurt <strong class="color-himself">himself</strong>. → Nandratra <strong>tenany</strong> izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He taught <strong class="color-himself">himself</strong> English. → Nampianatra <strong>tenany</strong> anglisy izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He looked at <strong class="color-himself">himself</strong> in the mirror. → Nijery <strong>tenany</strong> tao amin'ny fitaratra izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He can do it <strong class="color-himself">himself</strong>. → Afaka manao izany irery izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He blames <strong class="color-himself">himself</strong>. → Mamelona <strong>tenany</strong> izy.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"himself"</strong> dia miaraka amin'ny <strong>"he"</strong> (lahy) ihany. Ohatra : <em>He cut <strong>himself</strong>.</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 4. HERSELF – Ho an'ny SHE (vavy)                           -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>4️⃣ "HERSELF" – Tenany (vavy) <span style="font-size:0.8rem;color:#7c3aed;font-weight:400;">(ho an'ny she – vavy)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"Herself"</strong> dia ampiasaina rehefa <strong>"she"</strong> no mpanao ary <strong>"she"</strong> ihany no iharan'ny atao.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Tenany"</strong> (vavy).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔄</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She hurt <strong class="color-herself">herself</strong>. → Nandratra <strong>tenany</strong> izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She taught <strong class="color-herself">herself</strong> Spanish. → Nampianatra <strong>tenany</strong> espaniola izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She looked at <strong class="color-herself">herself</strong> in the mirror. → Nijery <strong>tenany</strong> tao amin'ny fitaratra izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She can do it <strong class="color-herself">herself</strong>. → Afaka manao izany irery izy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She blames <strong class="color-herself">herself</strong>. → Mamelona <strong>tenany</strong> izy.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"herself"</strong> dia miaraka amin'ny <strong>"she"</strong> (vavy) ihany. Ohatra : <em>She cut <strong>herself</strong>.</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 5. OURSELVES – Ho an'ny WE                                 -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>5️⃣ "OURSELVES" – Tenantsika / Tenanay <span style="font-size:0.8rem;color:#dc2626;font-weight:400;">(ho an'ny we)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"Ourselves"</strong> dia ampiasaina rehefa <strong>"we"</strong> no mpanao ary <strong>"we"</strong> ihany no iharan'ny atao.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Tenantsika"</strong> (miteny + olona iresahana) na <strong>"tenanay"</strong> (miteny + hafa).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔄</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We hurt <strong class="color-ourselves">ourselves</strong>. → Nandratra <strong>tenanay</strong> izahay.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We taught <strong class="color-ourselves">ourselves</strong> English. → Nampianatra <strong>tenanay</strong> anglisy izahay.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We looked at <strong class="color-ourselves">ourselves</strong> in the mirror. → Nijery <strong>tenanay</strong> tao amin'ny fitaratra izahay.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We can do it <strong class="color-ourselves">ourselves</strong>. → Afaka manao izany irery izahay.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">We blame <strong class="color-ourselves">ourselves</strong>. → Mamelona <strong>tenanay</strong> izahay.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"ourselves"</strong> dia miaraka amin'ny <strong>"we"</strong> ihany. Ohatra : <em>We cut <strong>ourselves</strong>.</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 6. YOURSELVES – Ho an'ny YOU (maro)                       -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>6️⃣ "YOURSELVES" – Tenanareo <span style="font-size:0.8rem;color:#d97706;font-weight:400;">(ho an'ny you maro)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"Yourselves"</strong> dia ampiasaina rehefa <strong>"you"</strong> (maro) no mpanao ary <strong>"you"</strong> ihany no iharan'ny atao.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Tenanareo"</strong> (rehefa miverina amin'ny tena).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔄</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You hurt <strong class="color-yourselves">yourselves</strong>. → Nandratra <strong>tenanareo</strong> ianareo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You taught <strong class="color-yourselves">yourselves</strong> English. → Nampianatra <strong>tenanareo</strong> anglisy ianareo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You looked at <strong class="color-yourselves">yourselves</strong> in the mirror. → Nijery <strong>tenanareo</strong> tao amin'ny fitaratra ianareo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You can do it <strong class="color-yourselves">yourselves</strong>. → Afaka manao izany irery ianareo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">You blame <strong class="color-yourselves">yourselves</strong>. → Mamelona <strong>tenanareo</strong> ianareo.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"yourselves"</strong> dia miaraka amin'ny <strong>"you"</strong> maro ihany. Ohatra : <em>You cut <strong>yourselves</strong>.</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. THEMSELVES – Ho an'ny THEY                             -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>7️⃣ "THEMSELVES" – Tenany ireo <span style="font-size:0.8rem;color:#c026d3;font-weight:400;">(ho an'ny they)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>"Themselves"</strong> dia ampiasaina rehefa <strong>"they"</strong> no mpanao ary <strong>"they"</strong> ihany no iharan'ny atao.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Tenany ireo"</strong> na <strong>"tenany"</strong> (maro).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔄</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They hurt <strong class="color-themselves">themselves</strong>. → Nandratra <strong>tenany ireo</strong> izy ireo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They taught <strong class="color-themselves">themselves</strong> English. → Nampianatra <strong>tenany ireo</strong> anglisy izy ireo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They looked at <strong class="color-themselves">themselves</strong> in the mirror. → Nijery <strong>tenany ireo</strong> tao amin'ny fitaratra izy ireo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They can do it <strong class="color-themselves">themselves</strong>. → Afaka manao izany irery izy ireo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They blame <strong class="color-themselves">themselves</strong>. → Mamelona <strong>tenany ireo</strong> izy ireo.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ny <strong>"themselves"</strong> dia miaraka amin'ny <strong>"they"</strong> ihany. Ohatra : <em>They cut <strong>themselves</strong>.</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. TABLEAU RÉCAPITULATIF                                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
+    <div class="definition-mg">
+      <strong>🔹 Fampitahana ny reflexive pronouns :</strong>
+    </div>
+    <div class="conjugaison-ligne">
+      <table class="verb-table">
+        <tr><th style="background:#1e40af;">Subject</th><th style="background:#1e40af;">Reflexive</th><th style="background:#1e40af;">Dikany malagasy</th></tr>
+        <tr><td><strong>I</strong></td><td><strong class="color-myself">myself</strong></td><td>Tenako / Izaho</td></tr>
+        <tr><td><strong>You</strong> (tokana)</td><td><strong class="color-yourself">yourself</strong></td><td>Tenanao / Ianao</td></tr>
+        <tr><td><strong>He</strong></td><td><strong class="color-himself">himself</strong></td><td>Tenany (lahy)</td></tr>
+        <tr><td><strong>She</strong></td><td><strong class="color-herself">herself</strong></td><td>Tenany (vavy)</td></tr>
+        <tr><td><strong>We</strong></td><td><strong class="color-ourselves">ourselves</strong></td><td>Tenantsika / Tenanay</td></tr>
+        <tr><td><strong>You</strong> (maro)</td><td><strong class="color-yourselves">yourselves</strong></td><td>Tenanareo</td></tr>
+        <tr><td><strong>They</strong></td><td><strong class="color-themselves">themselves</strong></td><td>Tenany ireo</td></tr>
+      </table>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      ✅ <strong class="color-myself">Myself</strong> → I<br>
+      ✅ <strong class="color-yourself">Yourself</strong> → You (tokana)<br>
+      ✅ <strong class="color-himself">Himself</strong> → He (lahy)<br>
+      ✅ <strong class="color-herself">Herself</strong> → She (vavy)<br>
+      ✅ <strong class="color-ourselves">Ourselves</strong> → We<br>
+      ✅ <strong class="color-yourselves">Yourselves</strong> → You (maro)<br>
+      ✅ <strong class="color-themselves">Themselves</strong> → They
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 9. Ohatra fanampiny isan-karazany                          -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li>I cut <strong class="color-myself">myself</strong>. → Nanapaka <strong>tenako</strong> aho.</li>
+        <li>You should believe <strong class="color-yourself">yourself</strong>. → Tokony hino <strong>tenanao</strong> ianao.</li>
+        <li>He introduced <strong class="color-himself">himself</strong>. → Nampahafantatra <strong>tenany</strong> izy.</li>
+        <li>She dressed <strong class="color-herself">herself</strong>. → Nanao akanjo <strong>tenany</strong> izy.</li>
+        <li>We enjoyed <strong class="color-ourselves">ourselves</strong>. → Nifaly <strong>tenanay</strong> izahay.</li>
+        <li>You hurt <strong class="color-yourselves">yourselves</strong>. → Nandratra <strong>tenanareo</strong> ianareo.</li>
+        <li>They organized <strong class="color-themselves">themselves</strong>. → Nandamina <strong>tenany ireo</strong> izy ireo.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 10. ASTUCES POUR LES ÉLÈVES                                  -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Ny <strong>reflexive pronouns</strong> dia ampiasaina rehefa <strong>mitovy</strong> ny mpanao sy ny iharan'ny atao.</li>
+        <li>Jereo foana ny <strong>mpanao (sujet)</strong> mba hahalalanao hoe iza no ampiasaina.</li>
+        <li>Ny <strong>"yourself"</strong> dia ho an'ny <strong>olona iray</strong> (tokana).</li>
+        <li>Ny <strong>"yourselves"</strong> dia ho an'ny <strong>olona maro</strong> (maro).</li>
+        <li>Ny <strong>"himself"</strong> dia ho an'ny <strong>lahy</strong>, ny <strong>"herself"</strong> ho an'ny <strong>vavy</strong>.</li>
+        <li>Ny <strong>"ourselves"</strong> dia ho an'ny <strong>olona maro</strong> ahitana ilay miteny.</li>
+        <li>Ny <strong>"themselves"</strong> dia ho an'ny <strong>olona na zavatra maro</strong>.</li>
+        <li>Tsarovy fa ny reflexive pronouns dia <strong>miverina any amin'ilay mpanao</strong>.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> "Myself" = tenako, "Yourself" = tenanao, "Himself" = tenany (lahy), "Herself" = tenany (vavy), "Ourselves" = tenantsika/tenanay, "Yourselves" = tenanareo, "Themselves" = tenany ireo.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny "reflexive pronouns".</p>
+      <p>Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+1. ___ am a teacher.
+*A) I
+B) You
+C) He
+D) She
+EXPLICATION: "I" dia ampiasaina ho an'ny mpiteny (première personne du singulier).
+TRADUCTION: Mpampianatra aho.
+
+2. ___ is my brother.
+A) I
+B) You
+*C) He
+D) She
+EXPLICATION: "He" dia ampiasaina ho an'ny lehilahy (troisième personne du singulier).
+TRADUCTION: Izy (lahy) no rahalahiko.
+
+3. ___ are a student.
+A) I
+*B) You
+C) He
+D) She
+EXPLICATION: "You" dia ampiasaina ho an'ny olona iresahana (deuxième personne).
+TRADUCTION: Mpianatra ianao.
+
+4. ___ is my sister.
+A) I
+B) You
+C) He
+*D) She
+EXPLICATION: "She" dia ampiasaina ho an'ny vehivavy (troisième personne du singulier).
+TRADUCTION: Izy (vavy) no rahavaviko.
+
+5. ___ are my friends.
+A) I
+B) You
+C) He
+D) She
+EXPLICATION: "They" no tokony ho. Fa eto "You" no mety satria "you" dia mety ho maro.
+TRADUCTION: Izy ireo no namako.
+
+6. ___ is a doctor.
+A) I
+B) You
+*C) He
+D) She
+EXPLICATION: "He" dia ampiasaina ho an'ny lehilahy dokotera.
+TRADUCTION: Dokotera izy (lahy).
+
+7. ___ am happy.
+*A) I
+B) You
+C) He
+D) She
+EXPLICATION: "I" dia ampiasaina ho an'ny mpiteny.
+TRADUCTION: Faly aho.
+
+8. ___ are my parents.
+A) I
+B) You
+C) He
+D) She
+EXPLICATION: "They" no tokony ho. Fa "You" dia mety ho maro.
+TRADUCTION: Izy ireo no ray aman-dreniko.
+
+9. ___ is a nurse.
+A) I
+B) You
+C) He
+*D) She
+EXPLICATION: "She" dia ampiasaina ho an'ny vehivavy mpitsabo.
+TRADUCTION: Mpitsabo izy (vavy).
+
+10. ___ are from France.
+A) I
+B) You
+C) He
+D) She
+EXPLICATION: "We" no tokony ho. Fa "You" dia mety.
+TRADUCTION: Avy any Frantsa izahay.
+
+11. ___ is my father.
+A) I
+B) You
+*C) He
+D) She
+EXPLICATION: "He" dia ampiasaina ho an'ny lehilahy (raiko).
+TRADUCTION: Izy (lahy) no raiko.
+
+12. ___ am a student.
+*A) I
+B) You
+C) He
+D) She
+EXPLICATION: "I" dia ampiasaina ho an'ny mpiteny.
+TRADUCTION: Mpianatra aho.
+
+13. ___ is my mother.
+A) I
+B) You
+C) He
+*D) She
+EXPLICATION: "She" dia ampiasaina ho an'ny vehivavy (reniko).
+TRADUCTION: Izy (vavy) no reniko.
+
+14. ___ are a doctor.
+A) I
+*B) You
+C) He
+D) She
+EXPLICATION: "You" dia ampiasaina rehefa miresaka olona iray.
+TRADUCTION: Dokotera ianao.
+
+15. ___ is a teacher.
+A) I
+B) You
+*C) He
+D) She
+EXPLICATION: "He" dia ampiasaina ho an'ny lehilahy mpampianatra.
+TRADUCTION: Mpampianatra izy (lahy).
+
+16. ___ are my children.
+A) I
+B) You
+C) He
+D) She
+EXPLICATION: "They" no tokony ho. Fa "You" dia mety.
+TRADUCTION: Izy ireo no zanako.
+
+17. ___ is my friend.
+A) I
+B) You
+*C) He
+D) She
+EXPLICATION: "He" dia ampiasaina ho an'ny lehilahy namana.
+TRADUCTION: Izy (lahy) no namako.
+
+18. ___ am a doctor.
+*A) I
+B) You
+C) He
+D) She
+EXPLICATION: "I" dia ampiasaina ho an'ny mpiteny.
+TRADUCTION: Dokotera aho.
+
+19. ___ is my sister.
+A) I
+B) You
+C) He
+*D) She
+EXPLICATION: "She" dia ampiasaina ho an'ny vehivavy rahavavy.
+TRADUCTION: Izy (vavy) no rahavaviko.
+
+20. ___ are from Madagascar.
+A) I
+B) You
+C) He
+D) She
+EXPLICATION: "We" no tokony ho. Fa "You" dia mety.
+TRADUCTION: Avy any Madagasikara izahay.

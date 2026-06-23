@@ -1,0 +1,399 @@
+1. ___ is my book. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny zavatra tokana akaiky (singular, near).
+TRADUCTION: Ity no bokiko.
+
+2. ___ are your shoes. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zavatra maro akaiky (plural, near).
+TRADUCTION: Ireo no kiraronao.
+
+3. ___ is a beautiful flower. (far from me)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny zavatra tokana lavitra (singular, far).
+TRADUCTION: Io no voninkazo tsara.
+
+4. ___ are my friends. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny olona maro akaiky.
+TRADUCTION: Ireo no namako.
+
+5. ___ is my house. (far from me)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny trano lavitra.
+TRADUCTION: Io no tranoko.
+
+6. ___ are my parents. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny olona maro akaiky.
+TRADUCTION: Ireo no ray aman-dreniko.
+
+7. ___ is a cat. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny saka akaiky.
+TRADUCTION: Ity no saka.
+
+8. ___ are nice cars. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny fiara maro lavitra.
+TRADUCTION: Ireo no fiara tsara.
+
+9. ___ is my teacher. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny mpampianatra akaiky.
+TRADUCTION: Ity no mpampianatro.
+
+10. ___ are beautiful birds. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny vorona maro lavitra.
+TRADUCTION: Ireo no vorona tsara tarehy.
+
+11. ___ is a pen. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny penina akaiky.
+TRADUCTION: Ity no penina.
+
+12. ___ are my books. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny boky maro lavitra.
+TRADUCTION: Ireo no bokiko.
+
+13. ___ is my sister. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny rahavavy akaiky.
+TRADUCTION: Ity no rahavaviko.
+
+14. ___ are expensive watches. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny famantaranandro maro lavitra.
+TRADUCTION: Ireo no famantaranandro lafo vidy.
+
+15. ___ is a big tree. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny hazo akaiky.
+TRADUCTION: Ity no hazo lehibe.
+
+16. ___ are my neighbors. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny mpifanolo-bodirindrina maro akaiky.
+TRADUCTION: Ireo no mpifanolo-bodirindrina amiko.
+
+17. ___ is a beautiful dress. (far from me)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny akanjo tokana lavitra.
+TRADUCTION: Io no akanjo tsara.
+
+18. ___ are my keys. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny lakile maro akaiky.
+TRADUCTION: Ireo no lakileko.
+
+19. ___ is a new phone. (far from me)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny finday tokana lavitra.
+TRADUCTION: Io no finday vaovao.
+
+20. ___ are delicious apples. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny paoma maro akaiky.
+TRADUCTION: Ireo no paoma matsiro.
+
+21. ___ is my brother. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny rahalahy akaiky.
+TRADUCTION: Ity no rahalahiko.
+
+22. ___ are old buildings. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny trano maro lavitra.
+TRADUCTION: Ireo no trano tranainy.
+
+23. ___ is a beautiful flower. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny voninkazo akaiky.
+TRADUCTION: Ity no voninkazo tsara.
+
+24. ___ are my pencils. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny pensily maro lavitra.
+TRADUCTION: Ireo no pensiliko.
+
+25. ___ is a nice girl. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny tovovavy akaiky.
+TRADUCTION: Ity no tovovavy tsara.
+
+26. ___ are my favorite songs. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny hira maro lavitra.
+TRADUCTION: Ireo no hira tianako indrindra.
+
+27. ___ is a delicious cake. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny mofomamy akaiky.
+TRADUCTION: Ity no mofomamy matsiro.
+
+28. ___ are my classmates. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny mpiara-mianatra maro akaiky.
+TRADUCTION: Ireo no mpiara-mianatra amiko.
+
+29. ___ is a tall man. (far from me)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny lehilahy tokana lavitra.
+TRADUCTION: Io no lehilahy lava.
+
+30. ___ are my favorite movies. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny sarimihetsika maro akaiky.
+TRADUCTION: Ireo no sarimihetsika tianako indrindra.
+
+31. ___ is a red car. (far from me)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny fiara tokana lavitra.
+TRADUCTION: Io no fiara mena.
+
+32. ___ are my children. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny zanaka maro akaiky.
+TRADUCTION: Ireo no zanako.
+
+33. ___ is a white house. (far from me)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny trano tokana lavitra.
+TRADUCTION: Io no trano fotsy.
+
+34. ___ are my favorite books. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny boky maro akaiky.
+TRADUCTION: Ireo no boky tianako indrindra.
+
+35. ___ is a beautiful garden. (far from me)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny zaridaina tokana lavitra.
+TRADUCTION: Io no zaridaina tsara.
+
+36. ___ are my toys. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny kilalao maro akaiky.
+TRADUCTION: Ireo no kilalaoko.
+
+37. ___ is a big dog. (far from me)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny alika tokana lavitra.
+TRADUCTION: Io no alika lehibe.
+
+38. ___ are my best friends. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny namana akaiky indrindra maro.
+TRADUCTION: Ireo no namako akaiky indrindra.
+
+39. ___ is a blue sky. (far from me)
+A) This
+*B) That
+C) These
+D) Those
+EXPLICATION: "That" ampiasaina ho an'ny lanitra tokana lavitra.
+TRADUCTION: Io no lanitra manga.
+
+40. ___ are my favorite foods. (near me)
+A) This
+B) That
+*C) These
+D) Those
+EXPLICATION: "These" ampiasaina ho an'ny sakafo maro akaiky.
+TRADUCTION: Ireo no sakafo tianako indrindra.
+
+41. ___ is my mother. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny reniko akaiky.
+TRADUCTION: Ity no reniko.
+
+42. ___ are expensive cars. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny fiara maro lavitra.
+TRADUCTION: Ireo no fiara lafo vidy.
+
+43. ___ is a happy family. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny fianakaviana akaiky.
+TRADUCTION: Ity no fianakaviana sambatra.
+
+44. ___ are my favorite colors. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny loko maro lavitra.
+TRADUCTION: Ireo no loko tianako indrindra.
+
+45. ___ is a small cat. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny saka kely akaiky.
+TRADUCTION: Ity no saka kely.
+
+46. ___ are my new shoes. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny kiraro maro lavitra.
+TRADUCTION: Ireo no kiraroko vaovao.
+
+47. ___ is a pretty woman. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny vehivavy akaiky.
+TRADUCTION: Ity no vehivavy tsara tarehy.
+
+48. ___ are my favorite animals. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny biby maro lavitra.
+TRADUCTION: Ireo no biby tianako indrindra.
+
+49. ___ is a strong man. (near me)
+*A) This
+B) That
+C) These
+D) Those
+EXPLICATION: "This" ampiasaina ho an'ny lehilahy akaiky.
+TRADUCTION: Ity no lehilahy matanjaka.
+
+50. ___ are my favorite clothes. (far from me)
+A) This
+B) That
+C) These
+*D) Those
+EXPLICATION: "Those" ampiasaina ho an'ny akanjo maro lavitra.
+TRADUCTION: Ireo no akanjo tianako indrindra.

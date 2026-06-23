@@ -1,0 +1,162 @@
+1. A male person is called a ___.
+A) woman
+*B) man
+C) girl
+D) child
+EXPLICATION: "Man" dia ampiasaina ho an'ny olona lahy.
+TRADUCTION: Ny olona lahy dia antsoina hoe "man".
+
+2. A female person is called a ___.
+*A) woman
+B) man
+C) boy
+D) father
+EXPLICATION: "Woman" dia ampiasaina ho an'ny olona vavy.
+TRADUCTION: Ny olona vavy dia antsoina hoe "woman".
+
+3. A male child is called a ___.
+A) girl
+*B) boy
+C) woman
+D) mother
+EXPLICATION: "Boy" dia ampiasaina ho an'ny zaza lahy.
+TRADUCTION: Ny zaza lahy dia antsoina hoe "boy".
+
+4. A female child is called a ___.
+*A) girl
+B) boy
+C) man
+D) father
+EXPLICATION: "Girl" dia ampiasaina ho an'ny zaza vavy.
+TRADUCTION: Ny zaza vavy dia antsoina hoe "girl".
+
+5. One book = ___ book.
+*A) a
+B) an
+C) the
+D) some
+EXPLICATION: "A" dia ampiasaina alohan'ny teny manomboka amin'ny konsonanta (book).
+TRADUCTION: Boky iray = "a book".
+
+6. One apple = ___ apple.
+A) a
+*B) an
+C) the
+D) some
+EXPLICATION: "An" dia ampiasaina alohan'ny teny manomboka amin'ny zanapeo (apple).
+TRADUCTION: Paoma iray = "an apple".
+
+7. Two books = ___ books.
+A) book
+*B) books
+C) bookes
+D) bookies
+EXPLICATION: Ampidirana "s" amin'ny farany ny ankamaroan'ny anarana amin'ny endrika maro.
+TRADUCTION: Boky roa = "books".
+
+8. Three boxes = ___ boxes.
+A) box
+B) boxs
+*C) boxes
+D) boxies
+EXPLICATION: Ampidirana "es" rehefa miafara amin'ny "s", "x", "ch", "sh" ny anarana.
+TRADUCTION: Boatiny telo = "boxes".
+
+9. One child = two ___
+A) childs
+B) childrens
+*C) children
+D) childes
+EXPLICATION: "Child" dia anarana tsy ara-dalàna; ny endrika maro dia "children".
+TRADUCTION: Zaza iray = zaza roa ("children").
+
+10. One foot = two ___
+A) foots
+B) feetes
+*C) feet
+D) footes
+EXPLICATION: "Foot" dia anarana tsy ara-dalàna; ny endrika maro dia "feet".
+TRADUCTION: Tongotra iray = tongotra roa ("feet").
+
+11. One tooth = two ___
+A) tooths
+B) toothes
+*C) teeth
+D) toothies
+EXPLICATION: "Tooth" dia anarana tsy ara-dalàna; ny endrika maro dia "teeth".
+TRADUCTION: Nify iray = nify roa ("teeth").
+
+12. One mouse = two ___
+A) mouses
+B) mice
+C) mices
+D) mouse
+*B) mice
+EXPLICATION: "Mouse" dia anarana tsy ara-dalàna; ny endrika maro dia "mice".
+TRADUCTION: Voalavo iray = voalavo roa ("mice").
+
+13. The masculine of "sister" is ___.
+A) sister
+*B) brother
+C) mother
+D) daughter
+EXPLICATION: Ny endrika lahy mifanandrify amin'ny "sister" dia "brother".
+TRADUCTION: Ny endrika lahy mifanandrify amin'ny "sister" dia "brother".
+
+14. The feminine of "father" is ___.
+A) brother
+B) son
+*C) mother
+D) uncle
+EXPLICATION: Ny endrika vavy mifanandrify amin'ny "father" dia "mother".
+TRADUCTION: Ny endrika vavy mifanandrify amin'ny "father" dia "mother".
+
+15. The masculine of "aunt" is ___.
+A) sister
+B) brother
+C) mother
+*D) uncle
+EXPLICATION: Ny endrika lahy mifanandrify amin'ny "aunt" dia "uncle".
+TRADUCTION: Ny endrika lahy mifanandrify amin'ny "aunt" dia "uncle".
+
+16. One woman = two ___
+A) womans
+B) womens
+*C) women
+D) womenses
+EXPLICATION: "Woman" dia anarana tsy ara-dalàna; ny endrika maro dia "women".
+TRADUCTION: Vehivavy iray = vehivavy roa ("women").
+
+17. One man = two ___
+A) mans
+*B) men
+C) mens
+D) manes
+EXPLICATION: "Man" dia anarana tsy ara-dalàna; ny endrika maro dia "men".
+TRADUCTION: Lehilahy iray = lehilahy roa ("men").
+
+18. One person = two ___
+A) persons
+B) people
+C) persones
+D) peoples
+*B) people
+EXPLICATION: "Person" dia manana endrika maro tsy ara-dalàna "people".
+TRADUCTION: Olona iray = olona roa ("people").
+
+19. The feminine of "brother" is ___.
+A) sister
+B) brother
+C) father
+D) son
+*A) sister
+EXPLICATION: Ny endrika vavy mifanandrify amin'ny "brother" dia "sister".
+TRADUCTION: Ny endrika vavy mifanandrify amin'ny "brother" dia "sister".
+
+20. One sheep = two ___
+A) sheeps
+B) sheepes
+*C) sheep
+D) shippes
+EXPLICATION: "Sheep" dia manana endrika tokana sy maro mitovy.
+TRADUCTION: Ondry iray = ondry roa ("sheep").

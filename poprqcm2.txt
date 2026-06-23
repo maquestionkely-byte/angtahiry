@@ -1,0 +1,399 @@
+1. This house is not mine; it's ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ity trano ity (vavy)".
+TRADUCTION: Ity trano ity dia azy.
+
+2. These books belong to me; they are ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ireo boky ireo".
+TRADUCTION: Ireo boky ireo dia ahy.
+
+3. I like your car, but I prefer ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ny fiarany (lahy)".
+TRADUCTION: Tiako ny fiaranao, fa ny azy no tianiko kokoa.
+
+4. This is her bag, so it's ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ity kitapo ity (vavy)".
+TRADUCTION: Ity kitapo ity dia azy.
+
+5. I forgot my pen; can I use ___?
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao", satria manontany an'ilay olona.
+TRADUCTION: Hadinoiko ny peniko; afaka mampiasa ny anao ve aho?
+
+6. This is not my book; it's ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity boky ity (lahy)".
+TRADUCTION: Tsy ahy ity boky ity; fa azy.
+
+7. We have our tickets; do you have ___?
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Ny anao".
+TRADUCTION: Manana ny tapakilanay izahay; manana ny anao ve ianao?
+
+8. She has her keys, but he doesn't have ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Ny azy (lahy)".
+TRADUCTION: Manana ny lakileny izy (vavy), fa tsy manana ny azy (lahy) izy.
+
+9. This is my phone, and that one is ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity finday ity (lahy)".
+TRADUCTION: Ity ny findaiko, ary ity koa dia azy.
+
+10. Your dress is nice, but ___ is nicer.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Ny azy (vavy)".
+TRADUCTION: Tsara ny akanjonao, fa ny azy (vavy) no tsara kokoa.
+
+11. This car is not yours; it's ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity fiara ity (lahy)".
+TRADUCTION: Tsy anao ity fiara ity; fa azy (lahy).
+
+12. I have my glasses; where are ___?
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Ny anao".
+TRADUCTION: Manana ny solomasoko aho; aiza ny anao?
+
+13. These are her shoes, not ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ireo kiraro ireo (vavy)".
+TRADUCTION: Ireo no kirarony (vavy), tsy ny ahy.
+
+14. We ate our lunch; they ate ___.
+A) mine
+B) yours
+C) his
+*D) theirs
+EXPLICATION: "Theirs" dia ampiasaina ho an'ny "they", midika hoe "Ny azy ireo".
+TRADUCTION: Nihinana ny sakafontsika izahay; nihinana ny azy ireo izy ireo.
+
+15. I love your garden; ___ is beautiful too.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Ny azy (vavy)".
+TRADUCTION: Tiako ny zaridainanao; tsara tarehy koa ny azy (vavy).
+
+16. His answer is wrong; ___ is correct.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ny ahy".
+TRADUCTION: Diso ny valinteniny; marina ny ahy.
+
+17. We can use your computer because ___ is broken.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Ny azy (vavy)".
+TRADUCTION: Afaka mampiasa ny solosainao izahay satria tapaka ny azy (vavy).
+
+18. This is my seat; that is ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Ny azy (lahy)".
+TRADUCTION: Ity ny sezako; ity koa dia azy (lahy).
+
+19. She doesn't like her dress; she wants ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Ny azy (vavy)".
+TRADUCTION: Tsy tiany ny akanjony; tiany ny azy (vavy).
+
+20. Your garden is big, but ___ is bigger.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ny ahy".
+TRADUCTION: Lehibe ny zaridainanao, fa lehibe kokoa ny ahy.
+
+21. I have my ticket; do you have ___?
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Ny anao".
+TRADUCTION: Manana ny tapakilako aho; manana ny anao ve ianao?
+
+22. These are his books, not ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ireo boky ireo (lahy)".
+TRADUCTION: Ireo no bokiny (lahy), tsy ny ahy.
+
+23. We have our food; they have ___.
+A) mine
+B) yours
+C) his
+*D) theirs
+EXPLICATION: "Theirs" dia ampiasaina ho an'ny "they", midika hoe "Ny azy ireo".
+TRADUCTION: Manana ny sakafontsika izahay; manana ny azy ireo izy ireo.
+
+24. This is your pen, but that one is ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity penina ity (lahy)".
+TRADUCTION: Ity ny peninao, fa ity koa dia azy (lahy).
+
+25. She left her bag; can you take ___?
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Ny azy (vavy)".
+TRADUCTION: Navelany ny kitapony; afaka maka ny azy (vavy) ve ianao?
+
+26. He lost his keys; I found ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Ny azy (lahy)".
+TRADUCTION: Very ny lakileny; hitako ny azy (lahy).
+
+27. My car is red; ___ is blue.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Ny azy (lahy)".
+TRADUCTION: Mena ny fiarako; manga ny azy (lahy).
+
+28. Your house is big; ___ is small.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Ny azy (vavy)".
+TRADUCTION: Lehibe ny tranonao; kely ny azy (vavy).
+
+29. I need a pen; can I borrow ___?
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Ny anao".
+TRADUCTION: Mila penina aho; afaka mindrana ny anao ve aho?
+
+30. She has her own style; he has ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Ny azy (lahy)".
+TRADUCTION: Manana ny fombany (vavy) izy; manana ny azy (lahy) izy.
+
+31. We are going to the beach; bring ___.
+A) mine
+B) yours
+C) his
+*D) yours
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Ny anao".
+TRADUCTION: Handeha any amin'ny morontsiraka izahay; ento ny anao.
+
+32. This is our house, and that is ___.
+A) mine
+B) yours
+*C) theirs
+D) hers
+EXPLICATION: "Theirs" dia ampiasaina ho an'ny "they", midika hoe "Ny azy ireo".
+TRADUCTION: Ity ny tranonay, ary ity koa dia azy ireo.
+
+33. Your idea is good, but ___ is better.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ny ahy".
+TRADUCTION: Tsara ny hevitrao, fa tsaratsara kokoa ny ahy.
+
+34. She doesn't have her phone; she lost ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Ny azy (vavy)".
+TRADUCTION: Tsy manana ny findainy (vavy) izy; very ny azy (vavy).
+
+35. I like your hat, but I like ___ more.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Ny azy (lahy)".
+TRADUCTION: Tiako ny satrokao, fa tiako kokoa ny azy (lahy).
+
+36. This is her seat, not ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Ny azy (lahy)".
+TRADUCTION: Ity no sezany (vavy), tsy ny azy (lahy).
+
+37. We brought our drinks; they forgot ___.
+A) mine
+B) yours
+C) his
+*D) theirs
+EXPLICATION: "Theirs" dia ampiasaina ho an'ny "they", midika hoe "Ny azy ireo".
+TRADUCTION: Nitondra ny zava-pisotronay izahay; hadinon'izy ireo ny azy ireo.
+
+38. Your answer is correct; ___ is wrong.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Ny azy (lahy)".
+TRADUCTION: Marina ny valintenao; diso ny azy (lahy).
+
+39. He lost his wallet; I found ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Ny azy (lahy)".
+TRADUCTION: Very ny poketreny; hitako ny azy (lahy).
+
+40. This is my book, not ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Ny anao".
+TRADUCTION: Ity ny bokiko, tsy ny anao.
+
+41. She likes her job; he likes ___ too.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Ny azy (lahy)".
+TRADUCTION: Tiany ny asany (vavy); tiany koa ny azy (lahy).
+
+42. We have our tickets; they have ___.
+A) mine
+B) yours
+C) his
+*D) theirs
+EXPLICATION: "Theirs" dia ampiasaina ho an'ny "they", midika hoe "Ny azy ireo".
+TRADUCTION: Manana ny tapakilanay izahay; manana ny azy ireo izy ireo.
+
+43. Your house is beautiful; ___ is nice too.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ny ahy".
+TRADUCTION: Tsara tarehy ny tranonao; tsara koa ny ahy.
+
+44. This is not your phone; it's ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity finday ity (lahy)".
+TRADUCTION: Tsy anao ity finday ity; fa azy (lahy).
+
+45. I have my bag; she has ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Ny azy (vavy)".
+TRADUCTION: Manana ny kitapoko aho; manana ny azy (vavy) izy.
+
+46. They have their house; we have ___.
+A) mine
+B) yours
+*C) ours
+D) hers
+EXPLICATION: "Ours" dia ampiasaina ho an'ny "we", midika hoe "Ny anay".
+TRADUCTION: Manana ny tranony izy ireo; manana ny anay izahay.
+
+47. Your shoes are old; ___ are new.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ny ahy".
+TRADUCTION: Efa antitra ny kiraronao; vaovao ny ahy.
+
+48. She wants her coffee; he wants ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Ny azy (lahy)".
+TRADUCTION: Tiany ny kafehiny (vavy); tiany ny azy (lahy).
+
+49. This is our classroom; that is ___.
+A) mine
+B) yours
+*C) theirs
+D) hers
+EXPLICATION: "Theirs" dia ampiasaina ho an'ny "they", midika hoe "Ny azy ireo".
+TRADUCTION: Ity ny efitranonay; ity koa dia azy ireo.
+
+50. I lost my watch; can I borrow ___?
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Ny anao".
+TRADUCTION: Very ny famantaranandroko; afaka mindrana ny anao ve aho?

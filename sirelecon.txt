@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Simple Relative Pronouns – Who, Whom, Which, That, Where, Whose</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f4f9f4;
+      color: #1a2e2a;
+      padding: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .title-main {
+      background: #bfdbfe;
+      color: #1e3a8a;
+      padding: 6px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .title-main h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 32px;
+      margin-bottom: 24px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e6cf;
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1e40af;
+      border-left: 6px solid #93c5fd;
+      padding-left: 14px;
+      margin-bottom: 16px;
+    }
+
+    .definition-mg {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+
+    .conjugaison-ligne {
+      background: #eef4ea;
+      padding: 16px;
+      border-radius: 24px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #1f3d34;
+      line-height: 1.8;
+    }
+
+    .conjugaison-ligne strong {
+      color: #1e40af;
+    }
+
+    .exemple-modern {
+      background: #fff9ef;
+      padding: 18px;
+      border-radius: 28px;
+      margin: 16px 0 12px 0;
+      border-left: 5px solid #f9c74f;
+    }
+    
+    .exemple-modern .exo-titre {
+      font-weight: 700;
+      color: #c45c1a;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .exemple-modern .exo-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f3e5cf;
+    }
+    
+    .exemple-modern .exo-ligne:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    .exemple-modern .fr {
+      background: white;
+      padding: 6px 14px;
+      border-radius: 24px;
+      font-weight: 600;
+      color: #1e3a5f;
+      font-size: 0.88rem;
+      min-width: 190px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    
+    .highlight {
+      background: #fef1cf;
+      padding: 10px 12px;
+      border-radius: 28px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+    }
+
+    .icone {
+      font-size: 1.2rem;
+      margin-right: 6px;
+    }
+
+    .fb-button-small {
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.1s, background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      width: auto;
+      max-width: 100%;
+      line-height: 1.4;
+      text-align: center;
+    }
+    
+    .fb-button-small:hover {
+      background: #0d65d9;
+    }
+    
+    .fb-button-small:active { 
+      transform: scale(0.97); 
+    }
+    
+    .fb-icon-small {
+      background: white;
+      color: #1877f2;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .contact-info {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e6cf;
+    }
+
+    .small-note {
+      font-size: 0.7rem;
+      color: #6f8f7d;
+      margin-top: 10px;
+    }
+
+    .liste-avec-lignes-vides {
+      list-style: none;
+      margin-top: 6px;
+    }
+    .liste-avec-lignes-vides li {
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+      padding-left: 22px;
+      position: relative;
+      color: #1f3d34;
+      line-height: 1.5;
+    }
+    .liste-avec-lignes-vides li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.85rem;
+    }
+    .liste-avec-lignes-vides li:last-child {
+      margin-bottom: 0;
+    }
+
+    .definition-mg p {
+      margin-bottom: 12px;
+    }
+    .definition-mg p:last-child {
+      margin-bottom: 0;
+    }
+
+    .verb-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    .verb-table th {
+      background: #1e40af;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      border-radius: 8px 8px 0 0;
+    }
+    .verb-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #e2e6cf;
+    }
+    .verb-table tr:nth-child(even) {
+      background: #f8faf8;
+    }
+    .verb-table tr:last-child td {
+      border-bottom: none;
+    }
+    .verb-table .mg-trans {
+      color: #1e3a5f;
+      font-weight: 500;
+    }
+    
+    .color-who { color: #1e40af; font-weight: 700; }
+    .color-whom { color: #7c3aed; font-weight: 700; }
+    .color-which { color: #0d9488; font-weight: 700; }
+    .color-that { color: #b45309; font-weight: 700; }
+    .color-where { color: #dc2626; font-weight: 700; }
+    .color-whose { color: #d97706; font-weight: 700; }
+    
+    .use-tag {
+      display: inline-block;
+      color: white;
+      font-size: 0.6rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 6px;
+    }
+    .use-tag.who { background: #1e40af; }
+    .use-tag.whom { background: #7c3aed; }
+    .use-tag.which { background: #0d9488; }
+    .use-tag.that { background: #b45309; }
+    .use-tag.where { background: #dc2626; }
+    .use-tag.whose { background: #d97706; }
+    
+    @media (max-width: 550px) {
+      .exemple-modern .exo-ligne {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .exemple-modern .fr {
+        align-self: flex-start;
+      }
+      .verb-table {
+        font-size: 0.78rem;
+      }
+      .verb-table th, .verb-table td {
+        padding: 5px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="title-main">
+    <h1>SIMPLE RELATIVE PRONOUNS</h1>
+    <p style="font-size:0.9rem;margin-top:4px;color:#1e3a8a;">Who &bull; Whom &bull; Which &bull; That &bull; Where &bull; Whose</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte : Inona ny relative pronouns ?                        -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🏷️ Inona ny "relative pronouns" ?</h2>
+    <div class="definition-mg">
+      🔹 Ny <strong>relative pronouns</strong> dia <strong>mpisolo anarana</strong> ampiasaina <strong>mampifandray</strong> fehezanteny roa na <strong>manondro</strong> zavatra na olona efa voalaza.<br><br>
+      🔹 Izy ireo dia <strong>mampiditra</strong> ny <strong>relative clause</strong> (fehezanteny mifameno).<br><br>
+      🔹 Ny <strong>"who"</strong> sy <strong>"whom"</strong> dia ho an'ny <strong>olona</strong>.<br><br>
+      🔹 Ny <strong>"which"</strong> dia ho an'ny <strong>zavatra na biby</strong>.<br><br>
+      🔹 Ny <strong>"that"</strong> dia ho an'ny <strong>olona, zavatra, na biby</strong> (rehetra).<br><br>
+      🔹 Ny <strong>"where"</strong> dia ho an'ny <strong>toerana</strong>.<br><br>
+      🔹 Ny <strong>"whose"</strong> dia ho an'ny <strong>fananana</strong> (an'ny olona na zavatra).
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 1. WHO – Olona (Sujet)                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>1️⃣ "WHO" – Olona <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Sujet – iza)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Who</strong> dia ampiasaina hanondroana <strong>olona</strong> izay <strong>mpanao (sujet)</strong> ny matoanteny.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Iza"</strong> na <strong>"izay"</strong> (olona manao zavatra).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👤</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The man <strong class="color-who">who</strong> is here is my father. → Ilay lehilahy <strong>iza</strong> eto dia raiko.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The girl <strong class="color-who">who</strong> sings is my sister. → Ilay zazavavy <strong>izay</strong> mihira dia rahavaviko.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I know the teacher <strong class="color-who">who</strong> works here. → Fantatro ilay mpampianatra <strong>izay</strong> miasa eto.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The doctor <strong class="color-who">who</strong> saved her is kind. → Ilay dokotera <strong>izay</strong> namonjy azy dia tsara fanahy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The woman <strong class="color-who">who</strong> lives next door is friendly. → Ilay vehivavy <strong>izay</strong> mipetraka eo akaiky eo dia sariaka.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"Who"</strong> dia ho an'ny <strong>olona</strong> izay <strong>manao zavatra</strong> (sujet). Ohatra : <em>The man <strong>who</strong> is here...</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. WHOM – Olona (Objet)                                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ "WHOM" – Olona <span style="font-size:0.8rem;color:#7c3aed;font-weight:400;">(Objet – iza no) </span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Whom</strong> dia ampiasaina hanondroana <strong>olona</strong> izay <strong>zavatra (objet)</strong> ny matoanteny.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Iza no"</strong> na <strong>"ilay"</strong> (olona iharan'ny zavatra).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>👤</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The man <strong class="color-whom">whom</strong> I saw is my teacher. → Ilay lehilahy <strong>izay</strong> nahitako dia mpampianatro.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The woman <strong class="color-whom">whom</strong> you met is my aunt. → Ilay vehivavy <strong>izay</strong> niharianao dia neniko.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The student <strong class="color-whom">whom</strong> we helped is grateful. → Ilay mpianatra <strong>izay</strong> nampianarinay dia misaotra.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The girl <strong class="color-whom">whom</strong> he loves is beautiful. → Ilay zazavavy <strong>izay</strong> tiany dia tsara tarehy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The person <strong class="color-whom">whom</strong> I called is my friend. → Ilay olona <strong>izay</strong> niantsoako dia namako.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"Whom"</strong> dia ho an'ny <strong>olona</strong> izay <strong>iharan'ny zavatra</strong> (objet). Ampiasaina amin'ny fomba ofisialy matetika. Ohatra : <em>The man <strong>whom</strong> I saw...</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. WHICH – Zavatra na Biby                                -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>3️⃣ "WHICH" – Zavatra na biby <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(Izay / Ilay)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Which</strong> dia ampiasaina hanondroana <strong>zavatra na biby</strong> (tsy olona).<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Izay"</strong> na <strong>"ilay"</strong> ho an'ny zavatra na biby.
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>📦</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The book <strong class="color-which">which</strong> I read is interesting. → Ilay boky <strong>izay</strong> novakiako dia mahaliana.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The car <strong class="color-which">which</strong> is red is mine. → Ilay fiara <strong>izay</strong> mena dia ahy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The dog <strong class="color-which">which</strong> lives there is big. → Ilay alika <strong>izay</strong> mipetraka any dia lehibe.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The house <strong class="color-which">which</strong> we bought is old. → Ilay trano <strong>izay</strong> novidianay dia tranainy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The phone <strong class="color-which">which</strong> I lost is new. → Ilay finday <strong>izay</strong> veryko dia vaovao.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"Which"</strong> dia ho an'ny <strong>zavatra na biby</strong> ihany. Tsy ampiasaina ho an'ny olona. Ohatra : <em>The book <strong>which</strong> I read...</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 4. THAT – Olona, Zavatra, na Biby (Rehetra)               -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>4️⃣ "THAT" – Olona, zavatra, na biby <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(Izay / Ilay / Ny)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>That</strong> dia ampiasaina hanondroana <strong>olona, zavatra, na biby</strong> (rehetra).<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Izay"</strong> na <strong>"ilay"</strong> na <strong>"ny"</strong> (miankina amin'ny heviny).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔗</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The man <strong class="color-that">that</strong> is here is my father. → Ilay lehilahy <strong>izay</strong> eto dia raiko.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The book <strong class="color-that">that</strong> I read is interesting. → Ilay boky <strong>izay</strong> novakiako dia mahaliana.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The car <strong class="color-that">that</strong> is red is mine. → Ilay fiara <strong>izay</strong> mena dia ahy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The woman <strong class="color-that">that</strong> you met is my aunt. → Ilay vehivavy <strong>izay</strong> niharianao dia neniko.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The dog <strong class="color-that">that</strong> lives there is big. → Ilay alika <strong>izay</strong> mipetraka any dia lehibe.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"That"</strong> dia azo ampiasaina ho an'ny <strong>rehetra</strong> (olona, zavatra, biby). Matetika ampiasaina amin'ny resaka andavanandro. Ohatra : <em>The man <strong>that</strong> is here...</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 5. WHERE – Toerana                                           -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>5️⃣ "WHERE" – Toerana <span style="font-size:0.8rem;color:#dc2626;font-weight:400;">(Aiza / Izay misy)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Where</strong> dia ampiasaina hanondroana <strong>toerana</strong>.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Aiza"</strong> na <strong>"izay misy"</strong>.
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>📍</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The house <strong class="color-where">where</strong> I live is big. → Ilay trano <strong>izay misy</strong> ahy dia lehibe.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This is the school <strong class="color-where">where</strong> I study. → Ity ny sekoly <strong>izay</strong> ianarako.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The city <strong class="color-where">where</strong> she works is beautiful. → Ilay tanàna <strong>izay misy</strong> miasa izy dia tsara tarehy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I remember the place <strong class="color-where">where</strong> we met. → Tadidiko ilay toerana <strong>izay</strong> nifankahitanay.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The restaurant <strong class="color-where">where</strong> we ate is expensive. → Ilay trano fisakafoanana <strong>izay</strong> nihinananay dia lafo.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"Where"</strong> dia ho an'ny <strong>toerana</strong> ihany. Ohatra : <em>The house <strong>where</strong> I live...</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 6. WHOSE – Fananana                                          -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>6️⃣ "WHOSE" – Fananana <span style="font-size:0.8rem;color:#d97706;font-weight:400;">(Iza no manana / An'iza)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>Whose</strong> dia ampiasaina hanondroana <strong>fananana</strong> (izy no manana ilay zavatra).<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      <strong>"Iza no manana"</strong> na <strong>"an'iza"</strong>.
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔑</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The man <strong class="color-whose">whose</strong> car is red is my father. → Ilay lehilahy <strong>izay</strong> mena ny fiarany dia raiko.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The woman <strong class="color-whose">whose</strong> bag is lost is sad. → Ilay vehivavy <strong>izay</strong> very ny poketrany dia malahelo.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The student <strong class="color-whose">whose</strong> book I have is smart. → Ilay mpianatra <strong>izay</strong> bokiny eto amiko dia marani-tsaina.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The dog <strong class="color-whose">whose</strong> tail is short is mine. → Ilay alika <strong>izay</strong> fohy ny rambony dia ahy.</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">The family <strong class="color-whose">whose</strong> house we visited is nice. → Ilay fianakaviana <strong>izay</strong> trano no tsidihantsika dia tsara.</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> <strong>"Whose"</strong> dia ho an'ny <strong>fananana</strong> (olona na zavatra manana zavatra). Ohatra : <em>The man <strong>whose</strong> car is red...</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. TABLEAU RÉCAPITULATIF                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
+    <div class="definition-mg">
+      <strong>🔹 Fampitahana ny relative pronouns :</strong>
+    </div>
+    <div class="conjugaison-ligne">
+      <table class="verb-table">
+        <tr><th style="background:#1e40af;">Pronom</th><th style="background:#1e40af;">Fampiasana</th><th style="background:#1e40af;">Dikany malagasy</th></tr>
+        <tr><td><strong class="color-who">WHO</strong></td><td>Olona (sujet – manao)</td><td>Iza / Izay (manao)</td></tr>
+        <tr><td><strong class="color-whom">WHOM</strong></td><td>Olona (objet – iharan'ny atao)</td><td>Iza / Izay (iharan'ny zavatra)</td></tr>
+        <tr><td><strong class="color-which">WHICH</strong></td><td>Zavatra na biby</td><td>Izay / Ilay</td></tr>
+        <tr><td><strong class="color-that">THAT</strong></td><td>Olona, zavatra, na biby (rehetra)</td><td>Izay / Ilay / Ny</td></tr>
+        <tr><td><strong class="color-where">WHERE</strong></td><td>Toerana</td><td>Aiza / Izay misy</td></tr>
+        <tr><td><strong class="color-whose">WHOSE</strong></td><td>Fananana (an'iza)</td><td>Iza no manana / An'iza</td></tr>
+      </table>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      ✅ <strong class="color-who">WHO</strong> → olona manao zavatra<br>
+      ✅ <strong class="color-whom">WHOM</strong> → olona iharan'ny zavatra<br>
+      ✅ <strong class="color-which">WHICH</strong> → zavatra na biby<br>
+      ✅ <strong class="color-that">THAT</strong> → rehetra (olona, zavatra, biby)<br>
+      ✅ <strong class="color-where">WHERE</strong> → toerana<br>
+      ✅ <strong class="color-whose">WHOSE</strong> → fananana
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. Ohatra fanampiny isan-karazany                          -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li><strong class="color-who">Who</strong> is the person <strong class="color-that">that</strong> called you? → Iza ilay olona <strong>izay</strong> niantso anao?</li>
+        <li>The house <strong class="color-where">where</strong> I grew up is gone. → Ilay trano <strong>izay</strong> nihalehibeako dia tsy misy intsony.</li>
+        <li>The teacher <strong class="color-whose">whose</strong> car is blue is my favourite. → Ilay mpampianatra <strong>izay</strong> manga ny fiarany no tiako indrindra.</li>
+        <li>I know the girl <strong class="color-who">who</strong> won the prize. → Fantatro ilay zazavavy <strong>izay</strong> nahazo ny loka.</li>
+        <li>The book <strong class="color-which">which</strong> you gave me is amazing. → Ilay boky <strong>izay</strong> nomenao ahy dia tena tsara.</li>
+        <li>The man <strong class="color-whom">whom</strong> we saw yesterday is a doctor. → Ilay lehilahy <strong>izay</strong> nahitantsika omaly dia dokotera.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 9. ASTUCES POUR LES ÉLÈVES                                  -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
+    <div class="definition-mg" style="margin-bottom: 6px;">
+      <ul class="liste-avec-lignes-vides">
+        <li>Jereo foana raha <strong>olona</strong> sa <strong>zavatra</strong> ilay resahina.</li>
+        <li>Raha <strong>olona</strong> dia jereo raha <strong>manao</strong> (who) sa <strong>iharan'ny atao</strong> (whom) ilay olona.</li>
+        <li>Raha <strong>zavatra na biby</strong> dia ampiasao ny <strong>"which"</strong> na <strong>"that"</strong>.</li>
+        <li>Raha <strong>toerana</strong> dia ampiasao ny <strong>"where"</strong>.</li>
+        <li>Raha <strong>fananana</strong> dia ampiasao ny <strong>"whose"</strong>.</li>
+        <li>Amin'ny resaka andavanandro, ny <strong>"that"</strong> no ampiasaina matetika indrindra.</li>
+        <li>Ny <strong>"whom"</strong> dia ampiasaina amin'ny fomba ofisialy na an-tsoratra.</li>
+        <li>Tsarovy fa ny <strong>"who"</strong> sy <strong>"whom"</strong> dia ho an'ny <strong>olona</strong> ihany.</li>
+      </ul>
+    </div>
+    <div class="highlight" style="margin-top: 8px;">
+      🌱 <strong>Tsarovy :</strong> "Who" = olona manao, "Whom" = olona iharan'ny atao, "Which" = zavatra/biby, "That" = rehetra, "Where" = toerana, "Whose" = fananana.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📬 Fanamarihana sy Fifandraisana</h2>
+    <div class="definition-mg" style="margin-bottom: 8px;">
+      <p>Raha misy ny fanamarihana avy aminao : </p>
+      <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
+      <p>➡️ Na maniry hianatra ianao.</p>
+      <p>➡️ Na manana olana amin'ny "relative pronouns".</p>
+      <p>Dia azonao atao ny miresaka aminay mivantana.</p>
+    </div>
+    
+    <button class="fb-button-small" id="fbContactBtn">
+      <span class="fb-icon-small">f</span>
+      Raha hiresaka aminay amin'ny facebook dia kitiho ity<br>👉 FACEBOOK
+    </button>
+    
+    <div class="contact-info">
+      <div class="small-note">Mirary fahazotoana mianatra sy fahaizana ho anao 🙏🏽</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const FB_PAGE_ID = "61555313604553";
+  const FB_URL = `https://www.facebook.com/profile.php?id=${FB_PAGE_ID}`;
+  
+  const fbButton = document.getElementById('fbContactBtn');
+  if (fbButton) {
+    fbButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(FB_URL, '_blank');
+    });
+  }
+
+  (function() {
+    function showBlockOverlay() {
+      if (document.getElementById('securityOverlay')) return;
+      const overlay = document.createElement('div');
+      overlay.id = 'securityOverlay';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.98);z-index:30000;display:flex;justify-content:center;align-items:center;';
+      overlay.innerHTML = `<div style="background:#1a1a2e;border:2px solid #e94560;border-radius:24px;padding:45px 35px;text-align:center;max-width:420px;"><div style="font-size:60px;">🔒</div><h3 style="color:#e94560;">Ny henjana ihany no tonga aty an!</h3><p style="color:white;">Akatony ary avereno ity pejy ity.</p><button id="closeSecurityBtn" style="background:#e94560;color:white;border:none;padding:12px 28px;border-radius:40px;cursor:pointer;">🔄 Akatony & Avereno</button></div>`;
+      document.body.appendChild(overlay);
+      document.getElementById('closeSecurityBtn').onclick = () => location.reload();
+    }
+
+    function hideBlockOverlay() {
+      const overlay = document.getElementById('securityOverlay');
+      if (overlay) overlay.remove();
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (e.key === "F12" || e.code === "F12" || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "J" || e.key === "j")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "d" || e.key === "D")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "f" || e.key === "F")) {
+        e.preventDefault();
+        return false;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === "r" || e.key === "R")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === "F5" || e.keyCode === 116) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "U" || e.key === "u")) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+        e.preventDefault();
+        return false;
+      }
+    }, true);
+
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('selectstart', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('copy', (e) => { e.preventDefault(); return false; }, true);
+    document.addEventListener('cut', (e) => { e.preventDefault(); return false; }, true);
+
+    function detectDevTools() {
+      let devToolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        if (widthDiff > threshold || heightDiff > threshold) {
+          if (!devToolsOpen) { devToolsOpen = true; showBlockOverlay(); }
+        } else {
+          if (devToolsOpen) { devToolsOpen = false; hideBlockOverlay(); }
+        }
+      }, 1000);
+    }
+
+    setInterval(() => { debugger; }, 50);
+    
+    if (window.console) {
+      const noop = () => {};
+      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
+    }
+
+    detectDevTools();
+  })();
+</script>
+</body>
+</html>

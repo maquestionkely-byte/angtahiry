@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Demonstrative determiners – this, that, these, those</title>
+  <title>Verbs after Prepositions – Infinitive Form</title>
   <style>
     * {
       margin: 0;
@@ -253,10 +253,12 @@
       font-weight: 500;
     }
     
-    .color-demo { color: #1e40af; font-weight: 700; }
+    .color-to { color: #1e40af; font-weight: 700; }
+    .color-of { color: #b45309; font-weight: 700; }
+    .color-for { color: #0d9488; font-weight: 700; }
+    
     .use-tag {
       display: inline-block;
-      background: #1e40af;
       color: white;
       font-size: 0.6rem;
       font-weight: 700;
@@ -266,10 +268,9 @@
       letter-spacing: 0.5px;
       margin-left: 6px;
     }
-    .use-tag.this { background: #1e40af; }
-    .use-tag.that { background: #b45309; }
-    .use-tag.these { background: #0d9488; }
-    .use-tag.those { background: #7c3aed; }
+    .use-tag.to { background: #1e40af; }
+    .use-tag.of { background: #b45309; }
+    .use-tag.for { background: #0d9488; }
     
     @media (max-width: 550px) {
       .exemple-modern .exo-ligne {
@@ -291,253 +292,229 @@
 <body>
 <div class="container">
   <div class="title-main">
-    <h1>DEMONSTRATIVE DETERMINERS</h1>
-    <p style="font-size:0.9rem;margin-top:4px;color:#1e3a8a;">this / that / these / those</p>
+    <h1>VERBS AFTER PREPOSITIONS</h1>
+    <p style="font-size:0.9rem;margin-top:4px;color:#1e3a8a;">Verbs after TO &bull; OF &bull; FOR are in the Infinitive</p>
   </div>
 
   <!-- ============================================================ -->
-  <!-- Carte : Inona ny demonstrative determiners ?                   -->
+  <!-- Carte : Inona ny verbs after prepositions ?                 -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>🏷️ Inona ny "this, that, these, those" ?</h2>
+    <h2>🏷️ Inona ny "verbs after prepositions" ?</h2>
     <div class="definition-mg">
-      🔹 Ny <strong>"demonstrative determiners"</strong> dia <strong>mpamaritra</strong> ampiasaina hilazana <strong>zavatra na olona akaiky na lavitra</strong>.<br><br>
-      🔹 Izy ireo dia <strong>mampiseho</strong> na <strong>manondro</strong> zavatra iray na maromaro.<br><br>
-      🔹 <strong>THIS</strong> → <strong>"ity"</strong> (zavatra tokana akaiky)<br><br>
-      🔹 <strong>THAT</strong> → <strong>"io / iry"</strong> (zavatra tokana lavitra)<br><br>
-      🔹 <strong>THESE</strong> → <strong>"ireo"</strong> (zavatra maromaro akaiky)<br><br>
-      🔹 <strong>THOSE</strong> → <strong>"ireo / iry"</strong> (zavatra maromaro lavitra)<br><br>
-      <span class="icone">📌</span> Ampiasaina eo <strong>alohan'ny anarana</strong> (noun) izy ireo mba hilazana hoe <strong>iza na inona</strong> no resahina.
+      🔹 Rehefa misy <strong>mpampiankin-teny (preposition)</strong> toy ny <strong>"to"</strong>, <strong>"of"</strong>, ary <strong>"for"</strong>, dia ny matoanteny manaraka azy dia <strong>ao amin'ny endrika infinitif</strong>.<br><br>
+      🔹 Ny <strong>infinitif</strong> dia ny endrika fototry ny matoanteny miaraka amin'ny <strong>"to"</strong> (to + verbe).<br><br>
+      🔹 Rehefa misy <strong>"to"</strong> ho mpampiankin-teny (tsy ho an'ny infinitif), dia <strong>to + verbe</strong> ihany no arahiny.<br><br>
+      🔹 Rehefa misy <strong>"of"</strong> na <strong>"for"</strong> ho mpampiankin-teny, dia <strong>to + verbe</strong> koa no arahiny.<br><br>
+      <span class="icone">📌</span> <strong>Règle générale :</strong><br>
+      <strong>Préposition (to / of / for) + VERBE (infinitif)</strong><br><br>
+      <span class="icone">📌</span> <strong>Ohatra :</strong><br>
+      • I want <strong>to go</strong>. (to + go)<br>
+      • She is afraid <strong>of to walk</strong> → She is afraid <strong>to walk</strong>. (of + to walk)<br>
+      • This is for <strong>to help</strong> → This is <strong>to help</strong>. (for + to help)<br><br>
+      <div style="background:#fef1cf;padding:10px;border-radius:16px;margin-top:8px;">
+      💡 <strong>Zava-dehibe :</strong> Rehefa misy mpampiankin-teny toy ny <strong>"to"</strong>, <strong>"of"</strong>, na <strong>"for"</strong>, dia <strong>to + verbe</strong> (infinitif) no manaraka azy.
+      </div>
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 1. TABLEAU RECAPITULATIF                                      -->
+  <!-- 1. VERBES APRÈS "TO" (PRÉPOSITION)                        -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>📊 Tabilao famintinana</h2>
+    <h2>1️⃣ Verbes après "TO" <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Préposition – to + infinitif)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      Rehefa misy <strong>"to"</strong> ho <strong>mpampiankin-teny</strong> (fa tsy mba ao amin'ny infinitif), dia <strong>"to + infinitif"</strong> no manaraka azy.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      "To" + matoanteny amin'ny endrika fototry (infinitif).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔗</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I want <strong class="color-to">to go</strong>. → Te-handeha aho. (to + go)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She needs <strong class="color-to">to eat</strong>. → Mila mihinana izy. (to + eat)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">They like <strong class="color-to">to sing</strong>. → Tia mihira izy ireo. (to + sing)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I have <strong class="color-to">to study</strong>. → Tsy maintsy mianatra aho. (to + study)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He wants <strong class="color-to">to play</strong>. → Te-hilalao izy. (to + play)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Rehefa misy <strong>"to"</strong> (mpampiankin-teny), dia <strong>to + verbe</strong> (infinitif) no arahiny. Ohatra : <em>I want <strong>to go</strong>.</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. VERBES APRÈS "OF"                                       -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ Verbes après "OF" <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(Préposition – of + infinitif)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      Rehefa misy <strong>"of"</strong> ho <strong>mpampiankin-teny</strong>, dia <strong>"to + infinitif"</strong> no manaraka azy.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      "Of" + matoanteny amin'ny endrika fototry (infinitif).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔗</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She is afraid <strong class="color-of">to walk</strong> alone. → Matahotra <strong>handeha</strong> irery izy. (of + to walk)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I am tired <strong class="color-of">to work</strong>. → Sasatra <strong>miasa</strong> aho. (of + to work)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He is capable <strong class="color-of">to do</strong> it. → Mahavita <strong>manao</strong> izany izy. (of + to do)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She is proud <strong class="color-of">to be</strong> here. → Rehareha <strong>ny ho</strong> eto izy. (of + to be)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I am fond <strong class="color-of">to read</strong>. → Tia <strong>mamaky</strong> aho. (of + to read)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Rehefa misy <strong>"of"</strong>, dia <strong>to + verbe</strong> (infinitif) no arahiny. Ohatra : <em>She is afraid <strong>to walk</strong>.</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. VERBES APRÈS "FOR"                                      -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>3️⃣ Verbes après "FOR" <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(Préposition – for + infinitif)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      Rehefa misy <strong>"for"</strong> ho <strong>mpampiankin-teny</strong>, dia <strong>"to + infinitif"</strong> no manaraka azy.<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      "For" + matoanteny amin'ny endrika fototry (infinitif).
+    </div>
+
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔗</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">This is <strong class="color-for">to help</strong> you. → Izany dia <strong>hanampy</strong> anao. (for + to help)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">It's time <strong class="color-for">to go</strong>. → Fotoana <strong>handeha</strong> izao. (for + to go)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">She is ready <strong class="color-for">to start</strong>. → Vonona <strong>hanomboka</strong> izy. (for + to start)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">I am looking <strong class="color-for">to find</strong> a job. → Mitady <strong>hahita</strong> asa aho. (for + to find)</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr">He is waiting <strong class="color-for">to see</strong> you. → Miandry <strong>hahita</strong> anao izy. (for + to see)</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Rehefa misy <strong>"for"</strong>, dia <strong>to + verbe</strong> (infinitif) no arahiny. Ohatra : <em>This is <strong>to help</strong> you.</em>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 4. TABLEAU RÉCAPITULATIF                                    -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
+    <div class="definition-mg">
+      <strong>🔹 Fampitahana ny prépositions :</strong>
+    </div>
     <div class="conjugaison-ligne">
       <table class="verb-table">
-        <tr><th>Determiner</th><th>Iza no ampiasaina</th><th>Dikany malagasy</th><th>Ohatra</th></tr>
-        <tr><td><strong class="color-demo">THIS</strong></td><td>Zavatra tokana <strong>akaiky</strong></td><td>ity / izao</td><td>this book (ity boky ity)</td></tr>
-        <tr><td><strong class="color-demo">THAT</strong></td><td>Zavatra tokana <strong>lavitra</strong></td><td>io / izy / iry</td><td>that car (io fiara io)</td></tr>
-        <tr><td><strong class="color-demo">THESE</strong></td><td>Zavatra maro <strong>akaiky</strong></td><td>ireto / ireo</td><td>these pens (ireto penina ireto)</td></tr>
-        <tr><td><strong class="color-demo">THOSE</strong></td><td>Zavatra maro <strong>lavitra</strong></td><td>ireo / iry</td><td>those houses (ireo trano ireo)</td></tr>
+        <tr><th style="background:#1e40af;">Préposition</th><th style="background:#1e40af;">Endrika manaraka</th><th style="background:#1e40af;">Dikany malagasy</th></tr>
+        <tr><td><strong class="color-to">TO</strong></td><td><strong>to + infinitif</strong></td><td>Mba / Ho / Mba haha...</td></tr>
+        <tr><td><strong class="color-of">OF</strong></td><td><strong>to + infinitif</strong></td><td>Mba / Ho / Mba haha...</td></tr>
+        <tr><td><strong class="color-for">FOR</strong></td><td><strong>to + infinitif</strong></td><td>Mba / Ho / Mba haha...</td></tr>
       </table>
     </div>
-  </div>
-
-  <!-- ============================================================ -->
-  <!-- 2. THIS (ity / izao)                                         -->
-  <!-- ============================================================ -->
-  <div class="card">
-    <h2>1️⃣ THIS <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(ity / izao)</span></h2>
-    <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"this"</strong> dia ampiasaina ho an'ny <strong>zavatra tokana akaiky</strong> (eo akaikinao na eo am-pelatananao).
-    </div>
-
-    <div class="exemple-modern">
-      <div class="exo-titre">
-        <span>👆</span> Ohatra amin'ny teny anglisy sy malagasy
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> book is mine. (Ity boky ity dia ahy.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> house is big. (Ity trano ity dia lehibe.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> is my friend. (Ity no namako.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> pen is red. (Ity penina ity dia mena.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> is a cat. (Ity dia saka.)</span>
-      </div>
-    </div>
     <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>akaiky</strong> ny zavatra resahina. Ohatra : zavatra eo am-pelatananao, eo akaikinao, na zavatra vao nolazainao.
+      💡 <strong>Tsarovy :</strong><br>
+      ✅ <strong class="color-to">TO</strong> + <strong>to + verbe</strong><br>
+      ✅ <strong class="color-of">OF</strong> + <strong>to + verbe</strong><br>
+      ✅ <strong class="color-for">FOR</strong> + <strong>to + verbe</strong><br><br>
+      Ny <strong>infinitif</strong> dia <strong>to + verbe</strong> (ohatra : to go, to eat, to sing).
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 3. THAT (io / iry)                                           -->
+  <!-- 5. DIFFÉRENCE : INFINITIF vs PRÉPOSITION + INFINITIF      -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>2️⃣ THAT <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(io / iry)</span></h2>
+    <h2>📌 Fahasamihafana : Infinitif vs Préposition + Infinitif</h2>
     <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"that"</strong> dia ampiasaina ho an'ny <strong>zavatra tokana lavitra</strong> (tsy akaiky na eo indray).
-    </div>
-
-    <div class="exemple-modern">
-      <div class="exo-titre">
-        <span>👉</span> Ohatra amin'ny teny anglisy sy malagasy
+      <strong>🔹 Zava-dehibe tokony hotadidina :</strong><br><br>
+      <span class="icone">📌</span> <strong>Infinitif</strong> → <strong>to + verbe</strong> (ohatra : to eat, to go)<br>
+      Ohatra : <em>I want <strong>to eat</strong>.</em> (Te-hihinana aho.)<br><br>
+      <span class="icone">📌</span> <strong>Préposition + Infinitif</strong> → <strong>to + to + verbe</strong><br>
+      Ohatra : <em>She is afraid <strong>of to walk</strong>.</em> → <em>She is afraid <strong>to walk</strong>.</em><br><br>
+      <span class="icone">📌</span> <strong>Fanamarihana :</strong> Amin'ny teny anglisy, rehefa misy mpampiankin-teny toy ny <strong>"of"</strong> sy <strong>"for"</strong>, dia matetika <strong>esorina</strong> ny "to" faharoa, ka lasa <strong>to + verbe</strong> fotsiny.<br><br>
+      <div style="background:#fef1cf;padding:10px;border-radius:16px;margin-top:8px;">
+      💡 <strong>Tsarovy :</strong> Ny mpampiankin-teny (to, of, for) dia <strong>mampiditra</strong> ny infinitif. Amin'ny fampiasana andavanandro, dia <strong>"to + verbe"</strong> ihany no hita.
       </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> car is expensive. (Io fiara io dia lafo.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> man is my father. (Io lehilahy io no raiko.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> is my house. (Io no tranoko.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> dog is big. (Io alika io dia lehibe.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> is a tree. (Io dia hazo.)</span>
-      </div>
-    </div>
-    <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>lavitra</strong> ny zavatra resahina. Ohatra : zavatra any lavitra, eo indray, na zavatra efa resahina taloha.
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 4. THESE (ireto / ireo)                                     -->
+  <!-- 6. Ohatra fanampiny isan-karazany                          -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>3️⃣ THESE <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(ireto / ireo)</span></h2>
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
     <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"these"</strong> dia ampiasaina ho an'ny <strong>zavatra maromaro akaiky</strong> (eo akaikinao na eo am-pelatananao).
-    </div>
-
-    <div class="exemple-modern">
-      <div class="exo-titre">
-        <span>👐</span> Ohatra amin'ny teny anglisy sy malagasy
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> books are mine. (Ireto boky ireto dia ahy.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> flowers are beautiful. (Ireto voninkazo ireto dia tsara tarehy.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> are my friends. (Ireto no namako.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> pens are red. (Ireto penina ireto dia mena.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> are apples. (Ireto dia paoma.)</span>
-      </div>
-    </div>
-    <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>maro sy akaiky</strong> ny zavatra resahina. Ohatra : zavatra maro eo am-pelatananao na eo akaikinao.
+      <ul class="liste-avec-lignes-vides">
+        <li>I want <strong class="color-to">to learn</strong> English. → Te-hianatra anglisy aho.</li>
+        <li>She is afraid <strong class="color-of">to fail</strong>. → Matahotra tsy hahomby izy.</li>
+        <li>This gift is <strong class="color-for">to thank</strong> you. → Ity fanomezana ity dia hisaotra anao.</li>
+        <li>He needs <strong class="color-to">to sleep</strong>. → Mila matory izy.</li>
+        <li>I am tired <strong class="color-of">to run</strong>. → Sasatra mihazakazaka aho.</li>
+        <li>It's time <strong class="color-for">to leave</strong>. → Fotoana handeha izao.</li>
+        <li>She is capable <strong class="color-of">to swim</strong>. → Mahavita milomano izy.</li>
+        <li>I am looking <strong class="color-for">to buy</strong> a house. → Mitady hividy trano aho.</li>
+      </ul>
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 5. THOSE (ireo / iry)                                       -->
+  <!-- 7. ASTUCES POUR LES ÉLÈVES                                  -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>4️⃣ THOSE <span style="font-size:0.8rem;color:#7c3aed;font-weight:400;">(ireo / iry)</span></h2>
-    <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"those"</strong> dia ampiasaina ho an'ny <strong>zavatra maromaro lavitra</strong> (tsy akaiky na eo indray).
-    </div>
-
-    <div class="exemple-modern">
-      <div class="exo-titre">
-        <span>👋</span> Ohatra amin'ny teny anglisy sy malagasy
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> cars are expensive. (Ireo fiara ireo dia lafo.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> men are my teachers. (Ireo lehilahy ireo no mpampianatro.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> are my houses. (Ireo no tranoko.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> dogs are big. (Ireo alika ireo dia lehibe.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> are trees. (Ireo dia hazo.)</span>
-      </div>
-    </div>
-    <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>maro sy lavitra</strong> ny zavatra resahina. Ohatra : zavatra maro any lavitra na eo indray.
-    </div>
-  </div>
-
-  <!-- ============================================================ -->
-  <!-- 6. FANAZAVANINA FANAMPINY                                   -->
-  <!-- ============================================================ -->
-  <div class="card">
-    <h2>📌 Fahasamihafana lehibe</h2>
-    <div class="definition-mg">
-      <strong>🔹 Distance :</strong><br>
-      • <strong>THIS / THESE</strong> → <strong>akaiky</strong> (proche)<br>
-      • <strong>THAT / THOSE</strong> → <strong>lavitra</strong> (loin)<br><br>
-      
-      <strong>🔹 Isan'isa (Nombre) :</strong><br>
-      • <strong>THIS / THAT</strong> → <strong>tokana</strong> (singulier)<br>
-      • <strong>THESE / THOSE</strong> → <strong>maro</strong> (pluriel)<br><br>
-
-      <strong>🔹 Tabilao fampitahana :</strong><br>
-      <table class="verb-table">
-        <tr><th></th><th>SINGULIER (tokana)</th><th>PLURIEL (maro)</th></tr>
-        <tr><th>PROCHE (akaiky)</th><td><strong>THIS</strong> (ity)</td><td><strong>THESE</strong> (ireto)</td></tr>
-        <tr><th>LOIN (lavitra)</th><td><strong>THAT</strong> (io / iry)</td><td><strong>THOSE</strong> (ireo)</td></tr>
-      </table>
-    </div>
-  </div>
-
-  <!-- ============================================================ -->
-  <!-- 7. Ohatra fampitahana mivantana                              -->
-  <!-- ============================================================ -->
-  <div class="card">
-    <h2>🧪 Ohatra fampitahana mazava</h2>
-    <div class="exemple-modern">
-      <div class="exo-titre">
-        <span>🔍</span> Jereo ny fahasamihafana
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> book is new. (Ity boky ity dia vaovao.) → akaiky</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> book is old. (Io boky io dia tranainy.) → lavitra</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> books are new. (Ireto boky ireto dia vaovao.) → maro akaiky</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> books are old. (Ireo boky ireo dia tranainy.) → maro lavitra</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============================================================ -->
-  <!-- 8. TOROHEVITRA MAHASOA                                       -->
-  <!-- ============================================================ -->
-  <div class="card">
-    <h2>🎯 Torohevitra mahasoa ho an'ny débutant</h2>
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
     <div class="definition-mg" style="margin-bottom: 6px;">
       <ul class="liste-avec-lignes-vides">
-        <li>Jereo foana raha <strong>tokana na maro</strong> ilay zavatra resahina.</li>
-        <li>Jereo raha <strong>akaiky na lavitra</strong> ilay zavatra resahina.</li>
-        <li>Raha <strong>tokana sy akaiky</strong> → <strong>THIS</strong></li>
-        <li>Raha <strong>tokana sy lavitra</strong> → <strong>THAT</strong></li>
-        <li>Raha <strong>maro sy akaiky</strong> → <strong>THESE</strong></li>
-        <li>Raha <strong>maro sy lavitra</strong> → <strong>THOSE</strong></li>
-        <li>Ampiasaina eo <strong>alohan'ny anarana</strong> (noun) ny determiners : <em>this book, that car, these pens, those houses</em></li>
-        <li>Azo ampiasaina irery koa izy ireo (maha-pronom) : <em>This is my house. That is my car.</em></li>
+        <li>Rehefa misy <strong>mpampiankin-teny (to, of, for)</strong>, dia <strong>to + verbe</strong> (infinitif) no manaraka azy.</li>
+        <li>Ny <strong>infinitif</strong> dia <strong>to + verbe</strong> (ohatra : to go, to eat, to sing).</li>
+        <li>Rehefa misy <strong>"to"</strong>, dia <strong>to + verbe</strong> fotsiny.</li>
+        <li>Rehefa misy <strong>"of"</strong> na <strong>"for"</strong>, dia <strong>to + verbe</strong> koa no arahiny.</li>
+        <li>Tsarovy fa ny <strong>to</strong> dia mety ho <strong>mpampiankin-teny</strong> na <strong>mpamaritra ny infinitif</strong>.</li>
+        <li>Amin'ny fampiasana andavanandro, dia <strong>to + verbe</strong> ihany no ampiasaina.</li>
+        <li>Jereo tsara ny <strong>mpampiankin-teny</strong> alohan'ny hamenoanao ny banga.</li>
+        <li>Zahao foana ny <strong>endrika tsy miova</strong> (base form) ilay verbe.</li>
       </ul>
     </div>
     <div class="highlight" style="margin-top: 8px;">
-      🌱 <strong>Tsarovy :</strong> THIS / THESE = <strong>akaiky</strong> (proche) — THAT / THOSE = <strong>lavitra</strong> (loin) !
+      🌱 <strong>Tsarovy :</strong> "To" + verbe, "Of" + to + verbe, "For" + to + verbe. Ny zava-dehibe dia ny <strong>to + verbe</strong> (infinitif) no manaraka ny mpampiankin-teny.
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 9. Carte Fanampiana & Fifandraisana                          -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
   <!-- ============================================================ -->
   <div class="card">
     <h2>📬 Fanamarihana sy Fifandraisana</h2>
@@ -545,7 +522,7 @@
       <p>Raha misy ny fanamarihana avy aminao : </p>
       <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
       <p>➡️ Na maniry hianatra ianao.</p>
-      <p>➡️ Na manana olana amin'ny "this, that, these, those".</p>
+      <p>➡️ Na manana olana amin'ny "verbs after prepositions".</p>
       <p>Dia azonao atao ny miresaka aminay mivantana.</p>
     </div>
     

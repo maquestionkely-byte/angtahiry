@@ -1,0 +1,399 @@
+1. This book is ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ity boky ity".
+TRADUCTION: Ity boky ity dia ahy.
+
+2. This pen is ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ity penina ity".
+TRADUCTION: Ity penina ity dia anao.
+
+3. This car is ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity fiara ity (lahy)".
+TRADUCTION: Ity fiara ity dia azy.
+
+4. This bag is ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ity kitapo ity (vavy)".
+TRADUCTION: Ity kitapo ity dia azy.
+
+5. This house is ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ity trano ity".
+TRADUCTION: Ity trano ity dia ahy.
+
+6. This phone is ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ity finday ity".
+TRADUCTION: Ity finday ity dia anao.
+
+7. This hat is ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity satroka ity (lahy)".
+TRADUCTION: Ity satroka ity dia azy.
+
+8. This dress is ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ity akanjo ity (vavy)".
+TRADUCTION: Ity akanjo ity dia azy.
+
+9. These shoes are ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ireo kiraro ireo".
+TRADUCTION: Ireo kiraro ireo dia ahy.
+
+10. These keys are ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ireo lakile ireo".
+TRADUCTION: Ireo lakile ireo dia anao.
+
+11. These glasses are ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ireo solomaso ireo (lahy)".
+TRADUCTION: Ireo solomaso ireo dia azy.
+
+12. These earrings are ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ireo kavina ireo (vavy)".
+TRADUCTION: Ireo kavina ireo dia azy.
+
+13. This watch is ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ity famantaranandro ity".
+TRADUCTION: Ity famantaranandro ity dia ahy.
+
+14. This jacket is ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ity palitao ity".
+TRADUCTION: Ity palitao ity dia anao.
+
+15. This bicycle is ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity bisikileta ity (lahy)".
+TRADUCTION: Ity bisikileta ity dia azy.
+
+16. This necklace is ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ity rojo ity (vavy)".
+TRADUCTION: Ity rojo ity dia azy.
+
+17. These books are ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ireo boky ireo".
+TRADUCTION: Ireo boky ireo dia ahy.
+
+18. These pens are ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ireo penina ireo".
+TRADUCTION: Ireo penina ireo dia anao.
+
+19. These bags are ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ireo kitapo ireo (lahy)".
+TRADUCTION: Ireo kitapo ireo dia azy.
+
+20. These dresses are ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ireo akanjo ireo (vavy)".
+TRADUCTION: Ireo akanjo ireo dia azy.
+
+21. This umbrella is ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ity elo ity".
+TRADUCTION: Ity elo ity dia ahy.
+
+22. This laptop is ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ity solosaina finday ity".
+TRADUCTION: Ity solosaina finday ity dia anao.
+
+23. This guitar is ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity gitara ity (lahy)".
+TRADUCTION: Ity gitara ity dia azy.
+
+24. This mirror is ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ity fitaratra ity (vavy)".
+TRADUCTION: Ity fitaratra ity dia azy.
+
+25. These chairs are ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ireo seza ireo".
+TRADUCTION: Ireo seza ireo dia ahy.
+
+26. These tables are ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ireo latabatra ireo".
+TRADUCTION: Ireo latabatra ireo dia anao.
+
+27. These phones are ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ireo finday ireo (lahy)".
+TRADUCTION: Ireo finday ireo dia azy.
+
+28. These hats are ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ireo satroka ireo (vavy)".
+TRADUCTION: Ireo satroka ireo dia azy.
+
+29. This wallet is ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ity poketra ity".
+TRADUCTION: Ity poketra ity dia ahy.
+
+30. This ring is ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ity peratra ity".
+TRADUCTION: Ity peratra ity dia anao.
+
+31. This watch is ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity famantaranandro ity (lahy)".
+TRADUCTION: Ity famantaranandro ity dia azy.
+
+32. This bracelet is ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ity fehin-tanana ity (vavy)".
+TRADUCTION: Ity fehin-tanana ity dia azy.
+
+33. These flowers are ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ireo voninkazo ireo".
+TRADUCTION: Ireo voninkazo ireo dia ahy.
+
+34. These pictures are ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ireo sary ireo".
+TRADUCTION: Ireo sary ireo dia anao.
+
+35. These cups are ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ireo kaopy ireo (lahy)".
+TRADUCTION: Ireo kaopy ireo dia azy.
+
+36. These plates are ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ireo lovia ireo (vavy)".
+TRADUCTION: Ireo lovia ireo dia azy.
+
+37. This sofa is ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ity sofa ity".
+TRADUCTION: Ity sofa ity dia ahy.
+
+38. This bed is ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ity fandriana ity".
+TRADUCTION: Ity fandriana ity dia anao.
+
+39. This TV is ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity fahitalavitra ity (lahy)".
+TRADUCTION: Ity fahitalavitra ity dia azy.
+
+40. This radio is ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ity radio ity (vavy)".
+TRADUCTION: Ity radio ity dia azy.
+
+41. These toys are ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ireo kilalao ireo".
+TRADUCTION: Ireo kilalao ireo dia ahy.
+
+42. These tools are ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ireo fitaovana ireo".
+TRADUCTION: Ireo fitaovana ireo dia anao.
+
+43. These shoes are ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ireo kiraro ireo (lahy)".
+TRADUCTION: Ireo kiraro ireo dia azy.
+
+44. These boots are ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ireo kiraro lava ireo (vavy)".
+TRADUCTION: Ireo kiraro lava ireo dia azy.
+
+45. This cake is ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ity mofomamy ity".
+TRADUCTION: Ity mofomamy ity dia ahy.
+
+46. This pizza is ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ity pizza ity".
+TRADUCTION: Ity pizza ity dia anao.
+
+47. This sandwich is ___.
+A) mine
+B) yours
+*C) his
+D) hers
+EXPLICATION: "His" dia ampiasaina ho an'ny "he", midika hoe "Azy ity sandwich ity (lahy)".
+TRADUCTION: Ity sandwich ity dia azy.
+
+48. This salad is ___.
+A) mine
+B) yours
+C) his
+*D) hers
+EXPLICATION: "Hers" dia ampiasaina ho an'ny "she", midika hoe "Azy ity salady ity (vavy)".
+TRADUCTION: Ity salady ity dia azy.
+
+49. These bananas are ___.
+*A) mine
+B) yours
+C) his
+D) hers
+EXPLICATION: "Mine" dia ampiasaina ho an'ny "I", midika hoe "Ahy ireo akondro ireo".
+TRADUCTION: Ireo akondro ireo dia ahy.
+
+50. These apples are ___.
+A) mine
+*B) yours
+C) his
+D) hers
+EXPLICATION: "Yours" dia ampiasaina ho an'ny "you", midika hoe "Anao ireo paoma ireo".
+TRADUCTION: Ireo paoma ireo dia anao.

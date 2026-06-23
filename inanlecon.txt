@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Demonstrative determiners – this, that, these, those</title>
+  <title>Interrogative and Exclamative Determiners – Which & What</title>
   <style>
     * {
       margin: 0;
@@ -253,7 +253,8 @@
       font-weight: 500;
     }
     
-    .color-demo { color: #1e40af; font-weight: 700; }
+    .color-which { color: #1e40af; font-weight: 700; }
+    .color-what { color: #b45309; font-weight: 700; }
     .use-tag {
       display: inline-block;
       background: #1e40af;
@@ -266,10 +267,7 @@
       letter-spacing: 0.5px;
       margin-left: 6px;
     }
-    .use-tag.this { background: #1e40af; }
-    .use-tag.that { background: #b45309; }
-    .use-tag.these { background: #0d9488; }
-    .use-tag.those { background: #7c3aed; }
+    .use-tag.what { background: #b45309; }
     
     @media (max-width: 550px) {
       .exemple-modern .exo-ligne {
@@ -291,253 +289,249 @@
 <body>
 <div class="container">
   <div class="title-main">
-    <h1>DEMONSTRATIVE DETERMINERS</h1>
-    <p style="font-size:0.9rem;margin-top:4px;color:#1e3a8a;">this / that / these / those</p>
+    <h1>INTERROGATIVE & EXCLAMATIVE DETERMINERS</h1>
+    <p style="font-size:0.9rem;margin-top:4px;color:#1e3a8a;">WHICH &amp; WHAT</p>
   </div>
 
   <!-- ============================================================ -->
-  <!-- Carte : Inona ny demonstrative determiners ?                   -->
+  <!-- Carte : Inona ny which sy what ?                             -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>🏷️ Inona ny "this, that, these, those" ?</h2>
+    <h2>🏷️ Inona ny "which" sy "what" ?</h2>
     <div class="definition-mg">
-      🔹 Ny <strong>"demonstrative determiners"</strong> dia <strong>mpamaritra</strong> ampiasaina hilazana <strong>zavatra na olona akaiky na lavitra</strong>.<br><br>
-      🔹 Izy ireo dia <strong>mampiseho</strong> na <strong>manondro</strong> zavatra iray na maromaro.<br><br>
-      🔹 <strong>THIS</strong> → <strong>"ity"</strong> (zavatra tokana akaiky)<br><br>
-      🔹 <strong>THAT</strong> → <strong>"io / iry"</strong> (zavatra tokana lavitra)<br><br>
-      🔹 <strong>THESE</strong> → <strong>"ireo"</strong> (zavatra maromaro akaiky)<br><br>
-      🔹 <strong>THOSE</strong> → <strong>"ireo / iry"</strong> (zavatra maromaro lavitra)<br><br>
-      <span class="icone">📌</span> Ampiasaina eo <strong>alohan'ny anarana</strong> (noun) izy ireo mba hilazana hoe <strong>iza na inona</strong> no resahina.
+      🔹 Ny teny <strong>"which"</strong> sy <strong>"what"</strong> dia <strong>mpamaritra (determiners)</strong> ampiasaina amin'ny <strong>fanontaniana</strong> sy ny <strong>fanehoana fahagagana</strong>.<br><br>
+      🔹 Izy ireo dia <strong>miaraka amin'ny anarana (nom)</strong> mba hamaritana azy.<br><br>
+      🔹 Ny <strong>"which"</strong> dia midika hoe <strong>"iza amin'ireo"</strong> amin'ny teny malagasy.<br><br>
+      🔹 Ny <strong>"what"</strong> dia midika hoe <strong>"inona"</strong> na <strong>"karazana inona"</strong> amin'ny teny malagasy.<br><br>
+      <span class="icone">📌</span> <strong>Which</strong> → ampiasaina rehefa <strong>misy safidy voafetra</strong> (fantatra ny lisitra) ary mila misafidy.<br><br>
+      <span class="icone">📌</span> <strong>What</strong> → ampiasaina rehefa <strong>tsy misy fetra</strong> ny safidy, na rehefa mangataka fampahalalana momba ny zavatra iray.
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 1. TABLEAU RECAPITULATIF                                      -->
+  <!-- 1. WHICH – DÉTERMINANT INTERROGATIF                          -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>📊 Tabilao famintinana</h2>
+    <h2>1️⃣ "WHICH" – DÉTERMINANT INTERROGATIF <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Iza amin'ireo)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>WHICH</strong> + <strong>nom</strong> + <strong>verbe</strong> ?<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      Mampiasa <strong>"which"</strong> isika rehefa <strong>misy safidy voafetra</strong> (fantatra ny lisitra) ary mila <strong>misafidy</strong> amin'izy ireo.
+    </div>
+
+    <!-- ====== Exemples WHICH ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔍</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-which">Which</strong> book do you want? → <strong>Iza amin'ireo boky</strong> no tianao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-which">Which</strong> colour do you prefer? → <strong>Iza amin'ireo loko</strong> no tianao kokoa?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-which">Which</strong> teacher is your favourite? → <strong>Iza amin'ireo mpampianatra</strong> no tianao indrindra?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-which">Which</strong> car is yours? → <strong>Iza amin'ireo fiara</strong> no anao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-which">Which</strong> way should we go? → <strong>Iza amin'ireo lalana</strong> no tokony halehantsika?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-which">Which</strong> dress should I wear? → <strong>Iza amin'ireo akanjo</strong> no tokony hataoko?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-which">Which</strong> restaurant do you like? → <strong>Iza amin'ireo trano fisakafoanana</strong> no tianao?</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ampiasao ny <strong>"which"</strong> rehefa <strong>mahafantatra ny safidy</strong> ianao ary mila misafidy amin'izy ireo. Ohatra : misy boky 3 eo anatrehanao, dia hanontany ianao hoe "Which book do you want?"
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 2. WHAT – DÉTERMINANT INTERROGATIF                           -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>2️⃣ "WHAT" – DÉTERMINANT INTERROGATIF <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(Inona / Karazana inona)</span></h2>
+    <div class="definition-mg">
+      <strong>📖 Règle :</strong><br>
+      <strong>WHAT</strong> + <strong>nom</strong> + <strong>verbe</strong> ?<br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      Mampiasa <strong>"what"</strong> isika rehefa <strong>tsy misy fetra</strong> ny safidy, na rehefa <strong>mangataka fampahalalana</strong> momba ny zavatra iray.
+    </div>
+
+    <!-- ====== Exemples WHAT ====== -->
+    <div class="exemple-modern">
+      <div class="exo-titre">
+        <span>🔍</span> Ohatra amin'ny teny anglisy sy malagasy
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-what">What</strong> book are you reading? → <strong>Inona</strong> ilay boky vakinao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-what">What</strong> colour is your car? → <strong>Inona</strong> ny lokon'ny fiaranao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-what">What</strong> time is it? → <strong>Amin'ny firy</strong> izao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-what">What</strong> kind of music do you like? → <strong>Inona</strong> karazana mozika tianao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-what">What</strong> movie did you watch? → <strong>Inona</strong> ilay sarimihetsika nijerenao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-what">What</strong> food do you like? → <strong>Inona</strong> ny sakafo tianao?</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-what">What</strong> language do you speak? → <strong>Inona</strong> ny fiteny teninao?</span>
+      </div>
+    </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong> Ampiasao ny <strong>"what"</strong> rehefa <strong>tsy fantatra na tsy voafetra</strong> ny safidy. Ohatra : misy boky rehetra eto an-tany, dia hanontany ianao hoe "What book are you reading?"
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 3. COMPARAISON : WHICH vs WHAT                              -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>3️⃣ Fampitahana : "WHICH" vs "WHAT"</h2>
+    <div class="definition-mg">
+      <strong>🔹 Tabilao fampitahana :</strong>
+    </div>
     <div class="conjugaison-ligne">
       <table class="verb-table">
-        <tr><th>Determiner</th><th>Iza no ampiasaina</th><th>Dikany malagasy</th><th>Ohatra</th></tr>
-        <tr><td><strong class="color-demo">THIS</strong></td><td>Zavatra tokana <strong>akaiky</strong></td><td>ity / izao</td><td>this book (ity boky ity)</td></tr>
-        <tr><td><strong class="color-demo">THAT</strong></td><td>Zavatra tokana <strong>lavitra</strong></td><td>io / izy / iry</td><td>that car (io fiara io)</td></tr>
-        <tr><td><strong class="color-demo">THESE</strong></td><td>Zavatra maro <strong>akaiky</strong></td><td>ireto / ireo</td><td>these pens (ireto penina ireto)</td></tr>
-        <tr><td><strong class="color-demo">THOSE</strong></td><td>Zavatra maro <strong>lavitra</strong></td><td>ireo / iry</td><td>those houses (ireo trano ireo)</td></tr>
+        <tr><th style="background:#1e40af;">WHICH (voafetra)</th><th style="background:#b45309;">WHAT (tsy voafetra)</th></tr>
+        <tr><td><strong class="color-which">Which</strong> dress should I wear? <br><span style="font-size:0.8rem;color:#1f3d34;">(2-3 akanjo fotsiny)</span></td>
+        <td><strong class="color-what">What</strong> dress should I wear? <br><span style="font-size:0.8rem;color:#1f3d34;">(rehetra mety)</span></td></tr>
+        <tr><td><strong class="color-which">Which</strong> colour do you like? <br><span style="font-size:0.8rem;color:#1f3d34;">(lisitra kely)</span></td>
+        <td><strong class="color-what">What</strong> colour is it? <br><span style="font-size:0.8rem;color:#1f3d34;">(mamantatra loko fotsiny)</span></td></tr>
+        <tr><td><strong class="color-which">Which</strong> student won? <br><span style="font-size:0.8rem;color:#1f3d34;">(fantatra ny mpianatra)</span></td>
+        <td><strong class="color-what">What</strong> student does that? <br><span style="font-size:0.8rem;color:#1f3d34;">(tsy fantatra, hafahafa)</span></td></tr>
+        <tr><td><strong class="color-which">Which</strong> day is best? <br><span style="font-size:0.8rem;color:#1f3d34;">(7 andro fotsiny)</span></td>
+        <td><strong class="color-what">What</strong> day is it today? <br><span style="font-size:0.8rem;color:#1f3d34;">(mamantatra andro)</span></td></tr>
       </table>
     </div>
+    <div class="highlight">
+      💡 <strong>Tsarovy :</strong><br>
+      ✅ <strong class="color-which">Which</strong> → "Iza amin'ireo ?" (misy safidy voafetra)<br>
+      ✅ <strong class="color-what">What</strong> → "Inona ?" (tsy misy fetra)
+    </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 2. THIS (ity / izao)                                         -->
+  <!-- 4. WHICH ET WHAT EXCLAMATIFS                                  -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>1️⃣ THIS <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(ity / izao)</span></h2>
+    <h2>4️⃣ "WHICH" ET "WHAT" EXCLAMATIFS <span style="font-size:0.8rem;color:#1e40af;font-weight:400;">(Fanehoana fahagagana)</span></h2>
     <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"this"</strong> dia ampiasaina ho an'ny <strong>zavatra tokana akaiky</strong> (eo akaikinao na eo am-pelatananao).
+      <strong>📖 Règle :</strong><br>
+      <strong>What</strong> / <strong>Which</strong> + <strong>nom</strong> ! <br><br>
+      <strong>📌 Fampiasana amin'ny teny malagasy :</strong><br>
+      Enti-maneho <strong>fahagagana</strong>, <strong>fahasosorana</strong>, na <strong>fankasitrahana</strong>.
     </div>
 
+    <!-- ====== Exemples EXCLAMATIFS ====== -->
     <div class="exemple-modern">
       <div class="exo-titre">
-        <span>👆</span> Ohatra amin'ny teny anglisy sy malagasy
+        <span>😲</span> Ohatra amin'ny teny anglisy sy malagasy
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> book is mine. (Ity boky ity dia ahy.)</span>
+        <span class="fr"><strong class="color-what">What</strong> a beautiful dress! → <strong>Tena</strong> akanjo tsara tarehy!</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> house is big. (Ity trano ity dia lehibe.)</span>
+        <span class="fr"><strong class="color-what">What</strong> an idea! → <strong>Tena</strong> hevitra izany!</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> is my friend. (Ity no namako.)</span>
+        <span class="fr"><strong class="color-what">What</strong> a day! → <strong>Tena</strong> andro iray izany!</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> pen is red. (Ity penina ity dia mena.)</span>
+        <span class="fr"><strong class="color-what">What</strong> a surprise! → <strong>Tena</strong> fahagagana!</span>
       </div>
       <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> is a cat. (Ity dia saka.)</span>
+        <span class="fr"><strong class="color-what">What</strong> a mess! → <strong>Tena</strong> korontana!</span>
+      </div>
+      <div class="exo-ligne">
+        <span class="fr"><strong class="color-what">What</strong> delicious food! → <strong>Tena</strong> sakafo matsiro!</span>
       </div>
     </div>
     <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>akaiky</strong> ny zavatra resahina. Ohatra : zavatra eo am-pelatananao, eo akaikinao, na zavatra vao nolazainao.
+      💡 <strong>Tsarovy :</strong> Amin'ny endrika exclamatif, ny <strong>"what"</strong> no ampiasaina matetika kokoa. Ny <strong>"which"</strong> dia zara raha ampiasaina amin'ity endrika ity.
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 3. THAT (io / iry)                                           -->
+  <!-- 5. TABLEAU RÉCAPITULATIF                                      -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>2️⃣ THAT <span style="font-size:0.8rem;color:#b45309;font-weight:400;">(io / iry)</span></h2>
+    <h2>📊 Tabilao famintinana (Tableau récapitulatif)</h2>
     <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"that"</strong> dia ampiasaina ho an'ny <strong>zavatra tokana lavitra</strong> (tsy akaiky na eo indray).
+      <strong>🔹 Famintinana :</strong>
     </div>
-
-    <div class="exemple-modern">
-      <div class="exo-titre">
-        <span>👉</span> Ohatra amin'ny teny anglisy sy malagasy
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> car is expensive. (Io fiara io dia lafo.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> man is my father. (Io lehilahy io no raiko.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> is my house. (Io no tranoko.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> dog is big. (Io alika io dia lehibe.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> is a tree. (Io dia hazo.)</span>
-      </div>
-    </div>
-    <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>lavitra</strong> ny zavatra resahina. Ohatra : zavatra any lavitra, eo indray, na zavatra efa resahina taloha.
-    </div>
-  </div>
-
-  <!-- ============================================================ -->
-  <!-- 4. THESE (ireto / ireo)                                     -->
-  <!-- ============================================================ -->
-  <div class="card">
-    <h2>3️⃣ THESE <span style="font-size:0.8rem;color:#0d9488;font-weight:400;">(ireto / ireo)</span></h2>
-    <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"these"</strong> dia ampiasaina ho an'ny <strong>zavatra maromaro akaiky</strong> (eo akaikinao na eo am-pelatananao).
-    </div>
-
-    <div class="exemple-modern">
-      <div class="exo-titre">
-        <span>👐</span> Ohatra amin'ny teny anglisy sy malagasy
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> books are mine. (Ireto boky ireto dia ahy.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> flowers are beautiful. (Ireto voninkazo ireto dia tsara tarehy.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> are my friends. (Ireto no namako.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> pens are red. (Ireto penina ireto dia mena.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> are apples. (Ireto dia paoma.)</span>
-      </div>
-    </div>
-    <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>maro sy akaiky</strong> ny zavatra resahina. Ohatra : zavatra maro eo am-pelatananao na eo akaikinao.
-    </div>
-  </div>
-
-  <!-- ============================================================ -->
-  <!-- 5. THOSE (ireo / iry)                                       -->
-  <!-- ============================================================ -->
-  <div class="card">
-    <h2>4️⃣ THOSE <span style="font-size:0.8rem;color:#7c3aed;font-weight:400;">(ireo / iry)</span></h2>
-    <div class="definition-mg">
-      <strong>📖 Famaritana malagasy :</strong><br>
-      Ny <strong>"those"</strong> dia ampiasaina ho an'ny <strong>zavatra maromaro lavitra</strong> (tsy akaiky na eo indray).
-    </div>
-
-    <div class="exemple-modern">
-      <div class="exo-titre">
-        <span>👋</span> Ohatra amin'ny teny anglisy sy malagasy
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> cars are expensive. (Ireo fiara ireo dia lafo.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> men are my teachers. (Ireo lehilahy ireo no mpampianatro.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> are my houses. (Ireo no tranoko.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> dogs are big. (Ireo alika ireo dia lehibe.)</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> are trees. (Ireo dia hazo.)</span>
-      </div>
-    </div>
-    <div class="highlight">
-      💡 <strong>Fampiasana :</strong> Ampiasaina rehefa <strong>maro sy lavitra</strong> ny zavatra resahina. Ohatra : zavatra maro any lavitra na eo indray.
-    </div>
-  </div>
-
-  <!-- ============================================================ -->
-  <!-- 6. FANAZAVANINA FANAMPINY                                   -->
-  <!-- ============================================================ -->
-  <div class="card">
-    <h2>📌 Fahasamihafana lehibe</h2>
-    <div class="definition-mg">
-      <strong>🔹 Distance :</strong><br>
-      • <strong>THIS / THESE</strong> → <strong>akaiky</strong> (proche)<br>
-      • <strong>THAT / THOSE</strong> → <strong>lavitra</strong> (loin)<br><br>
-      
-      <strong>🔹 Isan'isa (Nombre) :</strong><br>
-      • <strong>THIS / THAT</strong> → <strong>tokana</strong> (singulier)<br>
-      • <strong>THESE / THOSE</strong> → <strong>maro</strong> (pluriel)<br><br>
-
-      <strong>🔹 Tabilao fampitahana :</strong><br>
+    <div class="conjugaison-ligne">
       <table class="verb-table">
-        <tr><th></th><th>SINGULIER (tokana)</th><th>PLURIEL (maro)</th></tr>
-        <tr><th>PROCHE (akaiky)</th><td><strong>THIS</strong> (ity)</td><td><strong>THESE</strong> (ireto)</td></tr>
-        <tr><th>LOIN (lavitra)</th><td><strong>THAT</strong> (io / iry)</td><td><strong>THOSE</strong> (ireo)</td></tr>
+        <tr><th style="background:#1e40af;">WHICH</th><th style="background:#b45309;">WHAT</th></tr>
+        <tr><td>✅ Misy <strong>safidy voafetra</strong></td>
+        <td>✅ Tsy misy <strong>fetra</strong> ny safidy</td></tr>
+        <tr><td>✅ "<strong>Iza amin'ireo</strong> ?"</td>
+        <td>✅ "<strong>Inona</strong> ?" / "<strong>Karazana inona</strong> ?"</td></tr>
+        <tr><td>✅ <strong class="color-which">Which</strong> book do you want?</td>
+        <td>✅ <strong class="color-what">What</strong> book is that?</td></tr>
+        <tr><td>✅ <strong class="color-which">Which</strong> colour? (lisitra voafetra)</td>
+        <td>✅ <strong class="color-what">What</strong> colour? (mamantatra loko)</td></tr>
+        <tr><td>❌ Tsy ampiasaina amin'ny "time"</td>
+        <td>✅ <strong class="color-what">What</strong> time is it?</td></tr>
+        <tr><td>❌ Tsy ampiasaina amin'ny "kind of"</td>
+        <td>✅ <strong class="color-what">What</strong> kind of ...?</td></tr>
       </table>
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 7. Ohatra fampitahana mivantana                              -->
+  <!-- 6. ASTUCES POUR LES ÉLÈVES                                  -->
   <!-- ============================================================ -->
   <div class="card">
-    <h2>🧪 Ohatra fampitahana mazava</h2>
-    <div class="exemple-modern">
-      <div class="exo-titre">
-        <span>🔍</span> Jereo ny fahasamihafana
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>This</strong> book is new. (Ity boky ity dia vaovao.) → akaiky</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>That</strong> book is old. (Io boky io dia tranainy.) → lavitra</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>These</strong> books are new. (Ireto boky ireto dia vaovao.) → maro akaiky</span>
-      </div>
-      <div class="exo-ligne">
-        <span class="fr"><strong>Those</strong> books are old. (Ireo boky ireo dia tranainy.) → maro lavitra</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============================================================ -->
-  <!-- 8. TOROHEVITRA MAHASOA                                       -->
-  <!-- ============================================================ -->
-  <div class="card">
-    <h2>🎯 Torohevitra mahasoa ho an'ny débutant</h2>
+    <h2>🎯 Torohevitra mahasoa ho an'ny mpianatra</h2>
     <div class="definition-mg" style="margin-bottom: 6px;">
       <ul class="liste-avec-lignes-vides">
-        <li>Jereo foana raha <strong>tokana na maro</strong> ilay zavatra resahina.</li>
-        <li>Jereo raha <strong>akaiky na lavitra</strong> ilay zavatra resahina.</li>
-        <li>Raha <strong>tokana sy akaiky</strong> → <strong>THIS</strong></li>
-        <li>Raha <strong>tokana sy lavitra</strong> → <strong>THAT</strong></li>
-        <li>Raha <strong>maro sy akaiky</strong> → <strong>THESE</strong></li>
-        <li>Raha <strong>maro sy lavitra</strong> → <strong>THOSE</strong></li>
-        <li>Ampiasaina eo <strong>alohan'ny anarana</strong> (noun) ny determiners : <em>this book, that car, these pens, those houses</em></li>
-        <li>Azo ampiasaina irery koa izy ireo (maha-pronom) : <em>This is my house. That is my car.</em></li>
+        <li>Jereo foana raha <strong>misy safidy voafetra</strong> sa tsia. Raha misy → <strong>which</strong>. Raha tsy misy → <strong>what</strong>.</li>
+        <li><strong>Which</strong> dia miaraka amin'ny <strong>anarana (nom)</strong> foana. Tsy mitokana izy.</li>
+        <li><strong>What</strong> dia miaraka amin'ny <strong>anarana (nom)</strong> foana ihany koa.</li>
+        <li>Ho an'ny <strong>ora</strong> sy <strong>daty</strong>, dia mampiasa <strong>what</strong> foana isika : <em>What time is it?</em></li>
+        <li>Ho an'ny <strong>karazana</strong> zavatra iray, dia mampiasa <strong>what</strong> foana isika : <em>What kind of ...?</em></li>
+        <li>Ho an'ny <strong>fanehoana fahagagana</strong>, dia mampiasa <strong>what</strong> matetika isika : <em>What a beautiful day!</em></li>
+        <li>Tsarovy fa ny <strong>"which"</strong> dia matetika ampiasaina rehefa <strong>misy safidy roa na telo</strong> fotsiny.</li>
       </ul>
     </div>
     <div class="highlight" style="margin-top: 8px;">
-      🌱 <strong>Tsarovy :</strong> THIS / THESE = <strong>akaiky</strong> (proche) — THAT / THOSE = <strong>lavitra</strong> (loin) !
+      🌱 <strong>Tsarovy :</strong> "Which" = safidy voafetra, "What" = tsy voafetra. Io no fototry ny fampiasana azy roa !
     </div>
   </div>
 
   <!-- ============================================================ -->
-  <!-- 9. Carte Fanampiana & Fifandraisana                          -->
+  <!-- 7. Ohatra fanampiny                                             -->
+  <!-- ============================================================ -->
+  <div class="card">
+    <h2>📗 Ohatra fanampiny isan-karazany</h2>
+    <div class="definition-mg">
+      <ul class="liste-avec-lignes-vides">
+        <li><strong>Which</strong> shirt do you like? (misy 3 eo am-pelatananao) → <strong>Iza amin'ireo lobaka</strong> no tianao?</li>
+        <li><strong>What</strong> shirt do you like? (tsy misy fetra) → <strong>Inona</strong> karazana lobaka tianao?</li>
+        <li><strong>Which</strong> movie should we watch? (misy 2-3) → <strong>Iza amin'ireo sarimihetsika</strong> no tokony hojerentsika?</li>
+        <li><strong>What</strong> movie did you watch? (tsy misy fetra) → <strong>Inona</strong> ilay sarimihetsika nijerenao?</li>
+        <li><strong>What</strong> a wonderful day! → <strong>Tena</strong> andro mahafinaritra!</li>
+        <li><strong>Which</strong> of these books is yours? → <strong>Iza amin'ireo boky</strong> no anao?</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Carte Fanampiana & Fifandraisana                              -->
   <!-- ============================================================ -->
   <div class="card">
     <h2>📬 Fanamarihana sy Fifandraisana</h2>
@@ -545,7 +539,7 @@
       <p>Raha misy ny fanamarihana avy aminao : </p>
       <p>➡️ Ohatra misy fanatsarana ny lesona.</p>
       <p>➡️ Na maniry hianatra ianao.</p>
-      <p>➡️ Na manana olana amin'ny "this, that, these, those".</p>
+      <p>➡️ Na manana olana amin'ny "which" sy "what".</p>
       <p>Dia azonao atao ny miresaka aminay mivantana.</p>
     </div>
     
@@ -658,11 +652,4 @@
     
     if (window.console) {
       const noop = () => {};
-      console.log = console.info = console.warn = console.debug = console.table = console.dir = console.trace = console.group = console.groupEnd = console.error = noop;
-    }
-
-    detectDevTools();
-  })();
-</script>
-</body>
-</html>
+      console.log = console.info = console.warn = console
