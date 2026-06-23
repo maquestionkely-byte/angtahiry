@@ -635,7 +635,7 @@ body:has(#screenLecteurQCM.active) .footer {
             <div class="bandeau-haut">
                 <div>
                     <h1>📖 Dictionnaire</h1>
-                    <p>Français ⇄ Malagasy</p>
+                    <p>ANGLAIS ⇄ Malagasy</p>
                 </div>
             </div>
             <div id="dictionnaireContent" class="conteneur-dynamique"></div>
@@ -648,7 +648,7 @@ body:has(#screenLecteurQCM.active) .footer {
             <div class="bandeau-haut">
                 <div>
                     <h1>📘 Conjugaison</h1>
-                    <p>Conjugaison des verbes français</p>
+                    <p>Conjugaison des verbes anglais</p>
                 </div>
             </div>
             <div id="conjugaisonContent" class="conteneur-dynamique"></div>
@@ -661,7 +661,7 @@ body:has(#screenLecteurQCM.active) .footer {
             <div class="bandeau-haut">
                 <div>
                     <h1>💬 Dialoguer</h1>
-                    <p>Conversations françaises</p>
+                    <p>Conversations ANGLAISES</p>
                 </div>
             </div>
             <div id="dialoguerContent" class="conteneur-dynamique"></div>
@@ -699,7 +699,7 @@ body:has(#screenLecteurQCM.active) .footer {
             </button>
         </div>
         
-        <input type="text" id="modalCode" class="code-input" placeholder="Entrez le code" autocomplete="off">
+        <input type="text" id="modalCode" class="code-input" placeholder="Entrez le code" autocomplete="off" style="text-transform: uppercase;" oninput="this.value = this.value.toUpperCase()">
         
         <div class="code-modal-buttons">
             <button class="btn-validate" onclick="submitModalCode()">Voir leçon</button>
@@ -911,15 +911,12 @@ const dictionnaireLecons = [
 
 const conjugaisonLecons = [
     { id: 1, titre: "Verb Conjugation", fichier: "conjlecon.txt", description: "Conjugaison complète des verbes anglais", defaut: "Conjugaison non disponible." },
-    { id: 2, titre: "Conjugation Rules", fichier: "conjrelecon.txt", description: "Les règles de conjugaison et les cas particuliers (mangeons, jettes, espère, etc.)", defaut: "Conjugaison non disponible." }
+    { id: 2, titre: "Conjugation Rules", fichier: "conjrelecon.txt", description: "Les règles de conjugaison et les cas particuliers (avec s raha she,it,he,sns...", defaut: "Conjugaison non disponible." }
 ];
 
 const dialoguerLecons = [
     { id: 1, titre: "English and Malagasy Dialogues", fichier: "diallecon.txt", description: "Dialogues bilingues anglais et malagasy avec texte", defaut: "Dialogue non disponible." },
-    { id: 2, titre: "Audio + text dialogues", fichier: "diautecon.txt", description: "Dialogues avec audio et texte en anglais et malagasy", defaut: "Dialogue non disponible." },
-    { id: 3, titre: "English only dialogues", fichier: "diunlecon.txt", description: "Dialogues uniquement en anglais, sans traduction", defaut: "Dialogue non disponible." },
-    { id: 4, titre: "Audio only dialogues", fichier: "diaulecon.txt", description: "Dialogues seulement en audio, sans texte écrit", defaut: "Dialogue non disponible." },
-    { id: 5, titre: "Audio + English text dialogues", fichier: "ditelecon.txt", description: "Dialogues audio avec texte écrit en anglais uniquement", defaut: "Dialogue non disponible." }
+    { id: 2, titre: "English only dialogues", fichier: "diunlecon.txt", description: "Dialogues uniquement en anglais, sans traduction", defaut: "Dialogue non disponible." },
 ];
     // ======================= FONCTIONS INDEXEDDB =======================
     function ouvrirDB(nomDB) {
@@ -1412,7 +1409,7 @@ function afficherNotificationCentre(message, type = 'error') {
 
 // MODIFIER submitModalCode
 async function submitModalCode() {
-    const code = document.getElementById('modalCode').value.trim().toUpperCase();
+    const code = document.getElementById('modalCode').value.trim();
     if (!code) {
         afficherNotificationCentre('⚠️ Ampidiro ny code', 'error');
         return;
@@ -1887,32 +1884,53 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ======================= GÉNÉRATION DE LA LISTE DES LEÇONS =======================
-    function genererListeLecons(lecons, containerId, rondClass, urlPrefix = WORKER_URL + '/', niveau = '') {
-        let html = `<div class="liste-matiere">`;
-        lecons.forEach(lecon => {
-            const urlComplet = urlPrefix + lecon.fichier;
-            const codeLecon = getCodeLecon(lecon.titre);
-            html += `
-                <div class="bloc-theme">
-                    <div class="lecon-click" data-fichier="${lecon.fichier}" data-titre="${lecon.titre}" data-url="${urlComplet}" data-defaut="${lecon.defaut.replace(/"/g, '&quot;')}">
-                        <div class="titre-rond"><span class="${rondClass}">${lecon.id}</span><span class="nom-theme">${lecon.titre}</span></div>
-                        <div class="sous-accroche">${lecon.description}</div>
-                    </div>
-                    <div class="barre-exercice" data-lecon-titre="${lecon.titre}" data-lecon-code="${codeLecon}" data-niveau="${niveau}">
-                        <span class="texte-exo">✏️ EXERCICES — ${lecon.titre}</span>
-                    </div>
+function genererListeLecons(lecons, containerId, rondClass, urlPrefix = WORKER_URL + '/', niveau = '') {
+    let html = `<div class="liste-matiere">`;
+    lecons.forEach(lecon => {
+        const urlComplet = urlPrefix + lecon.fichier;
+        const codeLecon = getCodeLecon(lecon.titre);
+        
+        // ✅ AJOUTER CETTE CONDITION POUR CONJUGAISON DES VERBES
+        const isConjugaisonVerbes = (lecon.titre === "Verb Conjugation");
+        
+        // ✅ AJOUT : Cacher la barre EXERCICES pour les dialogues
+        const cacherExercices = (niveau === 'dialoguer');
+        
+        html += `
+            <div class="bloc-theme">
+                <div class="lecon-click" data-fichier="${lecon.fichier}" data-titre="${lecon.titre}" data-url="${urlComplet}" data-defaut="${lecon.defaut.replace(/"/g, '&quot;')}" data-special="${isConjugaisonVerbes ? 'true' : 'false'}">
+                    <div class="titre-rond"><span class="${rondClass}">${lecon.id}</span><span class="nom-theme">${lecon.titre}</span></div>
+                    <div class="sous-accroche">${lecon.description}</div>
                 </div>
-            `;
-        });
-        html += `</div><div class="footer-info">📘 Ny fianarana no lova tsara indrindra| ✏️ Mirary anao hahay ♥️</div>`;
-        document.getElementById(containerId).innerHTML = html;
-        
-        document.querySelectorAll(`#${containerId} .lecon-click`).forEach(el => {
-            el.addEventListener('click', () => {
+                ${!cacherExercices ? `
+                <div class="barre-exercice" data-lecon-titre="${lecon.titre}" data-lecon-code="${codeLecon}" data-niveau="${niveau}">
+                    <span class="texte-exo">✏️ EXERCICES — ${lecon.titre}</span>
+                </div>
+                ` : ''}
+            </div>
+        `;
+    });
+    html += `</div><div class="footer-info">📘 Ny fianarana no lova tsara indrindra| ✏️ Mirary anao hahay ♥️</div>`;
+    document.getElementById(containerId).innerHTML = html;
+    
+    // ✅ MODIFIER L'ÉVÉNEMENT CLICK
+    document.querySelectorAll(`#${containerId} .lecon-click`).forEach(el => {
+        el.addEventListener('click', () => {
+            const isSpecial = el.getAttribute('data-special') === 'true';
+            if (isSpecial) {
+                // Afficher le message avec bouton fermer
+                afficherNotificationAvecFermer(
+                    '📘 <strong>Miala tsiny fa tsy misy amin\'ity application ity ny Conjugaison.</strong><br><br>🔍 Azonao atao maka ao amin\'ny <strong>Play Store</strong> , ataovy recherche hoe <strong>"verb"</strong>.<br><br>✅ Ny <strong>règles de conjugaison</strong> misy amitsika.<br>✅ Ny <strong>exercice</strong> koa dia <strong>misy</strong> ka azo atao tsara mihitsy ny exercice.<br><br>🙏 <strong>Mankasitraka tompoko !🙏</strong>',
+                    'info'
+                );
+            } else {
                 chargerLecon(el.getAttribute('data-titre'), el.getAttribute('data-fichier'), el.getAttribute('data-url'), el.getAttribute('data-defaut'));
-            });
+            }
         });
-        
+    });
+    
+    // ✅ MODIFICATION : N'ajouter les événements EXERCICES que si ce n'est pas dialoguer
+    if (niveau !== 'dialoguer') {
         document.querySelectorAll(`#${containerId} .barre-exercice`).forEach(el => {
             el.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -1920,6 +1938,98 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+}
+
+// ✅ FONCTION : Notification avec bouton fermer - Version colorée
+function afficherNotificationAvecFermer(message, type = 'info') {
+    // Supprimer l'ancienne notification si elle existe
+    const ancienne = document.getElementById('centreNotification');
+    if (ancienne) ancienne.remove();
+    
+    // Choix des couleurs selon le type
+    const colors = {
+        'info': {
+            background: 'linear-gradient(145deg, #2c3e50, #34495e)',
+            boxShadow: '0 20px 60px rgba(44, 62, 80, 0.4)',
+            buttonColor: '#2c3e50',
+            border: '2px solid rgba(255, 215, 0, 0.3)'
+        },
+        'success': {
+            background: 'linear-gradient(145deg, #27ae60, #2ecc71)',
+            boxShadow: '0 20px 60px rgba(46, 204, 113, 0.4)',
+            buttonColor: '#27ae60',
+            border: '2px solid rgba(255, 255, 255, 0.2)'
+        },
+        'warning': {
+            background: 'linear-gradient(145deg, #f39c12, #e67e22)',
+            boxShadow: '0 20px 60px rgba(243, 156, 18, 0.4)',
+            buttonColor: '#e67e22',
+            border: '2px solid rgba(255, 255, 255, 0.2)'
+        },
+        'error': {
+            background: 'linear-gradient(145deg, #c0392b, #e74c3c)',
+            boxShadow: '0 20px 60px rgba(192, 57, 43, 0.4)',
+            buttonColor: '#c0392b',
+            border: '2px solid rgba(255, 255, 255, 0.2)'
+        }
+    };
+    
+    const color = colors[type] || colors['info'];
+    
+    const notif = document.createElement('div');
+    notif.id = 'centreNotification';
+    notif.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: ${color.background};
+        color: white;
+        padding: 35px 45px;
+        border-radius: 24px;
+        z-index: 30001;
+        font-size: 1.1rem;
+        text-align: center;
+        box-shadow: ${color.boxShadow};
+        max-width: 500px;
+        width: 90%;
+        animation: fadeIn 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border: ${color.border};
+    `;
+    
+    notif.innerHTML = `
+        <div style="display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%;">
+            <span style="font-size: 2.5rem;">📘</span>
+            <span style="font-size: 1.6rem; font-weight: 700; color: #FFD700;">ℹ️ Information</span>
+            <span style="font-size: 2.5rem;">📘</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.08); padding: 20px 25px; border-radius: 16px; width: 100%; line-height: 1.8; font-size: 1rem; text-align: left; backdrop-filter: blur(4px);">
+            ${message}
+        </div>
+        <button onclick="this.parentElement.remove()" style="
+            background: white;
+            color: ${color.buttonColor};
+            border: none;
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-top: 5px;
+        " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 25px rgba(0,0,0,0.3)';" 
+        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.2)';">
+            ✕ <strong>Fermer</strong>
+        </button>
+    `;
+    
+    document.body.appendChild(notif);
+}
     
     // ======================= NAVIGATION =======================
  function showScreen(screenName) {
@@ -2836,7 +2946,6 @@ async function chargerQCMIntegreDirect(nomFichier, leconTitre, forceUpdate = fal
             await stockerContenuEtVersion(dbName, contenu, versionToStore);
             lecteurCurrentVersion = versionToStore;
             
-            afficherNotificationCentre('✅ Mise à jour effectuée !', 'success');
         } else {
             lecteurCurrentVersion = localVersion;
         }
