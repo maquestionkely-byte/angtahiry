@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Fianarana ny teny FRANÇAIS</title>
+    <title>Fianarana ny teny ANGLAIS</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -548,11 +548,11 @@ body:has(#screenLecteurQCM.active) .footer {
                     <img src="https://photopasse.ahofaly62.workers.dev/saryprofil.jpg" alt="Gauche" class="side-image" id="imgGauche">
                     <img src="https://photopasse.ahofaly62.workers.dev/saryNiry.jpg" alt="Droite" class="side-image" id="imgDroite">
                 </div>
-                <h1><span>Mianatra Français isika</span></h1>
-                <h1 style="font-size: 0.9rem; background: #1e3a5f; color: white; padding: 6px 15px; border-radius: 40px; display: inline-block; text-align: center; margin: 10px auto;">✨ Mirary soa amin'ny fianarana français izay ataonao. ✨</h1>
+                <h1><span>Mianatra Anglais isika</span></h1>
+                <h1 style="font-size: 0.9rem; background: #1e3a5f; color: white; padding: 6px 15px; border-radius: 40px; display: inline-block; text-align: center; margin: 10px auto;">✨ Mirary soa amin'ny fianarana anglais izay ataonao ! ✨</h1>
                 <div style="width: 100%; margin-top: 15px; margin-bottom: 10px;">
                     <div style="background: #1e3a5f; border-radius: 60px; padding: 12px 20px; display: flex; flex-direction: column; align-items: center; gap: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-                        <span style="font-size: 0.85rem; color: white; font-weight: 500;">📞 Tél: 038 12 761 16  ou</span>
+                        <span style="font-size: 0.85rem; color: white; font-weight: 500;">📞 Tél: 038 12 761 16 ou</span>
                         <button class="fb-button-small" id="fbHomeBtn" style="margin: 0; background: white; color: #1877f2;">
                             <span class="fb-icon-small" style="background: #1877f2; color: white;">f</span>
                             Facebook
@@ -635,7 +635,7 @@ body:has(#screenLecteurQCM.active) .footer {
             <div class="bandeau-haut">
                 <div>
                     <h1>📖 Dictionnaire</h1>
-                    <p>Français ⇄ Malagasy</p>
+                    <p>ANGLAIS ⇄ Malagasy</p>
                 </div>
             </div>
             <div id="dictionnaireContent" class="conteneur-dynamique"></div>
@@ -648,7 +648,7 @@ body:has(#screenLecteurQCM.active) .footer {
             <div class="bandeau-haut">
                 <div>
                     <h1>📘 Conjugaison</h1>
-                    <p>Conjugaison des verbes français</p>
+                    <p>Conjugaison des verbes anglais</p>
                 </div>
             </div>
             <div id="conjugaisonContent" class="conteneur-dynamique"></div>
@@ -661,7 +661,7 @@ body:has(#screenLecteurQCM.active) .footer {
             <div class="bandeau-haut">
                 <div>
                     <h1>💬 Dialoguer</h1>
-                    <p>Conversations françaises</p>
+                    <p>Conversations ANGLAISES</p>
                 </div>
             </div>
             <div id="dialoguerContent" class="conteneur-dynamique"></div>
@@ -699,7 +699,7 @@ body:has(#screenLecteurQCM.active) .footer {
             </button>
         </div>
         
-      <input type="text" id="modalCode" class="code-input" placeholder="Entrez le code" autocomplete="off" style="text-transform: uppercase;" oninput="this.value = this.value.toUpperCase()">
+        <input type="text" id="modalCode" class="code-input" placeholder="Entrez le code" autocomplete="off" style="text-transform: uppercase;" oninput="this.value = this.value.toUpperCase()">
         
         <div class="code-modal-buttons">
             <button class="btn-validate" onclick="submitModalCode()">Voir leçon</button>
@@ -709,7 +709,7 @@ body:has(#screenLecteurQCM.active) .footer {
 </div>
 <script>
     // ======================= CONFIGURATION =======================
-  const WORKER_URL = 'https://passage.ahofaly62.workers.dev';
+  const WORKER_URL = 'https://passage.jeananglais8.workers.dev';
 const DATE_INFO_URL = WORKER_URL + '/date_rehetra.txt';
 const DB_VERSION = 19;
 
@@ -730,26 +730,15 @@ console.log('🔑 Device Model:', deviceModel);
 function getCodeLecon(titre) {
     // 🔧 GESTION MANUELLE DES CONFLITS
     const exceptions = {
-        // Conflit prde (N°10 et N°11)
-        "Pronoms démonstratifs": "prde",
-        "Pronoms démonstratifs neutres": "prdn",  // ajout n11 du 'n' pour neutres
-        
-        // Conflit prre (N°12 et N°22)
-        "Pronoms relatifs simples": "prre",
-        "Pronoms réfléchis": "prrf",  // ajout n22 du 'f' pour réfléchis
-		// Conflit prre (N°12 et N°22)
-        "Exprimer la condition": "exdi",//75 change
-        "Exprimer l'accord et le désaccord": "elad",//79 change
-        "Exprimer la conséquence": "laci",//73 change
-        "Conjonctions de coordination": "cood",//57 change
-        "Concordance des temps": "cdte",//88 change
-        "Pronoms relatifs simples": "pelt",//12 change
-
-
-// Conflit adde (N°29 et N°30)
-        "Adjectif de couleur": "adco",  // 'co' pour couleur
-        "Adjectif de qualification": "adqu",  // 'qu' pour qualification
-    };
+    // Conflict exco (ID 73 and ID 75)
+    "Expressing condition": "exsw",   // ID 75 changed
+    
+    // Conflict paan (ID 84 and ID 96)
+    "Passive and active voice": "pawa",   // ID 96 changed
+    
+    // Conflict prsu (ID 66 and ID 105)
+    "Program summary": "perw"   // ID 105 changed
+};
     
     // Vérifier si le titre est dans les exceptions
     if (exceptions[titre]) {
@@ -770,119 +759,119 @@ function getCodeLecon(titre) {
     }
 }
  
-   const leconsDebutant = [
-    { id: 1, titre: "Types de phrases", description: "phrase affirmative, exclamative et interrogative", defaut: "" },
-    { id: 2, titre: "Verbe avoir et être", description: "conjugaison et utilisation des verbes essentiels", defaut: "" },
-    { id: 3, titre: "Le déterminant", description: "introduction aux déterminants", defaut: "" },
-    { id: 4, titre: "Articles définis et indéfinis", description: "le, la, les, un, une, des", defaut: "" },
-    { id: 5, titre: "Articles partitifs", description: "du, de la, de l', des", defaut: "" },
-    { id: 6, titre: "Déterminants possessifs", description: "mon, ton, son, ma, ta, sa, mes, tes, ses", defaut: "" },
-    { id: 7, titre: "Déterminants démonstratifs", description: "ce, cet, cette, ces", defaut: "" },
-    { id: 8, titre: "Déterminants interrogatifs et exclamatifs", description: "quel, quelle, quels, quelles", defaut: "" },
-    { id: 9, titre: "Pronoms possessifs", description: "le mien, la mienne, le tien, la tienne, les siens", defaut: "" },
-    { id: 10, titre: "Pronoms démonstratifs", description: "celui, celle, ceux, celles", defaut: "" },
-    { id: 11, titre: "Pronoms démonstratifs neutres", description: "ceci, cela, ça", defaut: "" },
-    { id: 12, titre: "Pronoms relatifs simples", description: "qui, que, où, dont", defaut: "" },
-    { id: 13, titre: "Genre et nombre", description: "masculin, féminin, singulier, pluriel", defaut: "" },
-    { id: 14, titre: "Pronoms personnels sujets", description: "je, tu, il, elle, nous, vous, ils, elles", defaut: "" },
-    { id: 15, titre: "Les compléments d'objet", description: "COD et COI", defaut: "" },
-    { id: 16, titre: "Pronoms toniques", description: "moi, toi, lui, elle, nous, vous, eux, elles", defaut: "" },
-    { id: 17, titre: "Prépositions", description: "à, chez, de, pour, sur, sous, dans, avec, sans", defaut: "" },
-    { id: 18, titre: "Verbes après prépositions", description: "les verbes après à, de, pour sont à l'infinitif", defaut: "" },
-    { id: 19, titre: "Mots interrogatifs", description: "pourquoi, comment, que, quand, où, combien", defaut: "" },
-    { id: 20, titre: "Pronoms interrogatifs", description: "qui, que, à qui, de qui, pour qui", defaut: "" },
-    { id: 21, titre: "Négation", description: "ne...pas, ne...plus, ne...jamais, ne...ni...ni, ne...personne, ne...rien", defaut: "" },
-    { id: 22, titre: "Pronoms réfléchis", description: "me, te, se, nous, vous, se", defaut: "" },
-    { id: 23, titre: "Verbes pronominaux", description: "se réveiller, se laver, se regarder, se parler", defaut: "" },
-    { id: 24, titre: "Verbes impersonnels", description: "il faut, il pleut, il neige, il est important de", defaut: "" },
-    { id: 25, titre: "Verbes modaux", description: "pouvoir, vouloir, devoir", defaut: "" },
-    { id: 26, titre: "Expressions de quantité", description: "beaucoup de, peu de, assez de, trop de", defaut: "" },
-    { id: 27, titre: "Adjectif", description: "généralités et fonctions", defaut: "" },
-    { id: 28, titre: "Adjectif épithète et attribut", description: "position et fonction dans la phrase", defaut: "" },
-    { id: 29, titre: "Adjectif de couleur", description: "règles d'accord", defaut: "" },
-    { id: 30, titre: "Adjectif de qualification", description: "gentil, sérieux, intelligent, grand, petit", defaut: "" },
-    { id: 31, titre: "Adjectif numéral", description: "premier, deuxième, troisième, dernier", defaut: "" },
-    { id: 32, titre: "Adverbes", description: "manière, temps, lieu, quantité", defaut: "" },
-    { id: 33, titre: "Place des adverbes", description: "position dans la phrase", defaut: "" },
-    { id: 34, titre: "Adjectif vs Adverbe", description: "différence d'utilisation", defaut: "" },
-    { id: 35, titre: "Comparatif", description: "plus...que, moins...que, aussi...que", defaut: "" },
-    { id: 36, titre: "Superlatif", description: "le plus, le moins, le meilleur", defaut: "" },
-    { id: 37, titre: "Formation des mots", description: "mots simples et mots construits", defaut: "" },
-    { id: 38, titre: "Mots construits par dérivation", description: "exporter, exportation, portable", defaut: "" },
-    { id: 39, titre: "Les préfixes", description: "diminutifs (mini-, sur-), privatifs (in-, im-, il-)", defaut: "" },
-    { id: 40, titre: "Les suffixes", description: "diminutifs (-ette, -on), capacité (-able, -ible)", defaut: "" },
-    { id: 41, titre: "Accord sujet-verbe", description: "règles d'accord entre le sujet et le verbe", defaut: "" },
-    { id: 42, titre: "Accord de l'adjectif", description: "accord en genre et nombre", defaut: "" },
-    { id: 43, titre: "Majuscules et minuscules", description: "règles d'utilisation", defaut: "" },
-    { id: 44, titre: "La ponctuation", description: ". ? ! ; : ... « » ( ) -", defaut: "" },
-    { id: 45, titre: "Les signes orthographiques", description: "ç, ë, ü, è, é, ê, û, à", defaut: "" },
-    { id: 46, titre: "Construction des phrases simples", description: "structure de base sujet-verbe-complément", defaut: "" }
+const leconsDebutant = [
+    { id: 1, titre: "Sentence types", description: "affirmative, exclamatory and interrogative sentence", defaut: "" },
+    { id: 2, titre: "Verb to have and to be", description: "conjugation and use of essential verbs", defaut: "" },
+    { id: 3, titre: "The determiner", description: "introduction to determiners", defaut: "" },
+    { id: 4, titre: "Definite and indefinite articles", description: "the, a, an", defaut: "" },
+    { id: 5, titre: "Partitive articles", description: "some, any", defaut: "" },
+    { id: 6, titre: "Possessive determiners", description: "my, your, his, her, our, their", defaut: "" },
+    { id: 7, titre: "Demonstrative determiners", description: "this, that, these, those", defaut: "" },
+    { id: 8, titre: "Interrogative and exclamative determiners", description: "which, what", defaut: "" },
+    { id: 9, titre: "Possessive pronouns", description: "mine, yours, his, hers, ours, theirs", defaut: "" },
+    { id: 10, titre: "Demonstrative pronouns", description: "this one, that one, these, those", defaut: "" },
+    { id: 11, titre: "Neuter demonstrative pronouns", description: "this, that, it", defaut: "" },
+    { id: 12, titre: "Simple relative pronouns", description: "who, whom, which, that, where, whose", defaut: "" },
+    { id: 13, titre: "Gender and number", description: "masculine, feminine, singular, plural", defaut: "" },
+    { id: 14, titre: "Subject personal pronouns", description: "I, you, he, she, we, they", defaut: "" },
+    { id: 15, titre: "Object complements", description: "direct and indirect object", defaut: "" },
+    { id: 16, titre: "Stressed pronouns", description: "me, you, him, her, us, them", defaut: "" },
+    { id: 17, titre: "Prepositions", description: "to, at, of, for, on, under, in, with, without", defaut: "" },
+    { id: 18, titre: "Verbs after prepositions", description: "verbs after to, of, for are in the infinitive", defaut: "" },
+    { id: 19, titre: "Interrogative words", description: "why, how, what, when, where, how many", defaut: "" },
+    { id: 20, titre: "Interrogative pronouns", description: "who, whom, to whom, of whom, for whom", defaut: "" },
+    { id: 21, titre: "Negation", description: "not, no longer, never, neither...nor, nobody, nothing", defaut: "" },
+    { id: 22, titre: "Reflexive pronouns", description: "myself, yourself, himself, herself, ourselves, yourselves, themselves", defaut: "" },
+    { id: 23, titre: "Pronominal verbs", description: "to wake up, to wash, to look at oneself, to talk to each other", defaut: "" },
+    { id: 24, titre: "Impersonal verbs", description: "one must, it is raining, it is snowing, it is important to", defaut: "" },
+    { id: 25, titre: "Modal verbs", description: "can, want, must", defaut: "" },
+    { id: 26, titre: "Expressions of quantity", description: "a lot of, little, enough, too much", defaut: "" },
+    { id: 27, titre: "Adjective", description: "basics and functions", defaut: "" },
+    { id: 28, titre: "Attributive and predicative adjective", description: "position and function in the sentence", defaut: "" },
+    { id: 29, titre: "Color adjective", description: "agreement rules", defaut: "" },
+    { id: 30, titre: "Qualifying adjective", description: "kind, serious, intelligent, tall, small", defaut: "" },
+    { id: 31, titre: "Numeral adjective", description: "first, second, third, last", defaut: "" },
+    { id: 32, titre: "Adverbs", description: "manner, time, place, quantity", defaut: "" },
+    { id: 33, titre: "Place of adverbs", description: "position in the sentence", defaut: "" },
+    { id: 34, titre: "Adjective vs adverb", description: "difference in usage", defaut: "" },
+    { id: 35, titre: "Comparative", description: "more...than, less...than, as...as", defaut: "" },
+    { id: 36, titre: "Superlative", description: "the most, the least, the best", defaut: "" },
+    { id: 37, titre: "Word formation", description: "simple and derived words", defaut: "" },
+    { id: 38, titre: "Derived words", description: "to export, exportation, portable", defaut: "" },
+    { id: 39, titre: "Prefixes", description: "diminutives (mini-, over-), privatives (un-, in-, im-, il-)", defaut: "" },
+    { id: 40, titre: "Suffixes", description: "diminutives (-y, -ie), capacity (-able, -ible)", defaut: "" },
+    { id: 41, titre: "Subject-verb agreement", description: "agreement rules between subject and verb", defaut: "" },
+    { id: 42, titre: "Adjective agreement", description: "agreement in gender and number", defaut: "" },
+    { id: 43, titre: "Capital and lowercase letters", description: "usage rules", defaut: "" },
+    { id: 44, titre: "Punctuation", description: ". ? ! ; : ... « » ( ) -", defaut: "" },
+    { id: 45, titre: "Orthographic signs", description: "ç, ë, ü, è, é, ê, û, à", defaut: "" },
+    { id: 46, titre: "Simple sentence construction", description: "basic subject-verb-object structure", defaut: "" }
 ];
 
 const leconsIntermediaire = [
-    { id: 47, titre: "Passé récent", description: "venir de + infinitif", defaut: "" },
-    { id: 48, titre: "Présent progressif", description: "être en train de + infinitif", defaut: "" },
-    { id: 49, titre: "Temps présent de l'indicatif", description: "conjugaison des trois groupes", defaut: "" },
-    { id: 50, titre: "Futur proche", description: "aller + infinitif", defaut: "" },
-    { id: 51, titre: "Futur simple", description: "conjugaison et emploi", defaut: "" },
-    { id: 52, titre: "Impératif", description: "donne, donnons, donnez", defaut: "" },
-    { id: 53, titre: "Chiffres", description: "1,2,3... en lettres", defaut: "" },
-    { id: 54, titre: "Heure", description: "10h, 15h... en lettres", defaut: "" },
-    { id: 55, titre: "Mois", description: "janvier, février, mars, avril...", defaut: "" },
-    { id: 56, titre: "Date", description: "le 10 janvier 2024", defaut: "" },
-    { id: 57, titre: "Conjonctions de coordination", description: "mais, ou, et, donc, car, ni", defaut: "" },
-    { id: 58, titre: "Passé composé", description: "formation et emploi", defaut: "" },
-    { id: 59, titre: "Accord du participe passé", description: "règles d'accord", defaut: "" },
-    { id: 60, titre: "Participe présent", description: "participe présent (mangeant), gérondif (en mangeant)", defaut: "" },
-    { id: 61, titre: "Imparfait", description: "conjugaison et emploi", defaut: "" },
-    { id: 62, titre: "Gérondif", description: "en + participe présent", defaut: "" },
-    { id: 63, titre: "Pronoms adverbiaux", description: "y (lieu, chose) et en (quantité, chose)", defaut: "" },
-    { id: 64, titre: "Double pronom", description: "ordre des pronoms (je le lui donne)", defaut: "" },
-    { id: 65, titre: "Conditionnel présent", description: "conjugaison et emploi (politesse, hypothèse)", defaut: "" },
-    { id: 66, titre: "Subjonctif présent", description: "conjugaison et emploi (souhait, doute, nécessité)", defaut: "" },
-    { id: 67, titre: "Imparfait VS Passé composé", description: "différence d'emploi", defaut: "" },
-    { id: 68, titre: "Phrase complexe", description: "juxtaposition, coordination, subordination", defaut: "" },
-    { id: 69, titre: "Proposition relative", description: "qui, que, où, dont", defaut: "" },
-    { id: 70, titre: "Subordonnées et coordonnées", description: "conjonctives, coordonnées, juxtaposées", defaut: "" },
-    { id: 71, titre: "Conjonction subordonnée", description: "que, parce que, puisque", defaut: "" },
-    { id: 72, titre: "Exprimer la cause", description: "parce que, car, puisque, à cause de, grâce à", defaut: "" },
-    { id: 73, titre: "Exprimer la conséquence", description: "donc, ainsi, par conséquent, si...que, tellement...que", defaut: "" },
-    { id: 74, titre: "Exprimer le but", description: "pour, afin de, dans le but de, pour que, afin que", defaut: "" },
-    { id: 75, titre: "Exprimer la condition", description: "si, à condition que, pourvu que", defaut: "" },
-    { id: 76, titre: "Exprimer l'opposition et la concession", description: "mais, cependant, pourtant, bien que, quoique, même si", defaut: "" },
-    { id: 77, titre: "Discours direct et indirect", description: "transformation du discours direct en indirect", defaut: "" },
-    { id: 78, titre: "Exprimer une opinion", description: "à mon avis, je pense que, selon moi", defaut: "" },
-    { id: 79, titre: "Exprimer l'accord et le désaccord", description: "je suis d'accord, je ne suis pas d'accord", defaut: "" },
-    { id: 80, titre: "Exprimer l'hypothèse", description: "si + imparfait, conditionnel présent, à ta place", defaut: "" }
+    { id: 47, titre: "Recent past", description: "to have just + past participle", defaut: "" },
+    { id: 48, titre: "Present progressive", description: "to be in the process of + -ing", defaut: "" },
+    { id: 49, titre: "Present indicative tense", description: "conjugation of the three groups", defaut: "" },
+    { id: 50, titre: "Near future", description: "to be going to + infinitive", defaut: "" },
+    { id: 51, titre: "Simple future", description: "conjugation and usage", defaut: "" },
+    { id: 52, titre: "Imperative", description: "give, let's give, give (plural)", defaut: "" },
+    { id: 53, titre: "Numbers", description: "1,2,3... in words", defaut: "" },
+    { id: 54, titre: "Time", description: "10 o'clock, 3 o'clock... in words", defaut: "" },
+    { id: 55, titre: "Months", description: "January, February, March, April...", defaut: "" },
+    { id: 56, titre: "Date", description: "January 10th, 2024", defaut: "" },
+    { id: 57, titre: "Coordinating conjunctions", description: "but, or, and, so, for, nor", defaut: "" },
+    { id: 58, titre: "Compound past", description: "formation and usage", defaut: "" },
+    { id: 59, titre: "Past participle agreement", description: "agreement rules", defaut: "" },
+    { id: 60, titre: "Present participle", description: "present participle (eating), gerund (while eating)", defaut: "" },
+    { id: 61, titre: "Imperfect", description: "conjugation and usage", defaut: "" },
+    { id: 62, titre: "Gerund", description: "while + present participle", defaut: "" },
+    { id: 63, titre: "Adverbial pronouns", description: "there (place, thing) and some (quantity, thing)", defaut: "" },
+    { id: 64, titre: "Double pronoun", description: "pronoun order (I give it to him)", defaut: "" },
+    { id: 65, titre: "Present conditional", description: "conjugation and usage (politeness, hypothesis)", defaut: "" },
+    { id: 66, titre: "Present subjunctive", description: "conjugation and usage (wish, doubt, necessity)", defaut: "" },
+    { id: 67, titre: "Imperfect vs compound past", description: "difference in usage", defaut: "" },
+    { id: 68, titre: "Complex sentence", description: "juxtaposition, coordination, subordination", defaut: "" },
+    { id: 69, titre: "Relative clause", description: "who, whom, which, that, where, whose", defaut: "" },
+    { id: 70, titre: "Subordinate and coordinate clauses", description: "conjunctive, coordinated, juxtaposed", defaut: "" },
+    { id: 71, titre: "Subordinating conjunction", description: "that, because, since", defaut: "" },
+    { id: 72, titre: "Expressing cause", description: "because, for, since, due to, thanks to", defaut: "" },
+    { id: 73, titre: "Expressing consequence", description: "so, thus, consequently, so...that, so much...that", defaut: "" },
+    { id: 74, titre: "Expressing purpose", description: "to, in order to, for the purpose of, so that, in order that", defaut: "" },
+    { id: 75, titre: "Expressing condition", description: "if, provided that, as long as", defaut: "" },
+    { id: 76, titre: "Expressing opposition and concession", description: "but, however, yet, although, even though", defaut: "" },
+    { id: 77, titre: "Direct and indirect speech", description: "transforming direct speech into indirect speech", defaut: "" },
+    { id: 78, titre: "Expressing an opinion", description: "in my opinion, I think that, according to me", defaut: "" },
+    { id: 79, titre: "Expressing agreement and disagreement", description: "I agree, I disagree", defaut: "" },
+    { id: 80, titre: "Expressing hypothesis", description: "if + imperfect, present conditional, if I were you", defaut: "" }
 ];
 
 const leconsAvance = [
-    { id: 81, titre: "Passé simple", description: "conjugaison et emploi littéraire", defaut: "" },
-    { id: 82, titre: "Plus-que-parfait", description: "j'avais mangé", defaut: "" },
-    { id: 83, titre: "Futur antérieur", description: "j'aurai mangé", defaut: "" },
-    { id: 84, titre: "Passé antérieur", description: "j'eus mangé", defaut: "" },
-    { id: 85, titre: "Conditionnel passé", description: "j'aurais mangé", defaut: "" },
-    { id: 86, titre: "Subjonctif passé", description: "que j'aie mangé", defaut: "" },
-    { id: 87, titre: "Subjonctif plus-que-parfait", description: "que j'eusse mangé", defaut: "" },
-    { id: 88, titre: "Concordance des temps", description: "harmonisation des temps dans la phrase", defaut: "" },
-    { id: 89, titre: "Mise en relief", description: "c'est...qui, c'est...que, ce dont...c'est", defaut: "" },
-    { id: 90, titre: "Inversion du sujet", description: "inversion en interrogative et après certains adverbes", defaut: "" },
-    { id: 91, titre: "Ellipse et procédés de reprise", description: "éviter les répétitions, anaphore, cataphore", defaut: "" },
-    { id: 92, titre: "Registres de langue", description: "soutenu, courant, familier", defaut: "" },
-    { id: 93, titre: "Nuances lexicales et synonymie", description: "différences subtiles entre les mots", defaut: "" },
-    { id: 94, titre: "Faux amis", description: "mots identiques mais sens différent", defaut: "" },
-    { id: 95, titre: "Sens figuré et sens propre", description: "langage concret vs langage imagé", defaut: "" },
-    { id: 96, titre: "Voix passive et voix active", description: "phrase active transformée en passive", defaut: "" },
-    { id: 97, titre: "Techniques argumentatives", description: "exemples, autorités, analogies, concessions", defaut: "" },
-    { id: 98, titre: "Modalisation", description: "marques du point de vue du locuteur", defaut: "" },
-    { id: 99, titre: "Implicite et sous-entendu", description: "ce qui n'est pas dit mais sous-entendu", defaut: "" },
-    { id: 100, titre: "Ironie, satire, antiphrase", description: "dire le contraire de ce qu'on pense, moquerie", defaut: "" },
-    { id: 101, titre: "Champs lexicaux", description: "ensemble de mots liés à un même thème", defaut: "" },
-    { id: 102, titre: "Figures de style", description: "métaphore, comparaison, personnification, hyperbole, litote, euphémisme, anaphore, oxymore, métonymie", defaut: "" },
-    { id: 103, titre: "Analyse du texte", description: "narratif, descriptif, argumentatif, injonctif, informatif", defaut: "" },
-    { id: 104, titre: "Discours indirect libre", description: "forme littéraire entre narration et parole rapportée", defaut: "" },
-    { id: 105, titre: "Synthèse du programme", description: "révision complète et consolidation", defaut: "" }
-];
+    { id: 81, titre: "Simple past (literary)", description: "conjugation and literary usage", defaut: "" },
+    { id: 82, titre: "Pluperfect", description: "I had eaten", defaut: "" },
+    { id: 83, titre: "Future perfect", description: "I will have eaten", defaut: "" },
+    { id: 84, titre: "Past anterior", description: "I had eaten (literary)", defaut: "" },
+    { id: 85, titre: "Past conditional", description: "I would have eaten", defaut: "" },
+    { id: 86, titre: "Past subjunctive", description: "that I have eaten", defaut: "" },
+    { id: 87, titre: "Pluperfect subjunctive", description: "that I had eaten (literary)", defaut: "" },
+    { id: 88, titre: "Sequence of tenses", description: "harmonization of tenses in the sentence", defaut: "" },
+    { id: 89, titre: "Emphasis structures", description: "it is...that, it is...who, what...is", defaut: "" },
+    { id: 90, titre: "Subject inversion", description: "inversion in questions and after certain adverbs", defaut: "" },
+    { id: 91, titre: "Ellipsis and repetition devices", description: "avoiding repetition, anaphora, cataphora", defaut: "" },
+    { id: 92, titre: "Language registers", description: "formal, standard, informal", defaut: "" },
+    { id: 93, titre: "Lexical nuances and synonymy", description: "subtle differences between words", defaut: "" },
+    { id: 94, titre: "False friends", description: "identical words but different meanings", defaut: "" },
+    { id: 95, titre: "Figurative and literal meaning", description: "concrete vs figurative language", defaut: "" },
+    { id: 96, titre: "Passive and active voice", description: "active sentence transformed into passive", defaut: "" },
+    { id: 97, titre: "Argumentative techniques", description: "examples, authorities, analogies, concessions", defaut: "" },
+    { id: 98, titre: "Modality", description: "marks of the speaker's point of view", defaut: "" },
+    { id: 99, titre: "Implicit and subtext", description: "what is not said but implied", defaut: "" },
+    { id: 100, titre: "Irony, satire, antiphrasis", description: "saying the opposite of what one thinks, mockery", defaut: "" },
+    { id: 101, titre: "Lexical fields", description: "set of words related to the same theme", defaut: "" },
+    { id: 102, titre: "Figures of speech", description: "metaphor, simile, personification, hyperbole, litotes, euphemism, anaphora, oxymoron, metonymy", defaut: "" },
+    { id: 103, titre: "Text analysis", description: "narrative, descriptive, argumentative, instructive, informative", defaut: "" },
+    { id: 104, titre: "Free indirect speech", description: "literary form between narration and reported speech", defaut: "" },
+    { id: 105, titre: "Program summary", description: "complete review and consolidation", defaut: "" }
+];   
 
     // ======================= GÉNÉRATION AUTOMATIQUE DES NOMS DE FICHIERS =======================
     function genererNomsFichiers() {
@@ -913,21 +902,21 @@ const leconsAvance = [
     console.log("Débutant:", leconsDebutant.map(l => `${l.titre} → ${l.fichier}`));
     console.log("Intermédiaire:", leconsIntermediaire.map(l => `${l.titre} → ${l.fichier}`));
     console.log("Avancé:", leconsAvance.map(l => `${l.titre} → ${l.fichier}`));
-    
    // ======================= FICHIERS SPÉCIAUX =======================
 const dictionnaireLecons = [
-    { id: 1, titre: "Malagasy 👉 Français", fichier: "difrleconun.txt", description: "Traduction ny teny malagasy ho amin'ny teny frantsay", defaut: "Tsy misy ny diksionera." },
-    { id: 2, titre: "Français 👉 Malagasy", fichier: "difrlecondeux.txt", description: "Traduction ny teny frantsay ho amin'ny teny malagasy", defaut: "Tsy misy ny diksionera." },
-    { id: 3, titre: "Français uniquement", fichier: "difrunlecon.txt", description: "Explication de la signification des mots français en français", defaut: "Tsy misy ny diksionera." }
+    { id: 1, titre: "Malagasy 👉 English", fichier: "difrleconun.txt", description: "Traduction ny teny malagasy ho amin'ny teny anglisy", defaut: "Tsy misy ny diksionera." },
+    { id: 2, titre: "English 👉 Malagasy", fichier: "difrlecondeux.txt", description: "Traduction ny teny anglisy ho amin'ny teny malagasy", defaut: "Tsy misy ny diksionera." },
+    { id: 3, titre: "English only", fichier: "difrunlecon.txt", description: "Explication de la signification des mots anglais en anglais", defaut: "Tsy misy ny diksionera." }
 ];
+
 const conjugaisonLecons = [
-    { id: 1, titre: "Conjugaison des verbes", fichier: "conjlecon.txt", description: "Conjugaison complète des verbes français", defaut: "Conjugaison non disponible." },
-    { id: 2, titre: "Règles de conjugaison", fichier: "conjrelecon.txt", description: "Les règles de conjugaison et les cas particuliers (mangeons, jettes, espère, etc.)", defaut: "Conjugaison non disponible." }
+    { id: 1, titre: "Verb Conjugation", fichier: "conjlecon.txt", description: "Conjugaison complète des verbes anglais", defaut: "Conjugaison non disponible." },
+    { id: 2, titre: "Conjugation Rules", fichier: "conjrelecon.txt", description: "Les règles de conjugaison et les cas particuliers (avec s raha she,it,he,sns...", defaut: "Conjugaison non disponible." }
 ];
 
 const dialoguerLecons = [
-    { id: 1, titre: "Dialogues Français et Malagasy", fichier: "diallecon.txt", description: "Dialogues bilingues français et malagasy avec texte", defaut: "Dialogue non disponible." },
-    { id: 2, titre: "Dialogues Français uniquement", fichier: "diunlecon.txt", description: "Dialogues uniquement en français, sans traduction", defaut: "Dialogue non disponible." }
+    { id: 1, titre: "English and Malagasy Dialogues", fichier: "diallecon.txt", description: "Dialogues bilingues anglais et malagasy avec texte", defaut: "Dialogue non disponible." },
+    { id: 2, titre: "English only dialogues", fichier: "diunlecon.txt", description: "Dialogues uniquement en anglais, sans traduction", defaut: "Dialogue non disponible." },
 ];
     // ======================= FONCTIONS INDEXEDDB =======================
     function ouvrirDB(nomDB) {
@@ -1894,7 +1883,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
 // ======================= GÉNÉRATION DE LA LISTE DES LEÇONS =======================
 function genererListeLecons(lecons, containerId, rondClass, urlPrefix = WORKER_URL + '/', niveau = '') {
     let html = `<div class="liste-matiere">`;
@@ -1903,7 +1891,7 @@ function genererListeLecons(lecons, containerId, rondClass, urlPrefix = WORKER_U
         const codeLecon = getCodeLecon(lecon.titre);
         
         // ✅ AJOUTER CETTE CONDITION POUR CONJUGAISON DES VERBES
-        const isConjugaisonVerbes = (lecon.titre === "Conjugaison des verbes");
+        const isConjugaisonVerbes = (lecon.titre === "Verb Conjugation");
         
         // ✅ AJOUT : Cacher la barre EXERCICES pour les dialogues
         const cacherExercices = (niveau === 'dialoguer');
@@ -1932,7 +1920,7 @@ function genererListeLecons(lecons, containerId, rondClass, urlPrefix = WORKER_U
             if (isSpecial) {
                 // Afficher le message avec bouton fermer
                 afficherNotificationAvecFermer(
-                    '📘 <strong>Miala tsiny fa tsy misy amin\'ity application ity ny Conjugaison.</strong><br><br>🔍 Azonao atao maka ao amin\'ny <strong>Play Store</strong> , ataovy recherche hoe <strong>"Le Conjugueur"</strong>.<br><br>✅ Ny <strong>règles de conjugaison</strong> misy amitsika.<br>✅ Ny <strong>exercice</strong> koa dia <strong>misy</strong> ka azo atao tsara mihitsy ny exercice.<br><br>🙏 <strong>Mankasitraka tompoko !🙏</strong>',
+                    '📘 <strong>Miala tsiny fa tsy misy amin\'ity application ity ny Conjugaison.</strong><br><br>🔍 Azonao atao maka ao amin\'ny <strong>Play Store</strong> , ataovy recherche hoe <strong>"verb"</strong>.<br><br>✅ Ny <strong>règles de conjugaison</strong> misy amitsika.<br>✅ Ny <strong>exercice</strong> koa dia <strong>misy</strong> ka azo atao tsara mihitsy ny exercice.<br><br>🙏 <strong>Mankasitraka tompoko !🙏</strong>',
                     'info'
                 );
             } else {
@@ -2042,7 +2030,7 @@ function afficherNotificationAvecFermer(message, type = 'info') {
     
     document.body.appendChild(notif);
 }
-
+    
     // ======================= NAVIGATION =======================
  function showScreen(screenName) {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -2137,9 +2125,9 @@ toolbar.innerHTML = '<span class="niveau-label">🎯 Fidio eto :</span>';
 
 // Liste des boutons normaux avec progression de couleurs (débutant → avancé)
 const boutonsNormaux = [
-    { id: 'debutant', icon: '🌱', title: 'Débutant', bordure: '#2ecc71' },      // Vert (début)
-    { id: 'intermediaire', icon: '🌿', title: 'Intermédiaire', bordure: '#f39c12' }, // Orange (milieu)
-    { id: 'avance', icon: '🌳', title: 'Avancé', bordure: '#e74c3c' },            // Rouge (avancé)
+    { id: 'debutant', icon: '🌱', title: 'Beginner', bordure: '#2ecc71' },      // Vert (début)
+    { id: 'intermediaire', icon: '🌿', title: 'Intermediate', bordure: '#f39c12' }, // Orange (milieu)
+    { id: 'avance', icon: '🌳', title: 'Advanced', bordure: '#e74c3c' },            // Rouge (avancé)
     { id: 'dictionnaire', icon: '📖', title: 'Dictionnaire', bordure: '#3498db' },   // Bleu
     { id: 'conjugaison', icon: '📘', title: 'Conjugaison', bordure: '#9b59b6' },     // Violet
     { id: 'dialoguer', icon: '💬', title: 'Dialoguer', bordure: '#1abc9c' }          // Turquoise
@@ -2156,6 +2144,7 @@ boutonsNormaux.forEach(item => {
     btn.addEventListener('click', () => showScreen(item.id));
     toolbar.appendChild(btn);
 });
+
 // Bouton Vidéo (fond BLEU comme avant)
 const btnVideo = document.createElement('button');
 btnVideo.className = 'niveau-btn';
@@ -3039,7 +3028,7 @@ function afficherQCMIntegre(contenu, nomFichier) {
         document.getElementById('lecteurQCMContent').innerHTML = `
             <div style="text-align: center; padding: 50px; color: white;">
                 <div style="font-size: 3rem;">⚠️</div>
-                <p style="margin-top: 20px;"> Mbola tsy vita ny exercice ato fa miandry kely dia ho vita ilay izy, ataovy aloha ireo efa misy exercice</p>
+                <p style="margin-top: 20px;">Aucune question trouvée dans ce fichier.</p>
             </div>
         `;
         return;
