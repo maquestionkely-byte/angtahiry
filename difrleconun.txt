@@ -745,13 +745,13 @@
   }
 
   // ==================== CONFIGURATION ====================
-  const FILE_URL = 'https://passage.ahofaly62.workers.dev/dir1flecon.txt';
-  const DATE_INFO_URL = 'https://passage.ahofaly62.workers.dev/date_rehetra.txt';
-  const TARGET_FILE = 'dir1flecon.txt';
-  const DB_NAME = 'dir1flecon_cache_db';
-  const STORE_NAME = 'dir1flecon_contenus';
-  const CACHE_KEY = 'dir1flecon_content';
-  const VERSION_KEY = 'dir1flecon_version';
+  const FILE_URL = 'https://passage.jeananglais8.workers.dev/difr11.txt';
+  const DATE_INFO_URL = 'https://passage.jeananglais8.workers.dev/date_rehetra.txt';
+  const TARGET_FILE = 'difr11.txt';
+  const DB_NAME = 'difr11_cache_db';
+  const STORE_NAME = 'difr11_contenus';
+  const CACHE_KEY = 'difr11_content';
+  const VERSION_KEY = 'difr11_version';
 
   let verbsData = [];
   let currentFilteredData = [];
@@ -1185,8 +1185,6 @@
       })();
       
       const speakBtn = document.createElement('button');
-      speakBtn.className = 'btn-speak-word';
-      speakBtn.innerHTML = '🔊 Lire';
       speakBtn.onclick = (e) => { e.stopPropagation(); parler(verb.french); };
       searchedWordArea.appendChild(speakBtn);
     }
@@ -1435,7 +1433,7 @@
     scrollContainer.addEventListener('scroll', onScroll);
     
     ITEM_HEIGHT = 70;
-    VISIBLE_COUNT = Math.ceil(scrollContainer.clientHeight / ITEM_HEIGHT) + 4;
+VISIBLE_COUNT = 40330;
     currentSearchTerm = '';
     updateResults();
     

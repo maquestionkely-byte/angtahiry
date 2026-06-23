@@ -745,13 +745,13 @@
   }
 
   // ==================== CONFIGURATION ====================
-  const FILE_URL = 'https://passage.ahofaly62.workers.dev/dif2lecon.txt';
-  const DATE_INFO_URL = 'https://passage.ahofaly62.workers.dev/date_rehetra.txt';
-  const TARGET_FILE = 'dif2lecon.txt';
-  const DB_NAME = 'dif2lecon_cache_db';
-  const STORE_NAME = 'dif2lecon_contenus';
-  const CACHE_KEY = 'dif2lecon_content';
-  const VERSION_KEY = 'dif2lecon_version';
+  const FILE_URL = 'https://passage.jeananglais8.workers.dev/difr22.txt';
+  const DATE_INFO_URL = 'https://passage.jeananglais8.workers.dev/date_rehetra.txt';
+  const TARGET_FILE = 'difr22.txt';
+  const DB_NAME = 'difr22_cache_db';
+  const STORE_NAME = 'difr22_contenus';
+  const CACHE_KEY = 'difr22_content';
+  const VERSION_KEY = 'difr22_version';
 
   let verbsData = [];
   let currentFilteredData = [];
@@ -1435,7 +1435,7 @@
     scrollContainer.addEventListener('scroll', onScroll);
     
     ITEM_HEIGHT = 70;
-    VISIBLE_COUNT = Math.ceil(scrollContainer.clientHeight / ITEM_HEIGHT) + 4;
+    VISIBLE_COUNT = 40330;
     currentSearchTerm = '';
     updateResults();
     
