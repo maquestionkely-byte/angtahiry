@@ -21,86 +21,14 @@ Explication: Le verbe 'avoir' à la 1ère personne du pluriel se conjugue 'nous 
 Réponse: parlent
 Explication: Le verbe 'parler' (1er groupe) à la 3ème personne du pluriel se conjugue 'elles parlent'.
 
-EXERCICE 2
-1. je|être|content.
+6. je|être|content.
 Réponse: suis
 Explication: Le verbe 'être' à la 1ère personne se conjugue 'je suis'.
 
-2. elle|manger|une pomme.
+7. elle|manger|une pomme.
 Réponse: mange
 Explication: Le verbe 'manger' (1er groupe) à la 3ème personne se conjugue 'elle mange'.
 
-3. nous|venir|demain.
+8. nous|venir|demain.
 Réponse: venons
 Explication: Le verbe 'venir' (3ème groupe) à la 1ère personne du pluriel se conjugue 'nous venons'.
-
-4. ils|finir|leurs exercices.
-Réponse: finissent
-Explication: Le verbe 'finir' (2ème groupe) à la 3ème personne du pluriel se conjugue 'ils finissent'.
-
-5. tu|avoir|un chat.
-Réponse: as
-Explication: Le verbe 'avoir' à la 2ème personne se conjugue 'tu as'.
-
-EXERCICE 3
-1. je|faire|mes devoirs.
-Réponse: fais
-Explication: Le verbe 'faire' à la 1ère personne se conjugue 'je fais'.
-
-2. nous|aller|au cinéma.
-Réponse: allons
-Explication: Le verbe 'aller' à la 1ère personne du pluriel se conjugue 'nous allons'.
-
-3. elles|venir|à la fête.
-Réponse: viennent
-Explication: Le verbe 'venir' à la 3ème personne du pluriel se conjugue 'elles viennent'.
-
-4. tu|prendre|le petit déjeuner.
-Réponse: prends
-Explication: Le verbe 'prendre' à la 2ème personne se conjugue 'tu prends'.
-
-5. il|finir|son travail.
-Réponse: finit
-Explication: Le verbe 'finir' à la 3ème personne se conjugue 'il finit'.
-
-EXERCICE 4
-1. nous|avoir|une maison.
-Réponse: avons
-Explication: Le verbe 'avoir' à la 1ère personne du pluriel se conjugue 'nous avons'.
-
-2. je|manger|une pizza.
-Réponse: mange
-Explication: Le verbe 'manger' à la 1ère personne se conjugue 'je mange'.
-
-3. elles|faire|du sport.
-Réponse: font
-Explication: Le verbe 'faire' à la 3ème personne du pluriel se conjugue 'elles font'.
-
-4. tu|aller|à l'école.
-Réponse: vas
-Explication: Le verbe 'aller' à la 2ème personne se conjugue 'tu vas'.
-
-5. il|venir|ce soir.
-Réponse: vient
-Explication: Le verbe 'venir' à la 3ème personne se conjugue 'il vient'.
-
-EXERCICE 5
-1. je|prendre|le bus.
-Réponse: prends
-Explication: Le verbe 'prendre' à la 1ère personne se conjugue 'je prends'.
-
-2. nous|finir|à temps.
-Réponse: finissons
-Explication: Le verbe 'finir' à la 1ère personne du pluriel se conjugue 'nous finissons'.
-
-3. elle|avoir|froid.
-Réponse: a
-Explication: Le verbe 'avoir' à la 3ème personne se conjugue 'elle a'.
-
-4. ils|aller|au marché.
-Réponse: vont
-Explication: Le verbe 'aller' à la 3ème personne du pluriel se conjugue 'ils vont'.
-
-5. tu|faire|attention.
-Réponse: fais
-Explication: Le verbe 'faire' à la 2ème personne se conjugue 'tu fais'.
