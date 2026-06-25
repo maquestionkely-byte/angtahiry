@@ -19,33 +19,6 @@ D) rapide
 EXPLICATION: "Chat", "maison" et "arbre" sont des noms communs.
 TRADUCTION: Iza amin'ireo no anarana iombonana?
 
-3. Quels sont les synonymes de "joyeux" ?
-A) triste
-*B) heureux
-*C) gai
-D) fâché
-*E) ravi
-EXPLICATION: "Heureux", "gai" et "ravi" sont des synonymes de "joyeux".
-TRADUCTION: Iza no mitovy hevitra amin'ny "joyeux"?
-
-4. Quels sont les antonymes de "grand" ?
-*A) petit
-B) énorme
-*C) minuscule
-D) géant
-*E) court
-EXPLICATION: "Petit", "minuscule" et "court" sont des antonymes de "grand".
-TRADUCTION: Iza no mifanohitra amin'ny "grand"?
-
-5. Parmi ces mots, lesquels sont des adjectifs ?
-A) maison
-*B) rapide
-C) chat
-*D) intelligent
-*E) beau
-EXPLICATION: "Rapide", "intelligent" et "beau" sont des adjectifs.
-TRADUCTION: Iza amin'ireo no adjectif?
-
 EXERCICE 2
 1. Quels sont les verbes du 1er groupe ?
 *A) chanter
@@ -65,7 +38,8 @@ E) venir
 EXPLICATION: "Finir" et "réussir" sont des verbes du 2ème groupe.
 TRADUCTION: Iza amin'ireo no matoanteny amin'ny vondrona faharoa?
 
-3. Quels sont les verbes du 3ème groupe ?
+EXERCICE 3
+1. Quels sont les verbes du 3ème groupe ?
 A) chanter
 B) finir
 C) danser
@@ -74,7 +48,7 @@ C) danser
 EXPLICATION: "Prendre" et "venir" sont des verbes du 3ème groupe.
 TRADUCTION: Iza amin'ireo no matoanteny amin'ny vondrona fahatelo?
 
-4. Quels sont les mots invariables ?
+2. Quels sont les mots invariables ?
 A) chat
 *B) rapidement
 C) maison
@@ -82,12 +56,3 @@ C) maison
 *E) bien
 EXPLICATION: "Rapidement", "très" et "bien" sont des mots invariables (adverbes).
 TRADUCTION: Iza amin'ireo no teny tsy miova?
-
-5. Quels sont les déterminants possessifs ?
-A) le
-*B) mon
-C) un
-*D) ton
-*E) son
-EXPLICATION: "Mon", "ton" et "son" sont des déterminants possessifs.
-TRADUCTION: Iza amin'ireo no mpamaritra anarana?
