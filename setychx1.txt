@@ -19,8 +19,7 @@ D) rapide
 EXPLICATION: "Chat", "maison" et "arbre" sont des noms communs.
 TRADUCTION: Iza amin'ireo no anarana iombonana?
 
-EXERCICE 2
-1. Quels sont les verbes du 1er groupe ?
+3. Quels sont les verbes du 1er groupe ?
 *A) chanter
 B) finir
 *C) danser
@@ -29,7 +28,7 @@ E) venir
 EXPLICATION: "Chanter", "danser" et "manger" sont des verbes du 1er groupe.
 TRADUCTION: Iza amin'ireo no matoanteny amin'ny vondrona voalohany?
 
-2. Quels sont les verbes du 2ème groupe ?
+4. Quels sont les verbes du 2ème groupe ?
 A) chanter
 *B) finir
 C) danser
@@ -37,22 +36,3 @@ C) danser
 E) venir
 EXPLICATION: "Finir" et "réussir" sont des verbes du 2ème groupe.
 TRADUCTION: Iza amin'ireo no matoanteny amin'ny vondrona faharoa?
-
-EXERCICE 3
-1. Quels sont les verbes du 3ème groupe ?
-A) chanter
-B) finir
-C) danser
-*D) prendre
-*E) venir
-EXPLICATION: "Prendre" et "venir" sont des verbes du 3ème groupe.
-TRADUCTION: Iza amin'ireo no matoanteny amin'ny vondrona fahatelo?
-
-2. Quels sont les mots invariables ?
-A) chat
-*B) rapidement
-C) maison
-*D) très
-*E) bien
-EXPLICATION: "Rapidement", "très" et "bien" sont des mots invariables (adverbes).
-TRADUCTION: Iza amin'ireo no teny tsy miova?
