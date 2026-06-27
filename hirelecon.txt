@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Mianatra FRANÇAIS 🟢</title>
+    <title>Mianatra ANGLAIS 🟢</title>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#667eea">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -143,11 +143,11 @@
 <body>
 
 <div class="buttons-container">
-    <button class="course-btn debutant" data-file="hiredebutant.txt" data-db="hiredebutant" data-name="Débutant">
-        📘 DÉBUTANT
+    <button class="course-btn debutant" data-file="hiredeang.txt" data-db="hiredeang" data-name="hiredeang">
+        📘 BIGINNER
     </button>
-    <button class="course-btn intermediaire" data-file="hireintermediaire.txt" data-db="hireintermediaire" data-name="Intermédiaire">
-        📙 INTERMÉDIAIRE
+    <button class="course-btn intermediaire" data-file="hireinterang.txt" data-db="hireinterang" data-name="hireinterang">
+        📙 INTERMEDIATE
     </button>
     <button class="course-btn hiresaka" id="hiresakaBtn">
         👑 HIRESAKA
@@ -166,15 +166,15 @@
 
 <script>
     // ==================== CONFIGURATION ====================
-    const WORKER_URL = 'https://passage.ahofaly62.workers.dev';
+    const WORKER_URL = 'https://passage.jeananglais8.workers.dev';
     const DATE_INFO_URL = WORKER_URL + '/date_rehetra.txt';
     const DB_VERSION = 22;
     
     const FB_URL = 'https://www.facebook.com/profile.php?id=61555313604553';
 
     const COURSES = {
-        'hiredebutant.txt': { db: 'hiredebutant', name: 'Débutant' },
-        'hireintermediaire.txt': { db: 'hireintermediaire', name: 'Intermédiaire' }
+        'hiredeang.txt': { db: 'hiredeang', name: 'hiredeang' },
+        'hireinterang.txt': { db: 'hireinterang', name: 'hireinterang' }
     };
 
     let currentDbName = null;
@@ -430,13 +430,13 @@
         
         if (debutantBtn) {
             debutantBtn.addEventListener('click', () => {
-                chargerCours('hiredebutant.txt', 'hiredebutant', 'Débutant');
+                chargerCours('hiredeang.txt', 'hiredeang', 'hiredeang');
             });
         }
         
         if (intermediaireBtn) {
             intermediaireBtn.addEventListener('click', () => {
-                chargerCours('hireintermediaire.txt', 'hireintermediaire', 'Intermédiaire');
+                chargerCours('hireinterang.txt', 'hireinterang', 'hireinterang');
             });
         }
         
