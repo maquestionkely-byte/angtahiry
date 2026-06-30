@@ -550,9 +550,9 @@ align-self: flex-start; /* RESTE À DROITE POUR HERY */
   const STORE_NAME = 'dialleangunmalagasy';
   const FILE_KEY = 'diallemalagasanguny_content';
   const VERSION_KEY = 'dialanguny_version';
-  const FILE_URL = 'https://passage.jeananglais8.workers.dev/diallemalagasy.txt';
+  const FILE_URL = 'https://passage.jeananglais8.workers.dev/diallefrancais.txt';
   const DATE_INFO_URL = 'https://passage.jeananglais8.workers.dev/date_rehetra.txt';
-  const TARGET_FILE = 'diallemalagasy.txt';
+  const TARGET_FILE = 'diallefrancais.txt';
   
   const GARCONS = ['Hery', 'Safidy', 'Andry', 'Avotra', 'Dera'];
   const FILLES = ['Faniry', 'Rojo', 'Rova', 'Nomena', 'Nirina', 'Meva'];
