@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
-  <title>Dialogues ang UNIQUE</title>
+  <title> Dialogues ANGLAIS</title>
   
 
 
@@ -546,13 +546,13 @@ align-self: flex-start; /* RESTE À DROITE POUR HERY */
 
 <script>
   // ==================== CONFIGURATION ====================
-  const DB_NAME = 'dialangunalagasy';
-  const STORE_NAME = 'dialleangunmalagasy';
-  const FILE_KEY = 'diallemalagasanguny_content';
-  const VERSION_KEY = 'dialanguny_version';
-  const FILE_URL = 'https://passage-anglais.ahofaly62.workers.dev/diallefrancais.txt';
+  const DB_NAME = 'dialleangmalagasy';
+  const STORE_NAME = 'dialleangmalagasy';
+  const FILE_KEY = 'diallemalagangasy_content';
+  const VERSION_KEY = 'dialleangasy_version';
+  const FILE_URL = 'https://passage-anglais.ahofaly62.workers.dev/diallemalagasy.txt';
   const DATE_INFO_URL = 'https://passage-anglais.ahofaly62.workers.dev/date_rehetra.txt';
-  const TARGET_FILE = 'diallefrancais.txt';
+  const TARGET_FILE = 'diallemalagasy.txt';
   
   const GARCONS = ['Hery', 'Safidy', 'Andry', 'Avotra', 'Dera'];
   const FILLES = ['Faniry', 'Rojo', 'Rova', 'Nomena', 'Nirina', 'Meva'];
@@ -659,127 +659,88 @@ align-self: flex-start; /* RESTE À DROITE POUR HERY */
   }
   
   // ==================== PARSEUR ====================
- // ==================== PARSEUR AMÉLIORÉ (DÉTECTE TOUS LES NOMS) ====================
-function parseCompleteFile(rawText) {
+  function parseCompleteFile(rawText) {
     const lines = rawText.split(/\r?\n/);
     const rubriques = [];
     const rubriquesData = {};
     const rubriquesDescriptions = {};
-    
     let currentRubrique = null;
-    let currentNom = null;
-    let currentMessage = [];
     let i = 0;
     
-    // ✅ Fonction pour détecter TOUT nom en début de ligne
-    // Un nom est une suite de lettres majuscules/minuscules suivie de ":" ou " :"
-    function estNomAuDebut(ligne) {
-        const trimmed = ligne.trim();
-        // Détecte un mot composé uniquement de lettres (A-Z, a-z, accents) suivi de ":" ou " :"
-        const match = trimmed.match(/^([A-Za-zÀ-ÿ]+)\s*[:;]\s*/);
-        if (match) {
-            return match[1];
-        }
-        return null;
-    }
-    
-    function extraireMessage(ligne, nom) {
-        const trimmed = ligne.trim();
-        const pattern = new RegExp('^' + nom + '\\s*[:;]\\s*(.*)$', 'i');
-        const match = trimmed.match(pattern);
-        return match ? match[1].trim() : null;
-    }
-    
-    function sauvegarderMessage() {
-        if (currentRubrique && currentNom && currentMessage.length > 0) {
-            const messageTexte = currentMessage.join('\n').trim();
-            if (messageTexte) {
-                if (!rubriquesData[currentRubrique]) {
-                    rubriquesData[currentRubrique] = [];
-                }
-                rubriquesData[currentRubrique].push({
-                    nom: currentNom,
-                    message: messageTexte,
-                    genre: getGenre(currentNom)
-                });
-            }
-        }
-        currentNom = null;
-        currentMessage = [];
-    }
-    
     while (i < lines.length) {
-        let line = lines[i];
-        let trimmed = line.trim();
-        
-        // ✅ 1. Détecter TITRE
-        const titreMatch = trimmed.match(/^[Tt]itre\s*[:;]\s*(.+)$/);
-        if (titreMatch) {
-            sauvegarderMessage();
-            const nouveauTitre = titreMatch[1].trim();
-            currentRubrique = nouveauTitre;
-            
-            if (!rubriques.includes(currentRubrique)) {
-                rubriques.push(currentRubrique);
-                rubriquesData[currentRubrique] = [];
-                rubriquesDescriptions[currentRubrique] = "";
-            }
-            
-            i++;
-            if (i < lines.length) {
-                let nextLine = lines[i].trim();
-                const descMatch = nextLine.match(/^[Dd]escription\s*[:;]\s*(.+)$/);
-                if (descMatch) {
-                    rubriquesDescriptions[currentRubrique] = descMatch[1].trim();
-                    i++;
-                }
-            }
-            continue;
+      let line = lines[i];
+      let trimmed = line.trim();
+      
+      const titreMatch = trimmed.match(/^[Tt]itre\s*:\s*(.+)$/);
+      if (titreMatch) {
+        currentRubrique = titreMatch[1].trim();
+        if (!rubriques.includes(currentRubrique)) {
+          rubriques.push(currentRubrique);
+          rubriquesData[currentRubrique] = [];
+          rubriquesDescriptions[currentRubrique] = "";
         }
-        
-        // ✅ 2. Détecter TOUT NOM en début de ligne
-        const nomTrouve = estNomAuDebut(trimmed);
-        if (nomTrouve && currentRubrique) {
-            sauvegarderMessage();
-            const message = extraireMessage(trimmed, nomTrouve);
-            currentNom = nomTrouve;
-            if (message) {
-                currentMessage.push(message);
-            } else {
-                currentMessage = [];
-            }
-            i++;
-            continue;
-        }
-        
-        // ✅ 3. Sinon, c'est du texte (suite du message)
-        if (currentRubrique && currentNom) {
-            // Garder la ligne telle quelle (vide ou pas)
-            currentMessage.push(line);
-        }
-        
         i++;
+        if (i < lines.length) {
+          let nextLine = lines[i].trim();
+          const descMatch = nextLine.match(/^[Dd]escription\s*:\s*(.+)$/);
+          if (descMatch) {
+            rubriquesDescriptions[currentRubrique] = descMatch[1].trim();
+            i++;
+          }
+        }
+        continue;
+      }
+      
+      if (currentRubrique && trimmed.length > 0) {
+        const dialogueMatch = trimmed.match(/^([A-Za-zÀ-ÿ]+)\s*:\s*(.*)$/);
+        if (dialogueMatch) {
+          const nom = dialogueMatch[1].trim();
+          let message = dialogueMatch[2];
+          const genre = getGenre(nom);
+          let traduction = "";
+          let j = i + 1;
+          let found = false;
+          while (j < lines.length) {
+            const next = lines[j];
+            const nextTrim = next.trim();
+            const tradMatch = nextTrim.match(/^[Tt]raduction\s*:\s*(.*)$/);
+            if (tradMatch) {
+              traduction = tradMatch[1];
+              found = true;
+              i = j;
+              break;
+            }
+            message += "\n" + next;
+            j++;
+          }
+          if (found) {
+            let k = i + 1;
+            while (k < lines.length) {
+              const next = lines[k];
+              const nextTrim = next.trim();
+              if (nextTrim.match(/^[A-Za-zÀ-ÿ]+\s*:/)) break;
+              if (nextTrim.match(/^[Tt]itre\s*:/)) break;
+              k++;
+            }
+            i = k - 1;
+          }
+          rubriquesData[currentRubrique].push({
+            nom: nom,
+            message: message,
+            traduction: traduction,
+            genre: genre
+          });
+          i++;
+          continue;
+        }
+      }
+      i++;
     }
     
-    sauvegarderMessage();
-    
-    const rubriquesValides = rubriques.filter(r => rubriquesData[r] && rubriquesData[r].length > 0);
-    const rubriquesDataFiltre = {};
-    const rubriquesDescriptionsFiltre = {};
-    for (const r of rubriquesValides) {
-        rubriquesDataFiltre[r] = rubriquesData[r];
-        rubriquesDescriptionsFiltre[r] = rubriquesDescriptions[r] || "";
-    }
-    
-    return {
-        rubriques: rubriquesValides,
-        rubriquesData: rubriquesDataFiltre,
-        rubriquesDescriptions: rubriquesDescriptionsFiltre
-    };
-}
-
-
-
+    const valid = rubriques.filter(r => rubriquesData[r] && rubriquesData[r].length > 0);
+    return { rubriques: valid, rubriquesData, rubriquesDescriptions };
+  }
+  
   // ==================== MISE À JOUR SILENCIEUSE ====================
   async function silentUpdate() {
     if (isUpdating || !navigator.onLine) return false;
@@ -976,7 +937,7 @@ function parseCompleteFile(rawText) {
           <div class="message ${bubbleClass}" data-msg="${escapeHtml(msg.message).replace(/"/g, '&quot;')}">
             <span class="sender-name">${escapeHtml(msg.nom)}</span>
             <span class="message-text">${escapeHtml(msg.message).replace(/\n/g, '<br>')}</span>
-            ${msg.traduction ? `` : ''}
+            ${msg.traduction ? `<span class="${translationClass}">${escapeHtml(msg.traduction)}</span>` : ''}
             <span class="time">${hour}:${minute}</span>
           </div>
         </div>
@@ -1151,8 +1112,7 @@ copyBtn.addEventListener('touchstart', function(e) {
     });
   }
   
-
-// ==================== FALLBACK ====================
+ // ==================== FALLBACK ====================
 function renderErrorPage(message) {
   const app = document.getElementById('app-root');
   const errorMsg = message || "Misy olana tamin'ny fampidirana ny rakitra";
@@ -1246,6 +1206,7 @@ async function initApp() {
 }
 
 initApp();
+
 
   // ======================= CODE DE SÉCURITÉ =======================
   (function() {
